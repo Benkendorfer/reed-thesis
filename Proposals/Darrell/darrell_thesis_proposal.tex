@@ -1,0 +1,121 @@
+\documentclass[11pt,twoside,reqno]{amsart}
+\usepackage{amssymb, amsmath, enumerate, palatino, hyperref}
+\usepackage[normalem]{ulem}
+%\usepackage{fullpage}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\renewcommand{\labelitemi}{\guillemotright}
+\usepackage{mathrsfs}
+%--------------------------------
+% Kees' imports
+%--------------------------------
+\usepackage{physics}
+\usepackage{tensor}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{empheq}
+\usepackage{tensor}
+
+
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}%[section]
+\newtheorem{lemma}[prop]{Lemma}
+\newtheorem{thm}[prop]{Theorem}
+\newtheorem{obs}[prop]{Observation}
+\newtheorem{app}[prop]{Application}
+\newtheorem*{MainThm}{Main Theorem}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{conj}[prop]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{rmk}[prop]{Remark}
+\theoremstyle{definition}
+\newtheorem{prob}{Problem}
+\newtheorem{bonus}[prop]{Bonus Problem}
+\theoremstyle{remark}
+\newtheorem{exc}{Exercise}
+\newtheorem*{soln}{Solution}
+\theoremstyle{definition}
+\newtheorem{ex}[prop]{Example}
+\theoremstyle{definition}
+\newtheorem{defn}[prop]{Definition}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+
+\newcommand{\Aut}{\operatorname{Aut}}
+
+\newcommand{\defeq}{:=}
+
+\renewcommand{\Re}{\operatorname{Re}}
+
+%--------------------------------
+% Kees' commands
+%--------------------------------
+\makeatletter
+\newcommand{\subalign}[1]{%
+  \vcenter{%
+    \Let@ \restore@math@cr \default@tag
+    \baselineskip\fontdimen10 \scriptfont\tw@
+    \advance\baselineskip\fontdimen12 \scriptfont\tw@
+    \lineskip\thr@@\fontdimen8 \scriptfont\thr@@
+    \lineskiplimit\lineskip
+    \ialign{\hfil$\m@th\scriptstyle##$&$\m@th\scriptstyle{}##$\hfil\crcr
+      #1\crcr
+    }%
+  }%
+}
+\makeatother
+
+\newcommand{\allspace}{{\substack{\text{all}\\\text{space}}}}
+
+\newcommand{\DD}{\mathbb{D}}
+\renewcommand{\AA}{\mathbb{A}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\LL}{\mathbb{L}}
+\newcommand{\BB}{\mathbb{B}}
+\renewcommand{\SS}{\mathbb{S}}
+\newcommand{\HH}{\mathbb{H}}
+
+\renewcommand{\l}{\ell}
+
+\newcommand{\PB}{\mathrm{PB}}
+
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cI}{\mathcal{I}}
+
+\newcommand{\sgn}{\mathrm{sgn}}
+
+\def\beq#1\eeq{\begin{equation}#1\end{equation}}
+\def\bal#1\eal{\begin{align}#1\end{align}}
+
+\title{Thesis proposal: quantum simulation of open quantum systems}
+\author{Kees Benkendorfer}
+\date{11 September 2020}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Proposed Advisor:} Darrell Schroeter \\
+\noindent\textbf{Preference:} 2 \\
+
+The quantum systems we most often study have the convenient property of being sealed off from their environment. This is, of course, unphysical: any realistic quantum system exists within, interacts with, and loses information to its physical surroundings. It is becoming increasingly important to understand such `open' quantum systems, as the perturbing effects of the environment present challenges to the viability of many quantum technologies (and quantum experiments) currently under development \cite{de_vega_dynamics_2017}. An obvious example is that of the quantum computer, where decoherence of qubits imposes limits on the complexity and duration of quantum algorithms. This is particularly true at present (often called the noisy intermediate-scale quantum, or NISQ, era), as the quantum computers currently accessible have enough physical qubits for small-scale work, but non-negligible noise and too few qubits for effective quantum error correction.
+
+While open quantum systems are notoriously difficult to understand theoretically, quantum computers are reaching a point where \textit{simulation} of such systems is feasible. Recent work has shown that the publicly available IBM Q system, which provides free access to up to 15 physical qubits, can be used for simulation of simple models \cite{garcia-perez_ibm_2020}.
+
+One of the earliest open quantum systems to be studied was the Weisskopf-Wigner model of spontaneous emission of a photon from an excited atom%\footnote{This model can also be used to describe the spontaneous decay of unstable particles \cite{caban_unstable_2005}}
+. By now, this problem is well-understood theoretically, and therefore would provide an interesting testbed for the quantum simulation of an open quantum system. Nevertheless, to the best of my knowledge, such a simulation has not yet been performed.
+
+For this thesis, I propose to use a quantum computer to simulate an excited atom and compare measurable quantities (e.g.\ the lifetime of the excited state) to those extracted from the Weisskopf-Wigner model (as well as available experimental data). This would require me to learn about open quantum systems from a theoretical perspective, both broadly and with an eye towards solving this system of interest. I would then learn how to develop and implement a quantum algorithm to simulate such a system. If time permits, I would be interested in extending this algorithm to a regime beyond the theoretically calculable. This might entail, for example, performing such a simulation for the excited states of a hydrogen \textit{molecule} (a quantum simulation of the ground state of H$_2$ was recently performed in \cite{urbanek_error_2020-1}). Overall, this thesis would be an excellent way to learn about open quantum systems and quantum algorithm development.
+
+\bibliographystyle{unsrt}
+\bibliography{open_quantum_systems}
+
+\end{document}

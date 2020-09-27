@@ -1,0 +1,120 @@
+\documentclass[11pt,twoside,reqno]{amsart}
+\usepackage{amssymb, amsmath, enumerate, palatino, hyperref}
+\usepackage[normalem]{ulem}
+%\usepackage{fullpage}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\renewcommand{\labelitemi}{\guillemotright}
+\usepackage{mathrsfs}
+%--------------------------------
+% Kees' imports
+%--------------------------------
+\usepackage{physics}
+\usepackage{tensor}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{empheq}
+\usepackage{tensor}
+
+
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}%[section]
+\newtheorem{lemma}[prop]{Lemma}
+\newtheorem{thm}[prop]{Theorem}
+\newtheorem{obs}[prop]{Observation}
+\newtheorem{app}[prop]{Application}
+\newtheorem*{MainThm}{Main Theorem}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{conj}[prop]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{rmk}[prop]{Remark}
+\theoremstyle{definition}
+\newtheorem{prob}{Problem}
+\newtheorem{bonus}[prop]{Bonus Problem}
+\theoremstyle{remark}
+\newtheorem{exc}{Exercise}
+\newtheorem*{soln}{Solution}
+\theoremstyle{definition}
+\newtheorem{ex}[prop]{Example}
+\theoremstyle{definition}
+\newtheorem{defn}[prop]{Definition}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+
+\newcommand{\Aut}{\operatorname{Aut}}
+
+\newcommand{\defeq}{:=}
+
+\renewcommand{\Re}{\operatorname{Re}}
+
+%--------------------------------
+% Kees' commands
+%--------------------------------
+\makeatletter
+\newcommand{\subalign}[1]{%
+  \vcenter{%
+    \Let@ \restore@math@cr \default@tag
+    \baselineskip\fontdimen10 \scriptfont\tw@
+    \advance\baselineskip\fontdimen12 \scriptfont\tw@
+    \lineskip\thr@@\fontdimen8 \scriptfont\thr@@
+    \lineskiplimit\lineskip
+    \ialign{\hfil$\m@th\scriptstyle##$&$\m@th\scriptstyle{}##$\hfil\crcr
+      #1\crcr
+    }%
+  }%
+}
+\makeatother
+
+\newcommand{\allspace}{{\substack{\text{all}\\\text{space}}}}
+
+\newcommand{\DD}{\mathbb{D}}
+\renewcommand{\AA}{\mathbb{A}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\LL}{\mathbb{L}}
+\newcommand{\BB}{\mathbb{B}}
+\renewcommand{\SS}{\mathbb{S}}
+\newcommand{\HH}{\mathbb{H}}
+
+\renewcommand{\l}{\ell}
+
+\newcommand{\PB}{\mathrm{PB}}
+
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cI}{\mathcal{I}}
+
+\newcommand{\sgn}{\mathrm{sgn}}
+
+\def\beq#1\eeq{\begin{equation}#1\end{equation}}
+\def\bal#1\eal{\begin{align}#1\end{align}}
+
+\title{Thesis proposal: precision calculations of groomed jet mass}
+\author{Kees Benkendorfer}
+\date{11 September 2020}
+
+\begin{document}
+\maketitle
+
+\noindent\textbf{Proposed Advisor:} Andrew Larkoski \\
+\noindent\textbf{Preference:} 1 \\
+
+In the collision of two high-energy particles (e.g.\ electron-positron or proton-proton), the emission of a quark or a gluon leads to the production of a collimated, structured spray of particles called a jet. This is a direct result of the self-coupling of the strong force, described by the theory of quantum chromodynamics (QCD) \cite{larkoski_elementary_2019-1}. Since these jets are such a `purely' QCD phenomenon, they provide an excellent laboratory in which to study the theory directly. One would like, for example, to use jet substructure to measure the strong coupling $\alpha_s$, a fundamental quantity of QCD (if not \textit{the} fundamental quantity).
+
+Yet in order to measure quantities using jet substructure, we must have a clear theoretical understanding against which to compare experimental data. This is difficult due to the nature of QCD. A precise theoretical treatment of jets must contend with a breakdown of perturbation techniques (since $\alpha_s \sim 1$) and significant nonlinear corrections due to hadronization effects (since particles that have a charge under the strong force become `confined' together). Moreover, in an experimental context, one must account for radiation introduced to a jet from other events in the collider.
+
+We must, therefore, study jet observables that are robust to these problems. One such observable is the `groomed jet mass' --- the total mass/energy of all the particles in the jet, corrected to remove the low-energy and very off-axis particles typical of background radiation. This observable was recently calculated for the first time to high enough precision ($N^2LO + N^3LL$, for the \textit{cognoscenti}) \cite{kardos_groomed_2020,kardos_two-_2020} for comparison to data to be feasible\footnote{This is very timely, as the ATLAS collaboration recently produced a new measurement of groomed jet mass \cite{atlas_collaboration_measurement_2020-2}}. However, this calculation is only valid at low and high values of groomed jet mass (relative to the center-of-mass energy of the collided particles); intermediate values fall outside the regions of validity. Yet interesting physics occurs here, as evidenced by the significant cusp in Fig.\ 4 of Ref.\ \cite{kardos_groomed_2020}, and so understanding this region is crucial to the ultimate goal of computing $\alpha_s$.
+
+For this thesis, I would perform calculations to understand the physics of this intermediate-mass region, with the goal of pushing the calculation to the precision achieved for the tails of the distribution. If this proceeded swiftly, I would then attempt a (very rough) determination of $\alpha_s$. This project would provide an excellent opportunity to learn about QCD, jet phenomenology, and the techniques of modern theoretical high-energy physics.
+
+\bibliographystyle{unsrt}
+\bibliography{jet_substructure}
+
+\end{document}
