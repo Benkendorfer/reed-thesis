@@ -1,3 +1,4 @@
 .DS_STORE
 conda-env/
-.idea
+.idea/
+*.xml
