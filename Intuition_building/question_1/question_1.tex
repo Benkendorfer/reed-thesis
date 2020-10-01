@@ -1,0 +1,176 @@
+\documentclass[11pt,twoside,reqno]{amsart}
+\usepackage{amssymb, amsmath, enumerate, palatino, hyperref}
+\usepackage[normalem]{ulem}
+%\usepackage{fullpage}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\renewcommand{\labelitemi}{\guillemotright}
+\usepackage{mathrsfs}
+%--------------------------------
+% Kees' imports
+%--------------------------------
+\usepackage{physics}
+\usepackage{tensor}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{empheq}
+\usepackage{tensor}
+
+
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}%[section]
+\newtheorem{lemma}[prop]{Lemma}
+\newtheorem{thm}[prop]{Theorem}
+\newtheorem{obs}[prop]{Observation}
+\newtheorem{app}[prop]{Application}
+\newtheorem*{MainThm}{Main Theorem}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{conj}[prop]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{rmk}[prop]{Remark}
+\theoremstyle{definition}
+\newtheorem{prob}{Problem}
+\newtheorem{bonus}[prop]{Bonus Problem}
+\theoremstyle{remark}
+\newtheorem{exc}{Exercise}
+\newtheorem*{soln}{Solution}
+\theoremstyle{definition}
+\newtheorem{ex}[prop]{Example}
+\theoremstyle{definition}
+\newtheorem{defn}[prop]{Definition}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+
+\newcommand{\Aut}{\operatorname{Aut}}
+
+\newcommand{\defeq}{:=}
+
+\renewcommand{\Re}{\operatorname{Re}}
+
+%--------------------------------
+% Kees' commands
+%--------------------------------
+\makeatletter
+\newcommand{\subalign}[1]{%
+  \vcenter{%
+    \Let@ \restore@math@cr \default@tag
+    \baselineskip\fontdimen10 \scriptfont\tw@
+    \advance\baselineskip\fontdimen12 \scriptfont\tw@
+    \lineskip\thr@@\fontdimen8 \scriptfont\thr@@
+    \lineskiplimit\lineskip
+    \ialign{\hfil$\m@th\scriptstyle##$&$\m@th\scriptstyle{}##$\hfil\crcr
+      #1\crcr
+    }%
+  }%
+}
+\makeatother
+
+\newcommand{\allspace}{{\substack{\text{all}\\\text{space}}}}
+
+\newcommand{\DD}{\mathbb{D}}
+\renewcommand{\AA}{\mathbb{A}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\LL}{\mathbb{L}}
+\newcommand{\BB}{\mathbb{B}}
+\renewcommand{\SS}{\mathbb{S}}
+\newcommand{\HH}{\mathbb{H}}
+
+\renewcommand{\l}{\ell}
+
+\newcommand{\PB}{\mathrm{PB}}
+
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cI}{\mathcal{I}}
+
+\newcommand{\sgn}{\mathrm{sgn}}
+
+\def\beq#1\eeq{\begin{equation}#1\end{equation}}
+\def\bal#1\eal{\begin{align}#1\end{align}}
+
+\title{Solving the integral in Eq.\ 2.7: Partitioning Unity}
+\author{Kees Benkendorfer}
+\date{26 September 2020}
+
+\begin{document}
+\maketitle
+
+We want to solve the integral from Eq.\ 2.7 of 2006.14680:
+\begin{equation}
+	I = \int_0^1 dx_1 \int_0^1 dx_2 \, \Theta(x_1 + x_2 - 1) \frac{x_1^2 + x_2^2}{(1 - x_1)(1 - x_2)} \delta \qty(\rho - \frac{4(1 - \max\qty{x_i})}{(2 - \max\qty{x_i})^2}) \Theta\qty(\frac{\min\qty{x_i}}{2 - \max\qty{x_i}} - z),
+\end{equation}
+where $x_1, x_2, x_3$ are phase space variables satisfying
+\begin{equation}
+	x_1 + x_2 + x_3 = 2.
+\end{equation}
+A first step might be to partition unity as
+\begin{equation}
+\begin{aligned}
+	I &= \int_0^1 dx_1 \int_0^1 dx_2\, \Theta(x_1 + x_2 - 1) \frac{x_1^2 + x_2^2}{(1 - x_1)(1 - x_2)} \delta \qty(\rho - \frac{4(1 - \max\qty{x_i})}{(2 - \max\qty{x_i})^2}) \\
+		&\qquad\qquad\qquad \times \Theta\qty(\frac{\min\qty{x_i}}{2 - \max\qty{x_i}} - z) \big[\Theta(x_1 - x_2)\Theta(x_2 - x_3) + \Theta(x_1 - x_3)\Theta(x_3 - x_2) \\
+		&\qquad\qquad\qquad + \Theta(x_2 - x_1)\Theta(x_1 - x_3) + \Theta(x_2 - x_3)\Theta(x_3 - x_1) \\
+		&\qquad\qquad\qquad + \Theta(x_3 - x_1)\Theta(x_1 - x_2) + \Theta(x_3 - x_2)\Theta(x_2 - x_1) \big],
+\end{aligned}
+\end{equation}
+where we run over all the possible permutations of $\qty{x_1, x_2, x_3}$. For reference, define the integrals corresponding to these permutations as
+\begin{equation}
+	I \equiv I_1 + I_2 + I_3 + I_4 + I_5 + I_6.
+\end{equation}
+Since $x_1$ and $x_2$ are symmetric in the integrand (after the determination of the maximum and minimum), we see that
+\begin{align}
+	I_1 &= I_3 & I_2 &= I_4 & I_5 &= I_6.
+\end{align}
+
+Focusing for now on $I_1$, after applying the Heaviside functions $\Theta(x_1 - x_2)\Theta(x_2 - x_3)$ we have
+\begin{equation}
+	I_1 = \int_0^1 dx_1 \int_0^1 dx_2\, \Theta(x_1 + x_2 - 1) \frac{x_1^2 + x_2^2}{(1 - x_1)(1 - x_2)} \delta\qty(\rho - \frac{4(1 - x_1)}{(2 - x_1)^2}) \Theta\qty(\frac{2 - x_1 - x_2}{2 - x_1} - z).
+\end{equation}
+Considering the argument of the Dirac delta to be a function of $x_1$
+\begin{equation}
+	f(x_1) = \rho - \frac{4(1 - x_1)}{(2 - x_1)^2},
+\end{equation}
+its roots are
+\begin{equation}
+	r_1, r_2 = 2 + \frac{2\qty(-1 \pm \sqrt{1 - \rho}\,)}{\rho},
+\end{equation}
+so
+\begin{equation}
+	\delta\qty(\rho - \frac{4(1 - x_1)}{(2 - x_1)^2}) = \frac{\delta(x_1 - r_1)}{\abs{f'(r_1)}} + \frac{\delta(x_1 - r_2)}{\abs{f'(r_2)}}.
+\end{equation}
+Since $0 < r_1 < 1$ (for $0 < \rho < 1$) but over this same range $0 < r_2$, only the $r_1$ term will contribute to the integral. Thus,
+\begin{align}
+	I_1 &= \int_0^1 dx_1 \int_0^1 dx_2\, \Theta(x_1 + x_2 - 1) \frac{x_1^2 + x_2^2}{(1 - x_1)(1 - x_2)} \frac{\delta\qty(x_1 - r_1)}{\abs{f'(r_1)}} \Theta\qty(\frac{2 - x_1 - x_2}{2 - x_1} - z) \\
+	&= \frac{1}{\abs{f'(r_1)}}\int_0^1 dx_2 \, \Theta(r_1 + x_2 - 1) \frac{r_1^2 + x_2^2}{(1 - r_1)(1 - r_2)} \Theta\qty(\frac{2 - r_1 - x_2}{2 - r_1} - z).
+\end{align}
+The Heaviside functions assert that
+\begin{align}
+	x_2 &> 1 - r_1 & x_2 < (2 - r_1)(1 - z).
+\end{align}
+Over the range $0 < \rho < 1$, $1 - r_1 > 0$, so we can reset the lower bound of integration to this value. However, $(2 - r_1)(1 - z) < 1$ only if $z > 1/2$ or
+\begin{equation}
+	z < \frac{1}{2} \text{ and } \rho < 4(z - z^2).
+\end{equation}
+We seem to only care about the regime where $z$ is much less than $1/2$ (and perhaps this is required kinematically\ldots\ I haven't thought it through very deeply), so we'll focus on this for now. Thus, we have reduced the integral to
+\begin{equation}\label{eq:split_integral}
+\begin{aligned}
+	I_1 &= \Theta\qty(\frac{1}{2} - z)\Theta\qty(4(z - z^2) - \rho) \int_{1 - r_1}^{(2 - r_1)(1 - z)}dx_2\, \frac{r_1^2 + x_2^2}{(1 - r_1)(1 - x_2)} \\
+	&\quad + \Theta\qty(\rho - 4(z - z^2))\int_{1 - r_1}^{1}dx_2\, \frac{r_1^2 + x_2^2}{(1 - r_1)(1 - x_2)}.
+\end{aligned}
+\end{equation}
+There are two problems here:
+\begin{enumerate}
+	\item The second integral in Eq.\ \ref{eq:split_integral} does not converge
+
+	\item The split point here is around $4(z - z^2)$, which is different than the point you derived (which was $2z - z^2$). At first I thought that maybe this integral cancels with another, and yet another gives the $2z - z^2$ split, but having run through each (unique) case the $4(z - z^2)$ split seems fairly robust.
+\end{enumerate}
+This makes me think I've made a wrong step somewhere, but after quite a bit of time spent and ink used, I can't see where I've gone wrong. \textbf{Do you see where my reasoning has gone awry, or otherwise have advice on where to look/this strategy in general?}
+
+\end{document}
