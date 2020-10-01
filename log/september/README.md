@@ -24,6 +24,8 @@
   
   Solution to my problems: partitioning of unity. Let `H` be Heaviside theta. Then, in an integral, `1 = H(x1 - x2)H(x2 - x3) + H(x1 - x3)H(x3 - x2) + ...` 
   where the sum is over all possible permutations of `x1, x2, x2`.
+  
+  ![](../../Intuition_building/plots/first_reproduction.png)
 
 * #### Implemented a basic Monte Carlo integrator for Eq 2.7
 
