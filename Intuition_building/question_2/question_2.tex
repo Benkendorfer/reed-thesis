@@ -1,0 +1,173 @@
+\documentclass[11pt,twoside,reqno]{amsart}
+\usepackage{amssymb, amsmath, enumerate, palatino, hyperref}
+\usepackage[normalem]{ulem}
+%\usepackage{fullpage}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\renewcommand{\labelitemi}{\guillemotright}
+\usepackage{mathrsfs}
+%--------------------------------
+% Kees' imports
+%--------------------------------
+\usepackage{physics}
+\usepackage{tensor}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{empheq}
+\usepackage{tensor}
+
+
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}%[section]
+\newtheorem{lemma}[prop]{Lemma}
+\newtheorem{thm}[prop]{Theorem}
+\newtheorem{obs}[prop]{Observation}
+\newtheorem{app}[prop]{Application}
+\newtheorem*{MainThm}{Main Theorem}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{conj}[prop]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{rmk}[prop]{Remark}
+\theoremstyle{definition}
+\newtheorem{prob}{Problem}
+\newtheorem{bonus}[prop]{Bonus Problem}
+\theoremstyle{remark}
+\newtheorem{exc}{Exercise}
+\newtheorem*{soln}{Solution}
+\theoremstyle{definition}
+\newtheorem{ex}[prop]{Example}
+\theoremstyle{definition}
+\newtheorem{defn}[prop]{Definition}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+
+\newcommand{\Aut}{\operatorname{Aut}}
+
+\newcommand{\defeq}{:=}
+
+\renewcommand{\Re}{\operatorname{Re}}
+
+%--------------------------------
+% Kees' commands
+%--------------------------------
+\makeatletter
+\newcommand{\subalign}[1]{%
+  \vcenter{%
+    \Let@ \restore@math@cr \default@tag
+    \baselineskip\fontdimen10 \scriptfont\tw@
+    \advance\baselineskip\fontdimen12 \scriptfont\tw@
+    \lineskip\thr@@\fontdimen8 \scriptfont\thr@@
+    \lineskiplimit\lineskip
+    \ialign{\hfil$\m@th\scriptstyle##$&$\m@th\scriptstyle{}##$\hfil\crcr
+      #1\crcr
+    }%
+  }%
+}
+\makeatother
+
+\newcommand{\allspace}{{\substack{\text{all}\\\text{space}}}}
+
+\newcommand{\DD}{\mathbb{D}}
+\renewcommand{\AA}{\mathbb{A}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\LL}{\mathbb{L}}
+\newcommand{\BB}{\mathbb{B}}
+\renewcommand{\SS}{\mathbb{S}}
+\newcommand{\HH}{\mathbb{H}}
+
+\renewcommand{\l}{\ell}
+
+\newcommand{\PB}{\mathrm{PB}}
+
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cI}{\mathcal{I}}
+
+\newcommand{\sgn}{\mathrm{sgn}}
+
+\def\beq#1\eeq{\begin{equation}#1\end{equation}}
+\def\bal#1\eal{\begin{align}#1\end{align}}
+
+\title{Limiting Eq.\ 2.7 with $x_3 \ll 1$}
+\author{Kees Benkendorfer}
+\date{5 October 2020}
+
+\begin{document}
+\maketitle
+
+We want to take the $x_3 \ll 1$ limit of the integral from Eq.\ 2.7 of 2006.14680:
+\begin{equation}
+	I = \int_0^1 dx_1 \int_0^1 dx_2 \, \Theta(x_1 + x_2 - 1) \frac{x_1^2 + x_2^2}{(1 - x_1)(1 - x_2)} \, \delta \qty(\rho - \frac{4(1 - \max\qty{x_i})}{(2 - \max\qty{x_i})^2}) \Theta\qty(\frac{\min\qty{x_i}}{2 - \max\qty{x_i}} - z),
+\end{equation}
+where $x_1, x_2, x_3$ are phase space variables satisfying
+\begin{equation}
+	x_1 + x_2 + x_3 = 2.
+\end{equation}
+As a first step, we can change variables from $x_2$ to $x_3$:
+\begin{align}
+	x_3 &= 2 - x_1 - x_2 & dx_2 &= -dx_3.
+\end{align}
+Then, after partitioning unity with the definition $\Theta_{ijk} \equiv \Theta(x_i - x_j)\Theta(x_j - x_k)$, the integral becomes
+\begin{equation}
+\begin{aligned}
+	I &= \int_0^1 dx_3 \int_{1 - x_3}^{2 - x_3} dx_1 \, \Theta(1 - x_3) \frac{x_1^2 + (2 - x_1 - x_3)^2}{(1 - x_1)(x_1 + x_3 - 1)} \, \delta \qty(\rho - \frac{4(1 - \max\qty{x_i})}{(2 - \max\qty{x_i})^2}) \\
+	&\qquad\qquad\qquad\qquad \times \Theta\qty(\frac{\min\qty{x_i}}{2 - \max\qty{x_i}} - z) \Big[ \Theta_{123} + \Theta_{132} + \Theta_{213} + \Theta_{231} + \Theta_{312} + \Theta_{321} \Big].
+\end{aligned}
+\end{equation}
+Taking a look at the first integral, we have
+\begin{equation}
+\begin{aligned}
+	I_1 &= \int_0^1 dx_3 \int_{1 - x_3}^{2 - x_3} dx_1 \Theta(1 - x_3) \frac{x_1^2 + (2 - x_1 - x_3)^2}{(1 - x_1)(x_1 + x_3 - 1)} \, \delta \qty(\rho - \frac{4(1 - x_1)}{(2 - x_1)^2}) \\
+		&\qquad\qquad\qquad\qquad \times \Theta\qty(\frac{x_3}{2 - x_1} - z) \Theta(2x_1 + x_3 - 2)\Theta(2 - 2x_1 - x_3).
+\end{aligned}
+\end{equation}
+We can simplify the Dirac delta by considering its argument to be a function of $x_1$
+\begin{equation}
+	f(x_1) = \rho - \frac{4(1 - x_1)}{(2 - x_1)^2}.
+\end{equation}
+Then its roots are
+\begin{equation}
+	r_1, r_2 = 2 + \frac{2\qty(-1 \pm \sqrt{1 - \rho}\,)}{\rho},
+\end{equation}
+so
+\begin{equation}
+	\delta\qty(\rho - \frac{4(1 - x_1)}{(2 - x_1)^2}) = \frac{\delta(x_1 - r_1)}{\abs{f'(r_1)}} + \frac{\delta(x_1 - r_2)}{\abs{f'(r_2)}}.
+\end{equation}
+Only the first root will contribute in this case (since the other is negative for $0 < \rho < 1$), so
+\begin{align}
+	I_1 &= \int_0^1 dx_3 \int_{1 - x_3}^{2 - x_3} dx_1 \Theta(1 - x_3) \frac{x_1^2 + (2 - x_1 - x_3)^2}{(1 - x_1)(x_1 + x_3 - 1)} \, \frac{\delta(x_1 - r_1)}{\abs{f'(r_1)}} \\
+		\nonumber&\qquad\qquad\qquad\qquad \times \Theta\qty(\frac{x_3}{2 - x_1} - z) \Theta(2x_1 + x_3 - 2)\Theta(2 - 2x_1 - x_3) \\
+	&= \int_0^1 dx_3\, \Theta(1 - x_3) \frac{r_1^2 + (2 - r_1 - x_3)^2}{(1 - r_1)(r_1 + x_3 - 1)} \, \frac{1}{\abs{f'(r_1)}} \\
+		\nonumber&\qquad\qquad\qquad\qquad \times \Theta\qty(\frac{x_3}{2 - r_1} - z) \Theta(2r_1 + x_3 - 2)\Theta(2 - 2r_1 - x_3) \\
+	&\stackrel{?}{\approx} \int_0^\infty dx_3\, \Theta(1 - x_3) \frac{4 - 4r_1 + 2r_1^2 + 2r_x x_3 - 4x_3}{(1 - r_1)(r_1 + x_3 - 1)} \, \frac{1}{\abs{f'(r_1)}} \\
+		\nonumber&\qquad\qquad\qquad\qquad \times \Theta\qty(\frac{x_3}{2 - r_1} - z) \Theta(2r_1 + x_3 - 2)\Theta(2 - 2r_1 - x_3).
+\end{align}
+Here's where I'm suck: in the limit $x_3 \ll 1$, we might take the upper bound on the integral to be $\infty$ (as you suggest), which would simplify the integration (although\dots\ how then to handle the upper bounds on $x_3$ imposed by the Heaviside functions?). But how can we make the approximation play nice with, for example, the requirement
+\begin{equation}
+	\Theta(2r_1 + x_3 - 2) \implies x_3 > 2(1 - r_1)?
+\end{equation}
+These imposed lower bounds seem to prevent us from satisfying the limit $x_3 \to 0$. Should we treat them as a bound on $\rho$ instead (e.g.\ by saying $\Theta(2r_1 + x_3 - 2) \approx \Theta(2r_1 - 2$)? Then it seems like we're potentially losing an important part of the integral.
+
+Do you have any pointers on this?
+
+\vspace{1cm}
+
+\hrulefill
+
+\vspace{1cm}
+
+Ok, since we are setting $x_3 \ll 1$, we know $1 - x_1 \ll 1$, so let's set
+\begin{align}
+	x_3 &\to \lambda x_3 & x_1 \to 1 - \lambda(1 - x_1),
+\end{align}
+then drop terms quadratic and higher in $\lambda$. Since the delta function and Heaviside functions are linear in $x_1$ and $x_3$
+	
+\end{document}
