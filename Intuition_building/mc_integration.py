@@ -2,16 +2,18 @@ import time
 
 import numpy as np
 import matplotlib.pyplot as plt
-from typing import Tuple, Callable, List
+from typing import Tuple, Callable
 
 
 def monte_carlo_with_delta(mc_integrand: Callable, delta_argument: Callable,
-                           mc_bounds: Tuple[float, float], int_bounds: List[Tuple[float, float]],
+                           mc_bounds: Tuple[float, float],
                            n_bins: int, n_pts: int,
                            log=False):
     """Perform Monte Carlo integration when the integrand includes a delta function"""
-    rand_pts = np.array([np.random.uniform(bound[0], bound[1], n_pts) for bound in int_bounds])
-    rand_pts = np.reshape(rand_pts, (n_pts, len(int_bounds)))
+    rand_pts_1 = np.random.uniform(0, 1, n_pts)
+    rand_pts_2 = [np.random.uniform(1 - x1, 1) for x1 in rand_pts_1]
+    rand_pts = np.array([rand_pts_1, rand_pts_2])
+    rand_pts = rand_pts.T
     if log:
         bin_edges = np.geomspace(mc_bounds[0], mc_bounds[1], n_bins+1)
     else:
@@ -61,9 +63,12 @@ def integrand(x1, x2, z):
     max_val = max(x1, x2, x3)
 
     ht1 = heaviside_theta(x1 + x2 - 1)
-    main_portion = (x1 ** 2 + x2 ** 2) / ((1 - x1) * (1 - x2))
     ht2 = heaviside_theta(min_val / (2 - max_val) - z)
-    return ht1 * main_portion * ht2
+    if ht2 == 0:
+        return 0
+
+    main_portion = (x1 ** 2 + x2 ** 2) / ((1 - x1) * (1 - x2))
+    return main_portion
 
 
 def delta(x1, x2):
@@ -76,10 +81,12 @@ def main():
     # z = 0.04
     n_bins = 40
     n_events = 500000
-    for z in [0.04, 0.06, 0.08, 0.1]:
+    for z in [0.04,
+              #0.06, 0.08, 0.1
+              ]:
         mc_pts, mc_unc, bin_edges = monte_carlo_with_delta(lambda x1, x2: integrand(x1, x2, z),
                                                            delta,
-                                                           (0.005, 0.6), [(0, 1), (0, 1)], n_bins, n_events, log=True)
+                                                           (0.005, 0.6), n_bins, n_events, log=True)
         x_pts = (bin_edges[:-1] + bin_edges[1:]) / 2
 
         plt.plot(x_pts, mc_pts * x_pts, label='z = %.2f' % z)
