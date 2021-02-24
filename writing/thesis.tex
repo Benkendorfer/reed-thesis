@@ -1,0 +1,253 @@
+% This is the Reed College LaTeX thesis template. Most of the work 
+% for the document class was done by Sam Noble (SN), as well as this
+% template. Later comments etc. by Ben Salzberg (BTS). Additional
+% restructuring and APA support by Jess Youngberg (JY).
+% Your comments and suggestions are more than welcome; please email
+% them to cus@reed.edu
+%
+% See http://web.reed.edu/cis/help/latex.html for help. There are a 
+% great bunch of help pages there, with notes on
+% getting started, bibtex, etc. Go there and read it if you're not
+% already familiar with LaTeX.
+%
+% Any line that starts with a percent symbol is a comment. 
+% They won't show up in the document, and are useful for notes 
+% to yourself and explaining commands. 
+% Commenting also removes a line from the document; 
+% very handy for troubleshooting problems. -BTS
+
+% As far as I know, this follows the requirements laid out in 
+% the 2002-2003 Senior Handbook. Ask a librarian to check the 
+% document before binding. -SN
+
+%%
+%% Preamble
+%%
+% \documentclass{<something>} must begin each LaTeX document
+\documentclass[12pt,twoside]{reedthesis}
+% Packages are extensions to the basic LaTeX functions. Whatever you
+% want to typeset, there is probably a package out there for it.
+% Chemistry (chemtex), screenplays, you name it.
+% Check out CTAN to see: http://www.ctan.org/
+%%
+\usepackage{graphicx,latexsym} 
+\usepackage{amssymb,amsthm,amsmath}
+\usepackage{longtable,booktabs,setspace} 
+\usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+\usepackage[hyphens]{url}
+\usepackage{rotating}
+
+\usepackage{physics}
+\usepackage{siunitx}
+% \usepackage{natbib}
+% Comment out the natbib line above and uncomment the following two lines to use the new 
+% biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
+% bibliography is included. 
+%\usepackage{biblatex-chicago}
+%\bibliography{thesis}
+
+% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
+
+\title{TITLE TBD}
+\author{Kees Benkendorfer}
+% The month and year that you submit your FINAL draft TO THE LIBRARY (May or December)
+\date{May 2021}
+\division{Mathematics and Natural Sciences}
+\advisor{Andrew Larkoski}
+%If you have two advisors for some reason, you can use the following
+%\altadvisor{Your Other Advisor}
+%%% Remember to use the correct department!
+\department{Physics}
+% if you're writing a thesis in an interdisciplinary major,
+% uncomment the line below and change the text as appropriate.
+% check the Senior Handbook if unsure.
+%\thedivisionof{The Established Interdisciplinary Committee for}
+% if you want the approval page to say "Approved for the Committee",
+% uncomment the next line
+%\approvedforthe{Committee}
+
+\setlength{\parskip}{0pt}
+%%
+%% End Preamble
+%%
+%% The fun begins:
+\begin{document}
+
+  \maketitle
+  \frontmatter % this stuff will be roman-numbered
+  \pagestyle{empty} % this removes page numbers from the frontmatter
+
+% Acknowledgements (Acceptable American spelling) are optional
+% So are Acknowledgments (proper English spelling)
+    \chapter*{Acknowledgements}
+	I want to thank a few people.
+
+% The preface is optional
+% To remove it, comment it out or delete it.
+    \chapter*{Preface}
+	This is an example of a thesis setup to use the reed thesis document class.
+	
+	
+
+    \chapter*{List of Abbreviations}
+
+	\begin{table}[h]
+	\centering % You could remove this to move table to the left
+	\begin{tabular}{ll}
+		\textbf{QCD}  	&  Quantum chromodynamics \\
+		\textbf{SCET}  	&  Soft collinear effective theory\\
+	\end{tabular}
+	\end{table}
+	
+
+    \tableofcontents
+% if you want a list of tables, optional
+    \listoftables
+% if you want a list of figures, also optional
+    \listoffigures
+
+% The abstract is not required if you're writing a creative thesis (but aren't they all?)
+% If your abstract is longer than a page, there may be a formatting issue.
+    \chapter*{Abstract}
+	The preface pretty much says it all.
+	
+	\chapter*{Dedication}
+	You can have a dedication here if you wish.
+
+  \mainmatter % here the regular arabic numbering starts
+  \pagestyle{fancyplain} % turns page numbering back on
+
+%The \introduction command is provided as a convenience.
+%if you want special chapter formatting, you'll probably want to avoid using it altogether
+
+\chapter*{Introduction}
+     \addcontentsline{toc}{chapter}{Introduction}
+\chaptermark{Introduction}
+\markboth{Introduction}{Introduction}
+% The three lines above are to make sure that the headers are right, that the intro gets included in the table of contents, and that it doesn't get numbered 1 so that chapter one is 1.
+
+	Introduction here
+
+	\section{Technical and notational conventions}
+
+	First, we hold Planck's constant and the speed of light to be equal to unity: $\hbar = c = 1$. It turns out that non-unity values of these quantities are, for our purposes, redundant; when converting a given quantity to SI units, the appropriate factors of $c$ and $\hbar$ can be intuited from context. The result is that all quantities will be measured in units of energy. Physics where we will be working is at the \si{\giga\electronvolt} scale and higher. Therefore, to a high degree of accuracy, we will assume all particles to be massless.
+
+	Unless otherwise stated (and we \textit{will} eventually state otherwise), we will work in $4$ dimensions, comprising the usual three spatial dimensions and one temporal dimension. Vectors in $4$ dimensions (called four-vectors) are denoted by a Greek-letter index and take the form
+	\begin{equation}
+		p^\mu = (p^0, p^1, p^2, p^3).
+	\end{equation}
+	The $0$-th component of a four-vector is its `time' (or equivalent) component, and the others are the `spatial' (or equivalent) components. Thus, for example, a four-vector representing position would be
+	\begin{equation}
+		x^\mu = (t, x, y, z),
+	\end{equation}
+	while a four-momentum has the components
+	\begin{equation}
+		p^\mu = (E, p_x, p_y, p_z)
+	\end{equation}
+	with energy taking the place of time. It is sometimes convenient to refer to lower-dimensional pieces of a four-vector (usually two or three of the spatial components). When doing so, we will denote the sub-vector using a bold-face letter:
+	\begin{equation}
+		p^\mu = (E, \vb{p}), \quad \vb{p} = (p_x, p_y, p_z).
+	\end{equation}
+
+	As is standard in high-energy physics, we will neglect the effects of gravity and assume we are working in a flat space-time. When combining four-vectors, we will therefore use the `mostly minus' metric\footnote{Also known as the `West Coast' metric, among other names. The `East Coast' metric takes the opposite sign convention. Our convention here is clearly the correct one, as it results in naturally positive masses.}
+	\begin{equation}
+		\eta^{\mu \nu} = \begin{pmatrix}
+			1 & 0 & 0 & 0 \\
+			0 & -1 & 0 & 0 \\
+			0 & 0 & -1 & 0 \\
+			0 & 0 & 0 & -1
+		\end{pmatrix}.
+	\end{equation}
+	We will also employ the Einstein summation notation, in which one sums over repeated indices in an expression (known as `contracting' the index). Hence, for $p^\mu = (p^0, \vb{p})$ and $k_\mu = (k_0, \vb{k})$, we have
+	\begin{equation}
+		k_\mu p^\mu = k_0 p^0 + k_1 p^1 + k_2 p^2 + k_3 p^3.
+	\end{equation}
+
+	With our choice of metric, there is little mechanical difference between a contravariant and a covariant four-vector; one picks up a formal minus sign in the spatial components, but that is all. We will, therefore, not distinguish between the two, and we will interchange upper and lower indices freely, bearing in mind that contracting an index negates the spatial terms of the sum. Hence, for $p^\mu = (p^0, \vb{p})$ and $k^\mu = (k^0, \vb{k})$, we will write\footnote{Sorry, Joel.}
+	\begin{equation}
+		k^\mu p_\mu = k_\mu p^\mu = k^\mu p^\mu = k_\mu p_\mu = k^0 p^0 - \vb{k} \cdot \vb{p}.
+	\end{equation}
+	The final term is the standard dot product between the three-vectors. This choice enables us to abuse notation in a convenient manner: we will often drop the Greek sub/superscript on four-vectors, and use the standard notation of linear algebra to indicate their contraction:
+	\begin{equation}
+		k \cdot p = k^0 p^0 - \vb{k}\cdot\vb{p}.
+	\end{equation}
+
+	Let us end with a reminder about the connection between these four-vectors and the physical world. Suppose a particle has a momentum four-vector $p^\mu$. Transforming our frame of reference to the particle's rest frame, we could write $p^\mu = (E, 0, 0, 0)$, where $E$ is the particle's energy. But then, recalling the famous relation $E = mc^2 = m$ (since we set $c = 1$), we have
+	\begin{equation}
+		p^2 = p \cdot p = E^2 = m^2.
+	\end{equation}
+	Thus, the square of a particle's four-momentum yields its squared mass. Recall now that we are assuming all particles to be massless; therefore, for any `on-shell' particle (that is, a particle that could exist on its own and not just in some quantum fluctuation), we see that $p^2 = 0$, and also that $E^2 = \vb{p} \cdot \vb{p}$.\footnote{This is not strictly an accurate proof of these properties, since massless particles move at the speed of light and one cannot boost into a light-like reference frame using Lorentz transformations. But the spirit of the argument is right, and the result is the same regardless.} This will greatly simplify our calculations later on.
+
+	
+
+\chapter{QCD, jet grooming, and SCET}
+	
+	First chapter here
+
+	\section{Quantum Chromodynamics (QCD)}
+
+	\section{Jets}
+
+	\section{mMDT Grooming}
+
+	\section{Soft Collinear Effective Theory (SCET)}
+
+
+\chapter{Leading-order calculation}
+
+	\section{Setup}
+
+	\section{Dimensional regularization}
+
+	\section{Putting it all together}
+
+
+\chapter{Factorization formula}
+
+	\section{Power counting}
+
+	\section{Factorization}
+
+
+\chapter{All-orders calculation}
+	
+
+\chapter*{Conclusion}
+     \addcontentsline{toc}{chapter}{Conclusion}
+\chaptermark{Conclusion}
+\markboth{Conclusion}{Conclusion}
+\setcounter{chapter}{4}
+\setcounter{section}{0}
+	
+	Conclusion here 
+
+
+%If you feel it necessary to include an appendix, it goes here.
+    % \appendix
+    %   \chapter{The First Appendix}
+    %   \chapter{The Second Appendix, for Fun}
+
+
+%This is where endnotes are supposed to go, if you have them.
+%I have no idea how endnotes work with LaTeX.
+
+  \backmatter % backmatter makes the index and bibliography appear properly in the t.o.c...
+
+% if you're using bibtex, the next line forces every entry in the bibtex file to be included
+% in your bibliography, regardless of whether or not you've cited it in the thesis.
+    % \nocite{*}
+
+% Rename my bibliography to be called "Works Cited" and not "References" or ``Bibliography''
+% \renewcommand{\bibname}{Works Cited}
+
+%    \bibliographystyle{bsts/mla-good} % there are a variety of styles available; 
+%  \bibliographystyle{plainnat}
+% replace ``plainnat'' with the style of choice. You can refer to files in the bsts or APA 
+% subfolder, e.g. 
+ \bibliographystyle{bsts/JHEP}  % or
+ \bibliography{jet_substructure}
+ % Comment the above two lines and uncomment the next line to use biblatex-chicago.
+ %\printbibliography[heading=bibintoc]
+
+% Finally, an index would go here... but it is also optional.
+\end{document}

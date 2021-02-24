@@ -1,0 +1,367 @@
+\documentclass[11pt,twoside,reqno]{amsart}
+\usepackage{amssymb, amsmath, enumerate, palatino, hyperref}
+\usepackage[normalem]{ulem}
+%\usepackage{fullpage}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\renewcommand{\labelitemi}{\guillemotright}
+\usepackage{mathrsfs}
+%--------------------------------
+% Kees' imports
+%--------------------------------
+\usepackage{physics}
+\usepackage{tensor}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{empheq}
+\usepackage{tensor}
+
+
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}%[section]
+\newtheorem{lemma}[prop]{Lemma}
+\newtheorem{thm}[prop]{Theorem}
+\newtheorem{obs}[prop]{Observation}
+\newtheorem{app}[prop]{Application}
+\newtheorem*{MainThm}{Main Theorem}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{conj}[prop]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{rmk}[prop]{Remark}
+\theoremstyle{definition}
+\newtheorem{prob}{Problem}
+\newtheorem{bonus}[prop]{Bonus Problem}
+\theoremstyle{remark}
+\newtheorem{exc}{Exercise}
+\newtheorem*{soln}{Solution}
+\theoremstyle{definition}
+\newtheorem{ex}[prop]{Example}
+\theoremstyle{definition}
+\newtheorem{defn}[prop]{Definition}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+
+\newcommand{\Aut}{\operatorname{Aut}}
+
+\newcommand{\defeq}{:=}
+
+\renewcommand{\Re}{\operatorname{Re}}
+
+%--------------------------------
+% Kees' commands
+%--------------------------------
+\makeatletter
+\newcommand{\subalign}[1]{%
+  \vcenter{%
+    \Let@ \restore@math@cr \default@tag
+    \baselineskip\fontdimen10 \scriptfont\tw@
+    \advance\baselineskip\fontdimen12 \scriptfont\tw@
+    \lineskip\thr@@\fontdimen8 \scriptfont\thr@@
+    \lineskiplimit\lineskip
+    \ialign{\hfil$\m@th\scriptstyle##$&$\m@th\scriptstyle{}##$\hfil\crcr
+      #1\crcr
+    }%
+  }%
+}
+\makeatother
+
+\newcommand{\allspace}{{\substack{\text{all}\\\text{space}}}}
+
+\newcommand{\DD}{\mathbb{D}}
+\renewcommand{\AA}{\mathbb{A}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\LL}{\mathbb{L}}
+\newcommand{\BB}{\mathbb{B}}
+\renewcommand{\SS}{\mathbb{S}}
+\newcommand{\HH}{\mathbb{H}}
+
+\renewcommand{\l}{\ell}
+
+\newcommand{\PB}{\mathrm{PB}}
+
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cO}{\mathcal{O}}
+
+\newcommand{\sgn}{\mathrm{sgn}}
+
+\newcommand{\LIPS}{\mathrm{LIPS}}
+\newcommand{\zcut}{z_\mathrm{cut}}
+\newcommand{\mMDT}{\mathrm{mMDT}}
+
+\newcommand{\Ei}{\mathrm{Ei}}
+\newcommand{\Li}{\mathrm{Li}}
+
+\def\beq#1\eeq{\begin{equation}#1\end{equation}}
+\def\bal#1\eal{\begin{align}#1\end{align}}
+
+\title{Towards a factorization theorem in the limit $\rho \sim \zcut$}
+\author{Kees Benkendorfer}
+\date{24 January 2021}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\section{Power counting}
+
+	We wish to determine which emissions contribute to the cusp of the groomed hemisphere mass distribution $\rho$, following a similar procedure to that laid out in \cite{frye_factorization_2016}. The hemisphere mass is given by
+	\begin{equation}
+		\rho = \frac{1}{E_J^2}\sum_{i < j} 2p_i \cdot p_j
+	\end{equation}
+	where $E_J$ is the energy of the jet and the sum ranges over all unique pairs of particles in the jet. Expanding out the dot product, we have
+	\begin{equation}
+		\rho = \frac{2}{E_J^2} \sum_{i<j} \qty(E_i E_j - \vb{p}_i \cdot \vb{p}_j) = \frac{2}{E_J^2}\sum_{i,j} E_i E_j\qty(1 - \cos \theta_{ij}) = \sum_{i < j} 2z_i z_j \qty(1 - \cos\theta_{ij})
+	\end{equation}
+	where $z_i$ and $z_j$ are the relative energy fractions of each particle and $\theta_{ij}$ is the angle between them.
+
+	Supposing that we have instituted a grooming cut at energy fraction $\zcut$, the mMDT groomer asserts that every resolved emission with energy fraction $z_i$ satisfies
+	\begin{equation}
+		z_i > \zcut.
+	\end{equation}
+	Moreover, the cusp occurs at $\rho \sim \zcut$. If we assume a small energy cut $\zcut \ll 1$, then because the groomed hemisphere mass is approximately the sum of contributions from pairs of particles $i$ and $j$,
+	\begin{equation}\label{eq:rho sum}
+		\rho \sim \sum_{i,j} z_i z_j \theta_{ij}^2,
+	\end{equation}
+	we require that every pair of emissions satisfies
+	\begin{equation}\label{eq:z pairs small}
+		z_i z_j \theta_{ij}^2 \ll 1.
+	\end{equation}
+	
+	To complete the setup, we suppose that the underlying event contains two back-to-back quarks $z_1, z_2$. For the heavy hemisphere, let $n^\mu$ be the direction of the jet and $\bar n^\mu$ be the direction opposite the jet. Where convenient, we will work in the light-cone coordinates $p^\mu = (p^-, p^+, p_\perp)$ where
+	\begin{align}
+		p^- &= \bar n \cdot p & p^+ &= n \cdot p
+	\end{align}
+	and $p_\perp$ are the components transverse to $n$. In these coordinates, the energy fraction with total energy $Q$ is
+	\begin{equation}
+		z = \frac{p^+ + p^-}{2Q}
+	\end{equation}
+	and, in the collinear limit, the angle to the jet axis is $\theta \approx p_\perp / p^0$ \cite{frye_factorization_2016}.
+
+
+\subsection{Leading contribution}
+
+	The primary emission contributing to the cusp is a gluon emission $z_i$ sensitive to both $\rho$ and $\zcut$. From Eq.\ \ref{eq:rho sum}, the leading contribution to the heavy hemisphere mass satisfies
+	\begin{equation}
+		\rho \sim z_i \theta_i^2,
+	\end{equation}
+	where $\theta_i$ is the angle between emission $i$ and the quark axis. Therefore, since $z_i \sim \zcut$,
+	\begin{equation}
+		\rho \sim \zcut \theta_i^2 \sim \zcut,
+	\end{equation}
+	which means
+	\begin{equation}
+		\theta_i \sim 1.
+	\end{equation}
+	Thus, the emission must be at a wide angle relative to the quarks. Now this means that
+	\begin{equation}
+		\rho \sim z_i \ll 1,
+	\end{equation}
+	so $z_i \ll 1$. Therefore, the leading contribution in the cusp region comes from a \textbf{resolved soft, wide-angle} gluon. Its momentum scales like
+	\begin{equation}
+		p_r \sim \zcut Q (1, 1, 1).
+	\end{equation}
+
+	We can take this a step further. To leading order, notice that as $\theta_i \to \pi/2$, the contribution from the resolved emission (which is the only contribution to $\rho$) goes as
+	\begin{equation}
+		\rho = 2 z_i (1 - \cos\theta_i) \to 2z_i.
+	\end{equation}
+	Thus, we see that the cusp emerges right at the point where the resolved emission lies between the two hemispheres.
+
+
+\subsection{Sub-leading contributions}\label{sec:sub-leading}
+
+	Now let this soft, wide-angle gluon have energy fraction $z_g$ and angle $\theta_g$ from the quark axis. We wish to determine which other emissions can contribute to the distribution in the cusp region. Suppose there is another emission $z_i$ at angle $\theta_i$ from the jet axis and angle $\theta_{ig}$ from the resolved emission. There are a couple cases to consider:
+
+	\begin{itemize}
+		\item Suppose $z_i \ll 1$ and $\theta_i \sim 1$. There are three sub-cases:
+		\begin{itemize}
+			\item If $\theta_{ig} \ll 1$, then this emission passes the groomer since it is collinear to the resolved emission. We must have $z_i \ll z_g$ so that it does not compete with the resolved emission {\color{red}\textbf{[is this legit?]}}. In this case, the effect of the emission is to perturb the contribution of the resolved emission. The hemisphere mass is approximately
+			\begin{equation}
+				\rho \sim z_g + z_i,
+			\end{equation}
+			so the energy fraction is set by the scale $z_i \sim \rho - z_g$. Since $z_g \sim \zcut$, this means that the gluon-collinear emission scales like
+			\begin{equation}
+				p_{gc} \sim (\rho - \zcut) Q(1, 1, 1).
+			\end{equation}
+
+			\item If $\theta_{ig} \sim 1$ and $z_i < \zcut$, then the emission will be groomed away. It will contribute only to normalization. These modes scale as
+			\begin{equation}
+				p_{s} \sim \zcut Q (1, 1, 1)
+			\end{equation}
+
+			\item If $\theta_{ig} \sim 1$ and $z_i \gtrsim \zcut$, then it will be another resolved emission. This is an interesting case, but beyond the scope of this calculation, so we will ignore it.
+		\end{itemize}
+
+		\item Now we consider collinear radiation with $\theta_i \ll 1$. All collinear radiation has $p^- \gg p^+$ {\color{red}\textbf{[This is lifted from the Frye paper, but I don't understand it... it seems like it should be the other way around]}}. Further, since $z_i \theta_i^2 \lesssim \rho$, we must have \cite{frye_factorization_2016}
+		\begin{equation}
+			\rho \sim \frac{p^+}{Q}.
+		\end{equation}
+		To see this, first note that to be sensitive to $\rho$, we have $z_i \theta_i^2 \sim \rho$. Then because $z_i = p^0/Q$ and in the collinear limit $\theta_i \approx p_\perp / p^0$, we see that
+		\begin{equation}
+			\frac{p_\perp^2}{p^0 Q} \sim \rho.
+		\end{equation}
+		On-shell massless particles have $p_\perp^2 = p^+ p^-$, and because $p^- \gg p^+$ we have
+		\begin{equation}
+			p^0 = \frac{p^+ + p^-}{2} \approx \frac{p^-}{2}.
+		\end{equation}
+		Therefore, we see that
+		\begin{equation}
+			\rho \sim \frac{2 p^+ p^-}{p^- Q} \sim \frac{p^+}{Q}.
+		\end{equation}
+		There are two options for the energy fraction of collinear modes: either $z \sim 1$ or $z \ll 1$:
+		\begin{itemize}
+			\item If $z \sim 1$, then $z \gg \zcut$, so these modes are insensitive to $\zcut$ (physically, they all pass the groomer). We therefore conclude that these hard-collinear modes scale like
+			\begin{equation}
+				p_c \sim Q \qty(1, \rho, \rho^{1/2}).
+			\end{equation}
+
+			\item If $z \sim \zcut \ll 1$, then $p^- \sim z_i Q$ and $p^+ \sim \theta_i^2 z_i Q$ \cite{frye_factorization_2016}. These modes must satisfy both $z_i \theta_i^2 \sim \rho$ and $z_i \sim \zcut$. This means that $p^+ \sim p^- \theta_i^2$ while $\theta_i^2 \sim \rho/\zcut$, or $p^+ \sim p^- \rho / \zcut$. Therefore, these soft-collinear modes scale as
+			\begin{equation}
+				p_{cs} \sim Q\qty(\zcut, \rho, \qty(\zcut \rho)^{1/2}) = \zcut Q \qty(1, \frac{\rho}{\zcut}, \qty(\frac{\rho}{\zcut})^{1/2}).
+			\end{equation}
+		\end{itemize}
+	\end{itemize}
+
+
+\section{Factorization theorem}
+
+	We can proceed to derive a factorization theorem for the heavy hemisphere mass ratio $\rho$. It is most straightforward to calculate the differential cross section in terms of the individual hemisphere masses $\rho_1$ and $\rho_2$, then integrate over them to get the heavy hemisphere mass \cite{chien_resummation_2010}:
+	\begin{equation}
+		\frac{d\sigma}{d\rho} = \int \frac{d^2\sigma}{d\rho_1 d\rho_2} \qty[\delta(\rho - \rho_1) \Theta(\rho_1 - \rho_2) + \delta(\rho - \rho_2) \Theta(\rho_2 - \rho_1)].
+	\end{equation}
+
+	In the limit $\rho_1, \rho_2 \ll 1$ under a SCET (soft and collinear effective theory) framework, the differential cross section factorizes into a product of hard, soft, and jet contributions \cite{frye_factorization_2016,ellis_jet_2010}. Analogous to Eq.\ 1.2 of \cite{ellis_jet_2010} or Eq.\ 3.7 of \cite{frye_factorization_2016}, we have
+	\begin{equation}
+		\frac{d^2\sigma}{d\rho_1 d\rho_2} = H(Q^2) \times S(\rho_1, \rho_2, \zcut) \otimes J(\rho_1) \otimes J(\rho_2).
+	\end{equation}
+	$Q^2$ is the squared center-of-mass energy of the collision. $H(Q^2)$ is the function representing hard contributions to $e^+ e^- \to q\bar q$, $S(\rho, \zcut)$ is the function representing soft contributions (which are sensitive to $\zcut$), and $J(\rho)$ is a function describing the production of jets with mass ratio $\rho$.
+
+	To tailor this expression to the case $\rho \sim \zcut \ll 1$, we can first simplify the soft function and clarify the jet functions in the presence of mMDT grooming. Of the original soft function, after grooming, we are left with global soft emissions which contribute only to the normalization; a resolved soft, wide-angle emission generated by a hard (fixed-order) function; and soft radiation collinear to the resolved emission. Therefore, we can write
+	\begin{equation}
+		\frac{d^2\sigma}{d\rho_1 d\rho_2} = H(Q^2) \times S_G(\zcut) \times R(\zcut) \times S_R(\rho - \zcut) \otimes J_{c}(\rho_1, \zcut) \otimes J_{c}(\rho_2, \zcut).
+	\end{equation}
+	Here, $S_G(\zcut)$ describes the groomed soft wide-angle radiation, $R(\zcut)$ describes the resolved emission, and $S_R(\rho - \zcut)$ describes radiation collinear to the resolved emission. We have also re-written the jet functions as $J_c(\rho, \zcut)$ to make explicit their dependence on multiple scales.
+
+	In order to achieve full resummation of large logarithms of scale ratios, we must re-factor the jet functions into terms which depend only on a single scale \cite{frye_factorization_2016}. As established in \ref{sec:sub-leading}, radiation collinear to the jet with energy fraction of order $1$ depends only on $\rho$, so we can immediately pull this out:
+	\begin{equation}\label{eq:jet refactorization}
+		J_c(\rho, \zcut) = J(\rho) \otimes S_C(\rho, \zcut).
+	\end{equation}
+	We are left to show that soft-collinear radiation depends only on a single scale.
+
+\subsection{Soft-collinear scale}
+	
+	To show that the soft-collinear function in Eq.\ \ref{eq:jet refactorization} depends on only one scale, we will follow a similar procedure to that of \cite{frye_factorization_2016}. Under dimensional regularization in $d = 4 - 2\epsilon$ dimensions, the soft-collinear function takes the form
+	\begin{equation}
+		S_C(\rho, \zcut) = \sum_n \mu^{2n\epsilon} \int d\Pi_n \abs{\cM_n}^2 \,\Theta_{\mMDT}\, \delta_\rho.
+	\end{equation}
+	In this equation, $n$ is the number of soft-collinear particles, $d\Pi_n$ is Lorentz-invariant phase space
+	\begin{equation}
+		d\Pi_n = \prod_{i = 1}^n \frac{d^d k_i}{(2\pi)^d} 2\pi \delta(k_i^2)\Theta(k_i^0),
+	\end{equation}
+	$\mu$ is the dimensional correction applied during dimensional regularization, and $\cM_n$ is the matrix element of the $n$-particle final state. Jet grooming is captured by the step function $\Theta_\mMDT$, while $\delta_\rho$ is the measurement term
+	\begin{equation}
+		\delta_\rho = \delta\qty(\rho - 2\sum_{i<j} z_i z_j (1 - \cos\theta_{ij})).
+	\end{equation}
+	In the soft-collinear limit, the primary contributions come from interactions with the hard quark, so we can simplify the sum with $z_j \sim 1$ and $\theta_i \equiv \theta_{ij} \ll 1$:
+	\begin{equation}
+		2\sum_{i<j} z_i z_j (1 - \cos\theta_{ij}) \approx \sum_i z_i \theta_i^2.
+	\end{equation}
+	Now
+	\begin{equation}
+		z_i \theta_i^2 = \frac{k_i^0}{Q}\frac{k_{i,\perp}^2}{(k_i^0)^2} = \frac{k_i^+ k_i^-}{k_i^0 Q}.
+	\end{equation}
+	In the collinear limit, $k_i^- \gg k_i^+$, so $k^0 = (k_i^+ + k_i^-)/2 \approx k^-/2$. Therefore,
+	\begin{equation}
+		z_i \theta_i^2 \approx \frac{2 k_i^+}{Q}.
+	\end{equation}
+	The measurement function is therefore {\color{red}\textbf{[off by factor of 2?]}}
+	\begin{equation}
+		\delta_\rho = \delta\qty(\rho - 2\sum_i k_i^+).
+	\end{equation}
+
+	The goal now is to extract all scales from the integral, leaving the phase space integral scale-independent. To do so, following \cite{frye_factorization_2016}, we perform the rescaling
+	\begin{equation}\label{eq:rescaling}
+	\begin{aligned}
+		k^- &\to \zcut k^- \\
+		k^+ &\to \rho\,k^+ \\
+		k_\perp &\to \qty(\zcut \rho)^{1/2} k_\perp
+	\end{aligned}
+	\end{equation}
+	(these values are informed by the power-counting argument of \ref{sec:sub-leading} {\color{red}\textbf{[or is that just coincidence?]}}). Under this rescaling, $d\Pi_n$ and $\abs{\cM}^2$ scale inversely \cite{frye_factorization_2016}, so we take
+	\begin{equation}
+		d\Pi_n\, \abs{\cM}^2 \to \qty(\sqrt{\zcut \rho}\,)^{-2n\epsilon} d\Pi_n\,\abs{\cM}^2
+	\end{equation}
+	{\color{red}\textbf{[I don't totally understand this step from the Frye paper yet]}}.
+
+	Now we can pull scales out of the grooming and measurement terms. The measurement term is most straightforward: under the rescaling of Eq.\ \ref{eq:rescaling}, we can take
+	\begin{equation}
+		\delta_\rho = \delta\qty(\rho - 2\sum_i k^+) \to \delta\qty(\rho - 2\sum_i \rho k^+) = \frac{1}{\rho}\delta\qty(1 - 2\sum_i k^+) \equiv \frac{1}{\rho} \delta_{\rho = 1},
+	\end{equation}
+	where $\delta_{\rho = 1}$ indicates that we have set $\rho = 1$ in the measurement.
+
+	The grooming term $\Theta_\mMDT$ comes in two parts because of the nature of mMDT grooming. In the mMDT algorithm, the jet is first reclustered using the Cambridge/Aachen algorithm \cite{dasgupta_towards_2013,frye_factorization_2016} {\color{red}\textbf{[I need to look into this further to better understand it]}}, then for each sequential pair of branches $i$ and $j$ the condition
+	\begin{equation}
+		\min[z_i, z_j] > \zcut
+	\end{equation}
+	is checked. If the condition fails, then the softer of the two branches is dropped.
+
+	As discussed in \cite{frye_factorization_2016}, the constraints derived from the clustering portion of the algorithm are invariant under a transformation that takes the form in Eq.\ \ref{eq:rescaling}. All that's left to handle is the grooming portion
+	\begin{equation}
+		\Theta_\mMDT = \Theta\qty(\sum_i z_i - \zcut) = \Theta\qty(\sum_i k_i^- - \zcut Q)
+	\end{equation}
+	for some cluster $\qty{i}$. Under the rescaling, we take
+	\begin{equation}
+		\Theta\qty(\sum_i k_i^- - \zcut Q) \to \Theta\qty(\sum_i \zcut k_i^- - \zcut Q) = \Theta\qty(\sum_i k_i^- - Q) \equiv \Theta_\mMDT^{\zcut = 1}.
+	\end{equation}
+	Thus, the scale $\zcut$ has been removed from the constraint.
+
+	In the end, we are left with
+	\begin{equation}
+		S_C(\rho, \zcut) = \sum_n \mu^{2n\epsilon} \qty(\sqrt{\zcut \rho}\,)^{-2n\epsilon} \frac{1}{\rho}\int d\Pi_n \abs{\cM}^2 \Theta_\mMDT^{\zcut = 1} \delta_{\rho = 1},
+	\end{equation}
+	from which it is manifest that the function depends only on the scale
+	\begin{equation}
+		\sqrt{\zcut \rho}.
+	\end{equation}
+	{\color{red}\textbf{[I am following the example of the Frye paper here by ignoring the $1/\rho$, but I don't understand that decision\dots why is that not part of the scale?]}}. We conclude
+	\begin{equation}
+		S_C(\rho, \zcut) = S_C(\sqrt{\zcut \rho}\,).
+	\end{equation}
+
+\subsection{Refactored formula}
+
+	The jet function therefore factorizes as
+	\begin{equation}
+		J_c(\rho, \zcut) = J(\rho)\otimes S_C(\sqrt{\zcut \rho}\,).
+	\end{equation}
+	Putting everything together, our factorization formula reads
+	\begin{equation}
+		\boxed{
+		\begin{aligned}
+			\frac{d^2\sigma}{d\rho_1 d\rho_2} = H(Q^2) &\times S_G(\zcut) \times R(\zcut) \times S_R(\rho - \zcut) \\
+			&\otimes \qty[J(\rho_1) \otimes S_C(\sqrt{\rho_1 \zcut}\,)] \otimes \qty[J(\rho_2) \otimes S_C(\sqrt{\rho_2 \zcut}\,)]
+		\end{aligned}
+		}\,.
+	\end{equation}
+	To reiterate, the heavy hemisphere mass is then given by
+	\begin{equation}
+		\frac{d\sigma}{d\rho} = \int \frac{d^2\sigma}{d\rho_1 d\rho_2} \qty[\delta(\rho - \rho_1) \Theta(\rho_1 - \rho_2) + \delta(\rho - \rho_2) \Theta(\rho_2 - \rho_1)].
+	\end{equation}
+
+
+\bibliographystyle{unsrt}
+\bibliography{jet_substructure}
+
+\end{document}

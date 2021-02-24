@@ -1,0 +1,6 @@
+\contentsline {section}{\tocsection {}{1}{Setup}}{1}{section.1}%
+\contentsline {section}{\tocsection {}{2}{Coordinate choice}}{3}{section.2}%
+\contentsline {section}{\tocsection {}{3}{Evaluating the integral}}{5}{section.3}%
+\contentsline {subsection}{\tocsubsection {}{3.1}{Near the resolved gluon}}{5}{subsection.3.1}%
+\contentsline {subsection}{\tocsubsection {}{3.2}{Near the quark}}{9}{subsection.3.2}%
+\contentsline {section}{\tocsection {}{}{References}}{9}{section*.2}%

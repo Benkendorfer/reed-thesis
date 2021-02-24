@@ -1,0 +1,301 @@
+\documentclass[11pt,twoside,reqno]{amsart}
+\usepackage{amssymb, amsmath, enumerate, palatino, hyperref}
+\usepackage[normalem]{ulem}
+%\usepackage{fullpage}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\renewcommand{\labelitemi}{\guillemotright}
+\usepackage{mathrsfs}
+%--------------------------------
+% Kees' imports
+%--------------------------------
+\usepackage{physics}
+\usepackage{tensor}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{siunitx}
+\usepackage{empheq}
+\usepackage{tensor}
+
+
+\theoremstyle{plain}
+\newtheorem{prop}{Proposition}%[section]
+\newtheorem{lemma}[prop]{Lemma}
+\newtheorem{thm}[prop]{Theorem}
+\newtheorem{obs}[prop]{Observation}
+\newtheorem{app}[prop]{Application}
+\newtheorem*{MainThm}{Main Theorem}
+\newtheorem{cor}[prop]{Corollary}
+\newtheorem{conj}[prop]{Conjecture}
+\theoremstyle{remark}
+\newtheorem{rmk}[prop]{Remark}
+\theoremstyle{definition}
+\newtheorem{prob}{Problem}
+\newtheorem{bonus}[prop]{Bonus Problem}
+\theoremstyle{remark}
+\newtheorem{exc}{Exercise}
+\newtheorem*{soln}{Solution}
+\theoremstyle{definition}
+\newtheorem{ex}[prop]{Example}
+\theoremstyle{definition}
+\newtheorem{defn}[prop]{Definition}
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\QQ}{\mathbb{Q}}
+
+\newcommand{\Aut}{\operatorname{Aut}}
+
+\newcommand{\defeq}{:=}
+
+\renewcommand{\Re}{\operatorname{Re}}
+
+%--------------------------------
+% Kees' commands
+%--------------------------------
+\makeatletter
+\newcommand{\subalign}[1]{%
+  \vcenter{%
+    \Let@ \restore@math@cr \default@tag
+    \baselineskip\fontdimen10 \scriptfont\tw@
+    \advance\baselineskip\fontdimen12 \scriptfont\tw@
+    \lineskip\thr@@\fontdimen8 \scriptfont\thr@@
+    \lineskiplimit\lineskip
+    \ialign{\hfil$\m@th\scriptstyle##$&$\m@th\scriptstyle{}##$\hfil\crcr
+      #1\crcr
+    }%
+  }%
+}
+\makeatother
+
+\newcommand{\allspace}{{\substack{\text{all}\\\text{space}}}}
+
+\newcommand{\DD}{\mathbb{D}}
+\renewcommand{\AA}{\mathbb{A}}
+\newcommand{\VV}{\mathbb{V}}
+\newcommand{\LL}{\mathbb{L}}
+\newcommand{\BB}{\mathbb{B}}
+\renewcommand{\SS}{\mathbb{S}}
+\newcommand{\HH}{\mathbb{H}}
+
+\renewcommand{\l}{\ell}
+
+\newcommand{\PB}{\mathrm{PB}}
+
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cO}{\mathcal{O}}
+
+\newcommand{\sgn}{\mathrm{sgn}}
+
+\newcommand{\LIPS}{\mathrm{LIPS}}
+
+\def\beq#1\eeq{\begin{equation}#1\end{equation}}
+\def\bal#1\eal{\begin{align}#1\end{align}}
+
+\title{Groomed heavy hemisphere mass to first order, feat.\ light-cone coordinates}
+\author{Kees Benkendorfer}
+\date{27 October 2020}
+
+\begin{document}
+\maketitle
+
+We wish to calculate the mass of the heavy hemisphere in an $e^+ e^- \to q\bar q g$ event after mMDT grooming, assuming a soft (i.e.\ low-energy) gluon. If $E_h$ is the energy of the heavy hemisphere and $m_h$ is the mass, then the observable of interest is \cite{larkoski_improving_2020}
+\begin{equation}
+	\rho = \qty(\frac{m_h}{E_h})^2.
+\end{equation}
+
+To compute this quantity, we should first figure out the kinematics of the event. We shift our reference frame so that the quark has momentum
+\begin{equation}
+	p_1^\mu = \frac{Q_q}{2}(1, 0, 0, 1),
+\end{equation}
+the antiquark has momentum
+\begin{equation}
+	p_2^\mu = \frac{Q_q}{2}(1, 0, 0, -1),
+\end{equation}
+and the gluon has momentum $k^\mu$. If the is soft ($k^0 \ll 1$), then we can approximate $Q_q \approx Q$, the total energy of the event (this will simplify our calculations). Let us assume that the the gluon is emitted in the hemisphere with the quark (we will multiply the result by $2$ to account for the symmetric case where the gluon follows the antiquark). Then the momentum of the heavy hemisphere is
+\begin{equation}
+	p_h = p_1 + k,
+\end{equation}
+so that the heavy hemisphere has mass
+\begin{align}
+	m_h^2 &= p_h^2 = \qty(p_{1,0} + k_0)^2 - \qty(k_1)^2  - \qty(k_2)^2 - \qty(p_{1,3} + k_3)^2 \\
+	&= 2p_{1,0} k_0 - 2p_{1,3} k^3 + p_1^2 + k^2 \\
+	&= Q\qty(k_0 - k_3),
+\end{align}
+where the last line follows because the particles have high enough energy that we can take them to be massless. Introducing the light-cone coordinates
+\begin{align}\label{eq:light cone}
+	k^+ &\equiv k^0 - k^3 & k^- &\equiv  k^0 + k^3,
+\end{align}
+we then see that
+\begin{equation}
+	m_h^2 = Q k^+.
+\end{equation}
+Now, the energy of the heavy hemisphere is
+\begin{equation}
+	E_h = p_{1, 0} + k_0 = \frac{Q}{2} + k_0.
+\end{equation}
+But for a soft gluon, $k_0 \ll Q/2$, so we can take
+\begin{equation}
+	E_h = \frac{Q}{2}.
+\end{equation}
+Then
+\begin{equation}
+	\rho = \frac{Q k^+}{Q^2/4} = \frac{4 k^+}{Q}.
+\end{equation}
+
+Now we need to account for the mMDT grooming. The groomer only keeps pairs of particles $i$ and $j$ for which \cite{kardos_two-_2020}
+\begin{equation}
+	\frac{\min[E_i, E_j]}{E_i + E_j} > z
+\end{equation}
+for some $0 \le z < 1/2$. In our simple case, we need this to hold true for the quark and gluon; that is, since the gluon has less energy than the quark, we require
+\begin{equation}
+	\frac{k_0}{E_h} = \frac{(k^+ + k^-)/2}{Q/2} > z,
+\end{equation}
+or
+\begin{equation}
+	k^+ + k^- > Q z.
+\end{equation}
+All of this suggests a measurement term of the form
+\begin{equation}
+	2\delta\qty(\rho - \frac{4 k^+}{Q})\Theta(k^+ + k^- - Qz)\Theta(k^- - k^+),
+\end{equation}
+where the final Heaviside function comes from the assumption that the gluon follows the quark (and therefore that $k^- - k^+ = 2k_3 > 0$), and the $2$ accounts for the (symmetric) case in which the gluon follows the antiquark.
+
+The differential cross section then takes the form
+\begin{equation}\label{eq:cross section}
+\begin{aligned}
+	\frac{d\sigma}{d\rho} = \int d\LIPS\,\abs{\cM}^2 \, 2\delta\qty(\rho - \frac{4 k^+}{Q})\Theta(k^+ + k^- - Qz)\Theta(k^- - k^+),
+\end{aligned}
+\end{equation}
+where $d\LIPS$ is the differential element of Lorentz invariant phase space for the gluon momentum, and $\cM$ is the matrix element for $e^+ e^- \to q\bar q g$. {\color{red}\textbf{[where should $e^+ e^- \to q \bar q$ cross section come in?]}}
+
+We can write down the matrix element for this process, assuming a soft gluon, using the results of \cite{catani_infrared_2000}:
+\begin{equation}\label{eq:matrix element}
+	\abs{\cM}^2 = \frac{2}{k^+ k^-}
+\end{equation}
+{\color{red}\textbf{[are we neglecting color correlations? see discussion around Catani and Grazzini Eq.\ 87]}}.
+
+The last piece of the puzzle is to unpack $d\LIPS$. This is rather complicated, as we must account for the fact that the matrix element in Eq.\ \ref{eq:matrix element} could become divergent if we aren't careful. To account for this possibility, we will work in $d = 4 - 2\epsilon$ dimensions instead of the usual $4$. This is a process called \textbf{dimensional regularization}. Thus, we will take
+\begin{equation}
+	d\LIPS = \frac{d^d k}{(2\pi)^{d - 1}} \delta(k^2) \Theta(k_0),
+\end{equation}
+where the delta and Heaviside functions force the gluon to be on-shell with positive energy. If $\epsilon = 0$, we would have
+\begin{equation}
+	d^d k = dk_0\,dk_1\,dk_2\,dk_3.
+\end{equation}
+Transforming to phase space coordinates, $(k_0, k_3) \to (k^+, k^-)$, the Jacobian of the transformation is
+\begin{equation}
+	\frac{\partial(k_0, k_3)}{\partial(k^+, k^-)} = \begin{pmatrix}
+		1/2 & 1/2 \\ -1/2 & 1/2,
+	\end{pmatrix}
+\end{equation}
+so
+\begin{equation}
+	dk_0\,dk_3 = \abs{\det\qty(\frac{\partial(k_0, k_3)}{\partial(k^+, k^-)})} dk^+\,dk^- = \frac{1}{2}dk^+\,dk^-.
+\end{equation}
+For $\epsilon \neq 0$, we consider the transverse components of the gluon momentum $k_\perp$ to bleed into the modified dimensions, so that
+\begin{equation}
+	d\LIPS = \frac{dk^+ dk^- d^{d - 2}k_\perp}{(2\pi)^{d - 1}}\,\delta(k^+ k^- - k_\perp^2)\Theta(k^+ + k^-),
+\end{equation}
+where we have noted that
+\begin{equation}
+	\delta(k^2) = \delta(k_0^2 - k_3^2 - k_\perp^2) = \delta(k^+ k^- - k_\perp^2)
+\end{equation}
+because $k^+ k^- = (k_0 - k_3)(k_0 + k_3) = k_0^2  - k_3^2$. Now we transform into spherical coordinates in the $2 - 2\epsilon$ dimensions of $k_\perp$, so that
+\begin{equation}
+	d^{d - 2} k_\perp = k_\perp^{d - 3} \, dk_\perp d\Omega_{d - 3},
+\end{equation}
+with $\Omega_{d - 3}$ the solid angle of the $d - 3$-dimensional unit sphere. Since none of the terms in our cross section Eq.\ \ref{eq:cross section} have angular dependence, we can go ahead and integrate this angular portion
+\begin{equation}
+	\int d\Omega_{d - 3} = \frac{2\pi^{(d - 3)/2}}{\Gamma(\frac{d - 3}{2})}
+\end{equation}
+with $\Gamma(x)$ the gamma function; this identity comes from Eq.\ B.28 of \cite{schwartz_quantum_2014}. Therefore,
+\begin{equation}
+	d\LIPS = \frac{2\pi^{(d - 3)/2}}{\Gamma(\frac{d - 3}{2})} \frac{dk^+ dk^- dk_\perp}{(2 \pi)^{d - 1}}\,k_\perp^{d - 3}\, \delta(k^+ k^- - k_\perp^2) \Theta(k^+ + k^-).
+\end{equation}
+As a final step, we can resolve this delta function, first noting that
+\begin{equation}
+	\delta(k^+ k^- - k_\perp^2) = \frac{1}{2\sqrt{k^+ k^-}}\,\delta\qty(k_\perp - \sqrt{k^+ k^-}).
+\end{equation}
+Then integrating over $k_\perp$ yields
+\begin{equation}
+	d\LIPS = \frac{2\pi^{(d - 3)/2}}{\Gamma(\frac{d - 3}{2})} \frac{dk^+ dk^-}{(2 \pi)^{d - 1}} (k^+ k^-)^{(d - 3)/2}\frac{1}{2(k^+ k^-)^{1/2}}\,\Theta(k^+ + k^-).
+\end{equation}
+With some simplification and inserting $d = 4 - 2\epsilon$, we have
+\begin{equation}
+	d\LIPS = \frac{(4\pi)^\epsilon}{8\pi^{5/2}\Gamma(\frac{1}{2} - \epsilon)}\,\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \, \Theta(k^+ + k^-).
+\end{equation}
+This factor of $(k^+ k^-)^{-\epsilon}$ can help regulate our divergences.
+
+With everything in place, the differential cross section becomes
+\begin{equation}
+\boxed{
+\begin{aligned}
+	\frac{d\sigma}{d\rho} = 2\frac{(4\pi)^\epsilon}{8\pi^{5/2}\Gamma(\frac{1}{2} - \epsilon)} \int dk^+ dk^- & \frac{2}{(k^+ k^-)^{1 + \epsilon}} \, \Theta(k^+ + k^-) \\
+		&\times \delta\qty(\rho - \frac{4 k^+}{Q})\Theta(k^+ + k^- - Qz)\Theta(k^- - k^+).
+\end{aligned}
+}
+\end{equation}
+
+We can evaluate this integral as follows. First, we apply the identity
+\begin{equation}
+	\delta\qty(\rho - \frac{4 k^+}{Q}) = \frac{Q}{4}\delta\qty(k^+ - \frac{Q\rho}{4}),
+\end{equation}
+and then we integrate over $k^+$ to find
+\begin{equation}
+\begin{aligned}
+	\frac{d\sigma}{d\rho} = 4\frac{(4\pi)^\epsilon}{8\pi^{5/2}\Gamma(\frac{1}{2} - \epsilon)}
+	\int dk^- 
+	\frac{4^{1 + \epsilon}}{(Q\rho k^-)^{1 + \epsilon}} \frac{Q}{4} \, 
+	\Theta\qty(\frac{Q\rho}{4} + k^-) 
+	\Theta\qty(\frac{Q\rho}{4} + k^- - Qz)
+	\Theta\qty(k^- - \frac{Q\rho}{4}).
+\end{aligned}
+\end{equation}
+Now notice that the integrand is only non-zero when
+\begin{align}
+	k^- &> -\frac{Q\rho}{4} & k^- &> Qz - \frac{Q\rho}{4} & k^- &> \frac{Q\rho}{4}.
+\end{align}
+The first requirement is automatically satisfied by the second and third. To handle these, notice that
+\begin{equation}
+	Qz - \frac{Q\rho}{4} > \frac{Q\rho}{4}
+\end{equation}
+when $\rho < 2z$. Therefore, we find that
+\begin{equation}
+\begin{aligned}
+	\frac{d\sigma}{d\rho} = 4\frac{(4\pi)^\epsilon}{8\pi^{5/2}\Gamma(\frac{1}{2} - \epsilon)} \qty(\frac{4}{Q})^\epsilon \frac{1}{\rho^{1 + \epsilon}} \Big[ & \Theta(\rho - 2z) \int_{Q\rho/4}^\infty dk^- \frac{1}{(k^-)^{1 + \epsilon}} \\
+	&\quad + \Theta(2z - \rho) \int_{Qz - Q\rho/4}^\infty dk^- \frac{1}{(k^-)^{1 + \epsilon}} \Big].
+\end{aligned}
+\end{equation}
+Performing the integration, wee find
+\begin{equation}
+\begin{aligned}
+	\frac{d\sigma}{d\rho} = 4\frac{(4\pi)^\epsilon}{8\pi^{5/2}\Gamma(\frac{1}{2} - \epsilon)} \qty(\frac{4}{Q})^\epsilon \frac{1}{\rho^{1 + \epsilon}} \qty[ \Theta(\rho - 2z) \frac{1}{\epsilon}\qty(\frac{4}{Q\rho})^\epsilon + \Theta(2z - \rho) \frac{1}{\epsilon}\qty(Qz - \frac{Q\rho}{4})^{-\epsilon} ].
+\end{aligned}
+\end{equation}
+Expanding to zeroth-order in $\epsilon$ about $\epsilon = 0$, we find that
+\begin{equation}
+\begin{aligned}
+	\frac{d\sigma}{d\rho} = \frac{1}{2\pi^3 \rho \epsilon} + \frac{1}{2\pi^3 \rho} \qty[ \Theta(\rho - 2z) \qty(\log\qty[\frac{16 \pi}{Q^2 \rho^2}] - \gamma_E) + \Theta(2z - \rho) \qty(\log\qty[\frac{Q^2\rho(4z - \rho)}{16\pi}] + \gamma_E) ] + \cO(\epsilon),
+\end{aligned}
+\end{equation}
+where $\gamma_E$ is the Euler-Mascheroni constant. It is evident that the cross section has a simple pole at $\epsilon = 0$, which is to be expected because we did not impose an upper bound on the value of $k^-$. {\color{red}\textbf{[But\dots this is unphysical, and does not match our expectations. What went wrong?]}}
+
+We seem to be missing a necessary upper bound on the value of $k^-$. From Eq.\ \ref{eq:light cone}, notice that in order for $k^+, k^- < 0$, we must have $k_3 < k_0$. But then
+\begin{equation}
+	k^- - k^+ = 2k_3 < 2k_0 = k^- + k^+
+\end{equation}
+
+
+\bibliographystyle{unsrt}
+\bibliography{jet_substructure}
+
+\end{document}
