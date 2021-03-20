@@ -12,7 +12,11 @@
 \contentsline {chapter}{Chapter 3: Factorization formula}{7}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Setup}{7}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Power counting}{8}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Factorization}{8}{section.3.3}%
-\contentsline {chapter}{Chapter 4: All-orders calculation}{9}{chapter.4}%
-\contentsline {chapter}{Conclusion}{11}{chapter*.10}%
-\contentsline {chapter}{References}{13}{chapter*.11}%
+\contentsline {subsection}{\numberline {3.2.1}Resolved soft emission}{8}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Ungroomed extra-soft unresolved radiation}{9}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Groomed soft radiation}{10}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Collinear radiation}{10}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Factorization}{11}{section.3.3}%
+\contentsline {chapter}{Chapter 4: All-orders calculation}{13}{chapter.4}%
+\contentsline {chapter}{Conclusion}{15}{chapter*.10}%
+\contentsline {chapter}{References}{17}{chapter*.11}%
