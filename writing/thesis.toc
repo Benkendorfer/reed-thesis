@@ -1,17 +1,18 @@
-\contentsline {chapter}{Introduction}{1}%
-\contentsline {section}{\numberline {0.1}Technical and notational conventions}{1}%
-\contentsline {chapter}{Chapter 1: QCD, jet grooming, and SCET}{3}%
-\contentsline {section}{\numberline {1.1}Quantum Chromodynamics (QCD)}{3}%
-\contentsline {section}{\numberline {1.2}Jets}{3}%
-\contentsline {section}{\numberline {1.3}mMDT Grooming}{3}%
-\contentsline {section}{\numberline {1.4}Soft Collinear Effective Theory (SCET)}{3}%
-\contentsline {chapter}{Chapter 2: Leading-order calculation}{5}%
-\contentsline {section}{\numberline {2.1}Setup}{5}%
-\contentsline {section}{\numberline {2.2}Dimensional regularization}{5}%
-\contentsline {section}{\numberline {2.3}Putting it all together}{5}%
-\contentsline {chapter}{Chapter 3: Factorization formula}{7}%
-\contentsline {section}{\numberline {3.1}Power counting}{7}%
-\contentsline {section}{\numberline {3.2}Factorization}{7}%
-\contentsline {chapter}{Chapter 4: All-orders calculation}{9}%
-\contentsline {chapter}{Conclusion}{11}%
-\contentsline {chapter}{References}{13}%
+\contentsline {chapter}{Introduction}{1}{chapter*.9}%
+\contentsline {section}{\numberline {0.1}Technical and notational conventions}{1}{section.0.1}%
+\contentsline {chapter}{Chapter 1: QCD, jet grooming, and SCET}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Quantum Chromodynamics (QCD)}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Jets}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}mMDT Grooming}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Soft Collinear Effective Theory (SCET)}{3}{section.1.4}%
+\contentsline {chapter}{Chapter 2: Leading-order calculation}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Setup}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Dimensional regularization}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Putting it all together}{5}{section.2.3}%
+\contentsline {chapter}{Chapter 3: Factorization formula}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Setup}{7}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Power counting}{8}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Factorization}{8}{section.3.3}%
+\contentsline {chapter}{Chapter 4: All-orders calculation}{9}{chapter.4}%
+\contentsline {chapter}{Conclusion}{11}{chapter*.10}%
+\contentsline {chapter}{References}{13}{chapter*.11}%

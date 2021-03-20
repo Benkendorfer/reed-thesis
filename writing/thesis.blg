@@ -2,48 +2,46 @@ This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: thesis.aux
 The style file: bsts/JHEP.bst
-I found no \citation commands---while reading file thesis.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: jet_substructure.bib
-You've used 0 entries,
+You've used 2 entries,
             2316 wiz_defined-function locations,
-            545 strings with 3691 characters,
-and the built_in function-call counts, 22 in all, are:
-= -- 0
-> -- 0
+            564 strings with 4257 characters,
+and the built_in function-call counts, 828 in all, are:
+= -- 76
+> -- 32
 < -- 0
-+ -- 0
-- -- 0
-* -- 3
-:= -- 9
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 9
+- -- 7
+* -- 91
+:= -- 113
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 1
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 2
+duplicate$ -- 69
+empty$ -- 81
+format.name$ -- 21
+if$ -- 194
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 4
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 2
+missing$ -- 7
+newline$ -- 10
+num.names$ -- 2
+pop$ -- 10
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1
+skip$ -- 9
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 44
+swap$ -- 7
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There was 1 error message)
+while$ -- 10
+width$ -- 3
+write$ -- 23

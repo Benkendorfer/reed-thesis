@@ -1,6 +1,11 @@
 \contentsline {section}{\tocsection {}{1}{Setup}}{1}{section.1}%
 \contentsline {section}{\tocsection {}{2}{Coordinate choice}}{3}{section.2}%
 \contentsline {section}{\tocsection {}{3}{Evaluating the integral}}{5}{section.3}%
-\contentsline {subsection}{\tocsubsection {}{3.1}{Near the resolved gluon}}{5}{subsection.3.1}%
-\contentsline {subsection}{\tocsubsection {}{3.2}{Near the quark}}{9}{subsection.3.2}%
-\contentsline {section}{\tocsection {}{}{References}}{9}{section*.2}%
+\contentsline {section}{\tocsection {}{4}{Laplace transformation}}{10}{section.4}%
+\contentsline {subsection}{\tocsubsection {}{4.1}{Expansion}}{11}{subsection.4.1}%
+\contentsline {section}{\tocsection {}{5}{Resummation}}{12}{section.5}%
+\contentsline {subsection}{\tocsubsection {}{5.1}{Strategy}}{12}{subsection.5.1}%
+\contentsline {subsection}{\tocsubsection {}{5.2}{Anomalous dimension}}{13}{subsection.5.2}%
+\contentsline {subsection}{\tocsubsection {}{5.3}{Evaluation}}{14}{subsection.5.3}%
+\contentsline {section}{\tocsection {}{6}{Inverse Laplace transform}}{17}{section.6}%
+\contentsline {section}{\tocsection {}{}{References}}{17}{section*.2}%

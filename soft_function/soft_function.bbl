@@ -1,8 +1,31 @@
 \begin{thebibliography}{1}
 
+\bibitem{catani_infrared_2000}
+S.~Catani and M.~Grazzini.
+\newblock Infrared factorization of tree-level {{QCD}} amplitudes at the
+  next-to-next-to-leading order and beyond.
+\newblock {\em Nuclear Physics B}, 570(1-2):287--325, March 2000.
+
 \bibitem{schwartz_quantum_2014}
 Matthew~Dean Schwartz.
 \newblock {\em Quantum Field Theory and the Standard Model}.
 \newblock {Cambridge University Press}, {New York}, 2014.
+
+\bibitem{lazopoulos_qcd_2007}
+Achilleas Lazopoulos, Kirill Melnikov, and Frank Petriello.
+\newblock {{QCD}} corrections to tri-boson production.
+\newblock {\em Phys. Rev. D}, 76(1):014001, July 2007.
+
+\bibitem{frye_factorization_2016}
+Christopher Frye, Andrew~J. Larkoski, Matthew~D. Schwartz, and Kai Yan.
+\newblock Factorization for groomed jet substructure beyond the next-to-leading
+  logarithm.
+\newblock {\em J. High Energ. Phys.}, 2016(7):64, July 2016.
+
+\bibitem{becher_factorization_2007}
+Thomas Becher, Matthias Neubert, and Ben~D. Pecjak.
+\newblock Factorization and {{Momentum}}-{{Space Resummation}} in
+  {{Deep}}-{{Inelastic Scattering}}.
+\newblock {\em J. High Energy Phys.}, 2007(01):076--076, January 2007.
 
 \end{thebibliography}

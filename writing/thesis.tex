@@ -36,9 +36,11 @@
 \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
 \usepackage[hyphens]{url}
 \usepackage{rotating}
+\usepackage{hyperref}
 
 \usepackage{physics}
 \usepackage{siunitx}
+\usepackage[subpreambles]{standalone}
 % \usepackage{natbib}
 % Comment out the natbib line above and uncomment the following two lines to use the new 
 % biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
@@ -204,12 +206,11 @@
 
 \chapter{Factorization formula}
 
-	\section{Power counting}
-
-	\section{Factorization}
+	\input{factorization/factorization}
 
 
 \chapter{All-orders calculation}
+	Test
 	
 
 \chapter*{Conclusion}

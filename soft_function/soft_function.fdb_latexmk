@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex soft_function"] 1614110141 "soft_function.aux" "soft_function.bbl" "soft_function" 1614149051
+["bibtex soft_function"] 1616194413 "soft_function.aux" "soft_function.bbl" "soft_function" 1616194789
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "jet_substructure.bib" 1611531960 45770 5bd243ef0157de9a806533d8d3fb5abf ""
-  "soft_function.aux" 1614149051 2858 815529ee3bf0f8381e5a22216cb72d49 "lualatex"
+  "jet_substructure.bib" 1616194043 76446 f8d95e6b68cb9d1be309f7c7f2395c9f ""
+  "soft_function.aux" 1616194789 5813 f3a0e9e26f25ff5ca6e8026b97ce5f05 "lualatex"
   (generated)
   "soft_function.blg"
   "soft_function.bbl"
-["lualatex"] 1614149049 "soft_function.tex" "soft_function.pdf" "soft_function" 1614149051
+["lualatex"] 1616194786 "soft_function.tex" "soft_function.pdf" "soft_function" 1616194789
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1578167050 123160 07b01c97fb3dfb55a9303e4e62ca726f ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm" 1480098688 2532 9ad73cf4dd2173a847f2a5f5608e0b9a ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/palatino/pplb8t.tfm" 1480098688 3456 16dd534f88eb2bd21ebc7203786b436e ""
@@ -57,8 +57,10 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb" 1480098733 37166 8ab3487cbe3ab49ebce74c29ea2418db ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1480098733 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1480098733 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1480098733 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1480098733 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1480098733 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb" 1480098733 32587 1788b0c1c5b39540c96f5e42ccd6dae8 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1480098733 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb" 1480098746 52406 dad2f72863a03727d5f536c64a69c452 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb" 1480098746 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
@@ -162,16 +164,16 @@
   "/usr/local/texlive/2017/texmf-dist/tex/luatex/luaotfload/fontloader-basics-gen.lua" 1547850999 12695 9a740c440e62da9b31d1d097257a1869 ""
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1575873454 4693480 8353df0835313a2d202e2f489241f4ef ""
   "/usr/local/texlive/2017/texmf-var/web2c/luatex/lualatex.fmt" 1575873557 1399169 069afea70d38dea9ddb6c86bc40f5b67 ""
-  "figures/gluon_numerics.pdf" 1614109768 34274 7a2152ab2b85a110c831a8aae423400c ""
+  "figures/full_non_divergent.pdf" 1614752936 38289 1945a843e0a0bb56db752d3559637091 ""
   "figures/head_on_schematic.pdf" 1612548809 6779 d65cb7f305aae26809098a6380728c5e ""
-  "soft_function.aux" 1614149051 2858 815529ee3bf0f8381e5a22216cb72d49 "lualatex"
-  "soft_function.bbl" 1614110141 225 07fab623dab019810bf26a97e9abe96f "bibtex soft_function"
-  "soft_function.out" 1614149051 881 0f261389e0d46f34b745be808ec9b55a "lualatex"
-  "soft_function.tex" 1614149048 26845 3970414f85903f41973da37b7b617cf4 ""
-  "soft_function.toc" 1614149051 478 a6914212f3b5c8cee8f1f993554dd6a5 "lualatex"
+  "soft_function.aux" 1616194789 5813 f3a0e9e26f25ff5ca6e8026b97ce5f05 "lualatex"
+  "soft_function.bbl" 1616194414 1192 1be07a4c309f378cb3d00db5b9766c1d "bibtex soft_function"
+  "soft_function.out" 1616194789 1568 feed8870da5cbb270ec8266bc3bb0a9b "lualatex"
+  "soft_function.tex" 1616194786 56418 6e008c1e0685f20a062ad1c0dd0fb402 ""
+  "soft_function.toc" 1616194789 879 f708cf99fad822ac27f66fffc4ad29e7 "lualatex"
   (generated)
-  "soft_function.aux"
-  "soft_function.toc"
   "soft_function.log"
   "soft_function.pdf"
+  "soft_function.toc"
   "soft_function.out"
+  "soft_function.aux"
