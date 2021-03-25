@@ -42,6 +42,7 @@
 \usepackage{physics}
 \usepackage{siunitx}
 \usepackage[subpreambles]{standalone}
+% \usepackage[strings]{underscore}
 % \usepackage{natbib}
 % Comment out the natbib line above and uncomment the following two lines to use the new 
 % biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
@@ -130,57 +131,7 @@
 \markboth{Introduction}{Introduction}
 % The three lines above are to make sure that the headers are right, that the intro gets included in the table of contents, and that it doesn't get numbered 1 so that chapter one is 1.
 
-	Introduction here
-
-	\section{Technical and notational conventions}
-
-	First, we hold Planck's constant and the speed of light to be equal to unity: $\hbar = c = 1$. It turns out that non-unity values of these quantities are, for our purposes, redundant; when converting a given quantity to SI units, the appropriate factors of $c$ and $\hbar$ can be intuited from context. The result is that all quantities will be measured in units of energy. Physics where we will be working is at the \si{\giga\electronvolt} scale and higher. Therefore, to a high degree of accuracy, we will assume all particles to be massless.
-
-	Unless otherwise stated (and we \textit{will} eventually state otherwise), we will work in $4$ dimensions, comprising the usual three spatial dimensions and one temporal dimension. Vectors in $4$ dimensions (called four-vectors) are denoted by a Greek-letter index and take the form
-	\begin{equation}
-		p^\mu = (p^0, p^1, p^2, p^3).
-	\end{equation}
-	The $0$-th component of a four-vector is its `time' (or equivalent) component, and the others are the `spatial' (or equivalent) components. Thus, for example, a four-vector representing position would be
-	\begin{equation}
-		x^\mu = (t, x, y, z),
-	\end{equation}
-	while a four-momentum has the components
-	\begin{equation}
-		p^\mu = (E, p_x, p_y, p_z)
-	\end{equation}
-	with energy taking the place of time. It is sometimes convenient to refer to lower-dimensional pieces of a four-vector (usually two or three of the spatial components). When doing so, we will denote the sub-vector using a bold-face letter:
-	\begin{equation}
-		p^\mu = (E, \vb{p}), \quad \vb{p} = (p_x, p_y, p_z).
-	\end{equation}
-
-	As is standard in high-energy physics, we will neglect the effects of gravity and assume we are working in a flat space-time. When combining four-vectors, we will therefore use the `mostly minus' metric\footnote{Also known as the `West Coast' metric, among other names. The `East Coast' metric takes the opposite sign convention. Our convention here is clearly the correct one, as it results in naturally positive masses.}
-	\begin{equation}
-		\eta^{\mu \nu} = \begin{pmatrix}
-			1 & 0 & 0 & 0 \\
-			0 & -1 & 0 & 0 \\
-			0 & 0 & -1 & 0 \\
-			0 & 0 & 0 & -1
-		\end{pmatrix}.
-	\end{equation}
-	We will also employ the Einstein summation notation, in which one sums over repeated indices in an expression (known as `contracting' the index). Hence, for $p^\mu = (p^0, \vb{p})$ and $k_\mu = (k_0, \vb{k})$, we have
-	\begin{equation}
-		k_\mu p^\mu = k_0 p^0 + k_1 p^1 + k_2 p^2 + k_3 p^3.
-	\end{equation}
-
-	With our choice of metric, there is little mechanical difference between a contravariant and a covariant four-vector; one picks up a formal minus sign in the spatial components, but that is all. We will, therefore, not distinguish between the two, and we will interchange upper and lower indices freely, bearing in mind that contracting an index negates the spatial terms of the sum. Hence, for $p^\mu = (p^0, \vb{p})$ and $k^\mu = (k^0, \vb{k})$, we will write\footnote{Sorry, Joel.}
-	\begin{equation}
-		k^\mu p_\mu = k_\mu p^\mu = k^\mu p^\mu = k_\mu p_\mu = k^0 p^0 - \vb{k} \cdot \vb{p}.
-	\end{equation}
-	The final term is the standard dot product between the three-vectors. This choice enables us to abuse notation in a convenient manner: we will often drop the Greek sub/superscript on four-vectors, and use the standard notation of linear algebra to indicate their contraction:
-	\begin{equation}
-		k \cdot p = k^0 p^0 - \vb{k}\cdot\vb{p}.
-	\end{equation}
-
-	Let us end with a reminder about the connection between these four-vectors and the physical world. Suppose a particle has a momentum four-vector $p^\mu$. Transforming our frame of reference to the particle's rest frame, we could write $p^\mu = (E, 0, 0, 0)$, where $E$ is the particle's energy. But then, recalling the famous relation $E = mc^2 = m$ (since we set $c = 1$), we have
-	\begin{equation}
-		p^2 = p \cdot p = E^2 = m^2.
-	\end{equation}
-	Thus, the square of a particle's four-momentum yields its squared mass. Recall now that we are assuming all particles to be massless; therefore, for any `on-shell' particle (that is, a particle that could exist on its own and not just in some quantum fluctuation), we see that $p^2 = 0$, and also that $E^2 = \vb{p} \cdot \vb{p}$.\footnote{This is not strictly an accurate proof of these properties, since massless particles move at the speed of light and one cannot boost into a light-like reference frame using Lorentz transformations. But the spirit of the argument is right, and the result is the same regardless.} This will greatly simplify our calculations later on.
+	\input{introduction/introduction}
 
 	
 
@@ -249,7 +200,7 @@
 %  \bibliographystyle{plainnat}
 % replace ``plainnat'' with the style of choice. You can refer to files in the bsts or APA 
 % subfolder, e.g. 
- \bibliographystyle{bsts/JHEP}  % or
+ \bibliographystyle{bsts/myJHEP}  % or
  \bibliography{jet_substructure}
  % Comment the above two lines and uncomment the next line to use biblatex-chicago.
  %\printbibliography[heading=bibintoc]

@@ -1,0 +1,158 @@
+% This is the Reed College LaTeX thesis template. Most of the work 
+% for the document class was done by Sam Noble (SN), as well as this
+% template. Later comments etc. by Ben Salzberg (BTS). Additional
+% restructuring and APA support by Jess Youngberg (JY).
+% Your comments and suggestions are more than welcome; please email
+% them to cus@reed.edu
+%
+% See http://web.reed.edu/cis/help/latex.html for help. There are a 
+% great bunch of help pages there, with notes on
+% getting started, bibtex, etc. Go there and read it if you're not
+% already familiar with LaTeX.
+%
+% Any line that starts with a percent symbol is a comment. 
+% They won't show up in the document, and are useful for notes 
+% to yourself and explaining commands. 
+% Commenting also removes a line from the document; 
+% very handy for troubleshooting problems. -BTS
+
+% As far as I know, this follows the requirements laid out in 
+% the 2002-2003 Senior Handbook. Ask a librarian to check the 
+% document before binding. -SN
+
+%%
+%% Preamble
+%%
+% \documentclass{<something>} must begin each LaTeX document
+\providecommand{\main}{..}
+\documentclass[12pt,twoside,class=../reedthesis, crop=false]{standalone}
+% Packages are extensions to the basic LaTeX functions. Whatever you
+% want to typeset, there is probably a package out there for it.
+% Chemistry (chemtex), screenplays, you name it.
+% Check out CTAN to see: http://www.ctan.org/
+%%
+\usepackage{graphicx,latexsym} 
+\usepackage{amssymb,amsthm,amsmath}
+\usepackage{longtable,booktabs,setspace} 
+\usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+\usepackage[hyphens]{url}
+\usepackage{rotating}
+\usepackage{hyperref}
+
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{xcolor}
+% \usepackage{standalone}
+% \usepackage{natbib}
+% Comment out the natbib line above and uncomment the following two lines to use the new 
+% biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
+% bibliography is included. 
+%\usepackage{biblatex-chicago}
+%\bibliography{thesis}
+
+% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
+
+\providecommand{\zcut}{\mathrm{z_{cut}}}
+
+
+\setlength{\parskip}{0pt}
+%%
+%% End Preamble
+%%
+%% The fun begins:
+\begin{document}
+\section{The physics of elementary particles}
+	Modern particle physics is, ultimately, the result of a confluence of an ancient problem and an ancient technique. The problem: how does nature work on the most fundamental level? The technique: to smash objects together and see what comes out. 
+
+	Of course, thousands of years of scientific development have led us to a more nuanced and sophisticated understanding than, say, the early atomic theories of Democritus and Lucretius --- though echoes of these theories remain. We now understand\footnote{Or at least, believe to understand} that almost all visible matter and almost all observed forces are, at root, manifestations of interactions between 17 fundamental particles (though there may yet be more). We conceive of these particles as excitations in fields which permeate space-time --- this is known as Quantum Field Theory.\footnote{Space-time itself is a geometric entity --- we perceive this geometry as the force of gravity, acting on both human and cosmic scales --- described by the theory of General Relativity.}
+
+	The goal of elementary particle physics\footnote{Also known simply as particle physics or high-energy physics} is to understand these particles and fields at the deepest level.\footnote{Some particle theorists are also trying to unite Quantum Field Theory with General Relativity. Whether they will ever succeed remains to be seen, but they do lots of pretty math} We would like to lay a complete framework, understanding their nature and their interactions to such an extent that one could, in principle, derive from first principles an explanation for any observed physical phenomenon. The field is a long way from that goal, but much progress has been made over the past centuries. Let us begin by summarizing what we know so far.
+
+\subsection{The Standard Model}
+	\begin{figure}
+	\begin{centering}
+		\includegraphics[width=\textwidth]{\main/introduction/figures/Standard_Model_of_Elementary_Particles.pdf}
+		\caption{\label{fig:standard model}Diagram of the Standard Model of particle physics, as it currently stands. From \cite{cush_standard_2019}}
+	\end{centering}
+	\end{figure} 
+	The 17 known particles are organized in a framework called the Standard Model of particle physics \cite{larkoski_elementary_2019-1,schwartz_quantum_2014}, displayed in schematic form in Fig.~\ref{fig:standard model}.
+
+	There are 12 particles, called \textbf{fermions}, which are the fundamental components of matter. These in turn are subdivided into \textbf{quarks} and \textbf{leptons}. Quarks, with names such as `up,' `down,' and `strange,' combine in turn to form \textbf{hadrons} --- among the hadrons are familiar composite particles like protons and neutrons. 
+
+	Of the remaining 5 particles, called \textbf{bosons}, mediate interactions between particles. Four of these are responsible for three of the forces of nature: the \textbf{gluon} is responsible for the strong force; the \textbf{photon} is responsible for the electromagnetic force; and the \textbf{$W$ and $Z$ bosons} are responsible for the weak force. In terms of familiar phenomena, the strong force is what binds together the nuclei of atoms; the electromagnetic force is what makes possible most of chemistry, electronics, and modern technology; and the weak force is responsible for the decay of unstable nuclei and particles. The final boson, the \textbf{Higgs boson}, is responsible for giving mass to most of the fundamental particles, and in a technical sense is the keystone which holds the Standard Model together.
+
+	In the Standard Model, each fermion is beholden to some subset of these bosons. The neutrinos experience the weak force and so interact via the $W$ and $Z$ bosons. The electron, muon, and tau experience the weak force as well, but they can also interact electromagnetically through exchange of photons. The quarks experience all of the fundamental forces, and can interact via any of the force-carrying bosons. It is the interaction of quarks and gluons through the strong force which will occupy most of this thesis.
+
+
+\subsection{(In)completeness of the Standard Model}
+	The Standard Model is a remarkable theory. It explains many observed phenomenon with unparalleled accuracy --- in fact, the most accurate calculation in physics was performed in the context of quantum electrodynamics, the Standard Model explanation of electromagnetism \cite{larkoski_elementary_2019-1} {\color{red}\textbf{[TODO: find and cite this]}}. Experiment after experiment has confirmed predictions of the Standard Model, and in this sense it is a triumph of 20th-century physics.
+
+	In the present century, however, the strength of the theory is a significant problem in the field --- for we know that the Standard Model is incomplete. While the theory is successful at describing small-scale physics, it is not nearly as successful on a cosmic scale: it has been observed that 84.4\% of all matter in the universe is unknown to us and invisible except by gravitational signatures \cite{particle_data_group_review_2020}. We would like to understand the composition of this so-called `dark matter.' There are also hints that the Standard Model is incomplete which are visible in Earthly laboratories. Among these hints, one of the most famous is the existence of neutrino masses. While the Standard Model describes neutrinos as massless particles, the Super-Kamiokande experiment discovered evidence in 1998 that neutrinos have a (tiny) non-zero mass \cite{super-kamiokande_collaboration_evidence_1998} --- these observations have since been verified by numerous other experiments \cite{particle_data_group_review_2020}. Finally, there are aesthetic considerations. The Standard Model, as it currently stands, has a multitude of parameters (e.g., the masses of different particles) that currently have no basis in the theory; they must be supplied externally. If possible, we would like to be able to predict these parameters eventually.\footnote{One can hardly say they understand something if, when asked why a particular detail is just so, their response is no more sophisticated than ``That's just the way it is.''}
+
+	Thus, the Standard Model is incomplete. What can we do about that? There are two primary approaches to finding a solution:
+	\begin{enumerate}
+		\item \textbf{Searches for new particles:} one strategy is to design experiments that attempt to generate and detect new, previously unobserved particles. This is a well-worn technique in particle physics, responsible for many of the advances in the field over the last 20th century. Famous examples of new-particle discoveries include the $J/\psi$ in 1974 \cite{aubert_experimental_1974,augustin_discovery_1974}, the discovery of the top quark in 1995 \cite{d0_collaboration_observation_1995,cdf_collaboration_observation_1995}, and the discovery of the Higgs boson in 2012 \cite{atlas_collaboration_observation_2012,cms_collaboration_observation_2012}. Historically, whenever new experimental frontiers have been explored, new discoveries have followed, and with them, new understanding. This is not, of course, a guarantee that such will continue in the future.\footnote{Past performance is not a guarantee of future returns.} Nevertheless, it is the underlying (if simplified) philosophy for many new particle searches at modern experiments.
+
+		\item \textbf{Precision measurements of Standard Model parameters:} another, complementary strategy is to measure parameters of the Standard Model very precisely, and compare these measurements to theoretical predictions. These parameters could be anything from particle masses, to the strength of coupling constants, to the probability of a particular event after a particular interaction. If a discrepancy emerges, then that is a clue about where to consider modifying the Standard Model. Note, however, that to put a precise experimental measurement into a proper context, it is necessary to have at hand a precise theory. If we could measure, say, the mass of the muon\footnote{Compared to the state of the art, this would be an outrageously precise measurement. The mass of the muon is currently accepted to be \SI{105.6583745(24)}{\mega\electronvolt} \cite{particle_data_group_review_2020}, which is a precision of approximately 1 part in $10^{8}$.} to 1 part in $10^{20}$, it would do us no good if the theoretical prediction were only confident to 1 part in $10^5$. Theory and experiment must both be sufficiently advanced to take full advantage of a precise measurement.
+	\end{enumerate}
+
+	This thesis is situated firmly in the latter camp. We will be interested in precision theoretical predictions of a particular observable, called the `groomed jet mass,' measured in high-energy electron-positron collisions. More will be said on this topic in due time.
+
+\subsection{Particle physics experiments}
+
+\section{Thesis goals}
+
+\section{Technical and notational conventions}
+	Before we embark, we must lay some mathematical ground rules. First, we hold Planck's constant and the speed of light to be equal to unity: $\hbar = c = 1$. It turns out that non-unity values of these quantities are, for our purposes, redundant; when converting a given quantity back to SI units, the appropriate factors of $c$ and $\hbar$ can be intuited from context. The result is that all quantities will be measured in units of energy. Physics where we will be working is at the \si{\giga\electronvolt} scale and higher. Therefore, to a high degree of accuracy, we will assume all particles to be massless.
+
+	Unless otherwise stated (and we \textit{will} eventually state otherwise), we will work in $4$ dimensions, comprising the usual three spatial dimensions and one temporal dimension. Vectors in $4$ dimensions (called four-vectors) are denoted by a Greek-letter index and take the form
+	\begin{equation}
+		p^\mu = (p^0, p^1, p^2, p^3).
+	\end{equation}
+	The $0$-th component of a four-vector is its `time' (or equivalent) component, and the others are the `spatial' (or equivalent) components. Thus, for example, a four-vector representing position would be
+	\begin{equation}
+		x^\mu = (t, x, y, z),
+	\end{equation}
+	while a four-momentum has the components
+	\begin{equation}
+		p^\mu = (E, p_x, p_y, p_z)
+	\end{equation}
+	with energy taking the place of time. It is sometimes convenient to refer to lower-dimensional pieces of a four-vector (usually two or three of the spatial components). When doing so, we will denote the sub-vector using a bold-face letter:
+	\begin{equation}
+		p^\mu = (E, \vb{p}), \quad \vb{p} = (p_x, p_y, p_z).
+	\end{equation}
+
+	As is standard in high-energy physics, we will neglect the effects of gravity and assume we are working in a flat space-time. When combining four-vectors, we will therefore use the `mostly minus' metric\footnote{Also known as the `West Coast' metric, among other names. The `East Coast' metric takes the opposite sign convention. Our convention here is clearly the correct one, as it results in naturally positive masses.}
+	\begin{equation}
+		\eta^{\mu \nu} = \begin{pmatrix}
+			1 & 0 & 0 & 0 \\
+			0 & -1 & 0 & 0 \\
+			0 & 0 & -1 & 0 \\
+			0 & 0 & 0 & -1
+		\end{pmatrix}.
+	\end{equation}
+	We will also employ the Einstein summation notation, in which one sums over repeated indices in an expression (known as `contracting' the index). Hence, for $p^\mu = (p^0, \vb{p})$ and $k_\mu = (k_0, \vb{k})$, we have
+	\begin{equation}
+		k_\mu p^\mu = k_0 p^0 + k_1 p^1 + k_2 p^2 + k_3 p^3.
+	\end{equation}
+
+	With our choice of metric, there is little mechanical difference between a contravariant and a covariant four-vector; one picks up a formal minus sign in the spatial components, but that is all. We will, therefore, not distinguish between the two, and we will interchange upper and lower indices freely, bearing in mind that contracting an index negates the spatial terms of the sum. Hence, for $p^\mu = (p^0, \vb{p})$ and $k^\mu = (k^0, \vb{k})$, we will write\footnote{Sorry, Joel.}
+	\begin{equation}
+		k^\mu p_\mu = k_\mu p^\mu = k^\mu p^\mu = k_\mu p_\mu = k^0 p^0 - \vb{k} \cdot \vb{p}.
+	\end{equation}
+	The final term is the standard dot product between the three-vectors. This choice enables us to abuse notation in a convenient manner: we will often drop the Greek sub/superscript on four-vectors, and use the standard notation of linear algebra to indicate their contraction:
+	\begin{equation}
+		k \cdot p = k^0 p^0 - \vb{k}\cdot\vb{p}.
+	\end{equation}
+
+	Let us end with a reminder about the connection between these four-vectors and the physical world. Suppose a particle has a momentum four-vector $p^\mu$. Transforming our frame of reference to the particle's rest frame, we could write $p^\mu = (E, 0, 0, 0)$, where $E$ is the particle's energy. But then, recalling the famous relation $E = mc^2 = m$ (since we set $c = 1$), we have
+	\begin{equation}
+		p^2 = p \cdot p = E^2 = m^2.
+	\end{equation}
+	Thus, the square of a particle's four-momentum yields its squared mass. Recall now that we are assuming all particles to be massless; therefore, for any `on-shell' particle (that is, a particle that could exist on its own and not just in some quantum fluctuation), we see that $p^2 = 0$, and also that $E^2 = \vb{p} \cdot \vb{p}$.\footnote{This is not strictly an accurate proof of these properties, since massless particles move at the speed of light and one cannot boost into a light-like reference frame using Lorentz transformations. But the spirit of the argument is right, and the result is the same regardless.} This will greatly simplify our calculations later on.
+
+\ifstandalone
+\bibliographystyle{../bsts/myJHEP} 
+\bibliography{../jet_substructure}
+\fi
+\end{document}

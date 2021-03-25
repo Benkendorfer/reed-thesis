@@ -1,5 +1,8 @@
 \standalonepreambles
+\subpreamble{introduction/introduction.tex}
+\usepackage {graphicx,latexsym}\usepackage {amssymb,amsthm,amsmath}\usepackage {longtable,booktabs,setspace}\usepackage {chemarr} \usepackage [hyphens]{url}\usepackage {rotating}\usepackage {hyperref}\usepackage {physics}\usepackage {siunitx}\usepackage {xcolor}\providecommand {\zcut }{\mathrm {z_{cut}}}\setlength {\parskip }{0pt}
+\endsubpreamble
 \subpreamble{factorization/factorization.tex}
-\usepackage {graphicx,latexsym}\usepackage {amssymb,amsthm,amsmath}\usepackage {longtable,booktabs,setspace}\usepackage {chemarr} \usepackage [hyphens]{url}\usepackage {rotating}\usepackage {hyperref}\usepackage {physics}\usepackage {siunitx}\usepackage {xcolor}\newcommand {\zcut }{\mathrm {z_{cut}}}\setlength {\parskip }{0pt}
+\usepackage {graphicx,latexsym}\usepackage {amssymb,amsthm,amsmath}\usepackage {longtable,booktabs,setspace}\usepackage {chemarr} \usepackage [hyphens]{url}\usepackage {rotating}\usepackage {hyperref}\usepackage {physics}\usepackage {siunitx}\usepackage {xcolor}\providecommand {\zcut }{\mathrm {z_{cut}}}\setlength {\parskip }{0pt}
 \endsubpreamble
 \endstandalonepreambles
