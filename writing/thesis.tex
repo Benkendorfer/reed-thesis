@@ -42,6 +42,11 @@
 \usepackage{physics}
 \usepackage{siunitx}
 \usepackage[subpreambles]{standalone}
+
+\usepackage{tikz-feynman}
+
+\usepackage{xr}
+\externaldocument[intro-]{./introduction/introduction}
 % \usepackage[strings]{underscore}
 % \usepackage{natbib}
 % Comment out the natbib line above and uncomment the following two lines to use the new 
@@ -99,7 +104,10 @@
 	\begin{table}[h]
 	\centering % You could remove this to move table to the left
 	\begin{tabular}{ll}
+		\textbf{LHC}  	&  Large Hadron Collider \\
+		\textbf{mMDT}  	&  Modified Mass Drop Tagger \\
 		\textbf{QCD}  	&  Quantum chromodynamics \\
+		\textbf{QFT}  	&  Quantum field theory \\
 		\textbf{SCET}  	&  Soft collinear effective theory\\
 	\end{tabular}
 	\end{table}
@@ -107,9 +115,9 @@
 
     \tableofcontents
 % if you want a list of tables, optional
-    \listoftables
+    % \listoftables
 % if you want a list of figures, also optional
-    \listoffigures
+    % \listoffigures
 
 % The abstract is not required if you're writing a creative thesis (but aren't they all?)
 % If your abstract is longer than a page, there may be a formatting issue.
@@ -135,11 +143,16 @@
 
 	
 
-\chapter{QCD, jet grooming, and SCET}
+\chapter{QCD, jet grooming, and SCET}\label{test}
 	
 	First chapter here
 
 	\section{Quantum Chromodynamics (QCD)}
+	\subsection{Cross sections}
+
+	\subsection{Fermi's golden rule}
+
+	\subsection{Running coupling}
 
 	\section{Jets}
 
@@ -147,19 +160,15 @@
 
 	\section{Soft Collinear Effective Theory (SCET)}
 
+	\section{Dimensional regularization}
+
 
 \chapter{Leading-order calculation}
 
-	\section{Setup}
-
-	\section{Dimensional regularization}
-
-	\section{Putting it all together}
+	\input{leading_order/leading_order}
 
 
 \chapter{Factorization formula}
-	
-	\graphicspath{{factorization/figures/}}
 
 	\input{factorization/factorization}
 

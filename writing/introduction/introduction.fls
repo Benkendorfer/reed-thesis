@@ -167,6 +167,9 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/xr.sty
+INPUT ../thesis.aux
 INPUT ./introduction.aux
 INPUT ./introduction.aux
 OUTPUT introduction.aux
@@ -262,6 +265,16 @@ INPUT ../introduction/figures/Standard_Model_of_Elementary_Particles.pdf
 INPUT ../introduction/figures/Standard_Model_of_Elementary_Particles.pdf
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmromanslant12-regular.luc
 INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT ../introduction/figures/atlas_high_res.jpg
+INPUT ../introduction/figures/atlas_high_res.jpg
+INPUT ../introduction/figures/atlas_high_res.jpg
+INPUT ../introduction/figures/cms_160312_02.pdf
+INPUT ../introduction/figures/cms_160312_02.pdf
+INPUT ../introduction/figures/cms_160312_02.pdf
+INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
+INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-bold.luc
+INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bold.luc
+INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
@@ -277,6 +290,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb

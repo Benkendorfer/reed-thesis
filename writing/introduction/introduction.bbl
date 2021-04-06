@@ -61,4 +61,50 @@ C.~Collaboration, \emph{Observation of a new boson at a mass of 125 {{GeV}}
   B} {\bfseries 716} (2012) 30}
   [\href{https://arxiv.org/abs/1207.7235}{{\ttfamily 1207.7235}}].
 
+\bibitem{cern_ac_layout_1998}
+{CERN AC}, \emph{Layout of {{ATLAS}}. {{Dessin}} representant le detecteur
+  {{ATLAS}}},  Mar., 1998, \url{https://cds.cern.ch/record/39038}.
+
+\bibitem{sakuma_detector_2014}
+T.~Sakuma and T.~McCauley, \emph{Detector and {{Event Visualization}} with
+  {{SketchUp}} at the {{CMS Experiment}}},
+  \href{https://doi.org/10.1088/1742-6596/513/2/022032}{\emph{J. Phys.: Conf.
+  Ser.} {\bfseries 513} (2014) 022032}.
+
+\bibitem{atlas_outreach_atlas_2012}
+{ATLAS Outreach}, \emph{{{ATLAS Fact Sheet}}: {{To}} raise awareness of the
+  {{ATLAS}} detector and collaboration on the {{LHC}}},  2012,
+  \url{http://cds.cern.ch/record/1457044}.
+
+\bibitem{dasgupta_towards_2013}
+M.~Dasgupta, A.~Fregoso, S.~Marzani and G.P.~Salam, \emph{Towards an
+  understanding of jet substructure},
+  \href{https://doi.org/10.1007/JHEP09(2013)029}{\emph{J. High Energ. Phys.}
+  {\bfseries 2013} (2013) 29}.
+
+\bibitem{kardos_groomed_2020}
+A.~Kardos, A.J.~Larkoski and Z.~Tr{\'o}cs{\'a}nyi, \emph{Groomed jet mass at
+  high precision},
+  \href{https://doi.org/10.1016/j.physletb.2020.135704}{\emph{Physics Letters
+  B} {\bfseries 809} (2020) 135704}.
+
+\bibitem{kardos_two-_2020}
+A.~Kardos, A.J.~Larkoski and Z.~Tr{\'o}cs{\'a}nyi, \emph{Two- and three-loop
+  data for the groomed jet mass},
+  \href{https://doi.org/10.1103/PhysRevD.101.114034}{\emph{Phys. Rev. D}
+  {\bfseries 101} (2020) 114034}.
+
+\bibitem{frye_factorization_2016}
+C.~Frye, A.J.~Larkoski, M.D.~Schwartz and K.~Yan, \emph{Factorization for
+  groomed jet substructure beyond the next-to-leading logarithm},
+  \href{https://doi.org/10.1007/JHEP07(2016)064}{\emph{J. High Energ. Phys.}
+  {\bfseries 2016} (2016) 64}.
+
+\bibitem{kardos_soft-drop_2018}
+A.~Kardos, G.~Somogyi and Z.~Tr{\'o}cs{\'a}nyi, \emph{Soft-drop event shapes in
+  electron-positron annihilation at next-to-next-to-leading order accuracy},
+  \href{https://doi.org/10.1016/j.physletb.2018.10.014}{\emph{Physics Letters
+  B} {\bfseries 786} (2018) 313}
+  [\href{https://arxiv.org/abs/1807.11472}{{\ttfamily 1807.11472}}].
+
 \end{thebibliography}\endgroup

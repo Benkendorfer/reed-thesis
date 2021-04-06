@@ -1,6 +1,9 @@
 \standalonepreambles
 \subpreamble{introduction/introduction.tex}
-\usepackage {graphicx,latexsym}\usepackage {amssymb,amsthm,amsmath}\usepackage {longtable,booktabs,setspace}\usepackage {chemarr} \usepackage [hyphens]{url}\usepackage {rotating}\usepackage {hyperref}\usepackage {physics}\usepackage {siunitx}\usepackage {xcolor}\providecommand {\zcut }{\mathrm {z_{cut}}}\setlength {\parskip }{0pt}
+\usepackage {graphicx,latexsym}\usepackage {amssymb,amsthm,amsmath}\usepackage {longtable,booktabs,setspace}\usepackage {chemarr} \usepackage [hyphens]{url}\usepackage {rotating}\usepackage {hyperref}\usepackage {physics}\usepackage {siunitx}\usepackage {xcolor}\usepackage {xr}\externaldocument [main-]{../thesis}\providecommand {\zcut }{\mathrm {z_{cut}}}\setlength {\parskip }{0pt}
+\endsubpreamble
+\subpreamble{leading_order/leading_order.tex}
+\usepackage {graphicx,latexsym}\usepackage {amssymb,amsthm,amsmath}\usepackage {longtable,booktabs,setspace}\usepackage {chemarr} \usepackage [hyphens]{url}\usepackage {rotating}\usepackage {hyperref}\usepackage {physics}\usepackage {siunitx}\usepackage {xcolor}\usepackage {tikz-feynman}\providecommand {\zcut }{z_\mathrm {{cut}}}\providecommand {\LIPS }{\mathrm {LIPS}}\providecommand {\cM }{\mathcal {M}}\providecommand {\cO }{\mathcal {O}}\setlength {\parskip }{0pt}
 \endsubpreamble
 \subpreamble{factorization/factorization.tex}
 \usepackage {graphicx,latexsym}\usepackage {amssymb,amsthm,amsmath}\usepackage {longtable,booktabs,setspace}\usepackage {chemarr} \usepackage [hyphens]{url}\usepackage {rotating}\usepackage {hyperref}\usepackage {physics}\usepackage {siunitx}\usepackage {xcolor}\providecommand {\zcut }{\mathrm {z_{cut}}}\setlength {\parskip }{0pt}

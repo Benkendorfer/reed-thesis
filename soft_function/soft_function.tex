@@ -615,16 +615,20 @@
 	Now we can expand to partial $0$-th order in $\epsilon$. The prefactor becomes (after setting $\gamma_E \to 0$)
 	\begin{equation}
 	\begin{aligned}
-		\frac{2\pi\alpha_s C_F\mu^{2\epsilon}}{\pi^{5/2} \Gamma(\frac{1}{2} - \epsilon)}\qty(\frac{Q}{4})^{-2\epsilon} \nu^{2\epsilon} \Gamma(-2\epsilon) = \frac{\alpha_s C_F}{\pi^2}\qty[-\frac{1}{\epsilon} + 2\log(\frac{Q}{2\nu}) - 2\log\mu - 2\epsilon\log(\frac{\mu\nu}{Q})\log(\frac{4\mu\nu}{Q})] + \cO(\epsilon).
+		\frac{2\pi\alpha_s C_F\mu^{2\epsilon}}{\pi^{5/2} \Gamma(\frac{1}{2} - \epsilon)}\qty(\frac{Q}{4})^{-2\epsilon} \nu^{2\epsilon} \Gamma(-2\epsilon) = \frac{\alpha_s C_F}{\pi^2}\qty[-\frac{1}{\epsilon} + 2\log(\frac{Q}{2\mu\nu}) - 2\epsilon\qty(\log^2 2 + \log(\frac{\mu\nu}{Q})\log(\frac{4\mu\nu}{Q}))] + \cO(\epsilon).
 	\end{aligned}
 	\end{equation}
 	Since
 	\begin{equation}
-		\log(\frac{\mu\nu}{Q})\log(\frac{4\mu\nu}{Q}) = \log^2\mu + \log\mu\log(\frac{4\nu^2}{Q^2}) + \log(\frac{\nu}{Q})\log(\frac{4\nu}{Q})
+		\log(\frac{\mu\nu}{Q})\log(\frac{4\mu\nu}{Q}) = \log(\frac{\mu\nu}{Q})\qty[\log 4 + \log(\frac{\mu \nu}{Q})] = 2\log 2 \log(\frac{\mu \nu}{Q}) + \log^2\qty(\frac{\mu\nu}{Q}),
 	\end{equation}
-	and ultimately we only care about factors of $\log \mu$ to order $\epsilon^0$, we can then write
+	we see that
 	\begin{equation}
-		\frac{2\pi\alpha_s C_F\mu^{2\epsilon}}{\pi^{5/2} \Gamma(\frac{1}{2} - \epsilon)}\qty(\frac{Q}{4})^{-2\epsilon} \nu^{2\epsilon} \Gamma(-2\epsilon) = \frac{\alpha_s C_F}{\pi^2}\qty[-\frac{1}{\epsilon} + 2\log(\frac{Q}{2\nu}) - 2\log\mu - 2\epsilon\qty(\log^2\mu + \log\mu\log(\frac{4\nu^2}{Q^2}))] + \cO(\epsilon).
+		\log^2 2 + \log(\frac{\mu\nu}{Q})\log(\frac{4\mu\nu}{Q}) = \qty(\log 2 + \log(\frac{\mu\nu}{Q}))^2 = \log^2\qty(\frac{2\mu\nu}{Q}).
+	\end{equation}
+	Ultimately we only care about factors of $\log \mu$ to order $\epsilon^0$, so we can then write
+	\begin{equation}
+		\frac{2\pi\alpha_s C_F\mu^{2\epsilon}}{\pi^{5/2} \Gamma(\frac{1}{2} - \epsilon)}\qty(\frac{Q}{4})^{-2\epsilon} \nu^{2\epsilon} \Gamma(-2\epsilon) = \frac{\alpha_s C_F}{\pi^2}\qty[-\frac{1}{\epsilon} + 2\log(\frac{Q}{2\mu\nu}) - 2\epsilon\log^2\qty(\frac{2\mu\nu}{Q})] + \cO(\epsilon).
 	\end{equation}
 	We also have
 	\begin{equation}
@@ -634,7 +638,7 @@
 	\begin{equation}\label{eq:transformed soft function partial order}
 	\boxed{
 	\begin{aligned}
-		\cL\qty{S_R} &= -\frac{\alpha_s C_F}{\pi^2}\qty[-\frac{1}{\epsilon} + 2\log(\frac{Q}{2\nu}) - 2\log\mu - 2\epsilon\qty(\log^2\mu + \log\mu\log(\frac{4\nu^2}{Q^2}))] \\
+		\cL\qty{S_R} &= -\frac{\alpha_s C_F}{\pi^2}\qty[-\frac{1}{\epsilon} + 2\log(\frac{Q}{2\mu\nu}) - 2\epsilon\log^2\qty(\frac{2\mu\nu}{Q})] \\
 			&\qquad\times \Bigg[\frac{\pi}{2\epsilon} + \pi \log 2 - \qty[\pi - \arcsec(1 + \sec\theta_g)]\log\cot\frac{\theta_g}{2} \\
 			&\qquad\qquad - \arcsec\qty(1 + \sec\theta_g) \log(2\cot\theta_g) \\
 			&\qquad\qquad - \frac{i}{4}\qty[\Li_2\qty(-e^{-2i\arcsec\qty(1 + \sec\theta_g)}) - \Li_2\qty(-e^{2i\arcsec\qty(1 + \sec\theta_g)})] \\
@@ -698,7 +702,7 @@
 \subsection{Anomalous dimension}
 	The first step is to determine the anomalous dimension for the soft resolved function. Starting at Eq.~\ref{eq:transformed soft function partial order}, we have
 	\begin{equation}
-		\cL\qty{S_R} = -\frac{\alpha_s C_F}{\pi^2}\qty[-\frac{1}{\epsilon} - 2\log(\frac{2\mu\nu}{Q}) - 2\epsilon\qty(\log^2\mu + \log\mu \log(\frac{4\nu^2}{Q^2}))]\qty[\frac{\pi}{2\epsilon} + f(\theta_g)] + \cO(\epsilon^0)
+		\cL\qty{S_R} = -\frac{\alpha_s C_F}{\pi^2}\qty[-\frac{1}{\epsilon} - 2\log(\frac{2\mu\nu}{Q}) - 2\epsilon\log^2\qty(\frac{2\mu\nu}{Q})]\qty[\frac{\pi}{2\epsilon} + f(\theta_g)] + \cO(\epsilon^0)
 	\end{equation}
 	with
 	\begin{equation}\label{eq:non-cusp f function}
@@ -718,17 +722,19 @@
 		\gamma_F(\alpha_s) = \sum_{n = 0}^\infty \gamma_n \qty(\frac{\alpha_s}{4\pi})^{n+1}.
 	\end{equation}
 	We wish to determine the coefficients $\Gamma_n$ and $\gamma_n$. Expanding out the soft function, we have
-	\begin{equation}
+	\begin{equation}\label{eq:soft function expanded}
 	\begin{aligned}
-		\cL\qty{S_R} &= -\frac{\alpha_s C_F}{\pi^2}\qty[-\frac{\pi}{2\epsilon^2} - \frac{f(\theta_g)}{\epsilon} - \frac{\pi}{\epsilon}\log(\frac{2\mu \nu}{Q}) - \pi\qty(\log^2\mu + \log\mu\log(\frac{4\nu^2}{Q^2}))] + \cO(\epsilon^0) \\
-		&= \frac{\alpha_s C_F}{4\pi}\qty[\frac{2}{\epsilon^2} + \frac{4f(\theta_g)}{\pi\epsilon} + \frac{4}{\epsilon}\log(\frac{2\mu \nu}{Q}) + \frac{1}{4}\qty(\log^2\mu + \log\mu\log(\frac{4\nu^2}{Q^2}))] + \cO(\epsilon^0).
+		\cL\qty{S_R} &= -\frac{\alpha_s C_F}{\pi^2}\Bigg[-\frac{\pi}{2\epsilon^2} - \frac{f(\theta_g)}{\epsilon} - \frac{\pi}{\epsilon}\log(\frac{2\mu \nu}{Q}) - 2\log(\frac{2\mu\nu}{Q})f(\theta_g) \\
+			&\hspace{8cm} - \pi\log^2\qty(\frac{2\mu\nu}{Q})\Bigg] + \cO(\epsilon^0) \\
+		&= \frac{\alpha_s C_F}{4\pi}\Bigg[\frac{2}{\epsilon^2} + \frac{4f(\theta_g)}{\pi\epsilon} + \frac{4}{\epsilon}\log(\frac{2\mu \nu}{Q}) + \frac{8}{\pi}\log(\frac{2\mu\nu}{Q})f(\theta_g) \\
+			&\hspace{8cm}+ 4\log^2\qty(\frac{2\mu\nu}{Q})\Bigg] + \cO(\epsilon^0).
 	\end{aligned}
 	\end{equation}
 	The anomalous dimension is the coefficient of $1/\epsilon$:
 	\begin{equation}
 		\gamma_{S_R} = \frac{\alpha_s C_F}{4\pi}\qty[\frac{4f(\theta_g)}{\pi} + 2\log(\frac{4\mu^2\nu^2}{Q^2})].
 	\end{equation}
-	Notice that this takes the form {\color{red}\textbf{[is this supposed to happen? or is it weird to have a $\log \mu$ with a $1/\epsilon$?]}}
+	Notice that this takes the form
 	\begin{equation}
 		\gamma = \Gamma_{S_R}(\alpha_s)\log\frac{\mu^2}{\mu_1^2} + \gamma_{S_R}(\alpha_s)
 	\end{equation}
@@ -757,16 +763,25 @@
 		\boxed{\gamma_0 = \frac{4C_F}{\pi}f(\theta_g).}
 	\end{equation}
 
+\subsubsection{Consistency check}
+	As a quick consistency check, we can verify that
+	\begin{equation}
+		\frac{\partial \cL\qty{S_R}}{\partial \log \mu} = \gamma \cL\qty{S_R}
+	\end{equation}
+	to first order. From Eq.~\ref{eq:soft function expanded}, we have
+	\begin{equation}
+	\begin{aligned}
+		\frac{\partial \cL\qty{S_R}}{\partial \log \mu} &= \frac{\alpha_s C_F}{4\pi}\Bigg[ \frac{4}{\epsilon} + \frac{8 f(\theta_g)}{\pi} + 4\log\qty(\frac{4\mu^2\nu^2}{Q^2}) \Bigg],
+	\end{aligned}
+	\end{equation}
+	so, if we ignore the poles in $\epsilon$, we find that
+	\begin{equation}
+		\frac{\partial \cL\qty{S_R}}{\partial \log \mu} = 2\gamma_{S_R}.
+	\end{equation}
+	This is another way to get the anomalous dimension {\color{red}\textbf{[why the factor of 2?]}}.
+
 \subsection{Evaluation}
-	Now that we have $\gamma_0$ in hand, we wish to evaluate Eq.~\ref{eq:renormalization solution}. 
-	% To one-loop order, this reads
-	% \begin{equation}
-	% \begin{aligned}
-	% 	F(\mu) = F(\mu_0) \exp\Bigg[ 2\int_{\alpha_s(\mu_0)}^{\alpha_s(\mu)} \frac{d\alpha}{\beta(\alpha)}\Gamma_F \frac{\alpha}{4\pi} \int_{\alpha_s(\mu_0)}^\alpha \frac{d\alpha'}{\beta(\alpha')} &+ \int_{\alpha_s(\mu_0)}^{\alpha_s(\mu)}\frac{d\alpha}{\beta(\alpha)}\gamma_0 \frac{\alpha}{4\pi} \\
-	% 		&+ \log\frac{\mu_0^2}{\mu_1^2} \int_{\alpha_s(\mu_0)}^{\alpha_s(\mu)} \frac{d\alpha}{\beta(\alpha)} \Gamma_0 \frac{\alpha}{4\pi }\Bigg].
-	% \end{aligned}
-	% \end{equation}
-	The $\beta$-function can be written as a power series
+	Now that we have $\gamma_0$ in hand, we wish to evaluate Eq.~\ref{eq:renormalization solution}. The $\beta$-function can be written as a power series
 	\begin{equation}
 		\beta(\alpha_s) = \mu\frac{\partial \alpha_s}{\partial\mu} = -2\alpha_s \sum_{n = 0}^\infty \beta_n \qty(\frac{\alpha_s}{4\pi})^{n+1}
 	\end{equation}
@@ -908,7 +923,7 @@
 	\end{equation}
 	represent this transformation. Then we can re-write the soft resolved function as
 	\begin{equation}
-		\cL{S_R} = e^{K_{S_R}(\mu, \mu_0)}S_R(L \to \partial_{\omega_{S_R}}) \qty[\frac{4\mu_0^2}{Q^2}\nu^2]^{\omega_{S_R}(\mu, \mu_0)}.
+		\cL\qty{S_R} = e^{K_{S_R}(\mu, \mu_0)}S_R(L \to \partial_{\omega_{S_R}}) \qty[\frac{4\mu_0^2}{Q^2}\nu^2]^{\omega_{S_R}(\mu, \mu_0)}.
 	\end{equation}
 	Now, the Laplace transform commutes with derivatives, so we can use the relation \cite{frye_factorization_2016}
 	\begin{equation}
@@ -919,43 +934,31 @@
 		\boxed{S_R(\rho, \mu) = e^{K_{S_R}(\mu, \mu_0)}S_R(L \to \partial_{\omega_{S_R}}) \qty[\frac{4\mu_0^2}{Q^2}\frac{1}{\rho^2}]^{\omega_{S_R}(\mu, \mu_0)} \frac{1}{\rho} \qty\big[\Gamma\qty(-2\omega_{S_R}(\mu, \mu_0))]^{-1}.}
 	\end{equation}
 
-
-% \subsection{Execution}
-% 	The first step will be to take the $\log\mu$ derivative. Let us suggestively define
-% 	\begin{equation}
-% 	\begin{aligned}
-% 		\gamma_{\nc} &= -\frac{1}{2\pi^3}\Bigg[\pi \log 2 - \qty[\pi - \arcsec(1 + \sec\theta_g)]\log\cot\frac{\theta_g}{2} - \arcsec\qty(1 + \sec\theta_g) \log(2\cot\theta_g) \\
-% 			&\qquad\qquad - \frac{i}{4}\qty[\Li_2\qty(-e^{-2i\arcsec\qty(1 + \sec\theta_g)}) - \Li_2\qty(-e^{2i\arcsec\qty(1 + \sec\theta_g)})] \\
-% 			&\qquad\qquad+ \Theta\qty(\theta_g - \frac{\pi}{4})\Bigg[ \arccos\cot\theta_g \log(2\cot\theta_g) \\
-% 			&\hspace{5cm}+ \frac{i}{4}\qty[\Li_2\qty(-e^{-2i\arccos\cot\theta_g}) - \Li_2\qty(-e^{2i\arccos\cot\theta_g})] \Bigg]\Bigg],
-% 	\end{aligned}
-% 	\end{equation}
-% 	so that the transformed soft function is
-% 	\begin{equation}
-% 	\begin{aligned}
-% 		\cL\qty{S_R} &= \frac{1}{4\pi^3}\qty[-\frac{1}{\epsilon} + 2\log(\frac{Q}{2\nu}) - 2\log\mu - 2\epsilon\qty(\log^2\mu + \log\mu\log(\frac{4\nu^2}{Q^2}))] \qty[\frac{\pi}{2\epsilon} - 2\pi^3\gamma_{\nc}] + \cO(\epsilon^0) \\
-% 		&= -\frac{1}{8\pi^2\epsilon^2} + \frac{1}{4\pi^2\epsilon}\qty[\log(\frac{Q}{2\nu}) - \log\mu] \\
-% 			&\qquad\qquad- \gamma_{\nc}\qty(\log(\frac{Q}{2\nu}) - \log\mu) - \frac{1}{4\pi^2} \qty[\log^2\mu + \log\mu\log(\frac{4\nu^2}{Q^2})] + \cO(\epsilon^0).
-% 	\end{aligned}
-% 	\end{equation}
-% 	We can go ahead and drop the pole at $\epsilon = 0$, since the divergences must cancel in the end anyway {\color{red}\textbf{[is this the right justification?]}}. We are left with
-% 	\begin{equation}\label{eq:transformed soft dropped poles}
-% 	\begin{aligned}
-% 		\overline{\cL\qty{S_R}} &= - \gamma_{\nc}\qty(\log(\frac{Q}{2\nu}) - \log\mu) - \frac{1}{4\pi^2} \qty[\log^2\mu + \log\mu\log(\frac{4\nu^2}{Q^2})] + \cO(\epsilon^0) \\
-% 		&= \gamma_\nc \log(\frac{2\mu\nu}{Q}) - \frac{1}{4\pi^2} \qty[\log^2\mu + \log\mu\log(\frac{4\nu^2}{Q^2})] + \cO(\epsilon^0).
-% 	\end{aligned}
-% 	\end{equation}
-% 	Now taking the derivative with respect to $\log \mu$ is straightforward:
-% 	\begin{equation}
-% 	\begin{aligned}
-% 		\frac{\partial \overline{\cL\qty{S_R}}}{\partial \log \mu} &= \gamma_\nc - \frac{1}{4\pi^2}\log(\frac{4\mu^2\nu^2}{Q^2}) + \cO(\epsilon^1).
-% 	\end{aligned}
-% 	\end{equation}
-% 	Notice that this represents the full derivative to order $\epsilon^0$: any terms of order $\epsilon^0$ not represented in Eq.~\ref{eq:transformed soft dropped poles} are not associated with $\log \mu$. Then setting $\epsilon = 0$, we are left with
-% 	\begin{equation}
-% 		\frac{\partial \overline{\cL\qty{S_R}}}{\partial \log \mu} = \gamma_\nc - \frac{1}{2\pi^2}\log(\frac{2\mu\nu}{Q}).
-% 	\end{equation}
-% 	{\color{red}\textbf{[this does not appear to follow the renormalization equation\dots is it because the $S_R$ calculated up to here is not the function in the renormalization equation? Cf \cite{bell_automated_2015} section 5]}}
+\section{Finishing touches}
+	From Eq.~\ref{eq:soft function expanded}, ignoring the poles in $\epsilon$ (which must cancel) {\color{red}\textbf{[is it right to ignore the poles?]}}, the low-scale soft function in Laplace space through order $\alpha_s$ is
+	\begin{equation}
+		S_R(\nu, \mu) = 1 + \frac{\alpha_s C_F}{4\pi}\qty[\frac{8}{\pi}\log(\frac{2\mu\nu}{Q})f(\theta_g) + 4\log^2\qty(\frac{2\mu\nu}{Q})] + \cO(\alpha_s^2).
+	\end{equation}
+	The $1$ comes from the $\alpha_s^0$-order soft function (which is just a delta function in real space). Therefore, under the replacement $L \to \partial_{\omega_{S_R}}$, which takes {\color{red}\textbf{[is this right?]}}
+	\begin{equation}
+		\log(\frac{2\mu\nu}{Q}) \to \partial_{\omega_{S_R}},
+	\end{equation}
+	we have
+	\begin{equation}
+		S_R(L \to \partial_{\omega_{S_R}}) = 1 + \frac{\alpha_s C_F}{4\pi}\qty[\frac{8f(\theta_g)}{\pi}\,\partial_{\omega_{S_R}} + 4\partial^2_{\omega_{S_R}}] + \cO(\alpha_s^2).
+	\end{equation}
+	Then the soft function is
+	\begin{equation}
+		S_R(\rho, \mu) = e^{K_{S_R}(\mu, \mu_0)} \qty[1 + \frac{\alpha_s(\mu_0) C_F}{4\pi}\qty[\frac{8f(\theta_g)}{\pi}\,\partial_{\omega_{S_R}} + 4\partial^2_{\omega_{S_R}}]] \qty[\frac{4\mu_0^2}{Q^2}\frac{1}{\rho^2}]^{\omega_{S_R}(\mu, \mu_0)} \frac{1}{\rho} \frac{1}{\Gamma(-2\omega_{S_R}(\mu, \mu_0))}.
+	\end{equation}
+	If we set $\mu_0$ to the natural scale
+	\begin{equation}
+		\mu_0 = \frac{Q\rho}{2},
+	\end{equation}
+	then the function simplifies to
+	\begin{equation}
+		S_R(\rho, \mu) = e^{K_{S_R}(\mu, Q\rho /2)} \qty[1 + \frac{\alpha_s(Q\rho/2) C_F}{4\pi}\qty[\frac{8f(\theta_g)}{\pi}\,\partial_{\omega_{S_R}} + 4\partial^2_{\omega_{S_R}}]] \frac{1}{\rho} \frac{1}{\Gamma(-2\omega_{S_R}(\mu, Q\rho/2))}.
+	\end{equation}
 
 
 \bibliographystyle{unsrt}

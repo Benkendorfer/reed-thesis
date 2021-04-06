@@ -1,0 +1,5 @@
+\standalonepreambles
+\subpreamble{sub/sub.tex}
+\usepackage {xr}\externaldocument [main-]{../main}
+\endsubpreamble
+\endstandalonepreambles

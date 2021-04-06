@@ -1,0 +1,47 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: leading_order.aux
+The style file: ../bsts/JHEP.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ../jet_substructure.bib
+You've used 7 entries,
+            2316 wiz_defined-function locations,
+            605 strings with 5294 characters,
+and the built_in function-call counts, 2347 in all, are:
+= -- 234
+> -- 71
+< -- 0
++ -- 22
+- -- 15
+* -- 229
+:= -- 319
+add.period$ -- 7
+call.type$ -- 7
+change.case$ -- 5
+chr.to.int$ -- 0
+cite$ -- 7
+duplicate$ -- 178
+empty$ -- 233
+format.name$ -- 45
+if$ -- 579
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 26
+newline$ -- 25
+num.names$ -- 7
+pop$ -- 24
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 54
+stack$ -- 0
+substring$ -- 113
+swap$ -- 32
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 26
+width$ -- 8
+write$ -- 73

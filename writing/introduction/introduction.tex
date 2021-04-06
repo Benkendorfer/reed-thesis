@@ -42,6 +42,9 @@
 \usepackage{physics}
 \usepackage{siunitx}
 \usepackage{xcolor}
+
+\usepackage{xr}
+\externaldocument[main-]{../thesis}
 % \usepackage{standalone}
 % \usepackage{natbib}
 % Comment out the natbib line above and uncomment the following two lines to use the new 
@@ -98,9 +101,77 @@
 
 	This thesis is situated firmly in the latter camp. We will be interested in precision theoretical predictions of a particular observable, called the `groomed jet mass,' measured in high-energy electron-positron collisions. More will be said on this topic in due time.
 
-\subsection{Particle physics experiments}
+
+\subsection{Collider experiments}
+	Although this thesis is theoretical in nature, it will be helpful to have some familiarity with the experiments whose outcomes we would like to predict. There is an enormous variety of experiments in particle physics, and it would be neither feasible nor helpful to discuss them all here. Instead, let us examine the two modern experiments most pertinent for our study to come. These experiments are called ATLAS (\textbf{A} large \textbf{T}oroidal \textbf{L}HC \textbf{A}pparatu\textbf{S}) and CMS (\textbf{C}ompact \textbf{M}uon \textbf{S}olenoid).\footnote{Acronyms in particle physics get very unwieldy very quickly. But look how much fun they are!} 
+
+	Both of these are located at the Large Hadron Collider (LHC) at CERN in Geneva, Switzerland. The name of this collider is appropriate. Beams of protons are accelerated to around 99.9998\% of the speed of light using a circular ring approximately \SI{27}{\kilo\metre} in circumference.\footnote{The ring straddles the French-Swiss border.} Two beams circulate in the collider at a time, one traveling clockwise, the other counterclockwise. These beams are then maneuvered into collisions at four points around the ring, each located in the center of a massive, purpose-built experiment (in addition to ATLAS and CMS, there are two other experiments called ALICE and LHCb). That is when the magic begins --- the collision of these protons at high energy produces, through fundamental interactions, a huge variety of particles. By observing these particles, we hope to learn something about the interactions that brought them into being.
+
+	\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\main/introduction/figures/atlas_high_res.jpg}
+		\caption{\label{fig:atlas diagram}Schematic of the ATLAS experiment. For a sense of scale, note the people depicted along the bottom. Image from CERN \cite{cern_ac_layout_1998}}
+	\end{center}
+	\end{figure}
+
+	ATLAS and CMS are designed as multi-purpose experiments which detect all the products of the proton-proton collisions (or at least, they try to detect them). A schematic of the ATLAS detector is displayed in Fig.~\ref{fig:atlas diagram}, and a schematic of CMS is displayed in Fig.~\ref{fig:cms diagram}. These detectors are built in layers surrounding the \textbf{interaction point}, with each layer serving a dedicated purpose. These layers can be summarized as follows \cite{larkoski_elementary_2019-1}:
+	\begin{enumerate}
+		\item In the center of each detector is the \textbf{beam pipe}. This is where collisions take place.
+
+		\item Immediately surrounding the beam pipe is a \textbf{tracking system}. The objective of this system is to track particles as they fly away from the interaction point. From these tracks, we can glean information about the energy, charge, and type of the particles.
+
+		\item Outside the tracking system is a \textbf{calorimetry system}. These are divided into two parts, the \textbf{electromagnetic calorimeter} and the \textbf{hadronic calorimeter}. The calorimetry system records information about the energy of particles. It works by absorbing this energy directly. The electromagnetic calorimeter is designed to most efficiently absorb particles which interact primarily through electromagnetism: electrons, photons, and the like. The hadronic calorimeter is designed to absorb hadrons like protons and neutrons.
+
+		\item High-energy muons often escape all inner layers of the detector. Their properties are measured using \textbf{muon detectors} which line the detector's exterior.
+	\end{enumerate}
+
+	\begin{figure}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\main/introduction/figures/cms_160312_02.pdf}
+		\caption{\label{fig:cms diagram}Schematic of the CMS experiment. Note the person on the far right for scale. Image from \cite{sakuma_detector_2014}}
+	\end{center}
+	\end{figure}
+
+	Using these systems, ATLAS and CMS are able to measure the outcome of more than a billion collision events per second \cite{atlas_outreach_atlas_2012}. This data gets stored and processed at data centers distributed globally.\footnote{The scale of ATLAS and CMS is absolutely mind-boggling.} Typical searches and measurements at these experiments then look for statistical signatures of interesting physics. This could be anything from an unexpected excess of events in a particular region of phase space (for a particle search) to the probability distribution of observing particular values of particle parameters (for Standard Model measurements). 
+
 
 \section{Thesis goals}
+	The objectives of this thesis can be divided into two categories: scientific and pedagogical. It will be necessary to properly balance the two. Our scientific focus will be rather technical, and too much emphasis on this would cloud the narrative and make it difficult to learn from the work. The other side of this coin is that, to achieve the pedagogical goals of the thesis, we will have to complete only a partial calculation. This is not a complete loss --- what we achieve will be meaningful in its own right, and we will not have to suffer unnecessary tedium. Nevertheless, I warn the reader in advance that the story will be left incomplete.
+
+	But enough digression --- what are the goals?
+
+\subsection{Scientific}
+	The primary scientific objective of the thesis will be to complete an all-orders calculation of the distribution of groomed heavy hemisphere mass in $e^+ e^- \to \text{jets}$ events, in the limit that the jet mass is approximately equal to the grooming cutoff. There are several moving parts here:
+	\begin{enumerate}
+		\item \textbf{$e^+ e^- \to \text{jets}$ events:} We are going to consider collider events in which electron and positrons annihilate to produce quarks and gluons. At high energies, because of the nature of the strong force, quarks and gluons manifest themselves in a detector as \textbf{jets}, or collimated sprays of hadronic particles. Note that these are not the type of collision events observed at the LHC, which is a proton-proton collider. Electron-positron annihilation is much easier to handle theoretically, and it turns out that we can generalize our results to $pp$ collisions without much difficulty.
+
+		\item \textbf{Heavy hemisphere mass:} We are interested in an observable called heavy hemisphere mass. To compute heavy hemisphere mass, one can divide a collision event into two hemispheres, measure the mass of both hemispheres, and then take the greater of the two masses.
+
+		\item \textbf{Groomed:} When measuring an observable like jet mass, modern experiments like ATLAS and CMS must take into account significant amounts of background radiation from simultaneous events in the detector. One common technique is to perform `jet grooming,' in which undesirable radiation is algorithmically removed from a jet. We will consider a particular grooming algorithm called the Modified Mass Drop Tagger (mMDT) \cite{dasgupta_towards_2013}, in which radiation with energy below some threshold is ignored. Such grooming can significantly alter the distribution of an observable. While observables like jet mass are well understood in the absence of grooming, understanding the effect of grooming on such observables is an active area of research.
+
+		\item \textbf{The limit:} Jets are a phenomenon of the strong force, and the theory of the strong force is rather unwieldy. It is therefore difficult to accurately predict an entire observable distribution with only one calculation. While the distribution of groomed heavy hemisphere mass is well understood in the low-mass limit \cite{kardos_groomed_2020,kardos_two-_2020,frye_factorization_2016} and in the high-mass regime \cite{kardos_soft-drop_2018}, little study has been performed in the regime where the mass is approximately equal to the mMDT energy cutoff. Nevertheless, interesting physics occurs in this region --- whereas events of interest all rely on the production of two back-to-back quarks, this region is the one in which a third (gluon) emission just begins to be resolved above the threshold. Thus, this region is our focus.
+
+		\item \textbf{Calculation:} Just as we must perform calculations in particular limits to work with the strong force, so we must also perform calculations perturbatively, as a series expansion in the strong coupling constant $\alpha_s$. That is, if we want to compute an observable $\omega$, it is not usually feasible\footnote{At least with current theoretical techniques} to do so with perfect precision. Instead, we can expand $\omega$ in $\alpha_s$,
+		\begin{equation}
+			\omega(\alpha_s) = \omega_0 + \omega_1 \alpha_s + \omega_2 \alpha_s^2 + \dots = \sum_{n = 0}^\infty \omega_n \alpha_s^n.
+		\end{equation}
+		Then, to compute $\omega$ to a particular desired accuracy, we can simply compute the coefficients $\omega_i$ up to a particular order in $\alpha_s$. Unfortunately, $\alpha_s$ is not a particularly small quantity, taking a value of order $0.1$.\footnote{The strong coupling constant is not actually a constant\dots it changes with the energy of observation. This process is called the \textbf{running} of the strong coupling \cite{larkoski_elementary_2019-1}. At the mass of the $Z$ boson, $\alpha_s(m_Z) = 0.1179(10)$ \cite{particle_data_group_review_2020}.} This means it often takes several terms to obtain a reasonable degree of accuracy.
+
+		\item \textbf{All-orders:} That said, we are aiming to achieve an all-orders calculation of the groomed heavy hemisphere mass. This does \textit{not} mean that we will determine the distribution to infinite precision (i.e., infinite order in $\alpha_s$). Instead, it means that we will derive an expression which can be used to push to \textit{arbitrary accuracy} in $\alpha_s$, given the proper accuracy of inputs (and the proper degree of mathematical sophistication). Thus, by an `all-orders calculation,' we mean that we will develop a \textit{framework} for achieving precision results.
+	\end{enumerate}
+	A more complete development of these foundational concepts will be provided in Chapter \ref{main-test}.
+
+
+\subsection{Pedagogical}
+	The primary pedagogical goal of this thesis is to understand the inner workings of a particular class of precision calculations in modern high-energy physics. The scientific objectives described above require a set of advanced theoretical tools which are interesting in their own right, but difficult to understand except through examples and context. Such tools include:
+	\begin{enumerate}
+		\item \textbf{Dimensional regularization:} There will be times when we must evaluate an integral which diverges when computed in the usual 4 dimensions (3 spatial dimensions and one temporal). We will get around this problem by performing such calculations in $d = 4 - 2\epsilon$ dimensions for some small $\epsilon$ \cite{schwartz_quantum_2014}. The result will still diverge if we send $\epsilon \to 0$, but operating in this way will allow us to see the divergences explicitly, and cancel them as appropriate.
+
+		\item \textbf{Resummation:} A na\"ive series expansion of the distribution which we want to compute is plagued by corrections that take the form of logarithms of ratios of differing energy scales (e.g., the energy scale of a jet versus the energy scale of background radiation). When these scales are sufficiently different, the logarithm of their ratio becomes very large. Resummation is the process of getting a theoretical handle on these logarithmic corrections {\color{red}\textbf{[TODO: ask Andrew if this is a correct interpretation]}} \cite{larkoski_elementary_2019-1}. The primary thrust of this thesis can be viewed, in a sense, as one large resummation calculation.
+
+		\item \textbf{Soft and collinear effective theory (SCET):} Quantum field theory (QFT) is a remarkable description of the (subatomic) universe, but for our purposes it is too much machinery. Instead of using the full theory, we will make use of a low-energy effective theory called `soft and collinear effective theory' (SCET). SCET is essentially a limiting case of full QFT, useful in the regime which we will occupy ourselves. As a simpler theory, SCET has some useful properties that we will exploit.
+	\end{enumerate}
+
 
 \section{Technical and notational conventions}
 	Before we embark, we must lay some mathematical ground rules. First, we hold Planck's constant and the speed of light to be equal to unity: $\hbar = c = 1$. It turns out that non-unity values of these quantities are, for our purposes, redundant; when converting a given quantity back to SI units, the appropriate factors of $c$ and $\hbar$ can be intuited from context. The result is that all quantities will be measured in units of energy. Physics where we will be working is at the \si{\giga\electronvolt} scale and higher. Therefore, to a high degree of accuracy, we will assume all particles to be massless.
@@ -150,6 +221,8 @@
 		p^2 = p \cdot p = E^2 = m^2.
 	\end{equation}
 	Thus, the square of a particle's four-momentum yields its squared mass. Recall now that we are assuming all particles to be massless; therefore, for any `on-shell' particle (that is, a particle that could exist on its own and not just in some quantum fluctuation), we see that $p^2 = 0$, and also that $E^2 = \vb{p} \cdot \vb{p}$.\footnote{This is not strictly an accurate proof of these properties, since massless particles move at the speed of light and one cannot boost into a light-like reference frame using Lorentz transformations. But the spirit of the argument is right, and the result is the same regardless.} This will greatly simplify our calculations later on.
+
+	With these details out of the way, let us proceed.
 
 \ifstandalone
 \bibliographystyle{../bsts/myJHEP} 
