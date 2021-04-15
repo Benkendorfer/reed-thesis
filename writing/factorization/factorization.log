@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  22 MAR 2021 17:04
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  14 APR 2021 21:58
  restricted system commands enabled.
 **factorization.tex
 (./factorization.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.162 seconds
+luaotfload | main : initialization completed in 0.126 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stand
 alone
@@ -675,18 +675,6 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-
-! LaTeX Error: Command \zcut undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 \renewcommand{\zcut}
-                       {\mathrm{z_{cut}}}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 (./factorization.aux)
 \openout1 = factorization.aux
 
@@ -788,7 +776,7 @@ Non-PDF special ignored!{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updm
 ap/pdftex.map}
 
 ] [2]
-<../factorization/figures/head_on_schematic.pdf, id=90, 434.63028pt x 651.94836p
+<../factorization/figures/head_on_schematic.pdf, id=86, 434.63028pt x 651.94836p
 t>
 File: ../factorization/figures/head_on_schematic.pdf Graphic file (type pdf)
 <use ../factorization/figures/head_on_schematic.pdf>
@@ -796,26 +784,26 @@ Package luatex.def Info: ../factorization/figures/head_on_schematic.pdf  used on
  input line 135.
 (luatex.def)             Requested size: 86.72267pt x 130.07896pt.
  [3<../factorization/figures/head_on_schematic.pdf>]
-[4] [5] (./factorization.bbl [6])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
- [7
+[4] (./factorization.bbl [5] [6
 
-]
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
+ [7]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
  (./factorization.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 232.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
 Package rerunfilecheck Info: File `factorization.out' has not changed.
-(rerunfilecheck)             Checksum: 9AB85D15D93AF56C5473D89FC7602442;1180.
+(rerunfilecheck)             Checksum: 5A5C226CFF752BB0A1C70BA228BD92BD;1003.
 )
 
 Here is how much of LuaTeX's memory you used:
- 24310 strings out of 493861
+ 24307 strings out of 493861
  100000,552014 words of node,token memory allocated
- 811 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 4 glue, 4 kern, 1 glyph, 63 attribute, 66 glue_spec
-, 63 attribute_list, 1 write, 1 pdf_action nodes
-   avail lists: 2:382,3:152,4:26,5:234,6:25,7:3160,8:84,9:350,10:15,11:210
+ 795 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 4 glue, 4 kern, 1 glyph, 59 attribute, 66 glue_spec
+, 59 attribute_list, 1 write, 1 pdf_action nodes
+   avail lists: 2:369,3:155,4:26,5:234,6:25,7:3160,8:84,9:296,10:15,11:210
  28318 multiletter control sequences out of 65536+600000
  99 fonts using 11011335 bytes
  52i,13n,71p,926b,785s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -841,10 +829,10 @@ ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on factorization.pdf (7 pages, 183401 bytes).
+Output written on factorization.pdf (7 pages, 182639 bytes).
 
-PDF statistics: 265 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 131072)
- 65 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 257 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 49 named destinations out of 1000 (max. 131072)
+ 57 words of extra memory for PDF output out of 10000 (max. 100000000)
 

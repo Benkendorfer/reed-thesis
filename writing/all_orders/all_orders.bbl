@@ -1,0 +1,38 @@
+
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{becher_introduction_2015-1}
+T.~Becher, A.~Broggio and A.~Ferroglia, \emph{Introduction to
+  {{Soft}}-{{Collinear Effective Theory}}}, vol.~896 of \emph{Lecture {{Notes}}
+  in {{Physics}}}, {Springer International Publishing}, {Cham} (2015),
+  \href{https://doi.org/10.1007/978-3-319-14848-9}{10.1007/978-3-319-14848-9}.
+
+\bibitem{schwartz_quantum_2014}
+M.D.~Schwartz, \emph{Quantum Field Theory and the Standard Model}, {Cambridge
+  University Press}, {New York} (2014).
+
+\bibitem{frye_factorization_2016}
+C.~Frye, A.J.~Larkoski, M.D.~Schwartz and K.~Yan, \emph{Factorization for
+  groomed jet substructure beyond the next-to-leading logarithm},
+  \href{https://doi.org/10.1007/JHEP07(2016)064}{\emph{J. High Energ. Phys.}
+  {\bfseries 2016} (2016) 64}.
+
+\bibitem{boas_mathematical_2006}
+M.L.~Boas, \emph{Mathematical Methods in the Physical Sciences}, {Wiley},
+  {Hoboken, NJ}, 3rd ed~ed. (2006).
+
+\bibitem{becher_factorization_2007}
+T.~Becher, M.~Neubert and B.D.~Pecjak, \emph{Factorization and
+  {{Momentum}}-{{Space Resummation}} in {{Deep}}-{{Inelastic Scattering}}},
+  \href{https://doi.org/10.1088/1126-6708/2007/01/076}{\emph{J. High Energy
+  Phys.} {\bfseries 2007} (2007) 076}
+  [\href{https://arxiv.org/abs/hep-ph/0607228}{{\ttfamily hep-ph/0607228}}].
+
+\bibitem{catani_infrared_2000}
+S.~Catani and M.~Grazzini, \emph{Infrared factorization of tree-level {{QCD}}
+  amplitudes at the next-to-next-to-leading order and beyond},
+  \href{https://doi.org/10.1016/S0550-3213(99)00778-6}{\emph{Nuclear Physics B}
+  {\bfseries 570} (2000) 287}
+  [\href{https://arxiv.org/abs/hep-ph/9908523}{{\ttfamily hep-ph/9908523}}].
+
+\end{thebibliography}\endgroup

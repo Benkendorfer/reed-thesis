@@ -395,6 +395,13 @@ INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generi
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmromanslant12-regular.luc
 INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
+INPUT ../leading_order/figures/approximation_small_zcut_0.01.pdf
+INPUT ../leading_order/figures/approximation_small_zcut_0.01.pdf
+INPUT ../leading_order/figures/approximation_small_zcut_0.01.pdf
+INPUT ../leading_order/figures/approximation_small_zcut_0.0001.pdf
+INPUT ../leading_order/figures/approximation_small_zcut_0.0001.pdf
+INPUT ../leading_order/figures/approximation_small_zcut_0.0001.pdf
 INPUT ./leading_order.bbl
 INPUT ./leading_order.bbl
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc

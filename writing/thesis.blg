@@ -4,44 +4,44 @@ The top-level auxiliary file: thesis.aux
 The style file: bsts/myJHEP.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: jet_substructure.bib
-You've used 24 entries,
+You've used 27 entries,
             2314 wiz_defined-function locations,
-            726 strings with 9602 characters,
-and the built_in function-call counts, 9111 in all, are:
-= -- 945
-> -- 264
+            751 strings with 10309 characters,
+and the built_in function-call counts, 10248 in all, are:
+= -- 1059
+> -- 297
 < -- 0
-+ -- 81
-- -- 57
-* -- 820
-:= -- 1174
-add.period$ -- 24
-call.type$ -- 24
-change.case$ -- 21
++ -- 91
+- -- 64
+* -- 928
+:= -- 1312
+add.period$ -- 27
+call.type$ -- 27
+change.case$ -- 23
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 684
-empty$ -- 871
-format.name$ -- 171
-if$ -- 2299
+cite$ -- 27
+duplicate$ -- 783
+empty$ -- 990
+format.name$ -- 192
+if$ -- 2580
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 81
-newline$ -- 76
-num.names$ -- 24
-pop$ -- 92
+int.to.str$ -- 27
+missing$ -- 91
+newline$ -- 85
+num.names$ -- 27
+pop$ -- 109
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 293
+skip$ -- 314
 stack$ -- 0
-substring$ -- 537
-swap$ -- 152
+substring$ -- 612
+swap$ -- 163
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 106
-width$ -- 26
-write$ -- 240
+while$ -- 118
+width$ -- 29
+write$ -- 272

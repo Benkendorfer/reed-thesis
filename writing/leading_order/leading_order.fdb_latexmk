@@ -1,14 +1,17 @@
 # Fdb version 3
-["bibtex leading_order"] 1617686340 "leading_order.aux" "leading_order.bbl" "leading_order" 1617686483
+["bibtex leading_order"] 1618253301 "leading_order.aux" "leading_order.bbl" "leading_order" 1618253304
   "../bsts/JHEP.bst" 1616456312 20428 4525092f01ae6c589c5ebcc5d39fe653 ""
-  "../jet_substructure.bib" 1617322281 93205 b66aa24f48e2619f80288ec892e38ed8 ""
-  "leading_order.aux" 1617686483 3419 75e87adff0acba7bd3715c0ffdd91104 "lualatex"
+  "../jet_substructure.bib" 1617853419 94849 1613f53096b847663efb1ea7d1e62c47 ""
+  "leading_order.aux" 1618253303 4139 7d891fbfb254892bc4dba9dd07cb2782 "lualatex"
   (generated)
   "leading_order.bbl"
   "leading_order.blg"
-["lualatex"] 1617686480 "leading_order.tex" "leading_order.pdf" "leading_order" 1617686483
+["lualatex"] 1618253301 "leading_order.tex" "leading_order.pdf" "leading_order" 1618253304
+  "../leading_order/figures/approximation_small_zcut_0.0001.pdf" 1618252003 123782 846b44be50887e4afaa22ed895964d6c ""
+  "../leading_order/figures/approximation_small_zcut_0.01.pdf" 1618251964 87482 6b8dc0ec8d427f96e475b2c6a6b4aed4 ""
   "../reedthesis.cls" 1383591362 8293 480a01b2533a1585368760477c470aa0 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc" 1578089393 77605 7e7fca2819f97a8cad1742ec392b3c13 ""
+  "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc" 1578167051 132153 e7fa8b11b7f6a785da3d3a24d622a3e1 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1578167050 123160 07b01c97fb3dfb55a9303e4e62ca726f ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1578088225 124128 a9660d29d58fde0161397418fef1dfe6 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc" 1578088225 131060 99ff9ae82052dd1abb7e28d118ca7de7 ""
@@ -19,6 +22,7 @@
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1580168458 123967 57b70db54ced14932f52c5185614c3e5 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmromanslant12-regular.luc" 1612227379 125052 c97150538b27307107aa8c85aeb1c8af ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.otf" 1255129361 63012 5db69ad3c177ae338e5504d80d9e9eb6 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1255129361 118828 4d461c73423fe2666dad2ff0dfc3ca68 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf" 1255129361 111536 ae9d1b331000d544f47e5223081b7b54 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf" 1255129361 110496 b9c8767d4cc3bf3f4b21f676bf89aa78 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf" 1255129361 117732 558aeb4ada25b652cc2e9bcf0771e962 ""
@@ -255,12 +259,12 @@
   "/usr/local/texlive/2017/texmf-dist/tex/luatex/luaotfload/fontloader-basics-gen.lua" 1547850999 12695 9a740c440e62da9b31d1d097257a1869 ""
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1575873454 4693480 8353df0835313a2d202e2f489241f4ef ""
   "/usr/local/texlive/2017/texmf-var/web2c/luatex/lualatex.fmt" 1575873557 1399169 069afea70d38dea9ddb6c86bc40f5b67 ""
-  "leading_order.aux" 1617686483 3419 75e87adff0acba7bd3715c0ffdd91104 "lualatex"
-  "leading_order.bbl" 1617686340 1950 a39870bce8940c0ec229af24a3b09c36 "bibtex leading_order"
-  "leading_order.out" 1617686483 1036 6845310c81d7ab587220ec1ffa825513 "lualatex"
-  "leading_order.tex" 1617686480 25793 35ff54c98b34e0abb554c94f9f4671ef ""
+  "leading_order.aux" 1618253303 4139 7d891fbfb254892bc4dba9dd07cb2782 "lualatex"
+  "leading_order.bbl" 1618253301 2282 ce13b653cbfcc0a971ce836118e0392c "bibtex leading_order"
+  "leading_order.out" 1618253303 1036 6845310c81d7ab587220ec1ffa825513 "lualatex"
+  "leading_order.tex" 1618253297 33513 0db775d87caeec74c1cb9fddcdb527cc ""
   (generated)
-  "leading_order.aux"
   "leading_order.log"
-  "leading_order.pdf"
   "leading_order.out"
+  "leading_order.aux"
+  "leading_order.pdf"

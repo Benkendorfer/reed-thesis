@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  5 APR 2021 22:21
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  12 APR 2021 11:48
  restricted system commands enabled.
 **leading_order.tex
 (./leading_order.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.142 seconds
+luaotfload | main : initialization completed in 0.123 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/standalone/standalone.cls
 Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stand
 alone
@@ -1048,11 +1048,7 @@ File: pgflibrarygraphdrawing.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 \pgf@gd@postkind@box=\box77
 ))
 (/usr/local/texlive/2017/texmf-dist/tex/latex/tikz-feynman/tikzfeynman.keys.cod
-e.tex))) (./leading_order.aux
-
-LaTeX Warning: Label `eq:soft cross section integral' multiply defined.
-
-)
+e.tex))) (./leading_order.aux)
 \openout1 = leading_order.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -1073,7 +1069,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 69.
 LaTeX Font Info:    ... okay on input line 69.
- (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count320
 \scratchdimen=\dimen295
@@ -1156,57 +1153,76 @@ Non-PDF special ignored!
 Non-PDF special ignored!{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updm
 ap/pdftex.map}
 
-] [2] [3] [4] [5] [6] [7] [8] [9] (./leading_order.bbl [10])
-[11
+] [2] [3] [4] [5] [6] [7] [8] [9] [10]
+<../leading_order/figures/approximation_small_zcut_0.01.pdf, id=231, 375.4025pt 
+x 190.7125pt>
+File: ../leading_order/figures/approximation_small_zcut_0.01.pdf Graphic file (t
+ype pdf)
+<use ../leading_order/figures/approximation_small_zcut_0.01.pdf>
+Package luatex.def Info: ../leading_order/figures/approximation_small_zcut_0.01.
+pdf  used on input line 484.
+(luatex.def)             Requested size: 390.25534pt x 198.26938pt.
+<../leading_order/figures/approximation_small_zcut_0.0001.pdf, id=232, 375.4025p
+t x 190.7125pt>
+File: ../leading_order/figures/approximation_small_zcut_0.0001.pdf Graphic file 
+(type pdf)
+<use ../leading_order/figures/approximation_small_zcut_0.0001.pdf>
+Package luatex.def Info: ../leading_order/figures/approximation_small_zcut_0.000
+1.pdf  used on input line 485.
+(luatex.def)             Requested size: 390.25534pt x 198.26938pt.
+ [11<../leading_order/figures/approximation_small_zcut_0.01.pdf>]
+Overfull \hbox (37.62854pt too wide) detected at line 499
+[][][]
+ []
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 447.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 447.
+[12<../leading_order/figures/approximation_small_zcut_0.0001.pdf>]
+(./leading_order.bbl [13] [14
+
+]) [15]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 526.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 526.
  (./leading_order.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 447.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 447.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 526.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 526.
 Package rerunfilecheck Info: File `leading_order.out' has not changed.
 (rerunfilecheck)             Checksum: 6845310C81D7AB587220EC1FFA825513;1036.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
 )
 
 Here is how much of LuaTeX's memory you used:
- 38527 strings out of 493861
+ 38573 strings out of 493861
  100000,953878 words of node,token memory allocated
- 1157 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 7 glue, 4 kern, 1 glyph, 142 attribute, 66 glue_spe
-c, 142 attribute_list, 2 write, 2 pdf_action nodes
-   avail lists: 1:8,2:1621,3:457,4:30,5:287,6:26,7:3018,8:107,9:737,10:16,11:145
+ 1258 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 10 glue, 4 kern, 1 glyph, 162 attribute, 66 glue_sp
+ec, 162 attribute_list, 2 write, 2 pdf_action nodes
+   avail lists: 1:8,2:1581,3:458,4:30,5:334,6:26,7:3149,8:108,9:893,10:16,11:152
 
- 41958 multiletter control sequences out of 65536+600000
- 93 fonts using 10633095 bytes
+ 41974 multiletter control sequences out of 65536+600000
+ 94 fonts using 10764791 bytes
  67i,14n,100p,873b,1804s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.ot
-f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmromanslant12-re
-gular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10
--regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroma
-n7-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmro
-man8-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lm
-roman12-bold.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lm
-roman12-italic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/
-lmroman12-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.p
-fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
-ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on leading_order.pdf (11 pages, 187850 bytes).
+f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.
+otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmromanslant12-
+regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman
+10-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmro
+man7-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lm
+roman8-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/
+lmroman12-bold.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/
+lmroman12-italic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/l
+m/lmroman12-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on leading_order.pdf (15 pages, 374212 bytes).
 
-PDF statistics: 326 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
- 103 named destinations out of 1000 (max. 131072)
+PDF statistics: 792 PDF objects out of 1000 (max. 8388607)
+ 597 compressed objects within 6 object streams
+ 120 named destinations out of 1000 (max. 131072)
  88 words of extra memory for PDF output out of 10000 (max. 100000000)
 

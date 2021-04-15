@@ -125,6 +125,13 @@ A.J.~Larkoski, \emph{Improving the {{Understanding}} of {{Jet Grooming}} in
   {{Perturbation Theory}}}, {\emph{arXiv:2006.14680 [hep-ex, physics:hep-ph]}
   (2020) } [\href{https://arxiv.org/abs/2006.14680}{{\ttfamily 2006.14680}}].
 
+\bibitem{ellis_qcd_1996}
+R.K.~Ellis, W.J.~Stirling and B.R.~Webber, \emph{{{QCD}} and {{Collider
+  Physics}}}, Cambridge {{Monographs}} on {{Particle Physics}}, {{Nuclear
+  Physics}} and {{Cosmology}}, {Cambridge University Press}, {Cambridge}
+  (1996),
+  \href{https://doi.org/10.1017/CBO9780511628788}{10.1017/CBO9780511628788}.
+
 \bibitem{chien_resummation_2010}
 Y.-T.~Chien and M.D.~Schwartz, \emph{Resummation of heavy jet mass and
   comparison to {{LEP}} data},
@@ -136,5 +143,16 @@ S.D.~Ellis, C.K.~Vermilion, J.R.~Walsh, A.~Hornig and C.~Lee, \emph{Jet shapes
   and jet algorithms in {{SCET}}},
   \href{https://doi.org/10.1007/JHEP11(2010)101}{\emph{J. High Energ. Phys.}
   {\bfseries 2010} (2010) 101}.
+
+\bibitem{boas_mathematical_2006}
+M.L.~Boas, \emph{Mathematical Methods in the Physical Sciences}, {Wiley},
+  {Hoboken, NJ}, 3rd ed~ed. (2006).
+
+\bibitem{becher_factorization_2007}
+T.~Becher, M.~Neubert and B.D.~Pecjak, \emph{Factorization and
+  {{Momentum}}-{{Space Resummation}} in {{Deep}}-{{Inelastic Scattering}}},
+  \href{https://doi.org/10.1088/1126-6708/2007/01/076}{\emph{J. High Energy
+  Phys.} {\bfseries 2007} (2007) 076}
+  [\href{https://arxiv.org/abs/hep-ph/0607228}{{\ttfamily hep-ph/0607228}}].
 
 \end{thebibliography}\endgroup

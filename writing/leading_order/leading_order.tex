@@ -95,7 +95,7 @@
 
 		\item The \textbf{collinear region}, in which the gluon is emitted collinear to the quark or antiquark.
 
-		\item The \textbf{soft-collinear region}, in which the gluon is both low-energy and collinear to the quark or antiquark.
+		\item The \textbf{soft-collinear region}, in which the gluon is both low-energy and collinear to the quark or antiquark. This region is covered by both the soft and the collinear calculations, so we must subtract it away to avoid double-counting.
 	\end{enumerate}
 	If we label these cross sections $\sigma_\text{soft}$, $\sigma_\text{collinear}$, and $\sigma_\text{soft-collinear}$, respectively, then the full cross distribution will be
 	\begin{equation}
@@ -227,19 +227,19 @@
 	\end{equation}
 	As a final step, we can resolve this delta function:
 	\begin{equation}
-		\delta(k^+ k^- - k_\perp^2) = \frac{1}{2\sqrt{k^+ k^-}}\,\delta\qty(k_\perp - \sqrt{k^+ k^-}).
+		\delta(k^+ k^- - k_\perp^2) = \frac{1}{\sqrt{k^+ k^-}}\,\delta\qty(k_\perp - \sqrt{k^+ k^-}).
 	\end{equation}
 	Then integrating over $k_\perp$ yields
 	\begin{equation}
-		\int dk_\perp \frac{k_\perp^{d-3}}{2\sqrt{k^+ k^-}}\,\delta\qty(k_\perp - \sqrt{k^+ k^-}) = \frac{1}{2} \qty(k^+ k^-)^{(d-4)/2}.
+		\int dk_\perp \frac{k_\perp^{d-3}}{2\sqrt{k^+ k^-}}\,\delta\qty(k_\perp - \sqrt{k^+ k^-}) = \qty(k^+ k^-)^{(d-4)/2}.
 	\end{equation}
 	Putting everything together, inserting $d = 4 - 2\epsilon$, and simplifying, we are left with
 	\begin{equation}
-		d\LIPS = \frac{(4\pi)^{\epsilon}}{\Gamma(1-\epsilon)(4\pi)^2}\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \Theta(k^+ + k^-).
+		d\LIPS = \frac{(4\pi)^{\epsilon}}{\Gamma(1-\epsilon)8\pi^2}\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \Theta(k^+ + k^-).
 	\end{equation}
 	Notice that a factor of $(k^+ k^-)^\epsilon$ has been introduced --- this is what will help us capture divergences as we work and cancel them at the end. Finally, we will work using a convention known as \textbf{modified minimal subtraction}, under which we will throw away factors of $(4\pi)^\epsilon$ and set the Euler-Mascheroni constant to be $\gamma_E \to 0$ when it appears (this does not affect the final result, but will make calculations slightly less unwieldy). Under this scheme, we have
 	\begin{equation}\label{eq:soft phase space}
-		d\LIPS = \frac{1}{\Gamma(1-\epsilon)(4\pi)^2}\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \Theta(k^+ + k^-).
+		d\LIPS = \frac{1}{\Gamma(1-\epsilon)8\pi^2}\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \Theta(k^+ + k^-).
 	\end{equation}
 	as our final phase space element.
 
@@ -247,7 +247,7 @@
 	\begin{equation}\label{eq:soft cross section integral}
 	\boxed{
 	\begin{aligned}
-		\frac{1}{4\pi\alpha_s\sigma_0 C_F}\frac{d\sigma_{\text{soft}}}{d\rho} = \frac{4\mu^{2\epsilon}}{\Gamma(1-\epsilon)(4\pi)^2}\int &\frac{dk^+ dk^-}{(k^+ k^-)^{1+\epsilon}} \delta\qty(\rho - \frac{4k^+}{Q}) \Theta(k^+ + k^-) \\
+		\frac{1}{4\pi\alpha_s\sigma_0 C_F}\frac{d\sigma_{\text{soft}}}{d\rho} = \frac{\mu^{2\epsilon}}{\Gamma(1-\epsilon)2\pi^2}\int &\frac{dk^+ dk^-}{(k^+ k^-)^{1+\epsilon}} \delta\qty(\rho - \frac{4k^+}{Q}) \Theta(k^+ + k^-) \\
 		&\times \Theta\qty(k^+ + k^- - Q\,\zcut)\Theta\qty(k^- - k^+).
 	\end{aligned}
 	}
@@ -259,9 +259,9 @@
 		\delta\qty(\rho - \frac{4k^+}{Q}) = \frac{Q}{4}\delta\qty(k^+ - \frac{Q\rho}{4}).
 	\end{equation}
 	The integrating over $k^+$ yields
-	\begin{equation}\label{eq:soft cross section integral}
+	\begin{equation}
 	\begin{aligned}
-		\frac{1}{4\pi\alpha_s\sigma_0 C_F}\frac{d\sigma_{\text{soft}}}{d\rho} = \frac{4\mu^{2\epsilon}}{\Gamma(1-\epsilon)(4\pi)^2} \frac{1}{\rho} &\qty(\frac{4}{Q\rho})^{\epsilon} \int \frac{dk^- }{(k^-)^{1+\epsilon}}\Theta\qty(\frac{Q \rho}{4} + k^-)  \\
+		\frac{1}{4\pi\alpha_s\sigma_0 C_F}\frac{d\sigma_{\text{soft}}}{d\rho} = \frac{\mu^{2\epsilon}}{\Gamma(1-\epsilon)2\pi^2} \frac{1}{\rho} &\qty(\frac{4}{Q\rho})^{\epsilon} \int \frac{dk^- }{(k^-)^{1+\epsilon}}\Theta\qty(\frac{Q \rho}{4} + k^-)  \\
 		&\times \Theta\qty(\frac{Q\rho}{4} + k^- - Q\,\zcut)\Theta\qty(k^- - \frac{Q\rho}{4}).
 	\end{aligned}
 	\end{equation}
@@ -283,7 +283,7 @@
 	If we take $\epsilon > 0$, then these integrals yield a finite result:
 	\begin{equation}
 	\begin{aligned}
-		\frac{1}{4\pi\alpha_s\sigma_0 C_F}\frac{d\sigma_{\text{soft}}}{d\rho} = \frac{4\mu^{2\epsilon}}{\Gamma(1-\epsilon)(4\pi)^2} \frac{1}{\rho} &\qty(\frac{4}{Q\rho})^{\epsilon} \frac{1}{\epsilon}\Bigg[\Theta(\rho - 2\zcut)\qty(\frac{Q\rho}{4})^{-\epsilon} \\
+		\frac{1}{4\pi\alpha_s\sigma_0 C_F}\frac{d\sigma_{\text{soft}}}{d\rho} = \frac{\mu^{2\epsilon}}{\Gamma(1-\epsilon)2\pi^2} \frac{1}{\rho} &\qty(\frac{4}{Q\rho})^{\epsilon} \frac{1}{\epsilon}\Bigg[\Theta(\rho - 2\zcut)\qty(\frac{Q\rho}{4})^{-\epsilon} \\
 			&\hspace{1cm}+ \Theta(2\zcut - \rho)\qty(Q\qty(\zcut - \frac{\rho}{4}))^{-\epsilon}\Bigg].
 	\end{aligned}
 	\end{equation}
@@ -293,14 +293,14 @@
 	\begin{equation}\label{eq:soft result}
 	\boxed{
 	\begin{aligned}
-		\frac{1}{4\pi\alpha_s\sigma_0 C_F}\frac{d\sigma_{\text{soft}}}{d\rho} &= \frac{1}{4\pi^2\rho} \Bigg[\frac{1}{\epsilon} + \Theta(\rho - 2\zcut)2\log(\frac{4\mu}{Q\rho}) \\
+		\frac{1}{4\pi\alpha_s\sigma_0 C_F}\frac{d\sigma_{\text{soft}}}{d\rho} &= \frac{1}{2\pi^2\rho} \Bigg[\frac{1}{\epsilon} + \Theta(\rho - 2\zcut)2\log(\frac{4\mu}{Q\rho}) \\
 			&\quad+ \Theta(2\zcut - \rho)\qty[\log(\frac{4\mu^2}{Q \rho}) - \log(Q \zcut - \frac{Q\rho}{4})]\Bigg] + \cO(\epsilon).
 	\end{aligned}
 	}
 	\end{equation}
 	From this expansion, we see that the soft contribution to the cross section diverges as
 	\begin{equation}
-		\lim_{\epsilon \to 0}\frac{d\sigma_\text{soft}}{d\rho} \sim \frac{\alpha_s \sigma_0 C_F}{\pi\rho \epsilon}.
+		\lim_{\epsilon \to 0}\frac{d\sigma_\text{soft}}{d\rho} \sim \frac{2\alpha_s \sigma_0 C_F}{\pi\rho \epsilon}.
 	\end{equation}
 	Stop reading and appreciate this for a minute --- it is remarkable! By pushing our calculation out of the standard 4 dimensions, we are able to learn about structure that was inaccessible to us in our 4-dimensional perspective. 
 
@@ -371,26 +371,26 @@
 
 	In phase space coordinates, the matrix element for $e^+ e^- \to q \bar q g$ is \cite{larkoski_improving_2020}
 	\begin{equation}
-		\abs{\cM}^2 = 4\pi\alpha_s \sigma_0 C_F \frac{x_1^2 + x_2^2}{(1 - x_1)(1 - x_2)}.
+		\abs{\cM}^2 = \frac{\alpha_s \sigma_0 C_F}{2\pi} \frac{x_1^2 + x_2^2}{(1 - x_1)(1 - x_2)}.
 	\end{equation}
 	After performing the the change of variables discussed above and introducing the appropriate Jacobian factor, this reduces to
 	\begin{equation}
-		\abs{\cM}^2 = 4\pi\alpha_s \sigma_0 C_F \frac{1 + (1 - z)^2}{z\theta^2}.
+		\abs{\cM}^2 = \frac{\alpha_s \sigma_0 C_F}{2\pi} \frac{1 + (1 - z)^2}{z\theta^2}.
 	\end{equation}
 
-	Finally, we must sort out the phase space measure. In $d = 4 - 2\epsilon$ dimensions, the phase space integral with the matrix element is {\color{red}\textbf{[TODO: where does this come from? obtained from Andrew's notes but need to either derive or cite]}}
+	Finally, we must sort out the phase space measure. In $d = 4 - 2\epsilon$ dimensions, the phase space integral with the matrix element is {\color{red}\textbf{[TODO: where does this come from? obtained from Andrew's notes but need to either derive or cite \cite{ellis_qcd_1996}]}}
 	\begin{equation}
 	\begin{aligned}
-		\frac{4\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\sigma_{\text{collinear}} = \frac{1}{\sqrt{\pi}\,\Gamma(\frac{1}{2} - \epsilon)} &\qty(\frac{2\mu}{Q})^{2\epsilon} \int_0^1 dz \int_0^\infty d\theta^2 \int_0^{2\pi} d\phi \sin^{-2\epsilon}\phi  \\
+		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\sigma_{\text{collinear}} = \frac{2}{\sqrt{\pi}\,\Gamma(\frac{1}{2} - \epsilon)} &\qty(\frac{2\mu}{Q})^{2\epsilon} \int_0^1 dz \int_0^\infty d\theta^2 \int_0^{\pi} d\phi \sin^{-2\epsilon}\phi  \\
 			&\times \qty(\theta^2)^{-1-\epsilon} z^{-2\epsilon} (1 - z)^{-2\epsilon} \qty(\frac{1 + (1 - z)^2}{z} - \epsilon z).
 	\end{aligned}
 	\end{equation}
-	When we introduce the measurement and grooming terms of Eqs.~\ref{eq:collinear measurement term} and \ref{eq:collinear grooming term}, we find that the full differential cross section is
-	\begin{equation}
+	A factor of $2$ has been introduced to account for the possibility that the gluon might be collinear to either the quark or the antiquark {\color{red}\textbf{[TODO: check this]}}. When we introduce the measurement and grooming terms of Eqs.~\ref{eq:collinear measurement term} and \ref{eq:collinear grooming term}, we find that the full differential cross section is
+	\begin{equation}\label{eq:collinear integral}
 	\boxed{
 	\begin{aligned}
-		\frac{4\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho}\hspace{3.5cm} \\
-		= \frac{1}{\sqrt{\pi}\,\Gamma(\frac{1}{2} - \epsilon)} \qty(\frac{2\mu}{Q})^{2\epsilon} \int_0^1 dz &\int_0^\infty d\theta^2 \int_0^{2\pi} d\phi \sin^{-2\epsilon}\phi\,\qty(\theta^2)^{-1-\epsilon} \\
+		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho}\hspace{3.5cm} \\
+		= \frac{2}{\sqrt{\pi}\,\Gamma(\frac{1}{2} - \epsilon)} \qty(\frac{2\mu}{Q})^{2\epsilon} \int_0^1 dz &\int_0^\infty d\theta^2 \int_0^{\pi} d\phi \sin^{-2\epsilon}\phi\,\qty(\theta^2)^{-1-\epsilon} \\
 			&\times  z^{-2\epsilon} (1 - z)^{-2\epsilon} \qty(\frac{1 + (1 - z)^2}{z} - \epsilon z)\\
 			&\times \frac{1}{z(1 - z)}\delta\qty(\theta^2 - \frac{\rho}{z(1 - z)}) \\
 			&\times\Theta\qty(\min[z, 1 - z] - \zcut).
@@ -401,12 +401,12 @@
 \subsection{Calculation}
 	We can immediately perform the integrals in $\phi$,
 	\begin{equation}
-		\int_0^{2\pi} d\phi \sin^{-2\epsilon}\phi = \frac{\sqrt{\pi}\,\Gamma(\frac{1}{2} - \epsilon)}{\Gamma(1 - \epsilon)},
+		\int_0^{\pi} d\phi \sin^{-2\epsilon}\phi = \frac{\sqrt{\pi}\,\Gamma(\frac{1}{2} - \epsilon)}{\Gamma(1 - \epsilon)},
 	\end{equation}
 	and in $\theta^2$ to find
 	\begin{equation}
 	\begin{aligned}
-		\frac{4\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho} = \frac{1}{\Gamma(1 - \epsilon)} \qty(\frac{2\mu}{Q})^{2\epsilon} \frac{1}{\rho^{1+\epsilon}}\int_0^1 dz \,&\frac{1}{z^\epsilon(1 - z)^{\epsilon}}\qty(\frac{1 + (1 - z)^2}{z} - \epsilon z)\\
+		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho} = \frac{2}{\Gamma(1 - \epsilon)} \qty(\frac{2\mu}{Q})^{2\epsilon} \frac{1}{\rho^{1+\epsilon}}\int_0^1 dz \,&\frac{1}{z^\epsilon(1 - z)^{\epsilon}}\qty(\frac{1 + (1 - z)^2}{z} - \epsilon z)\\
 			&\times \Theta\qty(\min[z, 1 - z] - \zcut).
 	\end{aligned}
 	\end{equation}
@@ -421,23 +421,102 @@
 	The cross section becomes
 	\begin{equation}
 	\begin{aligned}
-		\frac{4\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho} = \frac{1}{\Gamma(1 - \epsilon)} \qty(\frac{2\mu}{Q})^{2\epsilon} \frac{1}{\rho^{1+\epsilon}}\int_{\zcut}^{1-\zcut} dz \,\frac{1}{z^\epsilon(1 - z)^{\epsilon}}\qty(\frac{1 + (1 - z)^2}{z} - \epsilon z).
+		\frac{4\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho} = \frac{2}{\Gamma(1 - \epsilon)} \qty(\frac{2\mu}{Q})^{2\epsilon} \frac{1}{\rho^{1+\epsilon}}\int_{\zcut}^{1-\zcut} dz \,\frac{1}{z^\epsilon(1 - z)^{\epsilon}}\qty(\frac{1 + (1 - z)^2}{z} - \epsilon z).
 	\end{aligned}
 	\end{equation}
 	This integral does not diverge in 4 dimensions, so we can simply set $\epsilon = 0$.\footnote{This is equivalent to computing the $\cO(\epsilon^0)$ term in the Taylor expansion.} Thus,
 	\begin{equation}
-		\frac{4\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho} = \frac{1}{\rho}\int_{\zcut}^{1-\zcut} dz \,\frac{1 + (1 - z)^2}{z} + \cO(\epsilon).
+		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho} = \frac{2}{\rho}\int_{\zcut}^{1-\zcut} dz \,\frac{1 + (1 - z)^2}{z} + \cO(\epsilon).
 	\end{equation}
 	This comes out to
 	\begin{equation}\label{eq:collinear result}
 	\boxed{
-		\frac{4\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho} = \frac{1}{\rho}\qty[-\frac{3}{2} + 3 \zcut + 2 \log(\frac{1-\zcut}{\zcut})]+ \cO(\epsilon).
+		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho} = \frac{2}{\rho}\qty[-\frac{3}{2} + 3 \zcut + 2 \log(\frac{1-\zcut}{\zcut})] + \cO(\epsilon).
 	}
 	\end{equation}
 
 \section{Soft-collinear gluon}
+	The last piece to compute is the soft-collinear limit. This can be achieved by starting from the collinear limit and taking $z \ll 1$. Thus, from Eq.~\ref{eq:collinear integral}, we have
+	\begin{equation}
+	\boxed{
+	\begin{aligned}
+		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{soft-collinear}}}{d\rho}\hspace{3.5cm} \\
+		= \frac{2}{\sqrt{\pi}\,\Gamma(\frac{1}{2} - \epsilon)} \qty(\frac{2\mu}{Q})^{2\epsilon} \int_0^\infty dz &\int_0^\infty d\theta^2 \int_0^{\pi} d\phi \sin^{-2\epsilon}\phi\,\qty(\theta^2)^{-1-\epsilon} \\
+			&\times  \frac{2}{z^{2+2\epsilon}} \delta\qty(\theta^2 - \frac{\rho}{z}) \Theta\qty(z - \zcut).
+	\end{aligned}
+	}
+	\end{equation}
+	The upper bound on $z$ has been replaced by $\infty$ because, in the $z \ll 1$ limit, the integral should not depend on the particular upper bound.\footnote{Another way to think about this is that there is in principle no \textit{a priori} upper bound on any variable of integration. We impose a bound according to the physical constraint that $0 < z < 1$. This could be represented in the integral as a term such as $\Theta(1 - z)$, but in the limit $z \ll 1$, we have $\Theta(1 - z) \approx 1$, so the upper bound vanishes.} These integrals can then be computed to find
+	\begin{equation}
+	\begin{aligned}
+		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{soft-collinear}}}{d\rho} = \frac{4}{\Gamma(1 - \epsilon)} \qty(\frac{2\mu}{Q})^{2\epsilon} \frac{1}{\rho^{1+\epsilon}} \frac{\zcut^{-\epsilon}}{\epsilon}.
+	\end{aligned}
+	\end{equation}
+	Performing a Laurent expansion in $\epsilon$ yields
+	\begin{equation}\label{eq:soft-collinear result}
+	\boxed{
+		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{soft-collinear}}}{d\rho} = \frac{4}{\rho}\qty[\frac{1}{\epsilon} + \log(\frac{4\mu^2}{Q^2 \rho \zcut})] + \cO(\epsilon).
+	}
+	\end{equation}
 
 \section{Putting it all together}
+	Now we can combine Eqs.~\ref{eq:soft result}, \ref{eq:collinear result}, and \ref{eq:soft-collinear result} to get a complete result. In particular, we find
+	\begin{equation}
+	\begin{aligned}
+		\frac{2\pi}{\alpha_s C_F}&\frac{\rho}{\sigma_0}\Bigg[\frac{d\sigma_{\text{soft}}}{d\rho} + \frac{d\sigma_{\text{collinear}}}{d\rho} - \frac{d\sigma_{\text{soft-collinear}}}{d\rho}\Bigg] \\
+		&= 4 \Bigg[\frac{1}{\epsilon} + \Theta(\rho - 2\zcut)2\log(\frac{4\mu}{Q\rho}) \\
+			&\qquad\qquad+ \Theta(2\zcut - \rho)\qty[\log(\frac{4\mu^2}{Q \rho}) - \log(Q \zcut - \frac{Q\rho}{4})]\Bigg] \\
+			&\qquad + 2\qty[-\frac{3}{2} + 3 \zcut + 2 \log(\frac{1-\zcut}{\zcut}) - \frac{2}{\epsilon} - 2\log(\frac{4\mu^2}{Q^2 \rho \zcut})] + \cO(\epsilon).
+	\end{aligned}
+	\end{equation}
+	Notice that the divergences in $\epsilon$ cancel! We are left with a function which does not diverge if we send $\epsilon \to 0$, which means we can simply return to 4 dimensions. Also notice that all factors of $\mu$ cancel each other out: we can pull a $\log(4\mu^2/Q^2\rho)$ out of the terms with a Heaviside function, which then cancels with the $-\log(4\mu^2/Q^2\rho)$ from the soft-collinear contribution.\footnote{Indeed, notice that logarithms of $\mu$ appear in conjunction with divergences in $\epsilon$. This is a general feature of our regularization scheme.} This is a nice consistency check, as $\mu$ is a completely arbitrary mass scale --- it would not make sense for the physical cross section to depend on an arbitrary constant! Thus, simplifying the expression and setting $\epsilon = 0$, we find that
+	\begin{equation}\label{eq:fixed order result}
+	\boxed{
+	\begin{aligned}
+		\frac{2\pi}{\alpha_s C_F}\frac{\rho}{\sigma_0}\frac{d\sigma}{d\rho} &= 4\Theta(\rho - 2\zcut)\log(\frac{4}{\rho}) - 4\Theta(2\zcut - \rho)\log(\zcut - \frac{\rho}{4}) \\
+		&\hspace{6cm} - 3 + 6\zcut + 4\log(1-\zcut).
+	\end{aligned}
+	}
+	\end{equation}
+
+	\begin{figure}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{\main/leading_order/figures/approximation_small_zcut_0.01.pdf}
+		\includegraphics[width=0.9\textwidth]{\main/leading_order/figures/approximation_small_zcut_0.0001.pdf}
+
+		\caption{\label{fig:fixed order approx}True (orange solid line) and approximated (blue dashed line) distribution of groomed heavy hemisphere mass in the limit $\rho \sim \zcut \ll 1$.}
+	\end{center}
+	\end{figure}
+
+	For this calculation, the true analytic distribution is known completely and can be used for comparison. From Ref.~\cite{larkoski_improving_2020}, we have
+	\begin{equation}
+	\begin{aligned}
+		\frac{2\pi}{\alpha_s C_F}\frac{1}{\sigma_0}\frac{d\sigma}{d\rho} &= \Theta\qty(\frac{3}{4}-\rho)\Theta(\rho - (2\zcut - \zcut^2))\Bigg[ -\frac{12(6-6\sqrt{1-\rho} + \rho(-8 + 5\sqrt{1- \rho} + 2\rho))}{\rho^3(1 - \rho)} \\
+		&\qquad- \frac{2(6 - 6 \sqrt{1 - \rho} - \rho(5 - 4\sqrt{1 - \rho}))}{\rho^2(1 - \rho)} \log(\frac{\rho}{2 + 2\sqrt{1 - \rho} - 3\rho}) \Bigg] \\
+		&+ \Theta(2\zcut - \zcut^2 - \rho)\Bigg[ \frac{12(1 - 2\zcut)(2 - 2\sqrt{1 - \rho} - \rho)^2}{\rho^3(2 - 2\sqrt{1 - \rho} - \rho(2 - \sqrt{1 - \rho}))} \\ 
+		&\hspace{-2cm}- \frac{2(6 -6 \sqrt{1 - \rho} - \rho(5 - 4\sqrt{1 - \rho}))}{\rho^2(1 - \rho)}\log(\frac{2 - 4\zcut(1 - \zcut - \sqrt{1 - \rho}) - 2\sqrt{1 - \rho} - \rho}{4\zcut(1 - \zcut) - \rho})\Bigg].
+	\end{aligned}
+	\end{equation}
+	The true result is plotted against the approximation in Fig.~\ref{fig:fixed order approx}. Notice that, as expected, the approximation gets better both as $\zcut$ becomes smaller and as $\rho$ moves closer to $\zcut$.
+
+	Now, from the true result, we can then take the limit $\rho \sim \zcut \ll 1$ explicitly to find
+	\begin{equation}
+	\begin{aligned}
+		\frac{2\pi}{\alpha_s C_F}\frac{1}{\sigma_0}\frac{d\sigma}{d\rho} &=\Theta(\rho - 2\zcut)\qty[-\frac{3}{\rho} + \frac{4}{\rho} \log(\frac{4}{\rho})] \\
+			&\hspace{3cm}+ \Theta(2\zcut - \rho)\qty[ -\frac{3}{\rho} - \frac{4}{\rho}\log(\zcut - \frac{\rho}{4})] \\
+		&= \Theta(\rho - 2\zcut)\frac{4}{\rho} \log(\frac{4}{\rho}) \\
+			&\hspace{3cm}- \Theta(2\zcut - \rho)\frac{4}{\rho}\log(\zcut - \frac{\rho}{4}) - \frac{3}{\rho}.
+	\end{aligned}
+	\end{equation}
+	Notice as well that taking the same limit in Eq.~\ref{eq:fixed order result} yields
+	\begin{equation}
+		\frac{2\pi}{\alpha_s C_F}\frac{\rho}{\sigma_0}\frac{d\sigma}{d\rho} = 4\Theta(\rho - 2\zcut)\log(\frac{4}{\rho}) - 4\Theta(2\zcut - \rho)\log(\zcut - \frac{\rho}{4}) - 3,
+	\end{equation}
+	which is the same result!
+	
+	Thus, we see that this method works. To compute the distribution in a given limit, it suffices for us to consider only `interesting' regions of phase space, compute their contribution to the distribution, and then combine these contributions in the appropriate manner. The same principle will be applied as we work towards an all-orders calculation. 
+
+	There, too, we will begin by identifying the singular regions of phase space and the dominant physical contributions in each region. We will need to resum the contributions in each region in order to manage the effects of imposed scales to all orders, but this is simply an additional step in the calculation. Moreover, instead of a simple sum, we will combine functions by convolving them, since we need to appropriately capture terms at every order in $\alpha_s$ hidden in each function. Despite these complications, however, the core idea is the same, and this simple example provides a general road map as we push forward.\footnote{We could think of this as a map which only contains the location of the interstate highways.}
 
 
 \ifstandalone
