@@ -8,6 +8,7 @@
 \providecommand{\cL}{\mathcal{L}}
 \providecommand{\cN}{\mathcal{N}}
 \providecommand{\cM}{\mathcal{M}}
+\providecommand{\cO}{\mathcal{O}}
 
 \providecommand{\su}{\mathfrak{su}}
 
@@ -213,11 +214,11 @@
 	\end{enumerate}
 	The intuition behind the mMDT groomer is that it removes particles whose energy fraction falls below $\zcut$, unless the particles are at a smaller angle than one which passed the cut. Most stray background radiation will appear with low energy at a wide angle relative to the core of the jet --- an mMDT groomer removes this radiation.
 
-	Of course, we also run the risk that some of the radiation from the jet itself will be cut by the groomer. That is why we need to calculate the jet mass distribution in the presence of mMDT grooming, since the groomer will modify the shape of the ungroomed distribution. This, then is the goal:\\
+	Of course, we also run the risk that some of the radiation from the jet itself will be cut by the groomer. That is why we need to calculate the jet mass distribution in the presence of mMDT grooming, since the groomer will modify the shape of the ungroomed distribution. High-precision calculations have already been performed in the limit $\rho \ll \zcut \ll 1$ \cite{frye_factorization_2016,kardos_groomed_2020,kardos_two-_2020}, as well as at fixed order (which is accurate for large $\rho$) \cite{kardos_soft-drop_2018}. As of yet, the distribution is not well-understood in the limit $\rho \sim \zcut \ll 1$, though this is an important region physically, as the relative size of the two scales is no longer dramatically different \cite{larkoski_improving_2020}. This, then is the goal:\\
 
 	\noindent\fbox{%
     	\parbox{\textwidth}{%
-        	We wish to calculate the differential cross section $d\sigma/d\rho$, with $\rho$ defined by Eq.~\ref{technical-eq:rho definition}, in $e^+ e^- \to \text{jets}$ events in the presence of mMDT grooming.
+        	We wish to calculate the differential cross section $d\sigma/d\rho$, with $\rho$ defined by Eq.~\ref{technical-eq:rho definition}, in $e^+ e^- \to \text{jets}$ events in the presence of mMDT grooming. We will work in the limit $\rho \sim \zcut \ll 1$.
     	}%
 	}
 	
@@ -232,8 +233,42 @@
 
 \section{Calculational techniques}
 \subsection{Soft-Collinear Effective Theory (SCET)}
+	The machinery of quantum field theory is, in some sense, too powerful. While the theory is extremely effective at predicting observations in nature, it is also unwieldy. Getting from the QCD Lagrangian of Eq.~\ref{technical-eq:QCD Lagrangian} to a precision calculation of the groomed heavy hemisphere mass would be simultaneously very difficult and not very enlightening.
+
+	Luckily for us, QCD simplifies in the low-energy, or \textbf{soft}, limit in which we will be working (since we are taking $\rho \ll 1$). In this limit, we can replace QCD with a low-energy effective theory called Soft-Collinear Effective Theory (SCET) \cite{bauer_summing_2000,bauer_effective_2001,bauer_invariant_2001,bauer_soft-collinear_2002,beneke_soft-collinear_2002,beneke_multipole-expanded_2003,hill_spectator_2003}. The precise details of SCET are unimportant for our purposes --- for more information, see Refs.~\cite{schwartz_quantum_2014} or \cite{becher_introduction_2015-1}.
+
+	What we will use is the framework which SCET provides for factorizing cross sections. In general, the differential cross section for an $e^+ e^- \to \text{3 jets}$ event takes on a factorized form like \cite{ellis_jet_2010,frye_factorization_2016}
+	\begin{equation}
+		\frac{d^2\sigma}{d\rho_1 d\rho_2} = H(Q^2) \otimes S(\rho_1, \rho_2, \zcut) \otimes J_q(\rho_1) \otimes J_g(\rho_1, \zcut) \otimes J_{\bar q}(\rho_2),
+	\end{equation} 
+	where here $\rho_1$ and $\rho_2$ are the normalized masses of the two hemispheres. $H(Q^2)$ is a hard function describing $e^+ e^- \to \text{jets}$; $S(\rho_1, \rho_2, \zcut)$ is a function describing soft radiation; and the $J_i$ are jet functions describing the production of collinear radiation in a jet about particle $i$ (in this case, $i$ could be a quark $q$, antiquark $\bar q$, or gluon $g$).
+
+	This factorization will be key for developing an all-orders calculation of the groomed heavy hemisphere mass, as it enables us to resum large logarithms. Much more on the factorization theorem will be discussed in Chapter \ref{chap:factorization}.
 
 \subsection{Dimensional regularization}
+	Beyond the framework of SCET, we will work using a technique called \textbf{dimensional regularization}.\footnote{Developed by 't Hooft and Veltman in the 1970s \cite{t_hooft_regularization_1972}} At its heart, dimensional regularization is a scheme for analytically isolating the divergences in divergent integrals. 
+
+	This is done by decreasing the dimension of the calculation by some small amount $\epsilon > 0$ --- we will work in $d = 4 - 2\epsilon$ dimensions instead of the usual $4$. The effect is to siphon divergences in the original integral into poles at $\epsilon = 0$. The result is still divergent if we send $\epsilon \to 0$, but now it is contained in a single term which can be manipulated and possibly removed. Effectively, dimensional regularization provides one answer the question: ``How can we, in a self-consistent way, remove divergences which cancel?''
+
+	As an example, take the integral
+	\begin{equation}
+		\int_1^\infty \frac{dx}{x}.
+	\end{equation}
+	This integral is, of course, divergent in one dimension. But now suppose we choose to work in $d = 1 - \epsilon$ dimensions. The integral becomes (ignoring the normalization)
+	\begin{equation}
+		\int_1^\infty \frac{dx}{x} \to \mu^\epsilon \int_1^\infty \frac{dx}{x^{1 + \epsilon}}
+	\end{equation}
+	for some arbitrary scale $\mu$. The scale $\mu$ is necessary because the original integral is dimensionless, so the dimension carried by the new $x^{-\epsilon}$ term must be eliminated. Now performing the integral yields
+	\begin{equation}
+		\mu^\epsilon \int_1^\infty \frac{dx}{x^{1 + \epsilon}} = \frac{\mu^\epsilon}{\epsilon} = \frac{1}{\epsilon} + \log \mu + \epsilon \log^2 \mu + \cO(\epsilon^2).
+	\end{equation}
+	Notice that the divergence has emerged as single term: $1/\epsilon$. Now if there were another term in the calculation which, when expanded in $\epsilon$, carried a $-1/\epsilon$, the divergences would manifestly cancel. We could then safely take $\epsilon \to 0$ with a finite result at the end.
+
+	Of course, the examples which we will see in practice are a little more complicated, but the basic strategy is the same. Our first encounter with dimensional regularization in the wild will take place in Chapter \ref{chap:leading order}.
 
 \subsection{Resummation}
+	The last piece of technical machinery we will use is the technique of \textbf{resummation}. As we have previously mentioned, the presence of multiple energy scales in certain calculations in QCD results in the emergence of logarithms of ratios of those energy scales \cite{larkoski_elementary_2019-1,becher_introduction_2015-1}. If these scales differ greatly, their ratio will be large, and so will the corresponding logarithms. It is possible, and indeed necessary, to tame these terms by accounting for them at \textbf{all orders}. This is the process of resummation. The actual mechanics will make more sense in context, so we will delay further discussion until Sec.~\ref{all-sec:resummation}.
+
+	We are now ready to put our knowledge to work and start calculating. We will begin, in Chapter \ref{chap:leading order}, with the relatively simple task of deriving a fixed-order distribution for the groomed heavy hemisphere mass.
+
 \end{document}

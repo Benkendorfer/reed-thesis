@@ -1,59 +1,4 @@
-% This is the Reed College LaTeX thesis template. Most of the work 
-% for the document class was done by Sam Noble (SN), as well as this
-% template. Later comments etc. by Ben Salzberg (BTS). Additional
-% restructuring and APA support by Jess Youngberg (JY).
-% Your comments and suggestions are more than welcome; please email
-% them to cus@reed.edu
-%
-% See http://web.reed.edu/cis/help/latex.html for help. There are a 
-% great bunch of help pages there, with notes on
-% getting started, bibtex, etc. Go there and read it if you're not
-% already familiar with LaTeX.
-%
-% Any line that starts with a percent symbol is a comment. 
-% They won't show up in the document, and are useful for notes 
-% to yourself and explaining commands. 
-% Commenting also removes a line from the document; 
-% very handy for troubleshooting problems. -BTS
-
-% As far as I know, this follows the requirements laid out in 
-% the 2002-2003 Senior Handbook. Ask a librarian to check the 
-% document before binding. -SN
-
-%%
-%% Preamble
-%%
-% \documentclass{<something>} must begin each LaTeX document
-% \providecommand{\main}{..}
 \documentclass[../thesis.tex]{subfiles}
-% Packages are extensions to the basic LaTeX functions. Whatever you
-% want to typeset, there is probably a package out there for it.
-% Chemistry (chemtex), screenplays, you name it.
-% Check out CTAN to see: http://www.ctan.org/
-%%
-% \usepackage{graphicx,latexsym} 
-% \usepackage{amssymb,amsthm,amsmath}
-% \usepackage{longtable,booktabs,setspace} 
-% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
-% \usepackage[hyphens]{url}
-% \usepackage{rotating}
-% \usepackage{hyperref}
-
-% \usepackage{physics}
-% \usepackage{siunitx}
-% \usepackage{xcolor}
-
-% \usepackage{xr}
-% \externaldocument[main-]{../thesis}
-% \usepackage{standalone}
-% \usepackage{natbib}
-% Comment out the natbib line above and uncomment the following two lines to use the new 
-% biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
-% bibliography is included. 
-%\usepackage{biblatex-chicago}
-%\bibliography{thesis}
-
-% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
 \providecommand{\zcut}{\mathrm{z_{cut}}}
 
@@ -147,7 +92,7 @@
 
 		\item \textbf{Heavy hemisphere mass:} We are interested in an observable called heavy hemisphere mass. To compute heavy hemisphere mass, one can divide a collision event into two hemispheres, measure the mass of both hemispheres, and then take the greater of the two masses.
 
-		\item \textbf{Groomed:} When measuring an observable like jet mass, modern experiments like ATLAS and CMS must take into account significant amounts of background radiation from simultaneous events in the detector. One common technique is to perform `jet grooming,' in which undesirable radiation is algorithmically removed from a jet. We will consider a particular grooming algorithm called the Modified Mass Drop Tagger (mMDT) \cite{dasgupta_towards_2013}, in which radiation with energy below some threshold is ignored. Such grooming can significantly alter the distribution of an observable. While observables like jet mass are well understood in the absence of grooming, understanding the effect of grooming on such observables is an active area of research.
+		\item \textbf{Groomed:} When measuring an observable like jet mass, modern experiments like ATLAS and CMS must take into account significant amounts of background radiation from simultaneous events in the detector. One common technique is to perform `jet grooming,' in which undesirable radiation is algorithmically removed from a jet. We will consider a particular grooming algorithm called the Modified Mass Drop Tagger (mMDT) \cite{dasgupta_towards_2013}, in which radiation with energy below some threshold is ignored. Such grooming can significantly alter the distribution of an observable, and it has important experimental and theoretical advantages. Understanding the effect of grooming on observables like jet mass is an active area of research.
 
 		\item \textbf{The limit:} Jets are a phenomenon of the strong force, and the theory of the strong force is rather unwieldy. It is therefore difficult to accurately predict an entire observable distribution with only one calculation. While the distribution of groomed heavy hemisphere mass is well understood in the low-mass limit \cite{kardos_groomed_2020,kardos_two-_2020,frye_factorization_2016} and in the high-mass regime \cite{kardos_soft-drop_2018}, little study has been performed in the regime where the mass is approximately equal to the mMDT energy cutoff. Nevertheless, interesting physics occurs in this region --- whereas events of interest all rely on the production of two back-to-back quarks, this region is the one in which a third (gluon) emission just begins to be resolved above the threshold. Thus, this region is our focus.
 
@@ -157,7 +102,7 @@
 		\end{equation}
 		Then, to compute $\omega$ to a particular desired accuracy, we can simply compute the coefficients $\omega_i$ up to a particular order in $\alpha_s$. Unfortunately, $\alpha_s$ is not a particularly small quantity, taking a value of order $0.1$.\footnote{The strong coupling constant is not actually a constant\dots it changes with the energy of observation. This process is called the \textbf{running} of the strong coupling \cite{larkoski_elementary_2019-1}. At the mass of the $Z$ boson, $\alpha_s(m_Z) = 0.1179(10)$ \cite{particle_data_group_review_2020}.} This means it often takes several terms to obtain a reasonable degree of accuracy.
 
-		\item \textbf{All-orders:} That said, we are aiming to achieve an all-orders calculation of the groomed heavy hemisphere mass. This does \textit{not} mean that we will determine the distribution to infinite precision (i.e., infinite order in $\alpha_s$). Instead, it means that we will derive an expression which can be used to push to \textit{arbitrary accuracy} in $\alpha_s$, given the proper accuracy of inputs (and the proper degree of mathematical sophistication). Thus, by an `all-orders calculation,' we mean that we will develop a \textit{framework} for achieving precision results.
+		\item \textbf{All-orders:} That said, we are aiming to achieve an all-orders calculation of the groomed heavy hemisphere mass. This does \textit{not} mean that we will determine the distribution to infinite precision (i.e., infinite order in $\alpha_s$). Instead, it means that we will derive an expression which can be used to push to \textit{arbitrary accuracy} in $\alpha_s$, given the proper accuracy of inputs (and the proper degree of mathematical sophistication). Thus, by an `all-orders calculation,' we mean that we will develop a \textit{framework} for achieving precision results. The term `all-orders' also refers to the fact that our calculation will account for the influence of large logarithms at every order in $\alpha_s$ through the process of resummation.
 	\end{enumerate}
 	A more complete development of these foundational concepts will be provided in Chapter \ref{chap:technical}.
 

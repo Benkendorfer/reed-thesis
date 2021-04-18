@@ -5,45 +5,45 @@ The style file: bsts/myJHEP.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: jet_substructure.bib
 Warning--empty author in andrews_hypergeometric_1999
-You've used 35 entries,
+You've used 43 entries,
             2314 wiz_defined-function locations,
-            804 strings with 12105 characters,
-and the built_in function-call counts, 13377 in all, are:
-= -- 1371
-> -- 388
+            868 strings with 13959 characters,
+and the built_in function-call counts, 17225 in all, are:
+= -- 1798
+> -- 492
 < -- 0
-+ -- 118
-- -- 83
-* -- 1205
-:= -- 1693
-add.period$ -- 35
-call.type$ -- 35
-change.case$ -- 31
++ -- 148
+- -- 105
+* -- 1548
+:= -- 2166
+add.period$ -- 43
+call.type$ -- 43
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 36
-duplicate$ -- 1016
-empty$ -- 1315
-format.name$ -- 249
-if$ -- 3360
+cite$ -- 44
+duplicate$ -- 1311
+empty$ -- 1652
+format.name$ -- 315
+if$ -- 4350
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 109
-newline$ -- 109
-num.names$ -- 38
-pop$ -- 149
+int.to.str$ -- 43
+missing$ -- 141
+newline$ -- 133
+num.names$ -- 46
+pop$ -- 170
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 416
+skip$ -- 570
 stack$ -- 0
-substring$ -- 826
-swap$ -- 211
+substring$ -- 1089
+swap$ -- 295
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 160
-width$ -- 37
-write$ -- 350
+while$ -- 203
+width$ -- 45
+write$ -- 434
 (There was 1 warning)

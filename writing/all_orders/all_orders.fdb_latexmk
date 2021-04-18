@@ -1,7 +1,7 @@
 # Fdb version 3
-["lualatex"] 1618611795 "all_orders.tex" "all_orders.pdf" "all_orders" 1618611798
+["lualatex"] 1618727086 "all_orders.tex" "all_orders.pdf" "all_orders" 1618727089
   "../reedthesis.cls" 1383591362 8293 480a01b2533a1585368760477c470aa0 ""
-  "../thesis.tex" 1618611760 7519 d83d29d753a5957e48197b3a5082e2f0 ""
+  "../thesis.tex" 1618726759 7349 688cf12851be9ceee1a4eac63cf2c423 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1578167051 124231 de1fac4fa22b2d0f3c02f2a11a85c4b6 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1578167050 123160 07b01c97fb3dfb55a9303e4e62ca726f ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1578088225 124128 a9660d29d58fde0161397418fef1dfe6 ""
@@ -256,12 +256,12 @@
   "/usr/local/texlive/2017/texmf-dist/tex/luatex/luaotfload/fontloader-basics-gen.lua" 1547850999 12695 9a740c440e62da9b31d1d097257a1869 ""
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1575873454 4693480 8353df0835313a2d202e2f489241f4ef ""
   "/usr/local/texlive/2017/texmf-var/web2c/luatex/lualatex.fmt" 1575873557 1399169 069afea70d38dea9ddb6c86bc40f5b67 ""
-  "all_orders.aux" 1618611798 7784 292c800e87f99aaf621878135a00307e "lualatex"
-  "all_orders.out" 1618611798 1832 7782c56fb89b5e9feab596edb13c988f "lualatex"
-  "all_orders.tex" 1618611792 51924 1d2278bfe136b089e6909f8c0e06df16 ""
+  "all_orders.aux" 1618727089 7891 3f08663186606ae4a5ef0f956bc01971 "lualatex"
+  "all_orders.out" 1618727089 1832 7782c56fb89b5e9feab596edb13c988f "lualatex"
+  "all_orders.tex" 1618727086 52079 45652740ca70fcb85cff03ea62c1566b ""
   "figures/resummation_plot.pdf" 1618608366 72136 9db02cf86e8cdb4af6ea83dfff68a744 ""
   (generated)
   "all_orders.aux"
   "all_orders.log"
-  "all_orders.out"
   "all_orders.pdf"
+  "all_orders.out"

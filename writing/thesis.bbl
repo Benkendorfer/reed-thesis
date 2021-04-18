@@ -144,6 +144,62 @@ A.J.~Larkoski, \emph{Improving the {{Understanding}} of {{Jet Grooming}} in
   {{Perturbation Theory}}}, {\emph{arXiv:2006.14680 [hep-ex, physics:hep-ph]}
   (2020) } [\href{https://arxiv.org/abs/2006.14680}{{\ttfamily 2006.14680}}].
 
+\bibitem{bauer_summing_2000}
+C.W.~Bauer, S.~Fleming and M.~Luke, \emph{Summing {{Sudakov}} logarithms in
+  {{B}} -{$>$} {{X}}\_s + gamma in effective field theory},
+  \href{https://doi.org/10.1103/PhysRevD.63.014006}{\emph{Phys. Rev. D}
+  {\bfseries 63} (2000) 014006}
+  [\href{https://arxiv.org/abs/hep-ph/0005275}{{\ttfamily hep-ph/0005275}}].
+
+\bibitem{bauer_effective_2001}
+C.W.~Bauer, S.~Fleming, D.~Pirjol and I.W.~Stewart, \emph{An effective field
+  theory for collinear and soft gluons: {{Heavy}} to light decays},
+  \href{https://doi.org/10.1103/PhysRevD.63.114020}{\emph{Phys. Rev. D}
+  {\bfseries 63} (2001) 114020}.
+
+\bibitem{bauer_invariant_2001}
+C.W.~Bauer and I.W.~Stewart, \emph{Invariant operators in collinear effective
+  theory}, \href{https://doi.org/10.1016/S0370-2693(01)00902-9}{\emph{Physics
+  Letters B} {\bfseries 516} (2001) 134}.
+
+\bibitem{bauer_soft-collinear_2002}
+C.W.~Bauer, D.~Pirjol and I.W.~Stewart, \emph{Soft-collinear factorization in
+  effective field theory},
+  \href{https://doi.org/10.1103/PhysRevD.65.054022}{\emph{Phys. Rev. D}
+  {\bfseries 65} (2002) 054022}.
+
+\bibitem{beneke_soft-collinear_2002}
+M.~Beneke, A.P.~Chapovsky, M.~Diehl and T.~Feldmann, \emph{Soft-collinear
+  effective theory and heavy-to-light currents beyond leading power},
+  \href{https://doi.org/10.1016/S0550-3213(02)00687-9}{\emph{Nuclear Physics B}
+  {\bfseries 643} (2002) 431}
+  [\href{https://arxiv.org/abs/hep-ph/0206152}{{\ttfamily hep-ph/0206152}}].
+
+\bibitem{beneke_multipole-expanded_2003}
+M.~Beneke and T.~Feldmann, \emph{Multipole-expanded soft-collinear effective
+  theory with non-abelian gauge symmetry},
+  \href{https://doi.org/10.1016/S0370-2693(02)03204-5}{\emph{Physics Letters B}
+  {\bfseries 553} (2003) 267}
+  [\href{https://arxiv.org/abs/hep-ph/0211358}{{\ttfamily hep-ph/0211358}}].
+
+\bibitem{hill_spectator_2003}
+R.J.~Hill and M.~Neubert, \emph{Spectator {{Interactions}} in
+  {{Soft}}-{{Collinear Effective Theory}}},
+  \href{https://doi.org/10.1016/S0550-3213(03)00116-0}{\emph{Nuclear Physics B}
+  {\bfseries 657} (2003) 229}
+  [\href{https://arxiv.org/abs/hep-ph/0211018}{{\ttfamily hep-ph/0211018}}].
+
+\bibitem{ellis_jet_2010}
+S.D.~Ellis, C.K.~Vermilion, J.R.~Walsh, A.~Hornig and C.~Lee, \emph{Jet shapes
+  and jet algorithms in {{SCET}}},
+  \href{https://doi.org/10.1007/JHEP11(2010)101}{\emph{J. High Energ. Phys.}
+  {\bfseries 2010} (2010) 101}.
+
+\bibitem{t_hooft_regularization_1972}
+G.~{'t Hooft} and M.~Veltman, \emph{Regularization and renormalization of gauge
+  fields}, \href{https://doi.org/10.1016/0550-3213(72)90279-9}{\emph{Nuclear
+  Physics B} {\bfseries 44} (1972) 189}.
+
 \bibitem{catani_infrared_2000}
 S.~Catani and M.~Grazzini, \emph{Infrared factorization of tree-level {{QCD}}
   amplitudes at the next-to-next-to-leading order and beyond},
@@ -163,12 +219,6 @@ Y.-T.~Chien and M.D.~Schwartz, \emph{Resummation of heavy jet mass and
   comparison to {{LEP}} data},
   \href{https://doi.org/10.1007/JHEP08(2010)058}{\emph{J. High Energ. Phys.}
   {\bfseries 2010} (2010) 58}.
-
-\bibitem{ellis_jet_2010}
-S.D.~Ellis, C.K.~Vermilion, J.R.~Walsh, A.~Hornig and C.~Lee, \emph{Jet shapes
-  and jet algorithms in {{SCET}}},
-  \href{https://doi.org/10.1007/JHEP11(2010)101}{\emph{J. High Energ. Phys.}
-  {\bfseries 2010} (2010) 101}.
 
 \bibitem{boas_mathematical_2006}
 M.L.~Boas, \emph{Mathematical Methods in the Physical Sciences}, {Wiley},

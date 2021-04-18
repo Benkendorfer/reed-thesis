@@ -18,7 +18,7 @@
 \contentsline {section}{\numberline {1.3}Calculational techniques}{23}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Soft-Collinear Effective Theory (SCET)}{23}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Dimensional regularization}{23}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Resummation}{23}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.3}Resummation}{24}{subsection.1.3.3}%
 \contentsline {chapter}{Chapter 2: Leading-order calculation}{25}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Soft gluon}{26}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Setup}{26}{subsection.2.1.1}%

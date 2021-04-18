@@ -75,11 +75,11 @@
 %%
 %% The fun begins:
 \begin{document}
-	Recall that the goal of our all-orders calculation is to derive an expression with which, if one has sufficient patience and mathematical skill, one could compute the heavy hemisphere mass to arbitrary accuracy in the $\rho \sim \zcut \ll 1$ limit. In this chapter, we will see how this is done.
+	Recall that the goal of our all-orders calculation is to derive an expression which accounts for contributions at every order in $\alpha_s$ and with which, if one has sufficient patience and mathematical skill, one could compute the heavy hemisphere mass to arbitrary accuracy in the $\rho \sim \zcut \ll 1$ limit. In this chapter, we will see how this is done.
 
-	Quantum chromodynamics is a scale-invariant theory. However, when we compute something like the heavy hemisphere mass distribution, we impose scale onto the system (such as the hemisphere mass or the groomer energy cut). In a theory such as SCET, whenever multiple scales appear, say $\Lambda_h$ and $\Lambda_\ell$, high-order corrections to observables appear with the form \cite{becher_introduction_2015-1}
+	As we have repeated several times by now,\footnote{Because it bears repeating!}, QCD is a scale-invariant theory. However, when we compute something like the groomed heavy hemisphere mass distribution, we impose scale onto the system (such as the hemisphere mass or the groomer energy cut). In QCD, whenever multiple scales appear, say $\Lambda_h$ and $\Lambda_\ell$, high-order corrections to observables appear with the form \cite{becher_introduction_2015-1}
 	\begin{equation}
-		\alpha_s^n \log^{2n}\frac{\Lambda_h}{\Lambda_\ell}.
+		\alpha_s^n \log^{n}\frac{\Lambda_h}{\Lambda_\ell}.
 	\end{equation}
 	These logarithms can grow quite large if the scales are far apart, which enhances the size of these contributions \cite{schwartz_quantum_2014}. Moreover, since these contributions occur at high order in $\alpha_s$, they can be incredibly difficult to compute. This leaves us in a quandary --- how do we handle large corrections which are, for all intents an purposes, out of computational reach?
 
@@ -162,7 +162,7 @@
 	\begin{equation}\label{all-eq:general non-cusp anomalous dimension}
 		\gamma_F(\alpha_s) = \sum_{n = 0}^\infty \gamma_n \qty(\frac{\alpha_s}{4\pi})^{n + 1}.
 	\end{equation}
-	An example calculation will be performed in Sec.~\ref{all-sec:soft function calculation}. This entails computing the function of interest to the desired accuracy, then peeling off the non-logarithmic contributions to the anomalous dimension. The anomalous dimension can be determined either through inspection, by simply taking the coefficient of $2/\epsilon$ {\color{red}\textbf{[TODO: check the factor of 2 here]}}, or by computing the appropriate derivative per the renormalization group equation.
+	An example calculation will be performed in Sec.~\ref{all-sec:soft function calculation}. This entails computing the function of interest to the desired accuracy, then peeling off the non-logarithmic contributions to the anomalous dimension. The anomalous dimension can be determined either through inspection, by simply taking the coefficient of $2/\epsilon$, or by computing the appropriate derivative per the renormalization group equation.
 
 \subsection{Solving the renormalization group equation}\label{all-sec:solving RGE}
 	To solve the renormalization group equation, Eq.~\ref{all-eq:general RGE}, it is convenient to rewrite the differential equation not in terms of $\mu$, but in terms of $\alpha_s$. This is done through the QCD $\beta$-function, which describes how $\alpha_s$ depends on the energy scale $\mu$ \cite{frye_factorization_2016}:
