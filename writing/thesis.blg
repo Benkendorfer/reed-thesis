@@ -4,44 +4,46 @@ The top-level auxiliary file: thesis.aux
 The style file: bsts/myJHEP.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: jet_substructure.bib
-You've used 27 entries,
+Warning--empty author in andrews_hypergeometric_1999
+You've used 35 entries,
             2314 wiz_defined-function locations,
-            751 strings with 10309 characters,
-and the built_in function-call counts, 10248 in all, are:
-= -- 1059
-> -- 297
+            804 strings with 12105 characters,
+and the built_in function-call counts, 13377 in all, are:
+= -- 1371
+> -- 388
 < -- 0
-+ -- 91
-- -- 64
-* -- 928
-:= -- 1312
-add.period$ -- 27
-call.type$ -- 27
-change.case$ -- 23
++ -- 118
+- -- 83
+* -- 1205
+:= -- 1693
+add.period$ -- 35
+call.type$ -- 35
+change.case$ -- 31
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 783
-empty$ -- 990
-format.name$ -- 192
-if$ -- 2580
+cite$ -- 36
+duplicate$ -- 1016
+empty$ -- 1315
+format.name$ -- 249
+if$ -- 3360
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 91
-newline$ -- 85
-num.names$ -- 27
-pop$ -- 109
+int.to.str$ -- 35
+missing$ -- 109
+newline$ -- 109
+num.names$ -- 38
+pop$ -- 149
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 314
+skip$ -- 416
 stack$ -- 0
-substring$ -- 612
-swap$ -- 163
+substring$ -- 826
+swap$ -- 211
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 118
-width$ -- 29
-write$ -- 272
+warning$ -- 1
+while$ -- 160
+width$ -- 37
+write$ -- 350
+(There was 1 warning)

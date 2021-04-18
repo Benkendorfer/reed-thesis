@@ -1,0 +1,103 @@
+% This is the Reed College LaTeX thesis template. Most of the work 
+% for the document class was done by Sam Noble (SN), as well as this
+% template. Later comments etc. by Ben Salzberg (BTS). Additional
+% restructuring and APA support by Jess Youngberg (JY).
+% Your comments and suggestions are more than welcome; please email
+% them to cus@reed.edu
+%
+% See http://web.reed.edu/cis/help/latex.html for help. There are a 
+% great bunch of help pages there, with notes on
+% getting started, bibtex, etc. Go there and read it if you're not
+% already familiar with LaTeX.
+%
+% Any line that starts with a percent symbol is a comment. 
+% They won't show up in the document, and are useful for notes 
+% to yourself and explaining commands. 
+% Commenting also removes a line from the document; 
+% very handy for troubleshooting problems. -BTS
+
+% As far as I know, this follows the requirements laid out in 
+% the 2002-2003 Senior Handbook. Ask a librarian to check the 
+% document before binding. -SN
+
+%%
+%% Preamble
+%%
+% \documentclass{<something>} must begin each LaTeX document
+% \providecommand{\main}{..}
+\documentclass[../thesis.tex]{subfiles}
+% Packages are extensions to the basic LaTeX functions. Whatever you
+% want to typeset, there is probably a package out there for it.
+% Chemistry (chemtex), screenplays, you name it.
+% Check out CTAN to see: http://www.ctan.org/
+%%
+% \usepackage{graphicx,latexsym} 
+% \usepackage{amssymb,amsthm,amsmath}
+% \usepackage{longtable,booktabs,setspace} 
+% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+% \usepackage[hyphens]{url}
+% \usepackage{rotating}
+% \usepackage{hyperref}
+
+% \usepackage{physics}
+% \usepackage{siunitx}
+% \usepackage{xcolor}
+
+% \usepackage{xr}
+% \externaldocument[factorization-]{../factorization/factorization}
+% \externaldocument[main-]{../thesis}
+% \usepackage{standalone}
+% \usepackage{natbib}
+% Comment out the natbib line above and uncomment the following two lines to use the new 
+% biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
+% bibliography is included. 
+%\usepackage{biblatex-chicago}
+%\bibliography{thesis}
+
+% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
+
+\providecommand{\zcut}{z_\mathrm{{cut}}}
+\providecommand{\LIPS}{\mathrm{LIPS}}
+\providecommand{\cusp}{\mathrm{cusp}}
+\providecommand{\mMDT}{\mathrm{mMDT}}
+\providecommand{\Li}{\mathrm{Li}}
+
+\providecommand{\arctanh}{\mathrm{arctanh}}
+
+\providecommand{\cM}{\mathcal{M}}
+\providecommand{\cL}{\mathcal{L}}
+\providecommand{\cO}{\mathcal{O}}
+
+
+\setlength{\parskip}{0pt}
+%%
+%% End Preamble
+%%
+%% The fun begins:
+\begin{document}
+	The next steps in completing an NLL calculation of the groomed heavy hemisphere mass distribution would be to perform a similar calculation for the resolved emission function $R(\rho_1, \rho_2, \zcut)$ to determine its anomalous dimension, then pull the anomalous dimensions for all the rest of the functions in the factorization theorem of Eq.~\ref{all-eq:factorization formula laplace}. With the anomalous dimensions in hand, we would then be able to complete the explicit calculation of Eq.~\ref{all-eq:full resummed result} to obtain an NLL prediction for the groomed hemisphere mass. Then we could integrate to find the heavy hemisphere mass:
+	\begin{equation}
+		\frac{d\rho}{d\sigma} = \int \frac{d^2\sigma}{d\rho_1 d\rho_2}\qty[\delta(\rho - \rho_1)\Theta(\rho_1 - \rho_2) + \delta(\rho - \rho_2)\Theta(\rho_2 - \rho_1)].
+	\end{equation}
+	Unfortunately, these steps are, to varying degrees, somewhat involved and fairly repetitive, and would take us beyond the pedagogical scope of this thesis. Thus, instead of marching forward, let us recap where we have been --- for it was quite an adventure.
+
+	Our object of study has been the distribution of the mMDT-groomed heavy hemisphere mass in $e^+ e^- \to \text{hemisphere jets}$ events, in the limit that the heavy hemisphere mass $\rho$ is approximately equal to the mMDT cutoff $\zcut$: $\rho \sim \zcut \ll 1$. As with many calculations in QCD, this distribution must be calculated as a series in the strong coupling $\alpha_s$. We began our journey in Chapter \ref{chap:leading order} by studying the leading-order term which contributes to the distribution. This allowed us to practice some important calculational techniques --- especially dimensional regularization --- and taught us something both about the mathematical structure of the calculation and the physical quantity of interest. We saw the power of the strategy of regions approach, in which the singular limits of the groomed jet mass could be combined to produce the complete distribution in the soft limit of interest. We also saw that the leading-order distribution exhibited a sharp, unphysical cusp, which gave us a clue that there is interesting physics to be studied in this limit.
+
+	Nevertheless, fixed-order calculations can only take us so far in the context of our calculation. Not only is it extremely challenging to move beyond the first few terms orders in the strong coupling $\alpha_s$ with fixed-order calculations, but for an exclusive cross section such as $\sigma(e^+ e^- \to \text{hemisphere jets})$, logarithms of energy scales emerge which can become quite large in, say, the $\rho \sim \zcut \ll 1$ limit \cite{larkoski_elementary_2019-1}. We therefore resolved to develop an all-orders calculation which would, through the process of resummation, carefully account for these large logarithms. The result would be a framework from which one could compute the distribution to arbitrary precision, given inputs with sufficiently high order in $\alpha_s$.
+
+	In Chapter \ref{chap:factorization}, we took our first steps towards this result by developing a factorization formula which broke the full cross section into a convolution of terms, each of which depends only on a single energy scale. To do this, we applied the technology of Soft-Collinear Effective Theory (SCET) after examining the dominant energy scales in each of the singular regions of phase space.\footnote{This extended the theme of developing a full result by considering contributions from particular singular regions.} The result was the factorization formula Eq.~\ref{factor-eq:factorization formula}. The dependence of each term on only a single energy scale meant that each term could be resummed separately, allowing us to achieve resummation of the full cross section.
+
+	Finally, we actually performed this resummation in Chapter \ref{chap:all orders}. We began by deriving the sought-after all-orders result in Eq.~\ref{all-eq:full resummed result}. This result can be used to achieve arbitrary accuracy --- the inputs are the anomalous dimensions of each function in the factorized cross section, as well as their value at a fixed energy scale for a fixed order in $\alpha_s$. A given calculation, however, can only be achieved to some fixed accuracy, only here, accuracy increases logarithmically with the order of $\alpha_s$, in some sense. In order to understand the type of calculation that could go into such a result, we computed one term of the factorized cross section, the soft function $S_R(\rho)$, to next-to-leading-logarithmic (NLL) accuracy.
+
+	As discussed above, the obvious next steps for this work would be to compute the remaining terms of the factorization formula to NLL accuracy in order to achieve a full NLL cross section in the $\rho \sim \zcut \ll 1$ limit. One could then match the predictions to extant results at high logarithmic precision in the $\rho \ll \zcut \ll 1$ limit \cite{frye_factorization_2016,kardos_groomed_2020,kardos_two-_2020}, and at high fixed-order precision \cite{kardos_soft-drop_2018}, which should be accurate at high $\rho$. That would be a very interesting culmination of this work.
+
+	Beyond that, the factorized and resummed framework we developed for computing the cross section should, in principle, be useful for even higher-precision calculations. One might dream of eventual comparison between precision predictions of this distribution and experimental measurements, as was performed by ATLAS in Ref.~\cite{atlas_collaboration_measurement_2020-1}.
+
+	Until then, I hope that the work of this thesis can provide a helpful example to future students interested in precision calculations in quantum chromodynamics. With luck, you have also developed an appreciation for the techniques that are used in such calculations.
+
+
+% \ifstandalone
+% \bibliographystyle{../bsts/JHEP} 
+% \bibliography{../jet_substructure}
+% \fi
+\end{document}

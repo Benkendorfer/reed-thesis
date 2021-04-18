@@ -24,24 +24,25 @@
 %% Preamble
 %%
 % \documentclass{<something>} must begin each LaTeX document
-\providecommand{\main}{..}
-\documentclass[12pt,twoside,class=../reedthesis, crop=false]{standalone}
+% \providecommand{\main}{..}
+\documentclass[../thesis.tex]{subfiles}
+% \graphicspath{{\subfix{figures/}}}
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
 % Check out CTAN to see: http://www.ctan.org/
 %%
-\usepackage{graphicx,latexsym} 
-\usepackage{amssymb,amsthm,amsmath}
-\usepackage{longtable,booktabs,setspace} 
-\usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
-\usepackage[hyphens]{url}
-\usepackage{rotating}
-\usepackage{hyperref}
+% \usepackage{graphicx,latexsym} 
+% \usepackage{amssymb,amsthm,amsmath}
+% \usepackage{longtable,booktabs,setspace} 
+% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+% \usepackage[hyphens]{url}
+% \usepackage{rotating}
+% \usepackage{hyperref}
 
-\usepackage{physics}
-\usepackage{siunitx}
-\usepackage{xcolor}
+% \usepackage{physics}
+% \usepackage{siunitx}
+% \usepackage{xcolor}
 % \usepackage{standalone}
 % \usepackage{natbib}
 % Comment out the natbib line above and uncomment the following two lines to use the new 
@@ -61,12 +62,19 @@
 %%
 %% The fun begins:
 \begin{document}
-	The first step on the path to an all-orders calculation is to derive a factorization formula for the heavy hemisphere mass cross section. The basic process for doing so is laid out in technical detail in Ref.~\cite{becher_introduction_2015-1}, and an example of a similar flavor to our calculation is provided by Frye et al.\ in Ref.~\cite{frye_factorization_2016}.\footnote{Indeed, the calculation of Frye et al.\ is a more general factorization of mass-like variables in groomed jets. Setting $\alpha = 2, \beta = 0$ for their two-point energy correlation function $e_2^{(\alpha)}$ under soft drop grooming with angular exponent $\beta$ yields the mMDT-groomed jet mass $\rho$. Their factorization is valid in the limit $\rho \ll \zcut \ll 1$, whereas we are interested in the limit $\rho \sim \zcut \ll 1$.} There are two primary steps in developing a factorization formula:
+	Fixed-order calculations like that of Chapter \ref{chap:leading order} are nice because of their exactness, but because of the relatively large value the strong coupling, $\alpha_s \sim 0.1$, one must go to fairly high orders to obtain precision results. At low orders, the calculations are relatively straightforward, but this quickly ceases to be the case, as the number of event topologies that one must consider increases factorially with the order of $\alpha_s$. Moreover, and more pressingly, when we compute an exclusive cross section like $\sigma(e^+ e^- \to \text{hemisphere jets})$, external energy scales are imposed. This is problematic for QCD, which is an intrinsically scale-invariant theory, and our punishment is the appearance of logarithms of scales which might grow large in particular limits, like the limit $\rho \sim \zcut \ll 1$ which we are considering \cite{larkoski_elementary_2019-1}. All this is to say that, while fixed-order calculations are nice for developing intuition for a physical quantity, they have limitations which become quite severe in the regime in which we are interested.
+
+	We would therefore like to develop an alternative framework for calculating the distribution of heavy hemisphere mass. The strategy we will settle on is try to develop an \textbf{all-orders calculation} of the distribution. This result will take into account contributions at every order of $\alpha_s$, and provide a mathematical structure for producing arbitrarily accurate predictions, given sufficiently precise inputs. We will get there via the process of \textbf{resummation}, which will be discussed in Sec.~\ref{all-sec:resummation} (and, indeed, will occupy most of Chapter \ref{chap:all orders}). In order to prepare for that, we must first lay some groundwork.
+
+	The first step on the path to an all-orders calculation is to derive a factorization formula for the heavy hemisphere mass cross section, the goal being to split the cross section into terms which each depend only on a single energy scale. The basic process for doing so is laid out in technical detail in Ref.~\cite{becher_introduction_2015-1}, and an example of a similar flavor to our calculation is provided by Frye et al.\ in Ref.~\cite{frye_factorization_2016}.\footnote{Indeed, the calculation of Frye et al.\ is a more general factorization of mass-like variables in groomed jets. Setting $\alpha = 2, \beta = 0$ for their two-point energy correlation function $e_2^{(\alpha)}$ under soft drop grooming with angular exponent $\beta$ yields the mMDT-groomed jet mass $\rho$. Their factorization is valid in the limit $\rho \ll \zcut \ll 1$, whereas we are interested in the limit $\rho \sim \zcut \ll 1$.} Once the cross section has been split into functions of single energy scales, the process of resummation can begin. 
+
+	There are two primary steps in developing a factorization formula:
 	\begin{enumerate}
 		\item \textbf{Power counting}: this involves determining the possible radiative modes of an event and their dominant momentum scales. The term `power counting' refers to the fact that for some momentum scale $\lambda$, different radiative modes have momenta that scale as different powers of $\lambda$.
 
 		\item \textbf{Factorization and refactorization}: Once the different radiative modes and energy scales are identified, we can use the framework of SCET to split the cross section into a convolution of terms describing different radiative modes. These terms themselves must then be split (refactored) into convolutions of terms, each of which depends, to leading order, only on a single energy scale.
 	\end{enumerate}
+	In this chapter, we will follow these steps to derive a factorization formula for the heavy hemisphere mass in the $\rho \sim \zcut \ll 1$ limit.
 
 \section{Setup}
 	Recall that the hemisphere mass is defined to be
@@ -74,7 +82,7 @@
 		\rho = \frac{1}{E_J^2} \sum_{i<j} 2p_i \cdot p_j
 	\end{equation}
 	with $E_J$ the jet energy and the sum ranging over all pairs of particles in the jet. Expanding out the dot product, we have
-	\begin{equation}\label{eq:jet mass z theta}
+	\begin{equation}\label{factor-eq:jet mass z theta}
 		\rho = \frac{2}{E_J^2} \sum_{i<j} \qty(E_i E_j - \vb{p}_i \cdot \vb{p}_j) = \frac{2}{E_J^2} \sum_{i<j} E_i E_j \qty(1 - \cos\theta_{ij}) = \sum_{i<j}2z_i z_j \qty(1 - \cos\theta_{ij}).
 	\end{equation}
 	Here, $z_i$ and $z_j$ are the relative energy fractions of each particle and $\theta_{ij}$ is the angle between particles $i$ and $j$.
@@ -88,7 +96,7 @@
 		p^- &= \bar n \cdot p & p^+ &= n \cdot p
 	\end{align}
 	and $p_\perp$ the components of momentum transverse to $n$. In these coordinates, the energy fraction with respect to total energy $E_J = Q$ is
-	\begin{equation}\label{eq:z light cone coordinates}
+	\begin{equation}\label{factor-eq:z light cone coordinates}
 		z = \frac{p^+ + p^-}{2Q}
 	\end{equation}
 	and, in the collinear limit, the angle to the jet axis is $\theta \approx p_\perp / p^0$ \cite{frye_factorization_2016}.
@@ -103,7 +111,7 @@
 
 \section{Power counting}
 \subsection{Resolved soft emission}
-	The primary emission contributing to the jet mass in the limit $\rho \sim \zcut \ll 1$ is a gluon emission $z_i$ sensitive to both $\rho$ and $\zcut$. In the presence of a hard quark (i.e., the jet) with $z_q \sim 1$, leading contributions to the jet mass of Eq.~\ref{eq:jet mass z theta} is
+	The primary emission contributing to the jet mass in the limit $\rho \sim \zcut \ll 1$ is a gluon emission $z_i$ sensitive to both $\rho$ and $\zcut$. In the presence of a hard quark (i.e., the jet) with $z_q \sim 1$, leading contributions to the jet mass of Eq.~\ref{factor-eq:jet mass z theta} is
 	\begin{equation}
 		\rho \approx \sum_i 2z_i \qty(1 - \cos\theta_i)
 	\end{equation}
@@ -132,7 +140,7 @@
 \subsection{Ungroomed extra-soft unresolved radiation}
 	\begin{figure}
 	\begin{centering}
-		\includegraphics[width=0.2\columnwidth]{\main/factorization/figures/head_on_schematic.pdf}
+		\includegraphics[width=0.2\columnwidth]{figures/head_on_schematic.pdf}
 		\caption{\label{fig:head-on schematic}Head-on schematic of a quark jet $q$ and a resolved gluon $g$. If the angle between the quark and the gluon is $\theta$ and the gluon (plus all lower-scale unresolved radiation) passes the groomer, then the mMDT groomer will accept all radiation within an angle $\theta$ of both the quark and the resolved gluon.}
 	\end{centering}
 	\end{figure}
@@ -162,7 +170,7 @@
 % 	\end{equation}
 
 \subsection{Collinear radiation}\label{sec:collinear radiation}
-	Finally, we consider radiation collinear to a jet axis with angle $\theta_i \ll 1$. This radiation has $p^- \gg p^+$, which means from Eq.~\ref{eq:z light cone coordinates} that
+	Finally, we consider radiation collinear to a jet axis with angle $\theta_i \ll 1$. This radiation has $p^- \gg p^+$, which means from Eq.~\ref{factor-eq:z light cone coordinates} that
 	\begin{equation}
 		z \approx \frac{p^+}{2Q}.
 	\end{equation}
@@ -190,7 +198,7 @@
 
 \section{Factorization}
 	With the power counting in hand, we are now ready to derive a factorization formula describing the hemisphere mass distribution in the limit $\rho \sim \zcut \ll 1$. First, we should note that it is most straightforward to compute the double differential cross section in the masses of the individual hemispheres, then integrate over them to get the heavy hemisphere mass \cite{chien_resummation_2010}:
-	\begin{equation}\label{eq:heavy hemisphere cross section}
+	\begin{equation}\label{factor-eq:heavy hemisphere cross section}
 		\frac{d\sigma}{d\rho} = \int \frac{d^2\sigma}{d\rho_1d\rho_2}\qty[\delta(\rho - \rho_1)\Theta(\rho_1 - \rho_2) + \delta(\rho - \rho_2)\Theta(\rho_2 - \rho_1)].
 	\end{equation}
 	The integral simply breaks up the two cases $\rho_1 > \rho_2$ and $\rho_2 > \rho_1$ and assigns the correct value of $\rho$ in each case.
@@ -215,7 +223,7 @@
 		J_{c, \bar q}(\rho, \zcut) = J_{\bar q}(\rho) \otimes S_C(\sqrt{\rho\,\zcut})
 	\end{equation}
 	The result is that we must treat each hemisphere separately, since one contains the resolved emission and the other does not. Moreover, the gluon's jet function $J_g$ only depends on the scale of the gluon's energy, which is a function of $\rho$ and $\zcut$ {\color{red}\textbf{[TODO: check this]}}. Therefore, if we assume, without loss of generality, that $\rho_1 > \rho_2$, the cross section becomes
-	\begin{equation}\label{eq:factorization formula}
+	\begin{equation}\label{factor-eq:factorization formula}
 	\boxed{
 	\begin{aligned}
 		\frac{d^2\sigma}{d\rho_1 d\rho_2} = 2 H(Q^2) \times R(\rho_1, \rho_2, \zcut) &\times S_R(\rho - \zcut) \otimes J_{c, q}(\rho_1)\\
@@ -223,10 +231,10 @@
 	\end{aligned}
 	}
 	\end{equation}
-	This is our final factorization formula for the double differential cross section in each hemisphere mass. The distribution of the heavy hemisphere mass then given by Eq.~\ref{eq:heavy hemisphere cross section}.
+	This is our final factorization formula for the double differential cross section in each hemisphere mass. The distribution of the heavy hemisphere mass then given by Eq.~\ref{factor-eq:heavy hemisphere cross section}. We are now ready to proceed with resummation.
 
-\ifstandalone
-\bibliographystyle{../bsts/JHEP} 
-\bibliography{../jet_substructure}
-\fi
+% \ifstandalone
+% \bibliographystyle{../bsts/JHEP} 
+% \bibliography{../jet_substructure}
+% \fi
 \end{document}

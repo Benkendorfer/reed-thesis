@@ -113,17 +113,43 @@ T.~Becher, A.~Broggio and A.~Ferroglia, \emph{Introduction to
   in {{Physics}}}, {Springer International Publishing}, {Cham} (2015),
   \href{https://doi.org/10.1007/978-3-319-14848-9}{10.1007/978-3-319-14848-9}.
 
+\bibitem{atlas_collaboration_event_nodate}
+{ATLAS Collaboration}, ``Event {{Displays}} from {{Run}} 2 physics analyses.''
+  \url{https://twiki.cern.ch/twiki/bin/view/AtlasPublic/EventDisplayRun2Physics}.
+
+\bibitem{holloway_how_1972}
+M.G.~Holloway and C.P.~Baker, \emph{How the barn was born},
+  \href{https://doi.org/10.1063/1.3070918}{\emph{Physics Today} {\bfseries 25}
+  (1972) 9}.
+
+\bibitem{atlas_collaboration_event_nodate-1}
+{ATLAS Collaboration}, ``Event displays from collision data.''
+  \url{https://twiki.cern.ch/twiki/bin/view/AtlasPublic/EventDisplayRun2Collisions}.
+
+\bibitem{dokshitzer_better_1997}
+Y.L.~Dokshitzer, G.D.~Leder, S.~Moretti and B.R.~Webber, \emph{Better jet
+  clustering algorithms},
+  \href{https://doi.org/10.1088/1126-6708/1997/08/001}{\emph{J. High Energy
+  Phys.} {\bfseries 1997} (1997) 001}.
+
+\bibitem{wobisch_hadronization_1998}
+M.~Wobisch and T.~Wengler, \emph{Hadronization corrections to jet
+  cross-sections in deep inelastic scattering},  in \emph{Workshop on {{Monte
+  Carlo Generators}} for {{HERA Physics}} ({{Plenary Starting Meeting}})},
+  ({Hamburg, Germany}), pp.~270--279 (1998),
+  \url{https://arxiv.org/abs/hep-ph/9907280}.
+
+\bibitem{larkoski_improving_2020}
+A.J.~Larkoski, \emph{Improving the {{Understanding}} of {{Jet Grooming}} in
+  {{Perturbation Theory}}}, {\emph{arXiv:2006.14680 [hep-ex, physics:hep-ph]}
+  (2020) } [\href{https://arxiv.org/abs/2006.14680}{{\ttfamily 2006.14680}}].
+
 \bibitem{catani_infrared_2000}
 S.~Catani and M.~Grazzini, \emph{Infrared factorization of tree-level {{QCD}}
   amplitudes at the next-to-next-to-leading order and beyond},
   \href{https://doi.org/10.1016/S0550-3213(99)00778-6}{\emph{Nuclear Physics B}
   {\bfseries 570} (2000) 287}
   [\href{https://arxiv.org/abs/hep-ph/9908523}{{\ttfamily hep-ph/9908523}}].
-
-\bibitem{larkoski_improving_2020}
-A.J.~Larkoski, \emph{Improving the {{Understanding}} of {{Jet Grooming}} in
-  {{Perturbation Theory}}}, {\emph{arXiv:2006.14680 [hep-ex, physics:hep-ph]}
-  (2020) } [\href{https://arxiv.org/abs/2006.14680}{{\ttfamily 2006.14680}}].
 
 \bibitem{ellis_qcd_1996}
 R.K.~Ellis, W.J.~Stirling and B.R.~Webber, \emph{{{QCD}} and {{Collider
@@ -154,5 +180,24 @@ T.~Becher, M.~Neubert and B.D.~Pecjak, \emph{Factorization and
   \href{https://doi.org/10.1088/1126-6708/2007/01/076}{\emph{J. High Energy
   Phys.} {\bfseries 2007} (2007) 076}
   [\href{https://arxiv.org/abs/hep-ph/0607228}{{\ttfamily hep-ph/0607228}}].
+
+\bibitem{atlas_collaboration_measurement_2020-1}
+{ATLAS Collaboration}, \emph{A measurement of soft-drop jet observables in
+  \$pp\$ collisions with the {{ATLAS}} detector at \$\textbackslash sqrt\{s\} =
+  13\$ {{TeV}}}, \href{https://doi.org/10.1103/PhysRevD.101.052007}{\emph{Phys.
+  Rev. D} {\bfseries 101} (2020) 052007}
+  [\href{https://arxiv.org/abs/1912.09837}{{\ttfamily 1912.09837}}].
+
+\bibitem{andrews_hypergeometric_1999}
+\emph{The {{Hypergeometric Functions}}},  in \emph{Special {{Functions}}},
+  G.E.~Andrews, R.~Roy and R.~Askey, eds., Encyclopedia of {{Mathematics}} and
+  Its {{Applications}}, ({Cambridge}), pp.~61--123, {Cambridge University
+  Press} (1999).
+
+\bibitem{zagier_dilogarithm_2007}
+D.~Zagier, \emph{The {{Dilogarithm Function}}},  in \emph{Frontiers in {{Number
+  Theory}}, {{Physics}}, and {{Geometry II}}: {{On Conformal Field Theories}},
+  {{Discrete Groups}} and {{Renormalization}}}, P.~Cartier, P.~Moussa, B.~Julia
+  and P.~Vanhove, eds., ({Berlin, Heidelberg}), pp.~3--65, {Springer} (2007).
 
 \end{thebibliography}\endgroup

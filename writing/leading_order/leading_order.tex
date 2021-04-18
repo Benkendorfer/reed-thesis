@@ -24,26 +24,26 @@
 %% Preamble
 %%
 % \documentclass{<something>} must begin each LaTeX document
-\providecommand{\main}{..}
-\documentclass[12pt,twoside,class=../reedthesis, crop=false]{standalone}
+% \providecommand{\main}{..}
+\documentclass[../thesis.tex]{subfiles}
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
 % Check out CTAN to see: http://www.ctan.org/
 %%
-\usepackage{graphicx,latexsym} 
-\usepackage{amssymb,amsthm,amsmath}
-\usepackage{longtable,booktabs,setspace} 
-\usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
-\usepackage[hyphens]{url}
-\usepackage{rotating}
-\usepackage{hyperref}
+% \usepackage{graphicx,latexsym} 
+% \usepackage{amssymb,amsthm,amsmath}
+% \usepackage{longtable,booktabs,setspace} 
+% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+% \usepackage[hyphens]{url}
+% \usepackage{rotating}
+% \usepackage{hyperref}
 
-\usepackage{physics}
-\usepackage{siunitx}
-\usepackage{xcolor}
+% \usepackage{physics}
+% \usepackage{siunitx}
+% \usepackage{xcolor}
 
-\usepackage{tikz-feynman}
+% \usepackage{tikz-feynman}
 % \usepackage{standalone}
 % \usepackage{natbib}
 % Comment out the natbib line above and uncomment the following two lines to use the new 
@@ -67,7 +67,7 @@
 %%
 %% The fun begins:
 \begin{document}
-	In order to develop an intuition for the mathematical tools we will put to use in the all-orders calculation of groomed heavy hemisphere mass, let us first compute the first-order (or rather, first \textit{nontrivial} order) distribution of the observable. A simple electron-positron production with the production of two quark jets, $e^+ e^- \to q\bar q$, would produce a constant distribution: the mass of the heavy hemisphere would simply be half of the final mass. The lowest-order nontrivial distribution corresponds to an $e^+ e^- \to q\bar q g$ event, in which an electron and positron annihilate to produce a quark-antiquark pair, off of which a single gluon is emitted. The location of the gluon in phase space sets the heavy hemisphere mass. This process is depicted in a Feynman diagram in Fig.~\ref{fig:first-order diagram}.
+	In order to develop an intuition for the mathematical tools we will put to use in the all-orders calculation of groomed heavy hemisphere mass, let us first compute the first-order (or rather, first \textit{nontrivial} order) distribution of the observable. A simple electron-positron production with the production of two quark jets, $e^+ e^- \to q\bar q$, would produce a constant distribution: the mass of the heavy hemisphere would simply be half of the final mass. The lowest-order nontrivial distribution corresponds to an $e^+ e^- \to q\bar q g$ event, in which an electron and positron annihilate to produce a quark-antiquark pair, off of which a single gluon is emitted. The location of the gluon in phase space sets the heavy hemisphere mass. This process is depicted in a Feynman diagram in Fig.~\ref{leading-fig:first-order diagram}.
 
 	\begin{figure}
 	\begin{center}
@@ -85,7 +85,7 @@
 		\end{feynman}
 		\end{tikzpicture}
 
-		\caption{\label{fig:first-order diagram}Feynman diagram of an $e^+ e^- \to q\bar q g$ event.}
+		\caption{\label{leading-fig:first-order diagram}Feynman diagram of an $e^+ e^- \to q\bar q g$ event.}
 	\end{center}
 	\end{figure}
 
@@ -144,7 +144,7 @@
 		E_h = p_{1, 0} + k_0 = \frac{Q}{2} + k_0 \approx \frac{Q}{2},
 	\end{equation}
 	since, for a soft gluon, $k_0 \ll Q/2$. The heavy hemisphere mass is therefore
-	\begin{equation}\label{eq:soft mass}
+	\begin{equation}\label{leading-eq:soft mass}
 		\rho = \frac{Q k^+}{Q^2 / 4} = \frac{4k^+}{Q}.
 	\end{equation}
 	This means that we will need to insert the measurement function
@@ -162,19 +162,19 @@
 		\frac{k_0}{E_h} = \frac{(k^+ + k^-)/2}{Q/2} > \zcut,
 	\end{equation}
 	or
-	\begin{equation}\label{eq:soft grooming}
+	\begin{equation}\label{leading-eq:soft grooming}
 		k^+ + k^- > Q\,\zcut.
 	\end{equation}
 	Moreover, since we are assuming that the gluon shares a hemisphere with the quark, we must also have $k_3 > 0$, which requires
-	\begin{equation}\label{eq:gluon quark hemisphere}
+	\begin{equation}\label{leading-eq:gluon quark hemisphere}
 		k^- - k^+ > 0.
 	\end{equation}
-	Equations \ref{eq:soft grooming} and \ref{eq:gluon quark hemisphere} generate the phase space constraints
+	Equations \ref{leading-eq:soft grooming} and \ref{leading-eq:gluon quark hemisphere} generate the phase space constraints
 	\begin{equation}
 		\Theta\qty(k^+ + k^- - Q\,\zcut)\Theta\qty(k^- - k^+).
 	\end{equation}
 	When we insert these into Fermi's Golden Rule, the differential cross section takes the form
-	\begin{equation}\label{eq:soft cross section preliminary}
+	\begin{equation}\label{leading-eq:soft cross section preliminary}
 		\frac{d\sigma_{\text{soft}}}{d\rho} = 2\int d\LIPS\,\abs{\cM}^2 \delta\qty(\rho - \frac{4k^+}{Q}) \Theta\qty(k^+ + k^- - Q\,\zcut)\Theta\qty(k^- - k^+).
 	\end{equation}
 	Here, $d\LIPS$ is a differential element of Lorentz-invariant phase space, and $\cM$ is the matrix element governing the $e^+ e^- \to q\bar q g$ process.
@@ -184,7 +184,7 @@
 		\abs{\cM}^2 = 4\pi \alpha_s \sigma_0 C_F \mu^{2\epsilon} \frac{p_1 \cdot p_2}{(p_1 \cdot k)(p_2 \cdot k)}.
 	\end{equation}
 	Here, $\alpha_s$ is the strong coupling constant\footnote{Which is not really a constant}, $\sigma_0$ is the cross section for $e^+ e^- \to q\bar q$, $C_F$ is the quadratic Casimir of the fundamental representation of color (taken to be $C_F = 4/3$ for our purposes \cite{particle_data_group_review_2020}), and $\mu$ is a mass scale introduced to ensure that the differential cross section will remain dimensionless in $d = 4 - 2\epsilon$ dimensions. Inserting the values of $p_1$, $p_2$, and $k$, we have
-	\begin{equation}\label{eq:soft matrix element}
+	\begin{equation}\label{leading-eq:soft matrix element}
 		\abs{\cM}^2 = 4\pi \alpha_s \sigma_0 C_F \mu^{2\epsilon} \frac{2}{k^+ k^-}.
 	\end{equation}
 
@@ -216,7 +216,7 @@
 	\begin{equation}
 		d^{d - 2}k_\perp = k_\perp^{d-3} dk_\perp d\Omega_{d-2}
 	\end{equation}
-	with $\Omega_{d-2}$ the solid angle of the $(d-2)$-dimensional unit sphere. Since none of the terms in the cross section of Eq.~\ref{eq:soft cross section preliminary} or matrix element of Eq.~\ref{eq:soft matrix element} have angular dependence, we can go ahead and integrate the solid angle:
+	with $\Omega_{d-2}$ the solid angle of the $(d-2)$-dimensional unit sphere. Since none of the terms in the cross section of Eq.~\ref{leading-eq:soft cross section preliminary} or matrix element of Eq.~\ref{leading-eq:soft matrix element} have angular dependence, we can go ahead and integrate the solid angle:
 	\begin{equation}
 		\int d\Omega_{d-2} = \frac{2\pi^{(d-2)/2}}{\Gamma(\frac{d-2}{2})}
 	\end{equation}
@@ -238,13 +238,13 @@
 		d\LIPS = \frac{(4\pi)^{\epsilon}}{\Gamma(1-\epsilon)8\pi^2}\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \Theta(k^+ + k^-).
 	\end{equation}
 	Notice that a factor of $(k^+ k^-)^\epsilon$ has been introduced --- this is what will help us capture divergences as we work and cancel them at the end. Finally, we will work using a convention known as \textbf{modified minimal subtraction}, under which we will throw away factors of $(4\pi)^\epsilon$ and set the Euler-Mascheroni constant to be $\gamma_E \to 0$ when it appears (this does not affect the final result, but will make calculations slightly less unwieldy). Under this scheme, we have
-	\begin{equation}\label{eq:soft phase space}
+	\begin{equation}\label{leading-eq:soft phase space}
 		d\LIPS = \frac{1}{\Gamma(1-\epsilon)8\pi^2}\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \Theta(k^+ + k^-).
 	\end{equation}
 	as our final phase space element.
 
-	Combining Eqs.~\ref{eq:soft cross section preliminary}, \ref{eq:soft matrix element}, and \ref{eq:soft phase space} then yields the full cross section:
-	\begin{equation}\label{eq:soft cross section integral}
+	Combining Eqs.~\ref{leading-eq:soft cross section preliminary}, \ref{leading-eq:soft matrix element}, and \ref{leading-eq:soft phase space} then yields the full cross section:
+	\begin{equation}\label{leading-eq:soft cross section integral}
 	\boxed{
 	\begin{aligned}
 		\frac{1}{4\pi\alpha_s\sigma_0 C_F}\frac{d\sigma_{\text{soft}}}{d\rho} = \frac{\mu^{2\epsilon}}{\Gamma(1-\epsilon)2\pi^2}\int &\frac{dk^+ dk^-}{(k^+ k^-)^{1+\epsilon}} \delta\qty(\rho - \frac{4k^+}{Q}) \Theta(k^+ + k^-) \\
@@ -254,7 +254,7 @@
 	\end{equation}
 
 \subsection{Calculation}
-	The integral of Eq.~\ref{eq:soft cross section integral} is relatively straightforward to evaluate. The first step is to resolve the Dirac delta:
+	The integral of Eq.~\ref{leading-eq:soft cross section integral} is relatively straightforward to evaluate. The first step is to resolve the Dirac delta:
 	\begin{equation}
 		\delta\qty(\rho - \frac{4k^+}{Q}) = \frac{Q}{4}\delta\qty(k^+ - \frac{Q\rho}{4}).
 	\end{equation}
@@ -290,7 +290,7 @@
 	Notice how dimensional regularization helped us achieve this calculation: without the regulating $(k^-)^\epsilon$, the integrals would have diverged without an upper bound on the value of $k^-$ (which, physically, has no upper bound). Our result is still manifestly divergent if we send $\epsilon \to 0$, but at least we can \textit{see} the divergence. This is the power of the technique.
 
 	We can pull out the divergence even more cleanly if we perform a Laurent expansion\footnote{Like a Taylor expansion, but possibly including negative exponents} in $\epsilon$. We will send $\epsilon \to 0$ at the end anyway, so we only care about terms through order $\cO(\epsilon^0)$; anything below this order generates divergences, and anything above this order will vanish. Performing the expansion yields
-	\begin{equation}\label{eq:soft result}
+	\begin{equation}\label{leading-eq:soft result}
 	\boxed{
 	\begin{aligned}
 		\frac{1}{4\pi\alpha_s\sigma_0 C_F}\frac{d\sigma_{\text{soft}}}{d\rho} &= \frac{1}{2\pi^2\rho} \Bigg[\frac{1}{\epsilon} + \Theta(\rho - 2\zcut)2\log(\frac{4\mu}{Q\rho}) \\
@@ -352,7 +352,7 @@
 		\rho = \frac{m_h^2}{E_h^2} = z(1 - z)\theta^2.
 	\end{equation}
 	The measurement function in Fermi's Golden Rule will then be
-	\begin{equation}\label{eq:collinear measurement term}
+	\begin{equation}\label{leading-eq:collinear measurement term}
 		\delta(\rho - z(1 - z)\theta^2) = \frac{1}{z(1 - z)}\delta\qty(\theta^2 - \frac{\rho}{z(1 - z)}).
 	\end{equation}
 
@@ -365,7 +365,7 @@
 		\min\qty[x_1, x_3] = \min[z, 1 - z] > \zcut.
 	\end{equation}
 	Thus, the grooming constraint on the cross section takes the form
-	\begin{equation}\label{eq:collinear grooming term}
+	\begin{equation}\label{leading-eq:collinear grooming term}
 		\Theta\qty(\min[z, 1 - z] - \zcut).
 	\end{equation}
 
@@ -385,8 +385,8 @@
 			&\times \qty(\theta^2)^{-1-\epsilon} z^{-2\epsilon} (1 - z)^{-2\epsilon} \qty(\frac{1 + (1 - z)^2}{z} - \epsilon z).
 	\end{aligned}
 	\end{equation}
-	A factor of $2$ has been introduced to account for the possibility that the gluon might be collinear to either the quark or the antiquark {\color{red}\textbf{[TODO: check this]}}. When we introduce the measurement and grooming terms of Eqs.~\ref{eq:collinear measurement term} and \ref{eq:collinear grooming term}, we find that the full differential cross section is
-	\begin{equation}\label{eq:collinear integral}
+	A factor of $2$ has been introduced to account for the possibility that the gluon might be collinear to either the quark or the antiquark {\color{red}\textbf{[TODO: check this]}}. When we introduce the measurement and grooming terms of Eqs.~\ref{leading-eq:collinear measurement term} and \ref{leading-eq:collinear grooming term}, we find that the full differential cross section is
+	\begin{equation}\label{leading-eq:collinear integral}
 	\boxed{
 	\begin{aligned}
 		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho}\hspace{3.5cm} \\
@@ -429,14 +429,14 @@
 		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho} = \frac{2}{\rho}\int_{\zcut}^{1-\zcut} dz \,\frac{1 + (1 - z)^2}{z} + \cO(\epsilon).
 	\end{equation}
 	This comes out to
-	\begin{equation}\label{eq:collinear result}
+	\begin{equation}\label{leading-eq:collinear result}
 	\boxed{
 		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{collinear}}}{d\rho} = \frac{2}{\rho}\qty[-\frac{3}{2} + 3 \zcut + 2 \log(\frac{1-\zcut}{\zcut})] + \cO(\epsilon).
 	}
 	\end{equation}
 
 \section{Soft-collinear gluon}
-	The last piece to compute is the soft-collinear limit. This can be achieved by starting from the collinear limit and taking $z \ll 1$. Thus, from Eq.~\ref{eq:collinear integral}, we have
+	The last piece to compute is the soft-collinear limit. This can be achieved by starting from the collinear limit and taking $z \ll 1$. Thus, from Eq.~\ref{leading-eq:collinear integral}, we have
 	\begin{equation}
 	\boxed{
 	\begin{aligned}
@@ -453,14 +453,14 @@
 	\end{aligned}
 	\end{equation}
 	Performing a Laurent expansion in $\epsilon$ yields
-	\begin{equation}\label{eq:soft-collinear result}
+	\begin{equation}\label{leading-eq:soft-collinear result}
 	\boxed{
 		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{soft-collinear}}}{d\rho} = \frac{4}{\rho}\qty[\frac{1}{\epsilon} + \log(\frac{4\mu^2}{Q^2 \rho \zcut})] + \cO(\epsilon).
 	}
 	\end{equation}
 
 \section{Putting it all together}
-	Now we can combine Eqs.~\ref{eq:soft result}, \ref{eq:collinear result}, and \ref{eq:soft-collinear result} to get a complete result. In particular, we find
+	Now we can combine Eqs.~\ref{leading-eq:soft result}, \ref{leading-eq:collinear result}, and \ref{leading-eq:soft-collinear result} to get a complete result. In particular, we find
 	\begin{equation}
 	\begin{aligned}
 		\frac{2\pi}{\alpha_s C_F}&\frac{\rho}{\sigma_0}\Bigg[\frac{d\sigma_{\text{soft}}}{d\rho} + \frac{d\sigma_{\text{collinear}}}{d\rho} - \frac{d\sigma_{\text{soft-collinear}}}{d\rho}\Bigg] \\
@@ -470,7 +470,7 @@
 	\end{aligned}
 	\end{equation}
 	Notice that the divergences in $\epsilon$ cancel! We are left with a function which does not diverge if we send $\epsilon \to 0$, which means we can simply return to 4 dimensions. Also notice that all factors of $\mu$ cancel each other out: we can pull a $\log(4\mu^2/Q^2\rho)$ out of the terms with a Heaviside function, which then cancels with the $-\log(4\mu^2/Q^2\rho)$ from the soft-collinear contribution.\footnote{Indeed, notice that logarithms of $\mu$ appear in conjunction with divergences in $\epsilon$. This is a general feature of our regularization scheme.} This is a nice consistency check, as $\mu$ is a completely arbitrary mass scale --- it would not make sense for the physical cross section to depend on an arbitrary constant! Thus, simplifying the expression and setting $\epsilon = 0$, we find that
-	\begin{equation}\label{eq:fixed order result}
+	\begin{equation}\label{leading-eq:fixed order result}
 	\boxed{
 	\begin{aligned}
 		\frac{2\pi}{\alpha_s C_F}\frac{\rho}{\sigma_0}\frac{d\sigma}{d\rho} &= 4\Theta(\rho - 2\zcut)\log(\frac{4}{\rho}) - 4\Theta(2\zcut - \rho)\log(\zcut - \frac{\rho}{4}) \\
@@ -481,10 +481,10 @@
 
 	\begin{figure}
 	\begin{center}
-		\includegraphics[width=0.9\textwidth]{\main/leading_order/figures/approximation_small_zcut_0.01.pdf}
-		\includegraphics[width=0.9\textwidth]{\main/leading_order/figures/approximation_small_zcut_0.0001.pdf}
+		\includegraphics[width=0.9\textwidth]{figures/approximation_small_zcut_0.01.pdf}
+		\includegraphics[width=0.9\textwidth]{figures/approximation_small_zcut_0.0001.pdf}
 
-		\caption{\label{fig:fixed order approx}True (orange solid line) and approximated (blue dashed line) distribution of groomed heavy hemisphere mass in the limit $\rho \sim \zcut \ll 1$.}
+		\caption{\label{leading-fig:fixed order approx}True (orange solid line) and approximated (blue dashed line) distribution of groomed heavy hemisphere mass in the limit $\rho \sim \zcut \ll 1$.}
 	\end{center}
 	\end{figure}
 
@@ -497,7 +497,7 @@
 		&\hspace{-2cm}- \frac{2(6 -6 \sqrt{1 - \rho} - \rho(5 - 4\sqrt{1 - \rho}))}{\rho^2(1 - \rho)}\log(\frac{2 - 4\zcut(1 - \zcut - \sqrt{1 - \rho}) - 2\sqrt{1 - \rho} - \rho}{4\zcut(1 - \zcut) - \rho})\Bigg].
 	\end{aligned}
 	\end{equation}
-	The true result is plotted against the approximation in Fig.~\ref{fig:fixed order approx}. Notice that, as expected, the approximation gets better both as $\zcut$ becomes smaller and as $\rho$ moves closer to $\zcut$.
+	The true result is plotted against the approximation in Fig.~\ref{leading-fig:fixed order approx}. Notice that, as expected, the approximation gets better both as $\zcut$ becomes smaller and as $\rho$ moves closer to $\zcut$.
 
 	Now, from the true result, we can then take the limit $\rho \sim \zcut \ll 1$ explicitly to find
 	\begin{equation}
@@ -508,7 +508,7 @@
 			&\hspace{3cm}- \Theta(2\zcut - \rho)\frac{4}{\rho}\log(\zcut - \frac{\rho}{4}) - \frac{3}{\rho}.
 	\end{aligned}
 	\end{equation}
-	Notice as well that taking the same limit in Eq.~\ref{eq:fixed order result} yields
+	Notice as well that taking the same limit in Eq.~\ref{leading-eq:fixed order result} yields
 	\begin{equation}
 		\frac{2\pi}{\alpha_s C_F}\frac{\rho}{\sigma_0}\frac{d\sigma}{d\rho} = 4\Theta(\rho - 2\zcut)\log(\frac{4}{\rho}) - 4\Theta(2\zcut - \rho)\log(\zcut - \frac{\rho}{4}) - 3,
 	\end{equation}
@@ -518,9 +518,11 @@
 
 	There, too, we will begin by identifying the singular regions of phase space and the dominant physical contributions in each region. We will need to resum the contributions in each region in order to manage the effects of imposed scales to all orders, but this is simply an additional step in the calculation. Moreover, instead of a simple sum, we will combine functions by convolving them, since we need to appropriately capture terms at every order in $\alpha_s$ hidden in each function. Despite these complications, however, the core idea is the same, and this simple example provides a general road map as we push forward.\footnote{We could think of this as a map which only contains the location of the interstate highways.}
 
+	Finally, one should notice in the leading-order distribution the sharp cusp that occurs at $\rho = 2\zcut - \zcut^2$. It looks strange for a reason --- this cusp is entirely unphysical. It has been demonstrated that, as higher-order contributions in $\alpha_s$ are added, the cusp becomes smooth \cite{larkoski_improving_2020}. Nevertheless, this oddity should serve as a clue that there is something interesting at play. We will explore the physics further in subsequent sections.
 
-\ifstandalone
-\bibliographystyle{../bsts/JHEP} 
-\bibliography{../jet_substructure}
-\fi
+
+% \ifstandalone
+% \bibliographystyle{../bsts/JHEP} 
+% \bibliography{../jet_substructure}
+% \fi
 \end{document}

@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2019)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: appendix_dilogarithm.aux
+The style file: ../bsts/JHEP.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: ../jet_substructure.bib
+Warning--empty author in andrews_hypergeometric_1999
+You've used 2 entries,
+            2316 wiz_defined-function locations,
+            563 strings with 4280 characters,
+and the built_in function-call counts, 1077 in all, are:
+= -- 98
+> -- 38
+< -- 0
++ -- 10
+- -- 8
+* -- 112
+:= -- 137
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 2
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 83
+empty$ -- 111
+format.name$ -- 24
+if$ -- 252
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 4
+newline$ -- 10
+num.names$ -- 5
+pop$ -- 12
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 20
+stack$ -- 0
+substring$ -- 84
+swap$ -- 12
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 17
+width$ -- 3
+write$ -- 24
+(There was 1 warning)

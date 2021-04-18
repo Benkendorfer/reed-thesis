@@ -24,27 +24,27 @@
 %% Preamble
 %%
 % \documentclass{<something>} must begin each LaTeX document
-\providecommand{\main}{..}
-\documentclass[12pt,twoside,class=../reedthesis, crop=false]{standalone}
+% \providecommand{\main}{..}
+\documentclass[../thesis.tex]{subfiles}
 % Packages are extensions to the basic LaTeX functions. Whatever you
 % want to typeset, there is probably a package out there for it.
 % Chemistry (chemtex), screenplays, you name it.
 % Check out CTAN to see: http://www.ctan.org/
 %%
-\usepackage{graphicx,latexsym} 
-\usepackage{amssymb,amsthm,amsmath}
-\usepackage{longtable,booktabs,setspace} 
-\usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
-\usepackage[hyphens]{url}
-\usepackage{rotating}
-\usepackage{hyperref}
+% \usepackage{graphicx,latexsym} 
+% \usepackage{amssymb,amsthm,amsmath}
+% \usepackage{longtable,booktabs,setspace} 
+% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
+% \usepackage[hyphens]{url}
+% \usepackage{rotating}
+% \usepackage{hyperref}
 
-\usepackage{physics}
-\usepackage{siunitx}
-\usepackage{xcolor}
+% \usepackage{physics}
+% \usepackage{siunitx}
+% \usepackage{xcolor}
 
-\usepackage{xr}
-\externaldocument[main-]{../thesis}
+% \usepackage{xr}
+% \externaldocument[main-]{../thesis}
 % \usepackage{standalone}
 % \usepackage{natbib}
 % Comment out the natbib line above and uncomment the following two lines to use the new 
@@ -74,11 +74,11 @@
 \subsection{The Standard Model}
 	\begin{figure}
 	\begin{centering}
-		\includegraphics[width=\textwidth]{\main/introduction/figures/Standard_Model_of_Elementary_Particles.pdf}
-		\caption{\label{fig:standard model}Diagram of the Standard Model of particle physics, as it currently stands. From \cite{cush_standard_2019}}
+		\includegraphics[width=\textwidth]{figures/Standard_Model_of_Elementary_Particles.pdf}
+		\caption{\label{intro-fig:standard model}Diagram of the Standard Model of particle physics, as it currently stands. From \cite{cush_standard_2019}}
 	\end{centering}
 	\end{figure} 
-	The 17 known particles are organized in a framework called the Standard Model of particle physics \cite{larkoski_elementary_2019-1,schwartz_quantum_2014}, displayed in schematic form in Fig.~\ref{fig:standard model}.
+	The 17 known particles are organized in a framework called the Standard Model of particle physics \cite{larkoski_elementary_2019-1,schwartz_quantum_2014}, displayed in schematic form in Fig.~\ref{intro-fig:standard model}.
 
 	There are 12 particles, called \textbf{fermions}, which are the fundamental components of matter. These in turn are subdivided into \textbf{quarks} and \textbf{leptons}. Quarks, with names such as `up,' `down,' and `strange,' combine in turn to form \textbf{hadrons} --- among the hadrons are familiar composite particles like protons and neutrons. 
 
@@ -109,12 +109,12 @@
 
 	\begin{figure}
 	\begin{center}
-		\includegraphics[width=\textwidth]{\main/introduction/figures/atlas_high_res.jpg}
-		\caption{\label{fig:atlas diagram}Schematic of the ATLAS experiment. For a sense of scale, note the people depicted along the bottom. Image from CERN \cite{cern_ac_layout_1998}}
+		\includegraphics[width=\textwidth]{figures/atlas_high_res.jpg}
+		\caption{\label{intro-fig:atlas diagram}Schematic of the ATLAS experiment. For a sense of scale, note the people depicted along the bottom. Image from CERN \cite{cern_ac_layout_1998}}
 	\end{center}
 	\end{figure}
 
-	ATLAS and CMS are designed as multi-purpose experiments which detect all the products of the proton-proton collisions (or at least, they try to detect them). A schematic of the ATLAS detector is displayed in Fig.~\ref{fig:atlas diagram}, and a schematic of CMS is displayed in Fig.~\ref{fig:cms diagram}. These detectors are built in layers surrounding the \textbf{interaction point}, with each layer serving a dedicated purpose. These layers can be summarized as follows \cite{larkoski_elementary_2019-1}:
+	ATLAS and CMS are designed as multi-purpose experiments which detect all the products of the proton-proton collisions (or at least, they try to detect them). A schematic of the ATLAS detector is displayed in Fig.~\ref{intro-fig:atlas diagram}, and a schematic of CMS is displayed in Fig.~\ref{intro-fig:cms diagram}. These detectors are built in layers surrounding the \textbf{interaction point}, with each layer serving a dedicated purpose. These layers can be summarized as follows \cite{larkoski_elementary_2019-1}:
 	\begin{enumerate}
 		\item In the center of each detector is the \textbf{beam pipe}. This is where collisions take place.
 
@@ -127,8 +127,8 @@
 
 	\begin{figure}
 	\begin{center}
-		\includegraphics[width=\textwidth]{\main/introduction/figures/cms_160312_02.pdf}
-		\caption{\label{fig:cms diagram}Schematic of the CMS experiment. Note the person on the far right for scale. Image from \cite{sakuma_detector_2014}}
+		\includegraphics[width=\textwidth]{figures/cms_160312_02.pdf}
+		\caption{\label{intro-fig:cms diagram}Schematic of the CMS experiment. Note the person on the far right for scale. Image from \cite{sakuma_detector_2014}}
 	\end{center}
 	\end{figure}
 
@@ -159,7 +159,7 @@
 
 		\item \textbf{All-orders:} That said, we are aiming to achieve an all-orders calculation of the groomed heavy hemisphere mass. This does \textit{not} mean that we will determine the distribution to infinite precision (i.e., infinite order in $\alpha_s$). Instead, it means that we will derive an expression which can be used to push to \textit{arbitrary accuracy} in $\alpha_s$, given the proper accuracy of inputs (and the proper degree of mathematical sophistication). Thus, by an `all-orders calculation,' we mean that we will develop a \textit{framework} for achieving precision results.
 	\end{enumerate}
-	A more complete development of these foundational concepts will be provided in Chapter \ref{main-test}.
+	A more complete development of these foundational concepts will be provided in Chapter \ref{chap:technical}.
 
 
 \subsection{Pedagogical}
@@ -224,8 +224,8 @@
 
 	With these details out of the way, let us proceed.
 
-\ifstandalone
-\bibliographystyle{../bsts/myJHEP} 
-\bibliography{../jet_substructure}
-\fi
+% \ifstandalone
+% \bibliographystyle{../bsts/myJHEP} 
+% \bibliography{../jet_substructure}
+% \fi
 \end{document}

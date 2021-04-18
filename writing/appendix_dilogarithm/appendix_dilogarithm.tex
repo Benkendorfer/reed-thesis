@@ -1,0 +1,68 @@
+\documentclass[../thesis.tex]{subfiles}
+
+\providecommand{\zcut}{z_\mathrm{{cut}}}
+\providecommand{\LIPS}{\mathrm{LIPS}}
+\providecommand{\cusp}{\mathrm{cusp}}
+\providecommand{\mMDT}{\mathrm{mMDT}}
+
+\providecommand{\arctanh}{\mathrm{arctanh}}
+\providecommand{\Li}{\mathrm{Li}}
+\providecommand{\Re}{\mathrm{Re}}
+
+\providecommand{\cM}{\mathcal{M}}
+\providecommand{\cL}{\mathcal{L}}
+\providecommand{\cO}{\mathcal{O}}
+
+
+\setlength{\parskip}{0pt}
+%%
+%% End Preamble
+%%
+%% The fun begins:
+\begin{document}
+	The dilogarithm function is defined by the power series \cite{andrews_hypergeometric_1999}
+	\begin{equation}\label{app_dilog-eq:dilog definition}
+		\Li_2(z) = \sum_{k = 1}^\infty \frac{z^k}{k^2}, \qquad \text{for } \abs{z} < 1.
+	\end{equation}
+	It is an identity of the dilogarithm that \cite{zagier_dilogarithm_2007}
+	\begin{equation}\label{app_dilog-eq:dilog reflection identity}
+		\Li_2(z) + \Li_2\qty(\frac{1}{z}) = -\frac{\pi^2}{6} - \frac{1}{2}\log^2(-z).
+	\end{equation}
+	The dilogarithm of exponentials in which we are interested is
+	\begin{equation}\label{app_dilog-eq:dilog exponential euler identity}
+		\Li_2\qty(-e^{2i\phi}) = \sum_{k = 1}^\infty \frac{(-1)^k e^{2ik \phi}}{k^2} = \sum_{k = 1}^\infty \frac{(-1)^k \cos(2k\phi)}{k^2} + i\sum_{k = 1}^\infty \frac{(-1)^k \sin(2k\phi)}{k^2}.
+	\end{equation}
+	The real part can be re-written in terms of dilogarithms:
+	\begin{equation}
+	\begin{aligned}
+		\sum_{k = 1}^\infty \frac{(-1)^k \cos(2k\phi)}{k^2} &= \frac{1}{2}\qty[\sum_{k = 1}^\infty \frac{(-1)^k e^{-2ik\phi}}{k^2} + \sum_{k = 1}^\infty \frac{(-1)^k e^{2ik\phi}}{k^2}] \\
+		&= \frac{1}{2}\qty[\Li_2\qty(-e^{2i\phi}) + \Li_2\qty(-e^{-2i\phi})].
+	\end{aligned}
+	\end{equation}
+	By Eq.~\ref{app_dilog-eq:dilog reflection identity}, we see that
+	\begin{equation}
+		\Li_2\qty(-e^{2i\phi}) + \Li_2\qty(-e^{-2i\phi}) = -\frac{\pi^2}{6} - \frac{1}{2}\log^2\qty(e^{2i\phi}) = -\frac{\pi^2}{6} - 2\phi^2.
+	\end{equation}
+	Therefore, the real part of Eq.~\ref{app_dilog-eq:dilog exponential euler identity} is
+	\begin{equation}
+		\Re\qty[\Li_2\qty(-e^{2i\phi})] = -\frac{\pi^2}{12} + \phi^2.
+	\end{equation}
+	The imaginary part is
+	\begin{equation}
+	\begin{aligned}
+		\sum_{k = 1}^\infty \frac{(-1)^k \sin(2 k \phi)}{k^2} &= \frac{i}{2}\qty[\sum_{k = 1}^\infty \frac{(-1)^k e^{-2ik\phi}}{k^2} - \sum_{k = 1}^\infty \frac{(-1)^k e^{2ik \phi}}{k^2}] \\
+		&= \frac{i}{2}\qty[\Li_2\qty(-e^{-2i\phi}) - \Li_2\qty(-e^{2i\phi})],
+	\end{aligned}
+	\end{equation}
+	which is more difficult to simplify.\footnote{To the best of my knowledge, no straightforward identity exists.} Therefore, we conclude that
+	\begin{equation}\label{app_dilog-eq:dilog exponential identity}
+		\Li_2\qty(-e^{2i\phi}) = -\frac{\pi^2}{12} + \phi^2 - \frac{1}{2}\qty[\Li_2\qty(-e^{-2i\phi}) - \Li_2\qty(-e^{2i\phi})].
+	\end{equation}
+	The portion in square brackets is purely imaginary.
+
+
+% \ifstandalone
+% \bibliographystyle{../bsts/JHEP} 
+% \bibliography{../jet_substructure}
+% \fi
+\end{document}

@@ -1,0 +1,16 @@
+
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{andrews_hypergeometric_1999}
+\emph{The {{Hypergeometric Functions}}},  in \emph{Special {{Functions}}},
+  G.E.~Andrews, R.~Roy and R.~Askey, eds., Encyclopedia of {{Mathematics}} and
+  Its {{Applications}}, ({Cambridge}), pp.~61--123, {Cambridge University
+  Press} (1999).
+
+\bibitem{zagier_dilogarithm_2007}
+D.~Zagier, \emph{The {{Dilogarithm Function}}},  in \emph{Frontiers in {{Number
+  Theory}}, {{Physics}}, and {{Geometry II}}: {{On Conformal Field Theories}},
+  {{Discrete Groups}} and {{Renormalization}}}, P.~Cartier, P.~Moussa, B.~Julia
+  and P.~Vanhove, eds., ({Berlin, Heidelberg}), pp.~3--65, {Springer} (2007).
+
+\end{thebibliography}\endgroup

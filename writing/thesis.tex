@@ -31,8 +31,9 @@
 % Chemistry (chemtex), screenplays, you name it.
 % Check out CTAN to see: http://www.ctan.org/
 %%
-\usepackage{graphicx,latexsym} 
-\usepackage{amssymb,amsthm,amsmath}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage{amssymb,amsthm,amsmath,amsfonts}
 \usepackage{longtable,booktabs,setspace} 
 \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
 \usepackage[hyphens]{url}
@@ -41,14 +42,17 @@
 
 \usepackage{physics}
 \usepackage{siunitx}
-\usepackage[subpreambles]{standalone}
+% \usepackage[subpreambles]{standalone}
 
 \usepackage{tikz-feynman}
 
-\usepackage{xr}
-\externaldocument[intro-]{./introduction/introduction}
-\externaldocument[factorization-]{./factorization/factorization}
-\externaldocument[all-]{./all_orders/all_orders}
+% \usepackage{xr}
+% \externaldocument[intro-]{./introduction/introduction}
+% \externaldocument[factorization-]{./factorization/factorization}
+% \externaldocument[all-]{./all_orders/all_orders}
+
+\usepackage{subfiles}
+
 % \usepackage[strings]{underscore}
 % \usepackage{natbib}
 % Comment out the natbib line above and uncomment the following two lines to use the new 
@@ -108,9 +112,9 @@
 	\begin{tabular}{ll}
 		\textbf{LHC}  	&  Large Hadron Collider \\
 		\textbf{mMDT}  	&  Modified Mass Drop Tagger \\
-		\textbf{QCD}  	&  Quantum chromodynamics \\
-		\textbf{QFT}  	&  Quantum field theory \\
-		\textbf{SCET}  	&  Soft collinear effective theory\\
+		\textbf{QCD}  	&  Quantum Chromodynamics \\
+		\textbf{QFT}  	&  Quantum Field Theory \\
+		\textbf{SCET}  	&  Soft-Collinear Effective Theory\\
 	\end{tabular}
 	\end{table}
 	
@@ -141,45 +145,32 @@
 \markboth{Introduction}{Introduction}
 % The three lines above are to make sure that the headers are right, that the intro gets included in the table of contents, and that it doesn't get numbered 1 so that chapter one is 1.
 
-	\input{introduction/introduction}
+	\graphicspath{{introduction/}}
+	\subfile{introduction/introduction}
 
 	
 
-\chapter{QCD, jet grooming, and our toolbox}\label{test}
+\chapter{Technical introduction}\label{chap:technical}
 	
-	First chapter here
-
-	\section{Quantum Chromodynamics (QCD)}
-	\subsection{Cross sections}
-
-	\subsection{Fermi's golden rule}
-
-	\subsection{Running coupling}
-
-	\section{Jets}
-
-	\section{mMDT Grooming}
-
-	\section{Soft Collinear Effective Theory (SCET)}
-
-	\section{Dimensional regularization}
-
-	\section{Resummation}
+	\graphicspath{{technical_introduction/}}
+	\subfile{technical_introduction/technical_introduction}
 
 
-\chapter{Leading-order calculation}
+\chapter{Leading-order calculation}\label{chap:leading order}
 
-	\input{leading_order/leading_order}
-
-
-\chapter{Factorization formula}
-
-	\input{factorization/factorization}
+	\graphicspath{{leading_order/}}
+	\subfile{leading_order/leading_order}
 
 
-\chapter{All-orders calculation}
+\chapter{Factorization formula}\label{chap:factorization}
+
+	\graphicspath{{factorization/}}
+	\subfile{factorization/factorization}
+
+
+\chapter{All-orders calculation}\label{chap:all orders}
 	
-	\input{all_orders/all_orders}
+	\subfile{all_orders/all_orders}
 	
 
 \chapter*{Conclusion}
@@ -189,13 +180,19 @@
 \setcounter{chapter}{4}
 \setcounter{section}{0}
 	
-	Conclusion here 
+	\subfile{conclusion/conclusion}
 
 
 %If you feel it necessary to include an appendix, it goes here.
-    % \appendix
-    %   \chapter{The First Appendix}
-    %   \chapter{The Second Appendix, for Fun}
+\appendix
+\chapter{Soft function integral}\label{app:soft function integral}
+
+	\graphicspath{{appendix_soft_function/}}
+	\subfile{appendix_soft_function/appendix_soft_function}
+
+\chapter{The dilogarithm function}\label{app:dilogarithm}
+
+  \subfile{appendix_dilogarithm/appendix_dilogarithm}
 
 
 %This is where endnotes are supposed to go, if you have them.
