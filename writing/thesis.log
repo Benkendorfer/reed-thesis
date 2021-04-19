@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  17 APR 2021 23:27
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  18 APR 2021 17:28
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.119 seconds
+luaotfload | main : initialization completed in 0.130 seconds
 (./reedthesis.cls
 Document Class: reedthesis 2004/01/27 The Reed College Thesis Class
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/book.cls
@@ -1195,7 +1195,7 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 30.
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [13] [14]
 [15]
-<technical_introduction/figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg, id=961
+<technical_introduction/figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg, id=962
 , 2862.17822pt x 1889.75317pt>
 File: technical_introduction/figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg Gr
 aphic file (type jpg)
@@ -1203,19 +1203,16 @@ aphic file (type jpg)
 Package luatex.def Info: technical_introduction/figures/DijetHighMass9.3TeV-VP1-
 nocone_small.jpg  used on input line 96.
 (luatex.def)             Requested size: 433.62pt x 286.2766pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16<./technical_introduction/figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg>] [17]
-[18]
-<technical_introduction/figures/atlas_pile_up.jpeg, id=1008, 1027.6794pt x 684.1
+ [16<./technical_introduction/figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg>] [17] [18]
+<technical_introduction/figures/atlas_pile_up.jpeg, id=1010, 1027.6794pt x 684.1
 56pt>
 File: technical_introduction/figures/atlas_pile_up.jpeg Graphic file (type jpg)
 <use technical_introduction/figures/atlas_pile_up.jpeg>
 Package luatex.def Info: technical_introduction/figures/atlas_pile_up.jpeg  used
  on input line 174.
 (luatex.def)             Requested size: 433.62pt x 288.66936pt.
- [19] [20<./technical_introduction/figures/atlas_pile_up.jpeg>] [21]
+ [19] [20<./technical_introduction/figures/atlas_pile_up.jpeg>]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
@@ -1242,7 +1239,7 @@ Chapter 2.
 
 ] [26] [27] [28] [29] [30] [31] [32]
 [33] [34]
-<leading_order/figures/approximation_small_zcut_0.01.pdf, id=1279, 375.4025pt x 
+<leading_order/figures/approximation_small_zcut_0.01.pdf, id=1283, 375.4025pt x 
 190.7125pt>
 File: leading_order/figures/approximation_small_zcut_0.01.pdf Graphic file (type
  pdf)
@@ -1250,7 +1247,7 @@ File: leading_order/figures/approximation_small_zcut_0.01.pdf Graphic file (type
 Package luatex.def Info: leading_order/figures/approximation_small_zcut_0.01.pdf
   used on input line 484.
 (luatex.def)             Requested size: 390.25534pt x 198.26938pt.
-<leading_order/figures/approximation_small_zcut_0.0001.pdf, id=1280, 375.4025pt 
+<leading_order/figures/approximation_small_zcut_0.0001.pdf, id=1284, 375.4025pt 
 x 190.7125pt>
 File: leading_order/figures/approximation_small_zcut_0.0001.pdf Graphic file (ty
 pe pdf)
@@ -1269,7 +1266,7 @@ Chapter 3.
 (./factorization/factorization.tex [39
 
 ] [40]
-<factorization/figures/head_on_schematic.pdf, id=1758, 434.63028pt x 651.94836pt
+<factorization/figures/head_on_schematic.pdf, id=1762, 434.63028pt x 651.94836pt
 >
 File: factorization/figures/head_on_schematic.pdf Graphic file (type pdf)
 <use factorization/figures/head_on_schematic.pdf>
@@ -1281,7 +1278,7 @@ Chapter 4.
 (./all_orders/all_orders.tex [45
 
 ] [46] [47] [48] [49] [50] [51]
-Overfull \hbox (4.35799pt too wide) detected at line 331
+Overfull \hbox (4.35799pt too wide) detected at line 275
 [][]
  []
 
@@ -1293,7 +1290,7 @@ Underfull \vbox (badness 6300) has occurred while \output is active []
 ! Undefined control sequence.
 <argument> \ltag (k^+ - k_0 \n 
                     _g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.378 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
+l.322 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
                                                   (k\cdot n_g - k_0 n_g \cdo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1304,7 +1301,7 @@ and I'll forget about whatever was undefined.
 ! Double subscript.
 <argument> \ltag (k^+ - k_0 \n _
                      g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.378 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
+l.322 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
                                                   (k\cdot n_g - k_0 n_g \cdo...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
@@ -1312,7 +1309,7 @@ I treat `x_1_2' essentially like `x_1{}_2'.
 ! Undefined control sequence.
 <argument> \ltag (k^+ - k_0 \n 
                     _g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.407 	}
+l.351 	}
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1323,12 +1320,12 @@ and I'll forget about whatever was undefined.
 ! Double subscript.
 <argument> \ltag (k^+ - k_0 \n _
                      g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.407 	}
+l.351 	}
       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 [55] [56]
-Overfull \hbox (23.26083pt too wide) detected at line 462
+Overfull \hbox (23.26083pt too wide) detected at line 406
 [][][]
  []
 
@@ -1336,7 +1333,7 @@ Overfull \hbox (23.26083pt too wide) detected at line 462
 Underfull \vbox (badness 4254) has occurred while \output is active []
 
  [58]
-Overfull \hbox (5.12096pt too wide) detected at line 547
+Overfull \hbox (5.12096pt too wide) detected at line 491
 [][][][]\OML/cmm/m/it/12 []\OT1/cmr/m/n/12  (\OMS/cmsy/m/n/12  \OT1/cmr/m/n/12
  2\OML/cmm/m/it/12 \OT1/cmr/m/n/12 ) = [][] + \OMS/cmsy/m/n/12 O\OT1/cmr/m/n/1
 2 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
@@ -1347,13 +1344,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
 [60] [61]
-<all_orders/figures/resummation_plot.pdf, id=2105, 346.29375pt x 170.6375pt>
+<all_orders/figures/resummation_plot.pdf, id=2110, 346.29375pt x 170.6375pt>
 File: all_orders/figures/resummation_plot.pdf Graphic file (type pdf)
 <use all_orders/figures/resummation_plot.pdf>
 Package luatex.def Info: all_orders/figures/resummation_plot.pdf  used on input 
-line 676.
+line 621.
 (luatex.def)             Requested size: 390.25534pt x 192.30518pt.
-) [62] [63<./all_orders/figures/resummation_plot.pdf>] [64
+ [62]) [63<./all_orders/figures/resummation_plot.pdf>] [64
 
 ]
 (./conclusion/conclusion.tex [65]) [66]
@@ -1369,7 +1366,7 @@ Overfull \hbox (24.55785pt too wide) detected at line 68
  []
 
 [68] [69] [70]
-<appendix_soft_function/figures/full_eps_0.0001.pdf, id=2351, 336.25626pt x 169.
+<appendix_soft_function/figures/full_eps_0.0001.pdf, id=2357, 336.25626pt x 169.
 63374pt>
 File: appendix_soft_function/figures/full_eps_0.0001.pdf Graphic file (type pdf)
 
@@ -1397,15 +1394,15 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39023 strings out of 493861
+ 39026 strings out of 493861
  100000,953878 words of node,token memory allocated
- 3411 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 58 glue, 4 kern, 1 glyph, 598 attribute, 65 glue_sp
-ec, 598 attribute_list, 2 write, 15 pdf_action nodes
-   avail lists: 1:8,2:972,3:413,4:64,5:330,6:54,7:4582,8:115,9:967,10:21,11:364
- 41831 multiletter control sequences out of 65536+600000
+ 3444 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 61 glue, 4 kern, 1 glyph, 601 attribute, 65 glue_sp
+ec, 601 attribute_list, 2 write, 15 pdf_action nodes
+   avail lists: 1:8,2:972,3:413,4:64,5:330,6:54,7:4553,8:115,9:967,10:21,11:359
+ 41832 multiletter control sequences out of 65536+600000
  110 fonts using 12003063 bytes
- 67i,16n,110p,1634b,1939s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 67i,16n,110p,1599b,1939s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.ot
 f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.
 otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.
@@ -1435,10 +1432,10 @@ xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (94 pages, 10874983 bytes).
+Output written on thesis.pdf (94 pages, 10877835 bytes).
 
-PDF statistics: 2727 PDF objects out of 2984 (max. 8388607)
- 2197 compressed objects within 22 object streams
- 555 named destinations out of 1000 (max. 131072)
+PDF statistics: 2734 PDF objects out of 2984 (max. 8388607)
+ 2203 compressed objects within 23 object streams
+ 557 named destinations out of 1000 (max. 131072)
  440 words of extra memory for PDF output out of 10000 (max. 100000000)
 

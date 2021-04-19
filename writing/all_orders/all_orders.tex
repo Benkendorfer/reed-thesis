@@ -1,60 +1,4 @@
-% This is the Reed College LaTeX thesis template. Most of the work 
-% for the document class was done by Sam Noble (SN), as well as this
-% template. Later comments etc. by Ben Salzberg (BTS). Additional
-% restructuring and APA support by Jess Youngberg (JY).
-% Your comments and suggestions are more than welcome; please email
-% them to cus@reed.edu
-%
-% See http://web.reed.edu/cis/help/latex.html for help. There are a 
-% great bunch of help pages there, with notes on
-% getting started, bibtex, etc. Go there and read it if you're not
-% already familiar with LaTeX.
-%
-% Any line that starts with a percent symbol is a comment. 
-% They won't show up in the document, and are useful for notes 
-% to yourself and explaining commands. 
-% Commenting also removes a line from the document; 
-% very handy for troubleshooting problems. -BTS
-
-% As far as I know, this follows the requirements laid out in 
-% the 2002-2003 Senior Handbook. Ask a librarian to check the 
-% document before binding. -SN
-
-%%
-%% Preamble
-%%
-% \documentclass{<something>} must begin each LaTeX document
-% \providecommand{\main}{..}
 \documentclass[../thesis.tex]{subfiles}
-% Packages are extensions to the basic LaTeX functions. Whatever you
-% want to typeset, there is probably a package out there for it.
-% Chemistry (chemtex), screenplays, you name it.
-% Check out CTAN to see: http://www.ctan.org/
-%%
-% \usepackage{graphicx,latexsym} 
-% \usepackage{amssymb,amsthm,amsmath}
-% \usepackage{longtable,booktabs,setspace} 
-% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
-% \usepackage[hyphens]{url}
-% \usepackage{rotating}
-% \usepackage{hyperref}
-
-% \usepackage{physics}
-% \usepackage{siunitx}
-% \usepackage{xcolor}
-
-% \usepackage{xr}
-% \externaldocument[factorization-]{../factorization/factorization}
-% \externaldocument[main-]{../thesis}
-% \usepackage{standalone}
-% \usepackage{natbib}
-% Comment out the natbib line above and uncomment the following two lines to use the new 
-% biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
-% bibliography is included. 
-%\usepackage{biblatex-chicago}
-%\bibliography{thesis}
-
-% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
 \providecommand{\zcut}{z_\mathrm{{cut}}}
 \providecommand{\LIPS}{\mathrm{LIPS}}
@@ -75,15 +19,15 @@
 %%
 %% The fun begins:
 \begin{document}
-	Recall that the goal of our all-orders calculation is to derive an expression which accounts for contributions at every order in $\alpha_s$ and with which, if one has sufficient patience and mathematical skill, one could compute the heavy hemisphere mass to arbitrary accuracy in the $\rho \sim \zcut \ll 1$ limit. In this chapter, we will see how this is done.
+	Recall that the goal of our all-orders calculation is to derive an expression which systematically accounts for logarithmic contributions at every order in $\alpha_s$ and with which, if one has sufficient patience and mathematical skill, one could compute the heavy hemisphere mass to arbitrary accuracy in the $\rho \sim \zcut \ll 1$ limit. In this chapter, we will see how this is done.
 
-	As we have repeated several times by now,\footnote{Because it bears repeating!}, QCD is a scale-invariant theory. However, when we compute something like the groomed heavy hemisphere mass distribution, we impose scale onto the system (such as the hemisphere mass or the groomer energy cut). In QCD, whenever multiple scales appear, say $\Lambda_h$ and $\Lambda_\ell$, high-order corrections to observables appear with the form \cite{becher_introduction_2015-1}
+	As we have repeated several times by now,\footnote{Because it bears repeating!} QCD is a scale-invariant theory. However, when we compute something like the groomed heavy hemisphere mass distribution, we impose scale onto the system (such as the hemisphere mass or the groomer energy cut). In QCD, whenever multiple scales appear, say $\Lambda_h$ and $\Lambda_\ell$, high-order corrections to observables appear with the form \cite{becher_introduction_2015-1}
 	\begin{equation}
 		\alpha_s^n \log^{n}\frac{\Lambda_h}{\Lambda_\ell}.
 	\end{equation}
-	These logarithms can grow quite large if the scales are far apart, which enhances the size of these contributions \cite{schwartz_quantum_2014}. Moreover, since these contributions occur at high order in $\alpha_s$, they can be incredibly difficult to compute. This leaves us in a quandary --- how do we handle large corrections which are, for all intents an purposes, out of computational reach?
+	These logarithms can grow quite large if the scales are far apart, which enhances the size of these contributions \cite{schwartz_quantum_2014}. Moreover, since these contributions occur at every order in $\alpha_s$, they can be difficult to take care of. This leaves us in a quandary --- how do we handle large corrections which are, for all intents an purposes, out of computational reach?
 
-	The key to an all-orders calculation of the distribution is to account for these logarithmic corrections in a systematic way, move them around, and put them back together into a scale-invariant function. This is the process of \textbf{resummation}, which we are about to undertake.
+	The key to an all-orders calculation of the distribution is to keep track of these logarithmic corrections in a systematic way, move them around, and put them back together into a scale-invariant function. This is the process of \textbf{resummation}, which we are about to undertake.
 
 \section{Resummation}\label{all-sec:resummation}
 	The first step towards resummation in SCET is to derive a factorization formula \cite{becher_introduction_2015-1}, as we have already done in Eq.~\ref{factor-eq:factorization formula}. Splitting the cross section into terms, each of which depends only on a single scale, enables resummation of each term \cite{frye_factorization_2016}.
@@ -101,7 +45,7 @@
 		&\qquad\times J_{\bar q}(\nu_2) \times S_C(\sqrt{\nu_2 \zcut}).
 	\end{aligned}
 	\end{equation}
-	The multiplicative factorization in Laplace space allows us to resum each term individually, without worrying about cross-talk between terms \cite{frye_factorization_2016}. Before moving on, with this calculation, let us study how resummation works.
+	The multiplicative factorization in Laplace space allows us to resum each term individually, without worrying about cross-talk between terms \cite{frye_factorization_2016}. Before moving on, with this calculation, let us study how our resummation strategy will work.
 
 \subsection{Strategy}
 	Let us consider the simple example of an observable
@@ -189,7 +133,7 @@
 	\end{aligned}
 	}
 	\end{equation}
-	Here, $\mu_0$ is some reference energy scale of our choosing. One way to think about resummation is that it allows us to compute the function $F$ at any scale $\mu$, given the value at a particular scale $\mu_0$.
+	Here, $\mu_0$ is some reference energy scale of our choosing. One way to think about resummation is that it allows us to compute the function $F$ at any scale $\mu$, given the value at a particular scale $\mu_0$. Moreover, the only place where large logarithms could now live is in $F(\mu_0)$ --- it turns out that the logarithms will contain factors of $\mu_0$, so we can cleverly pick $\mu_0$ in order to eliminate them.
 
 	To see that Eq.~\ref{all-eq:RGE general solution} solves the renormalization group equation \ref{all-eq:general RGE}, we can simply differentiate it with respect to $\mu$. To do so, first notice that
 	\begin{equation}
@@ -211,7 +155,7 @@
 	\end{equation}
 	The second and third integrals of Eq.~\ref{all-eq:RGE general solution} are similar but more straightforward:
 	\begin{align}
-		\int_{\alpha_s(\mu_0)}^{\alpha_s(\mu)} \frac{d\alpha}{\beta(\alpha)}\gamma_F(\alpha) &= \frac{\gamma_F(\alpha_s(\mu))}{\mu} & \int_{\alpha_s(\mu_0)}^{\alpha_s(\mu)} \frac{d\alpha}{\beta(\alpha)}\Gamma_F(\alpha) &= \frac{\Gamma_F(\alpha_s(\mu))}{\mu}.
+		\int_{\alpha_s(\mu_0)}^{\alpha_s(\mu)} \frac{d\alpha}{\beta(\alpha)}\gamma_F(\alpha) &= \frac{\gamma_F(\alpha_s(\mu))}{\mu}, & \int_{\alpha_s(\mu_0)}^{\alpha_s(\mu)} \frac{d\alpha}{\beta(\alpha)}\Gamma_F(\alpha) &= \frac{\Gamma_F(\alpha_s(\mu))}{\mu}.
 	\end{align}
 	Therefore, differentiating Eq.~\ref{all-eq:RGE general solution} with respect to $\mu$ yields, via the chain rule,
 	\begin{equation}
@@ -338,7 +282,7 @@
 
 \section{Soft function}\label{all-sec:soft function calculation}
 \subsection{Setup}
-	Let us first remind ourselves what it is we are calculating. The soft function $S_R(\rho - \zcut)$ describes soft radiation which passes the mMDT groomer due to its proximity to the resolved gluon. If the resolved emission occurs at an angle $\theta$ from the quark axis, then because of the iterative branching {\color{red}\textbf{[TODO: word choice]}} approach of the grooming algorithm, any radiation at a smaller angle either from the quark or the gluon will pass the groomer.
+	Let us first remind ourselves what it is we are calculating. The soft function $S_R(\rho - \zcut)$ describes soft radiation which passes the mMDT groomer due to its proximity to the resolved gluon. If the resolved emission occurs at an angle $\theta$ from the quark axis, then because of the iterative selection approach of the mMDT grooming algorithm, any radiation at a smaller angle either from the quark or the gluon will pass the groomer.
 
 	We want to compute $S_R$ to order $\alpha_s$, then use the renormalization group equation to resum the soft function. For the sake of this section, let $\rho_s = \rho - \zcut$ be the contribution of the soft ungroomed emissions to the hemisphere mass.
 
@@ -651,13 +595,14 @@
 	}
 	\end{equation}
 	From this, it is evident that the natural scale of the soft function is
-	\begin{equation}
+	\begin{equation}\label{all-eq:mu0 natural value}
 		\mu_0 = \frac{Q}{2\nu}.
 	\end{equation}
 	To evaluate $S_R(\nu, \mu_0)$, we simply ignore the pole of Eq.~\ref{all-eq:soft function laplace expanded}, set $\epsilon = 0$, and set $\mu = \mu_0$:
 	\begin{equation}
 		S_R(\nu, \mu_0) = -\frac{\alpha_s C_F}{\pi^2}\qty[2f(\theta_g)\log(\frac{2\mu_0 \nu}{Q}) + \pi \log^2\qty(\frac{2\mu_0 \nu}{Q})].
 	\end{equation}
+	Notice that setting $\mu_0 = Q/2\nu$ would eliminate the large logarithms from $S_R(\nu, \mu_0)$!\footnote{You might be concerned that it would also set $S_R(\nu, Q/2\nu) = 0$. However, it would also be incorrect to assign the value of $\mu_0$ before performing the inverse Laplace transform, so the point is irrelevant.}
 
 	Finally, we should convert the soft function back to real space. This is done using the tricks of Sec.~\ref{all-sec:full resummed result}. The logarithm-derivative transformation is
 	\begin{equation}

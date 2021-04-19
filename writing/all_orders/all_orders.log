@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  17 APR 2021 23:24
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  18 APR 2021 17:23
  restricted system commands enabled.
 **all_orders.tex
 (./all_orders.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.127 seconds
+luaotfload | main : initialization completed in 0.124 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1035,24 +1035,24 @@ Package: subfiles 2019/10/30 v1.5 Multi-file projects (package)
 ))) (./all_orders.aux)
 \openout1 = all_orders.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1077,7 +1077,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 
 ))
 \AtBeginShipoutBox=\box79
-Package hyperref Info: Link coloring OFF on input line 77.
+Package hyperref Info: Link coloring OFF on input line 21.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1090,9 +1090,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count323
 )
-LaTeX Info: Redefining \ref on input line 77.
-LaTeX Info: Redefining \pageref on input line 77.
-LaTeX Info: Redefining \nameref on input line 77.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (./all_orders.out) (./all_orders.out)
 \@outlinefile=\write4
@@ -1109,50 +1109,50 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 
 Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[com
 pat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on i
-nput line 77.
+nput line 21.
 
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 77.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 21.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 77.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Warning: Citation `becher_introduction_2015-1' on page 1 undefined on inpu
-t line 80.
+t line 24.
 
 
 LaTeX Warning: Citation `schwartz_quantum_2014' on page 1 undefined on input lin
-e 84.
+e 28.
 
 
 LaTeX Warning: Citation `becher_introduction_2015-1' on page 1 undefined on inpu
-t line 89.
+t line 33.
 
 
 LaTeX Warning: Reference `factor-eq:factorization formula' on page 1 undefined o
-n input line 89.
+n input line 33.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 1 undefined on input l
-ine 89.
+ine 33.
 
 
 LaTeX Warning: Citation `boas_mathematical_2006' on page 1 undefined on input li
-ne 91.
+ne 35.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 1 undefined on input l
-ine 104.
+ine 48.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1168,63 +1168,63 @@ ap/pdftex.map}
 ]
 
 LaTeX Warning: Citation `schwartz_quantum_2014' on page 2 undefined on input lin
-e 115.
+e 59.
 
 
 LaTeX Warning: Citation `schwartz_quantum_2014' on page 2 undefined on input lin
-e 119.
+e 63.
 
 
 LaTeX Warning: Citation `schwartz_quantum_2014' on page 2 undefined on input lin
-e 129.
+e 73.
 
 [2]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 3 undefined on input l
-ine 144.
+ine 88.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 3 undefined on input l
-ine 152.
+ine 96.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 3 undefined on input l
-ine 168.
+ine 112.
 
 [3]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 4 undefined on input l
-ine 176.
+ine 120.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 4 undefined on input l
-ine 183.
+ine 127.
 
 [4] [5]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 6 undefined on input l
-ine 244.
+ine 188.
 
 [6]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 7 undefined on input l
-ine 293.
+ine 237.
 
 
 LaTeX Warning: Citation `becher_factorization_2007' on page 7 undefined on input
- line 297.
+ line 241.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 7 undefined on input l
-ine 297.
+ine 241.
 
 [7]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 8 undefined on input l
-ine 309.
+ine 253.
 
 
-Overfull \hbox (4.35799pt too wide) detected at line 331
+Overfull \hbox (4.35799pt too wide) detected at line 275
 [][]
  []
 
@@ -1232,7 +1232,7 @@ Overfull \hbox (4.35799pt too wide) detected at line 331
 ! Undefined control sequence.
 <argument> \ltag (k^+ - k_0 \n 
                     _g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.378 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
+l.322 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
                                                   (k\cdot n_g - k_0 n_g \cdo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1243,23 +1243,23 @@ and I'll forget about whatever was undefined.
 ! Double subscript.
 <argument> \ltag (k^+ - k_0 \n _
                      g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.378 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
+l.322 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
                                                   (k\cdot n_g - k_0 n_g \cdo...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
 LaTeX Warning: Citation `catani_infrared_2000' on page 10 undefined on input lin
-e 381.
+e 325.
 
 
 LaTeX Warning: Citation `catani_infrared_2000' on page 10 undefined on input lin
-e 385.
+e 329.
 
 [10]
 ! Undefined control sequence.
 <argument> \ltag (k^+ - k_0 \n 
                     _g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.407 	}
+l.351 	}
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1270,86 +1270,86 @@ and I'll forget about whatever was undefined.
 ! Double subscript.
 <argument> \ltag (k^+ - k_0 \n _
                      g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.407 	}
+l.351 	}
       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 [11]
-Overfull \hbox (23.26083pt too wide) detected at line 462
+Overfull \hbox (23.26083pt too wide) detected at line 406
 [][][]
  []
 
 [12]
 
 LaTeX Warning: Citation `schwartz_quantum_2014' on page 13 undefined on input li
-ne 489.
+ne 433.
 
 [13]
 
 LaTeX Warning: Reference `app:soft function integral' on page 14 undefined on in
-put line 529.
+put line 473.
 
 
 LaTeX Warning: Reference `app_soft-eq:full soft function' on page 14 undefined o
-n input line 529.
+n input line 473.
 
 
-LaTeX Warning: Reference `app:dilogarithm' on page 14 undefined on input line 54
-0.
+LaTeX Warning: Reference `app:dilogarithm' on page 14 undefined on input line 48
+4.
 
 
-Overfull \hbox (5.12096pt too wide) detected at line 547
+Overfull \hbox (5.12096pt too wide) detected at line 491
 [][][][]\OML/cmm/m/it/12 []\OT1/cmr/m/n/12  (\OMS/cmsy/m/n/12  \OT1/cmr/m/n/12
  2\OML/cmm/m/it/12 \OT1/cmr/m/n/12 ) = [][] + \OMS/cmsy/m/n/12 O\OT1/cmr/m/n/1
 2 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
  []
 
 [14] [15] [16]
-<figures/resummation_plot.pdf, id=314, 346.29375pt x 170.6375pt>
+<figures/resummation_plot.pdf, id=315, 346.29375pt x 170.6375pt>
 File: figures/resummation_plot.pdf Graphic file (type pdf)
 <use figures/resummation_plot.pdf>
-Package luatex.def Info: figures/resummation_plot.pdf  used on input line 676.
+Package luatex.def Info: figures/resummation_plot.pdf  used on input line 621.
 (luatex.def)             Requested size: 390.25534pt x 192.30518pt.
 
 
 LaTeX Warning: Citation `particle_data_group_review_2020' on page 17 undefined o
-n input line 678.
+n input line 623.
 
 
 LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 17 undefined on inp
-ut line 678.
+ut line 623.
 
 
 LaTeX Warning: Citation `particle_data_group_review_2020' on page 17 undefined o
-n input line 678.
+n input line 623.
 
 
 LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 17 undefined on inp
-ut line 678.
+ut line 623.
 
 [17] [18<./figures/resummation_plot.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 689.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 689.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 634.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 634.
  (./all_orders.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 689.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 689.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 634.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 634.
 Package rerunfilecheck Info: File `all_orders.out' has not changed.
 (rerunfilecheck)             Checksum: 7782C56FB89B5E9FEAB596EDB13C988F;1832.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 689.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 634.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37881 strings out of 493861
+ 37883 strings out of 493861
  100000,953878 words of node,token memory allocated
- 1484 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 13 glue, 4 kern, 1 glyph, 215 attribute, 67 glue_sp
-ec, 215 attribute_list, 2 write nodes
-   avail lists: 1:8,2:733,3:178,4:18,5:308,6:36,7:3119,8:118,9:851,10:16,11:206
- 41264 multiletter control sequences out of 65536+600000
+ 1495 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 glyph, 216 attribute, 67 glue_sp
+ec, 216 attribute_list, 2 write nodes
+   avail lists: 1:8,2:771,3:178,4:18,5:318,6:40,7:3303,8:118,9:851,10:16,11:207
+ 41265 multiletter control sequences out of 65536+600000
  97 fonts using 10747943 bytes
  79i,15n,95p,901b,1048s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf>
@@ -1375,10 +1375,10 @@ b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on all_orders.pdf (18 pages, 331632 bytes).
+Output written on all_orders.pdf (18 pages, 334832 bytes).
 
-PDF statistics: 578 PDF objects out of 1000 (max. 8388607)
- 470 compressed objects within 5 object streams
- 148 named destinations out of 1000 (max. 131072)
+PDF statistics: 580 PDF objects out of 1000 (max. 8388607)
+ 472 compressed objects within 5 object streams
+ 149 named destinations out of 1000 (max. 131072)
  104 words of extra memory for PDF output out of 10000 (max. 100000000)
 

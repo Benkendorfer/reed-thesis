@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  17 APR 2021 23:16
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  18 APR 2021 17:02
  restricted system commands enabled.
 **technical_introduction.tex
 (./technical_introduction.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.122 seconds
+luaotfload | main : initialization completed in 0.126 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1199,22 +1199,23 @@ t line 84.
 LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 3 undefined on inpu
 t line 90.
 
-<figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg, id=99, 2862.17822pt x 1889.75
-317pt>
+[3]
+<figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg, id=108, 2862.17822pt x 1889.7
+5317pt>
 File: figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg Graphic file (type jpg)
 <use figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg>
 Package luatex.def Info: figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg  used 
 on input line 96.
 (luatex.def)             Requested size: 433.62pt x 286.2766pt.
 
-LaTeX Warning: Citation `atlas_collaboration_event_nodate' on page 3 undefined o
+
+LaTeX Warning: Citation `atlas_collaboration_event_nodate' on page 4 undefined o
 n input line 97.
 
 
-LaTeX Warning: Citation `atlas_collaboration_event_nodate' on page 3 undefined o
+LaTeX Warning: Citation `atlas_collaboration_event_nodate' on page 4 undefined o
 n input line 97.
 
-[3]
 
 LaTeX Warning: Citation `holloway_how_1972' on page 4 undefined on input line 10
 8.
@@ -1242,7 +1243,7 @@ LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 6 undefined on inpu
 t line 134.
 
 [6]
-<figures/atlas_pile_up.jpeg, id=151, 1027.6794pt x 684.156pt>
+<figures/atlas_pile_up.jpeg, id=154, 1027.6794pt x 684.156pt>
 File: figures/atlas_pile_up.jpeg Graphic file (type jpg)
 <use figures/atlas_pile_up.jpeg>
 Package luatex.def Info: figures/atlas_pile_up.jpeg  used on input line 174.
@@ -1264,15 +1265,15 @@ e 183.
 LaTeX Warning: Citation `kardos_two-_2020' on page 7 undefined on input line 183
 .
 
+[7] [8<./figures/atlas_pile_up.jpeg>]
 
-LaTeX Warning: Citation `dokshitzer_better_1997' on page 7 undefined on input li
+LaTeX Warning: Citation `dokshitzer_better_1997' on page 9 undefined on input li
 ne 187.
 
 
-LaTeX Warning: Citation `wobisch_hadronization_1998' on page 7 undefined on inpu
+LaTeX Warning: Citation `wobisch_hadronization_1998' on page 9 undefined on inpu
 t line 187.
 
-[7] [8<./figures/atlas_pile_up.jpeg>]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 9 undefined on input l
 ine 217.
@@ -1420,15 +1421,15 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 274.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37806 strings out of 493861
+ 37807 strings out of 493861
  100000,953878 words of node,token memory allocated
- 908 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 15 glue, 4 kern, 1 glyph, 71 attribute, 66 glue_spe
-c, 71 attribute_list, 2 write nodes
-   avail lists: 1:8,2:401,3:120,4:45,5:251,6:24,7:4052,8:64,9:270,10:15,11:298
+ 930 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 17 glue, 4 kern, 1 glyph, 73 attribute, 66 glue_spe
+c, 73 attribute_list, 2 write nodes
+   avail lists: 1:8,2:407,3:126,4:45,5:264,6:25,7:4255,8:64,9:270,10:15,11:314
  41249 multiletter control sequences out of 65536+600000
  99 fonts using 10977543 bytes
- 79i,12n,95p,1416b,891s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 79i,12n,95p,1444b,891s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.ot
 f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.
 otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.
@@ -1451,10 +1452,10 @@ r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on technical_introduction.pdf (12 pages, 1053225 bytes).
+Output written on technical_introduction.pdf (12 pages, 1053718 bytes).
 
-PDF statistics: 314 PDF objects out of 1000 (max. 8388607)
- 255 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 131072)
+PDF statistics: 316 PDF objects out of 1000 (max. 8388607)
+ 257 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 131072)
  104 words of extra memory for PDF output out of 10000 (max. 100000000)
 
