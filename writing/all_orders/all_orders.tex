@@ -48,7 +48,7 @@
 	The multiplicative factorization in Laplace space allows us to resum each term individually, without worrying about cross-talk between terms \cite{frye_factorization_2016}. Before moving on, with this calculation, let us study how our resummation strategy will work.
 
 \subsection{Strategy}
-	Let us consider the simple example of an observable
+	Let us consider the simple example of a cross section which factorizes into the product of two terms:
 	\begin{equation}
 		\sigma = F_1 F_2.
 	\end{equation}
@@ -70,7 +70,7 @@
 	\end{equation}
 	This provides constraints on our calculations as well as a strong consistency check --- if we have calculated $F_1$ and $F_2$ and find that Eq.~\ref{all-eq:toy anomalous dimension sum} is unsatisfied, then we know a mistake has been made. On the other hand, it means that if we compute the anomalous dimension of $F_1$, then we do not need to compute the anomalous dimension of $F_2$.
 
-	Equations \ref{all-eq:partial sigma mu zero} and \ref{all-eq:toy RGE} are known as \textbf{renormalization group equations}.\footnote{The renormalization group refers to the symmetry of physical quantities under changes in the techniques used to calculate them. Technically, we are working with the \textbf{continuum renormalization group}, which formalizes the independence of observable quantities on $\mu$ in dimensional regularization. \cite{schwartz_quantum_2014}} The overall strategy to resum large logarithms in the cross section $\sigma$ is to solve the renormalization group equation for each function $F_1$ and $F_2$. As long as $\sigma$ factorizes as claimed and Eq.~\ref{all-eq:toy anomalous dimension sum} is satisfied, then this results in an all-orders calculation of $\sigma$.
+	Equations \ref{all-eq:partial sigma mu zero} and \ref{all-eq:toy RGE} are known as \textbf{renormalization group equations}.\footnote{The renormalization group refers to the symmetry of physical quantities under changes in the techniques used to calculate them. Technically, we are working with the \textbf{continuum renormalization group}, which formalizes the independence of observable quantities on $\mu$ in dimensional regularization \cite{schwartz_quantum_2014}.} The overall strategy to resum large logarithms in the cross section $\sigma$ is to solve the renormalization group equation for each function $F_1$ and $F_2$. As long as $\sigma$ factorizes as claimed and Eq.~\ref{all-eq:toy anomalous dimension sum} is satisfied, then this results in an all-orders calculation of $\sigma$.
 
 	Thus, we have a general two-step strategy for resumming a function $F$ (such as $F_1$ or $F_2$ in the example above):
 	\begin{enumerate}
@@ -106,7 +106,7 @@
 	\begin{equation}\label{all-eq:general non-cusp anomalous dimension}
 		\gamma_F(\alpha_s) = \sum_{n = 0}^\infty \gamma_n \qty(\frac{\alpha_s}{4\pi})^{n + 1}.
 	\end{equation}
-	An example calculation will be performed in Sec.~\ref{all-sec:soft function calculation}. This entails computing the function of interest to the desired accuracy, then peeling off the non-logarithmic contributions to the anomalous dimension. The anomalous dimension can be determined either through inspection, by simply taking the coefficient of $2/\epsilon$, or by computing the appropriate derivative per the renormalization group equation.
+	An example calculation will be performed in Sec.~\ref{all-sec:soft function calculation}. This entails computing the function of interest to the desired accuracy, then peeling off the non-logarithmic contributions to the anomalous dimension. The anomalous dimension can be determined either through inspection, by simply taking the coefficient of $2/\epsilon$ (the factor of $2$ comes from the fact that we are working in $d = 4 - 2\epsilon$ dimensions; if we were working in $4 - \epsilon$ dimensions, then we would seek the coefficient of $1/\epsilon$), or by computing the appropriate derivative per the renormalization group equation.
 
 \subsection{Solving the renormalization group equation}\label{all-sec:solving RGE}
 	To solve the renormalization group equation, Eq.~\ref{all-eq:general RGE}, it is convenient to rewrite the differential equation not in terms of $\mu$, but in terms of $\alpha_s$. This is done through the QCD $\beta$-function, which describes how $\alpha_s$ depends on the energy scale $\mu$ \cite{frye_factorization_2016}:
@@ -171,7 +171,7 @@
 	\begin{equation}
 		f(\lambda) = \sum_{n = 0}^\infty f_n \lambda^n,
 	\end{equation}
-	we might talk about approximating a solution by keeping only, say, the leading-order (LO) term $f_0$. If we need higher precision,\footnote{Or are feeling particularly fancy} we can take higher-order terms in the series, moving to next-to-leading order (NLO), then next-to-next-to-leading-order (NNLO), and so on.
+	we might talk about approximating a solution by keeping only, say, the leading-order (LO) term $f_0$. If we need higher precision,\footnote{Or are feeling particularly fancy.} we can take higher-order terms in the series, moving to next-to-leading order (NLO), then next-to-next-to-leading-order (NNLO), and so on.
 
 	In the context of a perturbative resummation calculation such as the one at hand, it does not make sense to discuss the order of a result. This is because the exponent of the solution to the renormalization group equation, Eq.~\ref{all-eq:RGE general solution}, is itself a series in $\alpha_s$. To achieve a more accurate result, we want to expand the \textit{exponent} to a fixed order, which means that the quantity itself is \textit{logarithmically} accurate with respect to this expansion. A leading-order exponential expansion yields an overall result accurate to the leading logarithm (LL) of the exponent. Moving to higher accuracy then takes us to the next-to-leading-logarithm (NLL), and so on.
 
@@ -277,7 +277,7 @@
 	
 	As messy as Eq.~\ref{all-eq:full resummed result} may be, it is remarkable that we can write down the solution in closed form (assuming that we can compute the $K$ and $\omega$ functions). All that is left to do now is compute each piece of the cross section to determine the anomalous dimensions and fixed-scale contributions.
 
-	Luckily for us, several of the functions --- the hard function $H$, the jet functions $J_q$, $J_{\bar q}$, and $J_g$, and the collinear-soft function $S_C$ --- have already been computed to the necessary order for an NLL calculation of the heavy hemisphere mass {\color{red}\textbf{[TODO: would be nice to find/cite these]}}. However, the resolved emission function $R$ and the soft function $S_R$ are novel; for these, we must compute their anomalous dimensions and fixed-scale contributions to order $\alpha_s$. To see how this works, we will compute the soft function $S_R$ in Sec.~\ref{all-sec:soft function calculation}.
+	Luckily for us, several of the functions --- the hard function $H$, the jet functions $J_q$, $J_{\bar q}$, and $J_g$, and the collinear-soft function $S_C$ --- have already been computed to the necessary order for an NLL calculation of the heavy hemisphere mass (see the appendices of Ref.~\cite{frye_factorization_2016}). However, the resolved emission function $R$ and the soft function $S_R$ are novel; for these, we must compute their anomalous dimensions and fixed-scale contributions to order $\alpha_s$. To see how this works, we will compute the soft function $S_R$ in Sec.~\ref{all-sec:soft function calculation}.
 	
 
 \section{Soft function}\label{all-sec:soft function calculation}
@@ -470,7 +470,7 @@
 	\end{equation}
 
 \subsection{Computation, transformation, and Laurent series}
-	The actual computation of the integral in Eq.~\ref{all-eq:soft function specific coords} is fairly involved,\footnote{And much too complicated for Mathematica, in case you were wondering} and is therefore relegated to Appendix \ref{app:soft function integral}. The result, from Eq.~\ref{app_soft-eq:full soft function}, is
+	The actual computation of the integral in Eq.~\ref{all-eq:soft function specific coords} is fairly involved,\footnote{And much too complicated for Mathematica, in case you were wondering.} and is therefore relegated to Appendix \ref{app:soft function integral}. The result, from Eq.~\ref{app_soft-eq:full soft function}, is
 	\begin{equation}
 	\begin{aligned}
 		S_R(\rho_s) &= \frac{2\pi\alpha_s C_F\mu^{2\epsilon}}{\pi^{5/2} \Gamma(\frac{1}{2} - \epsilon)}\qty(\frac{Q}{4})^{-2\epsilon} \frac{1}{\rho_s^{1 + 2\epsilon}} \\
@@ -560,7 +560,7 @@
 	\begin{equation}
 		\frac{\partial S_R}{\partial \log \mu} = \gamma
 	\end{equation}
-	if we ignore the pole at $\epsilon = 0$ and then set $\epsilon = 0$.\footnote{This is acceptable because the pole must eventually cancel in the full resummed result}. From Eq.~\ref{all-eq:soft function laplace expanded}, we see that, dropping the pole,
+	if we ignore the pole at $\epsilon = 0$ and then set $\epsilon = 0$.\footnote{This is acceptable because the pole must eventually cancel in the full resummed result.} We expect this because derivatives with respect to $\log \mu$ relate different orders in $\alpha_s$ --- since the $\alpha_s^0$ contribution is just $1$ in Laplace space, differentiating from the $\alpha_s$ contribution with respect to $\log \mu$ should just yield the anomalous dimension. From Eq.~\ref{all-eq:soft function laplace expanded}, we see that, dropping the pole,
 	\begin{equation}
 		S_R^{\epsilon=0}(\nu) = -\frac{\alpha_s C_F}{\pi^2} \qty[2f(\theta_g)\log(\frac{2\mu\nu}{Q}) + \pi\log^2\qty(\frac{2\mu\nu}{Q})].
 	\end{equation}
@@ -598,20 +598,20 @@
 	\begin{equation}\label{all-eq:mu0 natural value}
 		\mu_0 = \frac{Q}{2\nu}.
 	\end{equation}
-	To evaluate $S_R(\nu, \mu_0)$, we simply ignore the pole of Eq.~\ref{all-eq:soft function laplace expanded}, set $\epsilon = 0$, and set $\mu = \mu_0$:
+	To evaluate $S_R(\nu, \mu_0)$, we simply ignore the pole of Eq.~\ref{all-eq:soft function laplace expanded}, set $\epsilon = 0$, and set $\mu = \mu_0$. The $\cO(\alpha_s^0)$ contribution to $S_R(\nu, \mu_0)$ is just $1$ in Laplace space (since in real space it is a Dirac delta). Thus, the fixed-scale soft function \textit{through} order $\alpha_s$ is
 	\begin{equation}
-		S_R(\nu, \mu_0) = -\frac{\alpha_s C_F}{\pi^2}\qty[2f(\theta_g)\log(\frac{2\mu_0 \nu}{Q}) + \pi \log^2\qty(\frac{2\mu_0 \nu}{Q})].
+		S_R(\nu, \mu_0) = 1 - \frac{\alpha_s C_F}{\pi^2}\qty[2f(\theta_g)\log(\frac{2\mu_0 \nu}{Q}) + \pi \log^2\qty(\frac{2\mu_0 \nu}{Q})].
 	\end{equation}
-	Notice that setting $\mu_0 = Q/2\nu$ would eliminate the large logarithms from $S_R(\nu, \mu_0)$!\footnote{You might be concerned that it would also set $S_R(\nu, Q/2\nu) = 0$. However, it would also be incorrect to assign the value of $\mu_0$ before performing the inverse Laplace transform, so the point is irrelevant.}
+	Notice that setting $\mu_0 = Q/2\nu$ would eliminate the large logarithms from $S_R(\nu, \mu_0)$!
 
 	Finally, we should convert the soft function back to real space. This is done using the tricks of Sec.~\ref{all-sec:full resummed result}. The logarithm-derivative transformation is
 	\begin{equation}
-		S_R(L \to \partial_{\omega}) = -\frac{\alpha_s C_F}{\pi^2}\qty[2f(\theta_g) \partial_{\omega} + \pi \partial^2_{\omega}],
+		S_R(L \to \partial_{\omega}) = 1 -\frac{\alpha_s C_F}{\pi^2}\qty[2f(\theta_g) \partial_{\omega} + \pi \partial^2_{\omega}],
 	\end{equation}
 	so from Eq.~\ref{all-eq:resummed inverse Laplace transform} we have
 	\begin{equation}\label{all-eq:NLL soft function}
 	\boxed{
-		S_R(\rho_s, \mu) = -\frac{\alpha_s C_F}{\pi^2} e^{K(\mu, \mu_0)} \qty[2f(\theta_g) \partial_{\omega} + \pi \partial^2_{\omega}] \qty[\frac{4\mu_0^2}{\rho_s^2 Q^2}]^{\omega(\mu, \mu_0)} \frac{1}{\rho_s \Gamma(-2\omega(\mu, \mu_0))}.
+		S_R(\rho_s, \mu) = e^{K(\mu, \mu_0)} \qty[1 - \frac{\alpha_s C_F}{\pi^2} \qty[2f(\theta_g) \partial_{\omega} + \pi \partial^2_{\omega}]] \qty[\frac{4\mu_0^2}{\rho_s^2 Q^2}]^{\omega(\mu, \mu_0)} \frac{1}{\rho_s \Gamma(-2\omega(\mu, \mu_0))}.
 	}
 	\end{equation}
 	This is our NLL resummed result for the soft function. It is plotted in Fig.~\ref{all-fig:resummed result}, where we have evaluated $\mu_0$ at the natural scale $\mu_0 = Q\rho_s / 2$ and taken $\mu = Q = \SI{91.2}{\giga\electronvolt}$, the mass of the $Z$ boson, and $\theta_g = \pi/3$.\footnote{The particular choice of the $Z$ mass is made because the strong coupling constant $\alpha_s$ has been measured to high precision at this energy scale.}

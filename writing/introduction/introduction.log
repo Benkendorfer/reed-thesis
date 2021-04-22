@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  18 APR 2021 16:45
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  20 APR 2021 11:29
  restricted system commands enabled.
 **introduction.tex
 (./introduction.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.123 seconds
+luaotfload | main : initialization completed in 0.125 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1244,6 +1244,10 @@ LaTeX Warning: Citation `sakuma_detector_2014' on page 6 undefined on input line
 LaTeX Warning: Citation `atlas_outreach_atlas_2012' on page 6 undefined on input
  line 80.
 
+
+LaTeX Warning: Citation `atlas_collaboration_performance_2017' on page 6 undefin
+ed on input line 80.
+
 [6] [7<./figures/cms_160312_02.pdf>]
 
 LaTeX Warning: Citation `dasgupta_towards_2013' on page 8 undefined on input lin
@@ -1307,10 +1311,10 @@ Here is how much of LuaTeX's memory you used:
  836 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 19 glue, 4 kern, 1 glyph, 46 attribute, 66 glue_spe
 c, 46 attribute_list, 2 write nodes
-   avail lists: 1:8,2:347,3:85,4:34,5:264,6:27,7:4219,8:36,9:225,10:17,11:312
+   avail lists: 1:8,2:347,3:85,4:34,5:264,6:27,7:4222,8:36,9:222,10:17,11:312
  41230 multiletter control sequences out of 65536+600000
  99 fonts using 11011335 bytes
- 79i,12n,95p,1574b,985s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 79i,12n,95p,1568b,985s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.ot
 f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.ot
 f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular
@@ -1332,7 +1336,7 @@ r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on introduction.pdf (11 pages, 9355793 bytes).
+Output written on introduction.pdf (11 pages, 9356200 bytes).
 
 PDF statistics: 637 PDF objects out of 1000 (max. 8388607)
  448 compressed objects within 5 object streams

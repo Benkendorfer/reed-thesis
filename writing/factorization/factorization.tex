@@ -1,57 +1,4 @@
-% This is the Reed College LaTeX thesis template. Most of the work 
-% for the document class was done by Sam Noble (SN), as well as this
-% template. Later comments etc. by Ben Salzberg (BTS). Additional
-% restructuring and APA support by Jess Youngberg (JY).
-% Your comments and suggestions are more than welcome; please email
-% them to cus@reed.edu
-%
-% See http://web.reed.edu/cis/help/latex.html for help. There are a 
-% great bunch of help pages there, with notes on
-% getting started, bibtex, etc. Go there and read it if you're not
-% already familiar with LaTeX.
-%
-% Any line that starts with a percent symbol is a comment. 
-% They won't show up in the document, and are useful for notes 
-% to yourself and explaining commands. 
-% Commenting also removes a line from the document; 
-% very handy for troubleshooting problems. -BTS
-
-% As far as I know, this follows the requirements laid out in 
-% the 2002-2003 Senior Handbook. Ask a librarian to check the 
-% document before binding. -SN
-
-%%
-%% Preamble
-%%
-% \documentclass{<something>} must begin each LaTeX document
-% \providecommand{\main}{..}
 \documentclass[../thesis.tex]{subfiles}
-% \graphicspath{{\subfix{figures/}}}
-% Packages are extensions to the basic LaTeX functions. Whatever you
-% want to typeset, there is probably a package out there for it.
-% Chemistry (chemtex), screenplays, you name it.
-% Check out CTAN to see: http://www.ctan.org/
-%%
-% \usepackage{graphicx,latexsym} 
-% \usepackage{amssymb,amsthm,amsmath}
-% \usepackage{longtable,booktabs,setspace} 
-% \usepackage{chemarr} %% Useful for one reaction arrow, useless if you're not a chem major
-% \usepackage[hyphens]{url}
-% \usepackage{rotating}
-% \usepackage{hyperref}
-
-% \usepackage{physics}
-% \usepackage{siunitx}
-% \usepackage{xcolor}
-% \usepackage{standalone}
-% \usepackage{natbib}
-% Comment out the natbib line above and uncomment the following two lines to use the new 
-% biblatex-chicago style, for Chicago A. Also make some changes at the end where the 
-% bibliography is included. 
-%\usepackage{biblatex-chicago}
-%\bibliography{thesis}
-
-% \usepackage{times} % other fonts are available like times, bookman, charter, palatino
 
 \providecommand{\zcut}{\mathrm{z_{cut}}}
 
@@ -101,7 +48,7 @@
 	\end{equation}
 	and, in the collinear limit, the angle to the jet axis is $\theta \approx p_\perp / p^0$ \cite{frye_factorization_2016}.
 	
-	In an $e^+ e^- \to \text{jets}$ event, there are two types of emission: resolved and unresolved. The essential difference is that a resolved emission is one which manifests itself as a jet at a particular scale of observation, while an unresolved emission does not. The presence of unresolved emissions can, however, perturb observable values of a resolved emission. {\color{red}\textbf{[TODO: check that this is a reasonable description]}} 
+	In an $e^+ e^- \to \text{jets}$ event, there are two types of emission: resolved and unresolved. The essential difference is that a resolved emission is one which manifests itself as a jet at a particular scale of observation, while an unresolved emission does not. The presence of unresolved emissions can, however, perturb observable values of a resolved emission.
 
 	Suppose now that we have applied an mMDT groomer with energy fraction cutoff $\zcut$. Then every \textit{resolved} emission must satisfy
 	\begin{equation}
@@ -115,7 +62,7 @@
 	\begin{equation}
 		\rho \approx \sum_i 2z_i \qty(1 - \cos\theta_i)
 	\end{equation}
-	where $\theta_i$ is the angle of emission $i$ from the quark. Considering the case with only one such emission,\footnote{This is the one-loop contribution {\color{red}\textbf{[TODO: is this accurate?]}}.} we have
+	where $\theta_i$ is the angle of emission $i$ from the quark. Considering the case with only one such emission,\footnote{This is the first-order approximation. One can consider additional resolved gluons to obtain a more precise result, but that is beyond what we require here.} we have
 	\begin{equation}
 		\rho \approx z_i \qty(1 - \cos\theta_i).
 	\end{equation} 

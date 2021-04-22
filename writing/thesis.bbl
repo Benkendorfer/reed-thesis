@@ -76,6 +76,12 @@ T.~Sakuma and T.~McCauley, \emph{Detector and {{Event Visualization}} with
   {{ATLAS}} detector and collaboration on the {{LHC}}},  2012,
   \url{http://cds.cern.ch/record/1457044}.
 
+\bibitem{atlas_collaboration_performance_2017}
+{ATLAS Collaboration}, \emph{Performance of the {{ATLAS Trigger System}} in
+  2015}, \href{https://doi.org/10.1140/epjc/s10052-017-4852-3}{\emph{Eur. Phys.
+  J. C} {\bfseries 77} (2017) 317}
+  [\href{https://arxiv.org/abs/1611.09661}{{\ttfamily 1611.09661}}].
+
 \bibitem{dasgupta_towards_2013}
 M.~Dasgupta, A.~Fregoso, S.~Marzani and G.P.~Salam, \emph{Towards an
   understanding of jet substructure},
@@ -232,10 +238,10 @@ T.~Becher, M.~Neubert and B.D.~Pecjak, \emph{Factorization and
   [\href{https://arxiv.org/abs/hep-ph/0607228}{{\ttfamily hep-ph/0607228}}].
 
 \bibitem{atlas_collaboration_measurement_2020-1}
-{ATLAS Collaboration}, \emph{A measurement of soft-drop jet observables in
-  \$pp\$ collisions with the {{ATLAS}} detector at \$\textbackslash sqrt\{s\} =
-  13\$ {{TeV}}}, \href{https://doi.org/10.1103/PhysRevD.101.052007}{\emph{Phys.
-  Rev. D} {\bfseries 101} (2020) 052007}
+{ATLAS Collaboration}, \emph{A measurement of soft-drop jet observables in $pp$
+  collisions with the atlas detector at $\sqrt{s} = 13$ tev},
+  \href{https://doi.org/10.1103/PhysRevD.101.052007}{\emph{Phys. Rev. D}
+  {\bfseries 101} (2020) 052007}
   [\href{https://arxiv.org/abs/1912.09837}{{\ttfamily 1912.09837}}].
 
 \bibitem{andrews_hypergeometric_1999}

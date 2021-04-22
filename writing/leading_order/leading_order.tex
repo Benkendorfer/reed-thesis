@@ -67,9 +67,9 @@
 %%
 %% The fun begins:
 \begin{document}
-	In order to develop an intuition for the mathematical tools we will put to use in the all-orders calculation of groomed heavy hemisphere mass, let us first compute the first-order (or rather, first \textit{nontrivial} order) distribution of the observable. A simple electron-positron production with the production of two quark jets, $e^+ e^- \to q\bar q$, would produce a constant distribution: the mass of the heavy hemisphere would simply be half of the final mass. The lowest-order nontrivial distribution corresponds to an $e^+ e^- \to q\bar q g$ event, in which an electron and positron annihilate to produce a quark-antiquark pair, off of which a single gluon is emitted. The location of the gluon in phase space sets the heavy hemisphere mass. This process is depicted in a Feynman diagram in Fig.~\ref{leading-fig:first-order diagram}.
+	In order to develop an intuition for the mathematical tools we will put to use in the all-orders calculation of groomed heavy hemisphere mass, let us first compute the first-order (or rather, first \textit{nontrivial} order) distribution of the observable. The distribution corresponding to simple electron-positron annihilation with the production of two quark jets, $e^+ e^- \to q\bar q$, would produce a delta function representing a constant measured value: the mass of the heavy hemisphere would simply be half of the final mass. The lowest-order nontrivial distribution corresponds to an $e^+ e^- \to q\bar q g$ event, in which an electron and positron annihilate to produce a quark-antiquark pair, off of which a single gluon is emitted. The location of the gluon in phase space sets the heavy hemisphere mass. This process is depicted in a Feynman diagram in Fig.~\ref{leading-fig:first-order diagram}.
 
-	\begin{figure}
+	\begin{figure}[h!]
 	\begin{center}
 		\begin{tikzpicture}
 		\begin{feynman}
@@ -99,7 +99,7 @@
 	\end{enumerate}
 	If we label these cross sections $\sigma_\text{soft}$, $\sigma_\text{collinear}$, and $\sigma_\text{soft-collinear}$, respectively, then the full cross distribution will be
 	\begin{equation}
-		\frac{d\sigma}{d\rho} = \frac{d\sigma_\text{soft}}{d\rho} + \frac{d\sigma_\text{collinear}}{d\rho} + \frac{d\sigma_\text{soft-collinear}}{d\rho}.
+		\frac{d\sigma}{d\rho} = \frac{d\sigma_\text{soft}}{d\rho} + \frac{d\sigma_\text{collinear}}{d\rho} - \frac{d\sigma_\text{soft-collinear}}{d\rho}.
 	\end{equation}
 	Let us calculate these components now.
 
@@ -183,7 +183,7 @@
 	\begin{equation}
 		\abs{\cM}^2 = 4\pi \alpha_s \sigma_0 C_F \mu^{2\epsilon} \frac{p_1 \cdot p_2}{(p_1 \cdot k)(p_2 \cdot k)}.
 	\end{equation}
-	Here, $\alpha_s$ is the strong coupling constant\footnote{Which is not really a constant}, $\sigma_0$ is the cross section for $e^+ e^- \to q\bar q$, $C_F$ is the quadratic Casimir of the fundamental representation of color (taken to be $C_F = 4/3$ for our purposes \cite{particle_data_group_review_2020}), and $\mu$ is a mass scale introduced to ensure that the differential cross section will remain dimensionless in $d = 4 - 2\epsilon$ dimensions. Inserting the values of $p_1$, $p_2$, and $k$, we have
+	Here, $\alpha_s$ is the strong coupling constant\footnote{Which is not really a constant.}, $\sigma_0$ is the cross section for $e^+ e^- \to q\bar q$, $C_F$ is the quadratic Casimir of the fundamental representation of color (taken to be $C_F = 4/3$ for our purposes \cite{particle_data_group_review_2020}), and $\mu$ is a mass scale introduced to ensure that the differential cross section will remain dimensionless in $d = 4 - 2\epsilon$ dimensions. Inserting the values of $p_1$, $p_2$, and $k$, we have
 	\begin{equation}\label{leading-eq:soft matrix element}
 		\abs{\cM}^2 = 4\pi \alpha_s \sigma_0 C_F \mu^{2\epsilon} \frac{2}{k^+ k^-}.
 	\end{equation}
@@ -289,7 +289,7 @@
 	\end{equation}
 	Notice how dimensional regularization helped us achieve this calculation: without the regulating $(k^-)^\epsilon$, the integrals would have diverged without an upper bound on the value of $k^-$ (which, physically, has no upper bound). Our result is still manifestly divergent if we send $\epsilon \to 0$, but at least we can \textit{see} the divergence. This is the power of the technique.
 
-	We can pull out the divergence even more cleanly if we perform a Laurent expansion\footnote{Like a Taylor expansion, but possibly including negative exponents} in $\epsilon$. We will send $\epsilon \to 0$ at the end anyway, so we only care about terms through order $\cO(\epsilon^0)$; anything below this order generates divergences, and anything above this order will vanish. Performing the expansion yields
+	We can pull out the divergence even more cleanly if we perform a Laurent expansion\footnote{Like a Taylor expansion, but possibly including negative exponents.} in $\epsilon$. We will send $\epsilon \to 0$ at the end anyway, so we only care about terms through order $\cO(\epsilon^0)$; anything below this order generates divergences, and anything above this order will vanish. Performing the expansion with $\rho > 0$ yields\footnote{Some trickery must take place to expand at $\rho = 0$, since $1/\rho$ diverges at that point. The expansion can be done using distributions called \textbf{plus-functions}, but we do not have to worry about that because $\zcut$ is finite and we are taking $\rho \sim \zcut$.}
 	\begin{equation}\label{leading-eq:soft result}
 	\boxed{
 	\begin{aligned}

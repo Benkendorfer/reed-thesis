@@ -1,8 +1,7 @@
 # Fdb version 3
-["lualatex"] 1618611757 "factorization.tex" "factorization.pdf" "factorization" 1618611759
+["lualatex"] 1618944300 "factorization.tex" "factorization.pdf" "factorization" 1618944302
   "../reedthesis.cls" 1383591362 8293 480a01b2533a1585368760477c470aa0 ""
-  "../thesis.tex" 1618611542 7519 d83d29d753a5957e48197b3a5082e2f0 ""
-  "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1578167051 124231 de1fac4fa22b2d0f3c02f2a11a85c4b6 ""
+  "../thesis.tex" 1618943766 7349 688cf12851be9ceee1a4eac63cf2c423 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1578167050 123160 07b01c97fb3dfb55a9303e4e62ca726f ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1578088225 124128 a9660d29d58fde0161397418fef1dfe6 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc" 1578088225 131060 99ff9ae82052dd1abb7e28d118ca7de7 ""
@@ -12,7 +11,6 @@
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc" 1581718734 124216 d49be5c63d35319dc6e96144cb2bf4db ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1580168458 123967 57b70db54ced14932f52c5185614c3e5 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmromanslant12-regular.luc" 1612227379 125052 c97150538b27307107aa8c85aeb1c8af ""
-  "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf" 1255129361 111536 ae9d1b331000d544f47e5223081b7b54 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf" 1255129361 110496 b9c8767d4cc3bf3f4b21f676bf89aa78 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf" 1255129361 117732 558aeb4ada25b652cc2e9bcf0771e962 ""
@@ -255,12 +253,12 @@
   "/usr/local/texlive/2017/texmf-dist/tex/luatex/luaotfload/fontloader-basics-gen.lua" 1547850999 12695 9a740c440e62da9b31d1d097257a1869 ""
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1575873454 4693480 8353df0835313a2d202e2f489241f4ef ""
   "/usr/local/texlive/2017/texmf-var/web2c/luatex/lualatex.fmt" 1575873557 1399169 069afea70d38dea9ddb6c86bc40f5b67 ""
-  "factorization.aux" 1618611759 2974 88df1de088f8371d2b0b6affcd7beb6a "lualatex"
-  "factorization.out" 1618611759 909 3600f6adb38b5c253a0ec7c6e79b2a0c "lualatex"
-  "factorization.tex" 1618611757 18019 e10784cfe6a8de8886db8725234cb4ca ""
+  "factorization.aux" 1618944302 2974 1f5a420b9e289d408d2b05c6015a6036 "lualatex"
+  "factorization.out" 1618944302 909 3600f6adb38b5c253a0ec7c6e79b2a0c "lualatex"
+  "factorization.tex" 1618944299 15899 2895d13de8a65fc67d235f9cccca9c93 ""
   "figures/head_on_schematic.pdf" 1612548809 6779 d65cb7f305aae26809098a6380728c5e ""
   (generated)
-  "factorization.aux"
+  "factorization.out"
   "factorization.pdf"
   "factorization.log"
-  "factorization.out"
+  "factorization.aux"

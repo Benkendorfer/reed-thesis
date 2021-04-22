@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  18 APR 2021 17:23
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  22 APR 2021 14:37
  restricted system commands enabled.
 **all_orders.tex
 (./all_orders.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.124 seconds
+luaotfload | main : initialization completed in 0.122 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1228,6 +1228,10 @@ Overfull \hbox (4.35799pt too wide) detected at line 275
 [][]
  []
 
+
+LaTeX Warning: Citation `frye_factorization_2016' on page 8 undefined on input l
+ine 280.
+
 [8] [9]
 ! Undefined control sequence.
 <argument> \ltag (k^+ - k_0 \n 
@@ -1305,7 +1309,7 @@ Overfull \hbox (5.12096pt too wide) detected at line 491
  []
 
 [14] [15] [16]
-<figures/resummation_plot.pdf, id=315, 346.29375pt x 170.6375pt>
+<figures/resummation_plot.pdf, id=314, 346.29375pt x 170.6375pt>
 File: figures/resummation_plot.pdf Graphic file (type pdf)
 <use figures/resummation_plot.pdf>
 Package luatex.def Info: figures/resummation_plot.pdf  used on input line 621.
@@ -1343,12 +1347,12 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 634.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37883 strings out of 493861
+ 37882 strings out of 493861
  100000,953878 words of node,token memory allocated
- 1495 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 glyph, 216 attribute, 67 glue_sp
-ec, 216 attribute_list, 2 write nodes
-   avail lists: 1:8,2:771,3:178,4:18,5:318,6:40,7:3303,8:118,9:851,10:16,11:207
+ 1484 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 13 glue, 4 kern, 1 glyph, 215 attribute, 67 glue_sp
+ec, 215 attribute_list, 2 write nodes
+   avail lists: 1:8,2:755,3:178,4:22,5:316,6:38,7:3404,8:118,9:851,10:16,11:209
  41265 multiletter control sequences out of 65536+600000
  97 fonts using 10747943 bytes
  79i,15n,95p,901b,1048s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1375,10 +1379,10 @@ b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on all_orders.pdf (18 pages, 334832 bytes).
+Output written on all_orders.pdf (18 pages, 333024 bytes).
 
-PDF statistics: 580 PDF objects out of 1000 (max. 8388607)
- 472 compressed objects within 5 object streams
- 149 named destinations out of 1000 (max. 131072)
+PDF statistics: 578 PDF objects out of 1000 (max. 8388607)
+ 470 compressed objects within 5 object streams
+ 148 named destinations out of 1000 (max. 131072)
  104 words of extra memory for PDF output out of 10000 (max. 100000000)
 

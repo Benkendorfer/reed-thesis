@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  16 APR 2021 14:41
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  20 APR 2021 11:42
  restricted system commands enabled.
 **leading_order.tex
 (./leading_order.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.124 seconds
+luaotfload | main : initialization completed in 0.123 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1172,17 +1172,18 @@ LaTeX Warning: Citation `kardos_two-_2020' on page 8 undefined on input line 359
 LaTeX Warning: Citation `larkoski_improving_2020' on page 8 undefined on input l
 ine 372.
 
+[8]
 
-LaTeX Warning: Citation `ellis_qcd_1996' on page 8 undefined on input line 381.
+LaTeX Warning: Citation `ellis_qcd_1996' on page 9 undefined on input line 381.
 
-[8] [9] [10]
-<figures/approximation_small_zcut_0.01.pdf, id=209, 375.4025pt x 190.7125pt>
+[9] [10]
+<figures/approximation_small_zcut_0.01.pdf, id=211, 375.4025pt x 190.7125pt>
 File: figures/approximation_small_zcut_0.01.pdf Graphic file (type pdf)
 <use figures/approximation_small_zcut_0.01.pdf>
 Package luatex.def Info: figures/approximation_small_zcut_0.01.pdf  used on inpu
 t line 484.
 (luatex.def)             Requested size: 390.25534pt x 198.26938pt.
-<figures/approximation_small_zcut_0.0001.pdf, id=210, 375.4025pt x 190.7125pt>
+<figures/approximation_small_zcut_0.0001.pdf, id=212, 375.4025pt x 190.7125pt>
 File: figures/approximation_small_zcut_0.0001.pdf Graphic file (type pdf)
 <use figures/approximation_small_zcut_0.0001.pdf>
 Package luatex.def Info: figures/approximation_small_zcut_0.0001.pdf  used on in
@@ -1199,12 +1200,12 @@ Overfull \hbox (37.62854pt too wide) detected at line 499
  []
 
 [11] [12<./figures/approximation_small_zcut_0.01.pdf><./figures/approximation_sm
-all_zcut_0.0001.pdf>]
+all_zcut_0.0001.pdf>] [13]
 
-LaTeX Warning: Citation `larkoski_improving_2020' on page 13 undefined on input 
+LaTeX Warning: Citation `larkoski_improving_2020' on page 14 undefined on input 
 line 521.
 
-[13]
+[14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 528.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 528.
  (./leading_order.aux)
@@ -1220,17 +1221,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 528.
 )
 
 Here is how much of LuaTeX's memory you used:
- 38195 strings out of 493861
+ 38199 strings out of 493861
  100000,953878 words of node,token memory allocated
- 1245 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 11 glue, 4 kern, 1 glyph, 160 attribute, 66 glue_sp
-ec, 160 attribute_list, 2 write nodes
-   avail lists: 1:8,2:1587,3:458,4:21,5:333,6:24,7:3141,8:107,9:893,10:12,11:152
+ 1256 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 12 glue, 4 kern, 1 glyph, 161 attribute, 66 glue_sp
+ec, 161 attribute_list, 2 write nodes
+   avail lists: 1:8,2:1581,3:459,4:22,5:298,6:24,7:3218,8:107,9:884,10:16,11:162
 
- 41617 multiletter control sequences out of 65536+600000
- 91 fonts using 10375303 bytes
- 79i,14n,100p,881b,1869s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 41618 multiletter control sequences out of 65536+600000
+ 92 fonts using 10506999 bytes
+ 79i,14n,100p,947b,1869s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.ot
+f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.ot
 f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmromanslant12-re
 gular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10
 -regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroma
@@ -1249,10 +1251,10 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
 /usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
 /local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/l
 ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on leading_order.pdf (13 pages, 361810 bytes).
+Output written on leading_order.pdf (14 pages, 366056 bytes).
 
-PDF statistics: 742 PDF objects out of 1000 (max. 8388607)
- 552 compressed objects within 6 object streams
- 109 named destinations out of 1000 (max. 131072)
+PDF statistics: 757 PDF objects out of 1000 (max. 8388607)
+ 563 compressed objects within 6 object streams
+ 111 named destinations out of 1000 (max. 131072)
  80 words of extra memory for PDF output out of 10000 (max. 100000000)
 

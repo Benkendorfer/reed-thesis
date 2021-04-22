@@ -404,8 +404,8 @@ INPUT ./figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg
 INPUT ./figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
-INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
+INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
 INPUT ./figures/atlas_pile_up.jpeg
 INPUT ./figures/atlas_pile_up.jpeg
 INPUT ./figures/atlas_pile_up.jpeg
