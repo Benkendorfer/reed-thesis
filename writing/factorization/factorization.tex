@@ -1,6 +1,6 @@
 \documentclass[../thesis.tex]{subfiles}
 
-\providecommand{\zcut}{\mathrm{z_{cut}}}
+\providecommand{\zcut}{z_\mathrm{{cut}}}
 
 
 \setlength{\parskip}{0pt}
@@ -58,7 +58,7 @@
 
 \section{Power counting}
 \subsection{Resolved soft emission}
-	The primary emission contributing to the jet mass in the limit $\rho \sim \zcut \ll 1$ is a gluon emission $z_i$ sensitive to both $\rho$ and $\zcut$. In the presence of a hard quark (i.e., the jet) with $z_q \sim 1$, leading contributions to the jet mass of Eq.~\ref{factor-eq:jet mass z theta} is
+	The primary emission contributing to the jet mass in the limit $\rho \sim \zcut \ll 1$ is a gluon emission $z_i$ sensitive to both $\rho$ and $\zcut$. In the presence of a hard quark (i.e., the jet) with $z_q \sim 1$, the leading contributions to the jet mass of Eq.~\ref{factor-eq:jet mass z theta} are
 	\begin{equation}
 		\rho \approx \sum_i 2z_i \qty(1 - \cos\theta_i)
 	\end{equation}
@@ -84,6 +84,8 @@
 	\end{equation}
 	For future reference, let this gluon have energy fraction $z_R$ and angle $\theta_R$ from the quark axis.
 
+	When this soft emission is resolved, it manifests itself in a detector as a jet. We therefore also need to consider the arbitrary \textbf{collinear} emissions off of the resolved gluon. If this radiation were hard, it would be resolved instead, so it must be soft like the resolved quark. The radiation collinear to the resolved gluon is therefore also sensitive to the scale $\zcut$.
+
 \subsection{Ungroomed extra-soft unresolved radiation}
 	\begin{figure}
 	\begin{centering}
@@ -91,7 +93,7 @@
 		\caption{\label{fig:head-on schematic}Head-on schematic of a quark jet $q$ and a resolved gluon $g$. If the angle between the quark and the gluon is $\theta$ and the gluon (plus all lower-scale unresolved radiation) passes the groomer, then the mMDT groomer will accept all radiation within an angle $\theta$ of both the quark and the resolved gluon.}
 	\end{centering}
 	\end{figure}
-	Unresolved soft emissions can also contribute to the jet mass if they are sufficiently close to the resolved emission or the quark. Suppose there is another emission $i$ with energy fraction $z_i$ at angle $\theta_i$ from the jet axis and angle $\theta_{iR}$ from the resolved gluon. If $\theta_i < \theta_R$ or $\theta_iR < \theta_R$, a situation displayed in Fig.~\ref{fig:head-on schematic}, then emission $i$ will pass the groomer.
+	Unresolved soft emissions can also contribute to the jet mass if they are sufficiently close to the resolved emission or the quark. Suppose there is another emission $i$ with energy fraction $z_i$ at angle $\theta_i$ from the jet axis and angle $\theta_{iR}$ from the resolved gluon. If $\theta_i < \theta_R$ or $\theta_{iR} < \theta_R$, a situation displayed in Fig.~\ref{fig:head-on schematic}, then emission $i$ will pass the groomer.
 
 	What does this mean for the hemisphere mass? Well, first notice that since $\theta_R \sim \pi/2$, most soft radiation in the hemisphere passes this cut. The effect of these extra-soft emissions, which have $z_i \ll z_R$, is to perturb the mass of the resolved emission, so that the hemisphere mass is approximately
 	\begin{equation}
@@ -106,18 +108,8 @@
 		p_{S_R} \sim \qty(\rho - \zcut)Q(1, 1, 1).
 	\end{equation}
 
-% \subsection{Groomed soft radiation}
-% 	Radiation outside of the region displayed in Fig.~\ref{fig:head-on schematic} gets groomed away if its energy fraction is
-% 	\begin{equation}
-% 		z_i < \zcut.
-% 	\end{equation}
-% 	If $z_i > \zcut$, then we would have a second resolved emission, which we have already decided to ignore. These emissions must be at a very wide angle in order to not be within the region of mMDT acceptance. Since this \textbf{global soft} radiation is removed by the groomer, it is not sensitive to $\rho$ and contributes only to the normalization. It must scale as
-% 	\begin{equation}
-% 		p_{S_G} \sim \zcut Q(1, 1, 1).
-% 	\end{equation}
-
-\subsection{Collinear radiation}\label{sec:collinear radiation}
-	Finally, we consider radiation collinear to a jet axis with angle $\theta_i \ll 1$. This radiation has $p^- \gg p^+$, which means from Eq.~\ref{factor-eq:z light cone coordinates} that
+\subsection{Quark-collinear radiation}\label{sec:collinear radiation}
+	We might also consider radiation collinear to a quark-jet axis with angle $\theta_i \ll 1$. This radiation has $p^- \gg p^+$, which means from Eq.~\ref{factor-eq:z light cone coordinates} that
 	\begin{equation}
 		z \approx \frac{p^+}{2Q}.
 	\end{equation}
@@ -144,40 +136,42 @@
 
 
 \section{Factorization}
-	With the power counting in hand, we are now ready to derive a factorization formula describing the hemisphere mass distribution in the limit $\rho \sim \zcut \ll 1$. First, we should note that it is most straightforward to compute the double differential cross section in the masses of the individual hemispheres, then integrate over them to get the heavy hemisphere mass \cite{chien_resummation_2010}:
+	With the powers now counted, we are ready to derive a factorization formula describing the hemisphere mass distribution in the limit $\rho \sim \zcut \ll 1$. First, we should note that it is most straightforward to compute the double differential cross section in the masses of the individual hemispheres, then integrate over them to get the heavy hemisphere mass \cite{chien_resummation_2010}:
 	\begin{equation}\label{factor-eq:heavy hemisphere cross section}
 		\frac{d\sigma}{d\rho} = \int \frac{d^2\sigma}{d\rho_1d\rho_2}\qty[\delta(\rho - \rho_1)\Theta(\rho_1 - \rho_2) + \delta(\rho - \rho_2)\Theta(\rho_2 - \rho_1)].
 	\end{equation}
 	The integral simply breaks up the two cases $\rho_1 > \rho_2$ and $\rho_2 > \rho_1$ and assigns the correct value of $\rho$ in each case.
 
-	Now, in the limit $\rho_1, \rho_2 \ll 1$, we can apply the technology of SCET to factorize the double-differential cross section into a product of hard, soft, and jet contributions \cite{frye_factorization_2016,ellis_jet_2010}. The basic form is
+	Now, in the limit $\rho_1, \rho_2 \ll 1$, we can apply the technology of SCET to factorize the double-differential cross section into a product of hard, soft, and jet contributions \cite{frye_factorization_2016,ellis_jet_2010}. The basic form separates the event into a hard contribution, soft radiation, and two jets:
 	\begin{equation}
-		\frac{d^2\sigma}{d\rho_1 d\rho_2} = H(Q^2) \otimes S(\rho_1, \rho_2, \zcut) \otimes J_q(\rho_1) \otimes J_g(\rho_1, \zcut) \otimes J_{\bar q}(\rho_2).
+		\frac{d^2\sigma}{d\rho_1 d\rho_2} = H(Q^2) \otimes S(\rho_1, \rho_2, \zcut) \otimes J_q(\rho_1) \otimes J_{\bar q}(\rho_2).
 	\end{equation}
-	The symbol $\otimes$ represents convolution. Here, $Q^2$ is the squared center-of-mass energy of the collision. $H(Q^2)$ is hard function representing the cross section of $e^+ e^- \to q\bar{q}$ events, $S(\rho_1, \rho_2, \zcut)$ is the function representing soft contributions (which are sensitive to $\zcut$), and $J_i(\rho)$ is a function describing the production of a jet off of particle $i$ (where $i$ is a quark $q$, antiquark $\bar q$, or gluon $g$).
+	The symbol $\otimes$ represents convolution. Here, $Q^2$ is the squared center-of-mass energy of the collision. $H(Q^2)$ is hard function representing the cross section of $e^+ e^- \to q\bar{q}$ events, $S(\rho_1, \rho_2, \zcut)$ is the function representing soft contributions (which are sensitive to $\zcut$), and $J_i(\rho)$ is a function describing the production of a jet off of particle $i$ (where $i$ is a quark $q$ or antiquark $\bar q$).
 
-	As this factorization currently stands, several terms depend on multiple scales and must be refactorized. In the limit $\rho \sim \zcut \ll 1$ after mMDT grooming, the soft function consists of global soft emissions which contribute only to the normalization; a resolved soft, wide-angle emission generated by a fixed-order function; and soft radiation which passes the groomer due to the resolved emission. The first two depend only on the scale $\zcut$ and can be combined into one function. Therefore, we can write
+	As this factorization currently stands, several terms depend on multiple scales and must be refactorized. In the limit $\rho \sim \zcut \ll 1$ after mMDT grooming, the soft function consists of global soft emissions which contribute only to the normalization; a resolved soft, wide-angle emission generated by a fixed-order function; radiation in a jet collinear to the resolved emission; and other soft, wide-angle radiation which passes the groomer due to the presence of the resolved emission. The first two depend only on the scale $\zcut$ and can be combined into one function. Therefore, we can write
 	\begin{equation}
 	\begin{aligned}
-		\frac{d^2\sigma}{d\rho_1 d\rho_2} = H(Q^2) \times R(\rho_1, \rho_2, \zcut) \times S_R(\rho - \zcut) &\otimes J_{c, q}(\rho_1, \zcut)\\
-			& \otimes J_{c, g}(\rho_1, \zcut) \otimes J_{c, \bar q}(\rho_2, \zcut).
+		\frac{d^2\sigma}{d\rho_1 d\rho_2} = H(Q^2) \times R(\rho_1, \rho_2, \zcut) \times S_R(\rho - \zcut) &\otimes J_{c, g}(\rho, \zcut)\\
+			& \otimes J_{c, q}(\rho_1, \zcut) \otimes J_{c, \bar q}(\rho_2, \zcut).
 	\end{aligned}
 	\end{equation}
-	Here, $R(\rho_1, \rho_2, \zcut)$ describes the resolved emission as well as other soft wide-angle radiation (from which the resolved emission emerged), while $S_R(\rho - \zcut)$ describes radiation which passes the groomer in the presence of the resolved emission. We have also re-written the jet functions as $J_{c, i}(\rho, \zcut)$ to make explicit their dependence on multiple scales.
+	The variable $\rho$ is used as a stand-in for either $\rho_1$ or $\rho_2$. Here, $R(\rho_1, \rho_2, \zcut)$ describes the resolved emission as well as other soft wide-angle radiation (from which the resolved emission emerged), while $S_R(\rho - \zcut)$ describes radiation which passes the groomer in the presence of the resolved emission. We have also introduced a jet function corresponding to the resolved gluon and re-written all of the jet functions as $J_{c, i}(\rho, \zcut)$ (where $i$ is either a quark $q$, an antiquark $\bar q$, or a gluon $g$) to make explicit their dependence on multiple scales.
 
 	Now, as we established in Sec.~\ref{sec:collinear radiation}, radiation collinear to the jet with energy fraction of order 1 depends only on $\rho$, and radiation with energy fraction much less than 1 depends on the scale $\sqrt{\rho\,\zcut}$. However, this soft-collinear radiation only matters in the absence of a resolved gluon emission (which stops the mMDT groomer), in which case the jet function factorizes as
 	\begin{equation}
-		J_{c, \bar q}(\rho, \zcut) = J_{\bar q}(\rho) \otimes S_C(\sqrt{\rho\,\zcut})
+		J_{c, \bar q}(\rho, \zcut) = J_{\bar q}(\rho) \otimes S_C(\sqrt{\rho\,\zcut}),
 	\end{equation}
-	The result is that we must treat each hemisphere separately, since one contains the resolved emission and the other does not. Moreover, the gluon's jet function $J_g$ only depends on the scale of the gluon's energy, which is a function of $\rho$ and $\zcut$ {\color{red}\textbf{[TODO: check this]}}. Therefore, if we assume, without loss of generality, that $\rho_1 > \rho_2$, the cross section becomes
+	where $J_{\bar q}(\rho)$ describes the antiquark jet function and $S_C(\sqrt{\rho\,\zcut})$ describes the soft-collinear radiation. The result is that we must treat each hemisphere separately, since one contains the resolved emission and the other does not. Therefore, if we assume, without loss of generality, that $\rho_1 > \rho_2$ (and introduce a factor of 2 to compensate for the restriction), the cross section becomes
 	\begin{equation}\label{factor-eq:factorization formula}
 	\boxed{
 	\begin{aligned}
-		\frac{d^2\sigma}{d\rho_1 d\rho_2} = 2 H(Q^2) \times R(\rho_1, \rho_2, \zcut) &\times S_R(\rho - \zcut) \otimes J_{c, q}(\rho_1)\\
-			& \otimes J_{c, g}(\rho_1, \zcut) \otimes \qty[J_{\bar q}(\rho_2) \otimes S_C(\sqrt{\rho_2\,\zcut})].
+		\frac{d^2\sigma}{d\rho_1 d\rho_2} = 2 H(Q^2) \times R(\rho_1, \rho_2, \zcut) &\times S_R(\rho - \zcut) \otimes J_{g}(\zcut)\\
+			& \otimes J_{q}(\rho_1) \otimes \qty[J_{\bar q}(\rho_2) \otimes S_C(\sqrt{\rho_2\,\zcut})].
 	\end{aligned}
 	}
 	\end{equation}
+	The functions $J_g,$ $J_q$, and $J_{\bar q}$ describe the gluon, quark, and antiquark jets, respectively. 
+
 	This is our final factorization formula for the double differential cross section in each hemisphere mass. The distribution of the heavy hemisphere mass then given by Eq.~\ref{factor-eq:heavy hemisphere cross section}. We are now ready to proceed with resummation.
 
 % \ifstandalone

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  20 APR 2021 11:45
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 15:20
  restricted system commands enabled.
 **factorization.tex
 (./factorization.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.128 seconds
+luaotfload | main : initialization completed in 0.118 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1170,46 +1170,46 @@ ine 49.
 <figures/head_on_schematic.pdf, id=71, 434.63028pt x 651.94836pt>
 File: figures/head_on_schematic.pdf Graphic file (type pdf)
 <use figures/head_on_schematic.pdf>
-Package luatex.def Info: figures/head_on_schematic.pdf  used on input line 90.
+Package luatex.def Info: figures/head_on_schematic.pdf  used on input line 92.
 (luatex.def)             Requested size: 86.72267pt x 130.07896pt.
  [3]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 4 undefined on input l
-ine 128.
+ine 120.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 4 undefined on input l
-ine 133.
-
-
-LaTeX Warning: Citation `frye_factorization_2016' on page 4 undefined on input l
-ine 139.
+ine 125.
 
 [4<./figures/head_on_schematic.pdf>]
 
+LaTeX Warning: Citation `frye_factorization_2016' on page 5 undefined on input l
+ine 131.
+
+
 LaTeX Warning: Citation `chien_resummation_2010' on page 5 undefined on input li
-ne 147.
+ne 139.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 5 undefined on input l
-ine 153.
+ine 145.
 
 
-LaTeX Warning: Citation `ellis_jet_2010' on page 5 undefined on input line 153.
+LaTeX Warning: Citation `ellis_jet_2010' on page 5 undefined on input line 145.
 
 [5] [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
  (./factorization.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
 Package rerunfilecheck Info: File `factorization.out' has not changed.
-(rerunfilecheck)             Checksum: 3600F6ADB38B5C253A0EC7C6E79B2A0C;909.
+(rerunfilecheck)             Checksum: 71D2E0D9B2D48E262F0019CC72DBCE9C;939.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 187.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -1218,7 +1218,7 @@ Here is how much of LuaTeX's memory you used:
  803 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 60 attribute, 66 glue_spec
 , 60 attribute_list, 2 write nodes
-   avail lists: 1:8,2:364,3:125,4:11,5:234,6:26,7:3907,8:77,9:309,10:6,11:289
+   avail lists: 1:8,2:350,3:128,4:12,5:234,6:26,7:3907,8:77,9:296,10:7,11:289
  41220 multiletter control sequences out of 65536+600000
  96 fonts using 10616247 bytes
  79i,13n,95p,1199b,746s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1243,7 +1243,7 @@ ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on factorization.pdf (6 pages, 176635 bytes).
+Output written on factorization.pdf (6 pages, 177161 bytes).
 
 PDF statistics: 224 PDF objects out of 1000 (max. 8388607)
  174 compressed objects within 2 object streams

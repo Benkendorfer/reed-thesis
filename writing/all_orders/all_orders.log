@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  22 APR 2021 14:50
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 15:21
  restricted system commands enabled.
 **all_orders.tex
 (./all_orders.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.132 seconds
+luaotfload | main : initialization completed in 0.125 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1379,7 +1379,7 @@ b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
 live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on all_orders.pdf (18 pages, 355622 bytes).
+Output written on all_orders.pdf (18 pages, 355607 bytes).
 
 PDF statistics: 633 PDF objects out of 1000 (max. 8388607)
  506 compressed objects within 6 object streams

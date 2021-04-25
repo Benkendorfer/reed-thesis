@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  20 APR 2021 11:34
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 14:45
  restricted system commands enabled.
 **technical_introduction.tex
 (./technical_introduction.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.131 seconds
+luaotfload | main : initialization completed in 0.169 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1178,11 +1178,11 @@ t line 61.
 LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 2 undefined on inpu
 t line 70.
 
+[2]
 
-LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 2 undefined on inpu
+LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 3 undefined on inpu
 t line 76.
 
-[2]
 
 LaTeX Warning: Reference `all-sec:solving RGE' on page 3 undefined on input line
  80.
@@ -1434,7 +1434,7 @@ Here is how much of LuaTeX's memory you used:
  919 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 16 glue, 4 kern, 1 glyph, 72 attribute, 66 glue_spe
 c, 72 attribute_list, 2 write nodes
-   avail lists: 1:8,2:407,3:126,4:45,5:264,6:25,7:4258,8:64,9:270,10:15,11:314
+   avail lists: 1:8,2:407,3:126,4:45,5:264,6:25,7:4258,8:64,9:257,10:15,11:314
  41250 multiletter control sequences out of 65536+600000
  99 fonts using 10977543 bytes
  79i,13n,95p,1444b,891s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1460,7 +1460,7 @@ r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/loc
 al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
 texlive/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb>
-Output written on technical_introduction.pdf (12 pages, 1053831 bytes).
+Output written on technical_introduction.pdf (12 pages, 1054525 bytes).
 
 PDF statistics: 314 PDF objects out of 1000 (max. 8388607)
  255 compressed objects within 3 object streams
