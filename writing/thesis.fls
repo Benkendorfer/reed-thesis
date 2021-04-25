@@ -353,6 +353,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman17-regular.luc
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc
+INPUT ./acknowledgments/acknowledgments.tex
+INPUT ./acknowledgments/acknowledgments.tex
 INPUT ./thesis.toc
 INPUT ./thesis.toc
 OUTPUT thesis.toc

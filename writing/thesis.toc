@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {4.1.1}Strategy}{46}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Anomalous dimension}{47}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Solving the renormalization group equation}{48}{subsection.4.1.3}%
-\contentsline {subsubsection}{Next-to-leading-logarithmic accuracy}{49}{section*.8}%
+\contentsline {subsubsection}{Next-to-leading-logarithmic accuracy}{50}{section*.8}%
 \contentsline {subsection}{\numberline {4.1.4}Full resummed result}{51}{subsection.4.1.4}%
 \contentsline {section}{\numberline {4.2}Soft function}{53}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Setup}{53}{subsection.4.2.1}%

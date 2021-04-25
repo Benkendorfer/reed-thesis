@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  22 APR 2021 14:07
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 13:24
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.124 seconds
+luaotfload | main : initialization completed in 0.129 seconds
 (./reedthesis.cls
 Document Class: reedthesis 2004/01/27 The Reed College Thesis Class
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/book.cls
@@ -1124,12 +1124,16 @@ Non-PDF special ignored!
 
 ] [3] [4
 
-] [1
+] (./acknowledgments/acknowledgments.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
-] [2
+])
+[2] [3
 
-] [3] [4
+] [4
 
 ] [5] [6
 
@@ -1137,14 +1141,14 @@ Non-PDF special ignored!
 \tf@toc=\write5
 
 \openout5 = thesis.toc
-
-[8] [9
+ [8] [9
 
 ] [10
 
 ] [11] [12
 
-] (./introduction/introduction.tex
+]
+(./introduction/introduction.tex
 <introduction/figures/Standard_Model_of_Elementary_Particles.pdf, id=354, 1046.4
 0938pt x 1001.24063pt>
 File: introduction/figures/Standard_Model_of_Elementary_Particles.pdf Graphic fi
@@ -1277,16 +1281,16 @@ put line 90.
 Chapter 4.
 (./all_orders/all_orders.tex [45
 
-] [46] [47] [48] [49] [50] [51]
+] [46] [47]
+Underfull \vbox (badness 1122) has occurred while \output is active []
+
+ [48]
+[49] [50] [51]
 Overfull \hbox (4.35799pt too wide) detected at line 275
 [][]
  []
 
-
-Underfull \vbox (badness 6300) has occurred while \output is active []
-
- [52]
-[53]
+[52] [53]
 ! Undefined control sequence.
 <argument> \ltag (k^+ - k_0 \n 
                     _g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
@@ -1344,12 +1348,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [59]
 [60] [61]
-<all_orders/figures/resummation_plot.pdf, id=2114, 346.29375pt x 170.6375pt>
+<all_orders/figures/resummation_plot.pdf, id=2113, 346.29375pt x 157.58875pt>
 File: all_orders/figures/resummation_plot.pdf Graphic file (type pdf)
 <use all_orders/figures/resummation_plot.pdf>
 Package luatex.def Info: all_orders/figures/resummation_plot.pdf  used on input 
 line 621.
-(luatex.def)             Requested size: 390.25534pt x 192.30518pt.
+(luatex.def)             Requested size: 390.25534pt x 177.59949pt.
  [62]) [63<./all_orders/figures/resummation_plot.pdf>] [64
 
 ]
@@ -1366,7 +1370,7 @@ Overfull \hbox (24.55785pt too wide) detected at line 68
  []
 
 [68] [69] [70]
-<appendix_soft_function/figures/full_eps_0.0001.pdf, id=2361, 336.25626pt x 169.
+<appendix_soft_function/figures/full_eps_0.0001.pdf, id=2414, 336.25626pt x 169.
 63374pt>
 File: appendix_soft_function/figures/full_eps_0.0001.pdf Graphic file (type pdf)
 
@@ -1383,24 +1387,24 @@ Appendix B.
 
 
 ] [76] [77]) [78]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 220.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 220.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (./thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 220.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 220.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 154D4D78A189990D283C1D79406315EC;8746.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 220.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39028 strings out of 493861
+ 39038 strings out of 493861
  100000,953878 words of node,token memory allocated
- 3444 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 61 glue, 4 kern, 1 glyph, 601 attribute, 65 glue_sp
-ec, 601 attribute_list, 2 write, 15 pdf_action nodes
-   avail lists: 1:8,2:972,3:414,4:64,5:330,6:54,7:4553,8:115,9:967,10:21,11:359
- 41833 multiletter control sequences out of 65536+600000
+ 3433 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 60 glue, 4 kern, 1 glyph, 600 attribute, 65 glue_sp
+ec, 600 attribute_list, 2 write, 15 pdf_action nodes
+   avail lists: 1:8,2:972,3:414,4:64,5:330,6:54,7:4554,8:115,9:967,10:21,11:359
+ 41834 multiletter control sequences out of 65536+600000
  110 fonts using 12003063 bytes
  67i,16n,110p,1599b,1939s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono12-regular.ot
@@ -1432,10 +1436,10 @@ xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (94 pages, 10878490 bytes).
+Output written on thesis.pdf (94 pages, 10906432 bytes).
 
-PDF statistics: 2740 PDF objects out of 2984 (max. 8388607)
- 2209 compressed objects within 23 object streams
- 558 named destinations out of 1000 (max. 131072)
+PDF statistics: 2792 PDF objects out of 2984 (max. 8388607)
+ 2243 compressed objects within 23 object streams
+ 557 named destinations out of 1000 (max. 131072)
  440 words of extra memory for PDF output out of 10000 (max. 100000000)
 
