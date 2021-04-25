@@ -25,12 +25,14 @@
 	\begin{equation}
 		\alpha_s^n \log^{n}\frac{\Lambda_h}{\Lambda_\ell}.
 	\end{equation}
-	These logarithms can grow quite large if the scales are far apart, which enhances the size of these contributions \cite{schwartz_quantum_2014}. Moreover, since these contributions occur at every order in $\alpha_s$, they can be difficult to take care of. This leaves us in a quandary --- how do we handle large corrections which are, for all intents an purposes, out of computational reach?
+	For events we are considering, the first scale of the problem is the total energy of the collision $Q$; two additional scales are the heavy hemisphere mass $\rho$ and the mMDT grooming cutoff $\zcut$.
+
+	These logarithms can grow quite large if the scales are far apart, which enhances the size of these contributions \cite{schwartz_quantum_2014}. In our calculation, this occurs when we set $\rho \sim \zcut \ll 1$.\footnote{It general, one could expect large logarithms of scales near \textit{any} such phase space boundary.} Moreover, since these contributions occur at every order in $\alpha_s$, they can be difficult to take care of. This leaves us in a quandary --- how do we handle large corrections which are, for all intents an purposes, out of computational reach?
 
 	The key to an all-orders calculation of the distribution is to keep track of these logarithmic corrections in a systematic way, move them around, and put them back together into a scale-invariant function. This is the process of \textbf{resummation}, which we are about to undertake.
 
 \section{Resummation}\label{all-sec:resummation}
-	The first step towards resummation in SCET is to derive a factorization formula \cite{becher_introduction_2015-1}, as we have already done in Eq.~\ref{factor-eq:factorization formula}. Splitting the cross section into terms, each of which depends only on a single scale, enables resummation of each term \cite{frye_factorization_2016}.
+	The first step towards resummation in SCET is to derive a factorization formula \cite{becher_introduction_2015-1}, as we have already done in Eq.~\ref{factor-eq:factorization formula}. Splitting the cross section into terms, each of which depends only on a single scale, enables resummation of the logarithms in each term \cite{frye_factorization_2016}.
 
 	It will be helpful to work in Laplace space, which for a function $f(t)$ is achieved by the transformation \cite{boas_mathematical_2006}
 	\begin{equation}
@@ -214,7 +216,7 @@
 		F(\mu) = F(\mu_0) e^{K(\mu, \mu_0)} \qty(\frac{\mu_0^2}{\mu_1^2})^{\omega(\mu, \mu_0)}.
 	}
 	\end{equation}
-	Everything is now defined in terms of known constants and the anomalous dimension except for $F(\mu_0)$. This quantity is determined by calculating $F$ at some fixed order and then evaluating at the scale $\mu_0$.\footnote{$F(\mu_0)$ is simply a boundary value for the renormalization group equation.} {\color{red}\textbf{[TODO: explicate the subtle difference between the resummed result and the fixed-order result. Explain why we needed to go through the trouble of resummation in the first place]}}
+	Everything is now defined in terms of known constants and the anomalous dimension except for $F(\mu_0)$. This quantity is determined by calculating $F$ at some fixed order and then evaluating at the scale $\mu_0$.\footnote{$F(\mu_0)$ is simply a boundary value for the renormalization group equation.} The scale $\mu_0$, while in principle arbitrary, will have a natural value which enables us to eliminate the large logarithms of scales.
 
 \subsection{Full resummed result}\label{all-sec:full resummed result}
 	The above process can be completed for every term in the factorization formula, Eq.~\ref{all-eq:factorization formula laplace}. Letting $\mu_F$ be the fixed scale at which function $F$ is evaluated and $\mu_{1, F}$ be the natural scale appearing logarithmically in $F$, we have
@@ -242,7 +244,7 @@
 	\begin{equation}
 		\frac{\partial^n}{\partial q^n} \nu^q = \nu^q \log^n \nu
 	\end{equation}
-	to re-write the logarithms in the fixed-scale as derivatives. That is, we will take {\color{red}\textbf{[TODO: check this]}}
+	to re-write the logarithms in the fixed-scale as derivatives. That is, we will take
 	\begin{equation}
 		\log^n \frac{\nu^\xi \mu_0}{\mu_1} \to \partial^n_{\omega},
 	\end{equation}
@@ -322,15 +324,15 @@
 		\Theta_\mMDT = 1 - \Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta(k\cdot n_g - k_0 n_g \cdot n_q).
 	\end{equation}
 
-	In QCD, the gluon carries color charge, so a gluon can be emitted off of any pair of color-charged particles: the quark and antiquark, the quark and resolved gluon, or the antiquark and resolved gluon. The matrix element accounts for all of these possibilities, and in the soft limit in $d = 4 - 2\epsilon$ dimensions it takes the form \cite{catani_infrared_2000}
+	In QCD, the gluon carries color charge, so a gluon can be emitted off of any pair of color-charged particles: the quark and antiquark, the quark and resolved gluon, or the antiquark and resolved gluon. The matrix element for soft emissions accounts for all of these possibilities, and in the soft limit in $d = 4 - 2\epsilon$ dimensions it takes the form \cite{catani_infrared_2000}
 	\begin{equation}
-		\abs{\cM}^2 = -4\pi\alpha_s \mu^{2\epsilon} \sum_{i < j} \vb{T}_i \cdot \vb{T}_j \frac{n_i \cdot n_j}{(n_i \cdot k) (n_j \cdot k)}.
+		\abs{\cM_s}^2 = -4\pi\alpha_s \mu^{2\epsilon} \sum_{i < j} \vb{T}_i \cdot \vb{T}_j \frac{n_i \cdot n_j}{(n_i \cdot k) (n_j \cdot k)}.
 	\end{equation}
-	{\color{red}\textbf{[TODO: are we missing a factor of $\sigma_0$?]}} Here $i, j$ range over all the pairs of resolved particles, the $n_i$ are direction vectors, and the $\vb{T}_i$ are color charge matrices which account for color correlations. Their precise definition is unimportant, and all we need to know is that $\vb{T}_q \cdot \vb{T}_{\bar q} = -C_F$ \cite{catani_infrared_2000}.
+	Here $i, j$ range over all the pairs of resolved particles, the $n_i$ are direction vectors, and the $\vb{T}_i$ are color charge matrices which account for color correlations. Their precise definition is unimportant, and all we need to know is that $\vb{T}_q \cdot \vb{T}_{\bar q} = -C_F$ \cite{catani_infrared_2000}.
 
 	For a complete calculation, we would need to compute the soft function separately for each term of the sum, then combine them all together at the end. However, only one of the terms --- emission off of the quark-antiquark pair --- is analytically tractable, so for the sake of demonstration we will focus solely on that. This is equivalent, in some sense, to computing the soft function in a theory like quantum electrodynamics, in which the force carrier does not carry charge.\footnote{Of course, this would be a logically incoherent calculation, as the very presence of jet physics is a result of the particular nonlinearities of QCD which lead to the gluon carrying color charge. Nevertheless, we will continue, since the goal of this thesis is, in large part, pedagogical --- I warned you that we would have to make sacrifices.} Thus, we will simply take
 	\begin{equation}
-		\abs{\cM}^2 = 4\pi\alpha_s C_F \mu^{2\epsilon} \frac{n_q \cdot n_{\bar q}}{(n_q \cdot k) (n_{\bar q} \cdot k)} = 4\pi\alpha_s C_F \mu^{2\epsilon} \frac{2}{k^+ k^-},
+		\abs{\cM_s}^2 = 4\pi\alpha_s C_F \mu^{2\epsilon} \frac{n_q \cdot n_{\bar q}}{(n_q \cdot k) (n_{\bar q} \cdot k)} = 4\pi\alpha_s C_F \mu^{2\epsilon} \frac{2}{k^+ k^-},
 	\end{equation}
 	where $n_{\bar q} = (1, 0, 0, -1)$.
 
@@ -338,9 +340,9 @@
 	\begin{equation}
 		d\Pi = \frac{d^d k}{(2 \pi)^{d - 1}} \delta(k^2) \Theta(k^+) \Theta(k^- - k^+).
 	\end{equation}
-	{\color{red}\textbf{[TODO: check the power of $2\pi$]}} Notice that we are enforcing the gluon to be emitted in the hemisphere with the quark by requiring $k^- > k^+$. This is necessary because of the assumption we have made in writing the all-orders result of Eq.~\ref{all-eq:full resummed result}. Note as well that we are only scanning over the momentum of the extra-soft gluon: under the assumption that this gluon is softer than the resolved gluon, the emission does not meaningfully influence the momentum of either the quarks or the resolved gluon.
+	Notice that we are enforcing the gluon to be emitted in the hemisphere with the quark by requiring $k^- > k^+$. This is necessary because of the assumption we have made in writing the all-orders result of Eq.~\ref{all-eq:full resummed result}. Note as well that we are only scanning over the momentum of the extra-soft gluon: under the assumption that this gluon is softer than the resolved gluon, the emission does not meaningfully influence the momentum of either the quarks or the resolved gluon.
 
-	Thus, putting everything together, we find
+	Thus, putting everything together using Fermi's Golden Rule, we find
 	\begin{equation}\label{all-eq:soft function general coords}
 	\boxed{
 	\begin{aligned}
@@ -379,7 +381,7 @@
 	\end{equation}
 	Moreover, the matrix element becomes
 	\begin{equation}\label{all-eq:matrix element specific coords}
-		\abs{\cM}^2 = 4\pi\alpha_s C_F \frac{2}{k_\perp^2}.
+		\abs{\cM_s}^2 = 4\pi\alpha_s C_F \frac{2}{k_\perp^2}.
 	\end{equation}
 
 	Next comes the measurement function. Notice that

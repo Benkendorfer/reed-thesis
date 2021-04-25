@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 15:21
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 15:35
  restricted system commands enabled.
 **all_orders.tex
 (./all_orders.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.125 seconds
+luaotfload | main : initialization completed in 0.118 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1132,27 +1132,23 @@ t line 24.
 
 
 LaTeX Warning: Citation `schwartz_quantum_2014' on page 1 undefined on input lin
-e 28.
+e 30.
 
 
 LaTeX Warning: Citation `becher_introduction_2015-1' on page 1 undefined on inpu
-t line 33.
+t line 35.
 
 
 LaTeX Warning: Reference `factor-eq:factorization formula' on page 1 undefined o
-n input line 33.
+n input line 35.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 1 undefined on input l
-ine 33.
+ine 35.
 
 
 LaTeX Warning: Citation `boas_mathematical_2006' on page 1 undefined on input li
-ne 35.
-
-
-LaTeX Warning: Citation `frye_factorization_2016' on page 1 undefined on input l
-ine 48.
+ne 37.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1167,76 +1163,84 @@ ap/pdftex.map}
 
 ]
 
-LaTeX Warning: Citation `schwartz_quantum_2014' on page 2 undefined on input lin
-e 59.
+LaTeX Warning: Citation `frye_factorization_2016' on page 2 undefined on input l
+ine 50.
 
 
 LaTeX Warning: Citation `schwartz_quantum_2014' on page 2 undefined on input lin
-e 63.
+e 61.
 
 
 LaTeX Warning: Citation `schwartz_quantum_2014' on page 2 undefined on input lin
-e 73.
+e 65.
+
+
+LaTeX Warning: Citation `schwartz_quantum_2014' on page 2 undefined on input lin
+e 75.
 
 [2]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 3 undefined on input l
-ine 88.
+ine 90.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 3 undefined on input l
-ine 96.
-
-
-LaTeX Warning: Citation `frye_factorization_2016' on page 3 undefined on input l
-ine 112.
+ine 98.
 
 [3]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 4 undefined on input l
-ine 120.
+ine 114.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 4 undefined on input l
-ine 127.
+ine 122.
+
+
+LaTeX Warning: Citation `frye_factorization_2016' on page 4 undefined on input l
+ine 129.
 
 [4] [5]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 6 undefined on input l
-ine 188.
+ine 190.
 
 [6]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 7 undefined on input l
-ine 237.
+ine 239.
 
 
 LaTeX Warning: Citation `becher_factorization_2007' on page 7 undefined on input
- line 241.
+ line 243.
 
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 7 undefined on input l
-ine 241.
+ine 243.
 
 [7]
 
 LaTeX Warning: Citation `frye_factorization_2016' on page 8 undefined on input l
-ine 253.
+ine 255.
 
 
-Overfull \hbox (4.35799pt too wide) detected at line 275
+Overfull \hbox (4.35799pt too wide) detected at line 277
 [][]
  []
 
 
-LaTeX Warning: Citation `frye_factorization_2016' on page 8 undefined on input l
-ine 280.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[8] [9]
+ [8]
+
+LaTeX Warning: Citation `frye_factorization_2016' on page 9 undefined on input l
+ine 282.
+
+[9]
 ! Undefined control sequence.
 <argument> \ltag (k^+ - k_0 \n 
                     _g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.322 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
+l.324 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
                                                   (k\cdot n_g - k_0 n_g \cdo...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1247,23 +1251,23 @@ and I'll forget about whatever was undefined.
 ! Double subscript.
 <argument> \ltag (k^+ - k_0 \n _
                      g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.322 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
+l.324 ...\Theta\qty(k^+ - k_0 \n_g \cdot n_q) \Theta
                                                   (k\cdot n_g - k_0 n_g \cdo...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
 LaTeX Warning: Citation `catani_infrared_2000' on page 10 undefined on input lin
-e 325.
-
-
-LaTeX Warning: Citation `catani_infrared_2000' on page 10 undefined on input lin
-e 329.
+e 327.
 
 [10]
+
+LaTeX Warning: Citation `catani_infrared_2000' on page 11 undefined on input lin
+e 331.
+
 ! Undefined control sequence.
 <argument> \ltag (k^+ - k_0 \n 
                     _g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.351 	}
+l.353 	}
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1274,115 +1278,124 @@ and I'll forget about whatever was undefined.
 ! Double subscript.
 <argument> \ltag (k^+ - k_0 \n _
                      g \cdot n_q\rtag ) \IfNoValueTF {-NoValue-}{}{|-NoValue-|}
-l.351 	}
+l.353 	}
       
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 [11]
-Overfull \hbox (23.26083pt too wide) detected at line 406
+Overfull \hbox (23.26083pt too wide) detected at line 408
 [][][]
  []
 
 [12]
 
 LaTeX Warning: Citation `schwartz_quantum_2014' on page 13 undefined on input li
-ne 433.
+ne 435.
 
 [13]
 
 LaTeX Warning: Reference `app:soft function integral' on page 14 undefined on in
-put line 473.
+put line 475.
 
 
 LaTeX Warning: Reference `app_soft-eq:full soft function' on page 14 undefined o
-n input line 473.
+n input line 475.
 
 
-LaTeX Warning: Reference `app:dilogarithm' on page 14 undefined on input line 48
-4.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+
+LaTeX Warning: Reference `app:dilogarithm' on page 15 undefined on input line 48
+6.
 
 
-Overfull \hbox (5.12096pt too wide) detected at line 491
+Overfull \hbox (5.12096pt too wide) detected at line 493
 [][][][]\OML/cmm/m/it/12 []\OT1/cmr/m/n/12  (\OMS/cmsy/m/n/12  \OT1/cmr/m/n/12
  2\OML/cmm/m/it/12 \OT1/cmr/m/n/12 ) = [][] + \OMS/cmsy/m/n/12 O\OT1/cmr/m/n/1
 2 (\OML/cmm/m/it/12 \OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :
  []
 
-[14] [15] [16]
-<figures/resummation_plot.pdf, id=314, 346.29375pt x 157.58875pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+[16] [17]
+<figures/resummation_plot.pdf, id=322, 346.29375pt x 157.58875pt>
 File: figures/resummation_plot.pdf Graphic file (type pdf)
 <use figures/resummation_plot.pdf>
-Package luatex.def Info: figures/resummation_plot.pdf  used on input line 621.
+Package luatex.def Info: figures/resummation_plot.pdf  used on input line 623.
 (luatex.def)             Requested size: 390.25534pt x 177.59949pt.
 
 
-LaTeX Warning: Citation `particle_data_group_review_2020' on page 17 undefined o
-n input line 623.
+LaTeX Warning: Citation `particle_data_group_review_2020' on page 18 undefined o
+n input line 625.
 
 
-LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 17 undefined on inp
-ut line 623.
+LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 18 undefined on inp
+ut line 625.
 
 
-LaTeX Warning: Citation `particle_data_group_review_2020' on page 17 undefined o
-n input line 623.
+LaTeX Warning: Citation `particle_data_group_review_2020' on page 18 undefined o
+n input line 625.
 
 
-LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 17 undefined on inp
-ut line 623.
+LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 18 undefined on inp
+ut line 625.
 
-[17] [18<./figures/resummation_plot.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 634.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 634.
+[18] [19<./figures/resummation_plot.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 636.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 636.
  (./all_orders.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 634.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 634.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 636.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 636.
 Package rerunfilecheck Info: File `all_orders.out' has not changed.
 (rerunfilecheck)             Checksum: 7782C56FB89B5E9FEAB596EDB13C988F;1832.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 634.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 636.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37882 strings out of 493861
+ 37886 strings out of 493861
  100000,953878 words of node,token memory allocated
- 1480 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 13 glue, 4 kern, 1 glyph, 214 attribute, 67 glue_sp
-ec, 214 attribute_list, 2 write nodes
-   avail lists: 1:8,2:761,3:178,4:22,5:318,6:38,7:3445,8:118,9:851,10:16,11:209
- 41265 multiletter control sequences out of 65536+600000
- 97 fonts using 10747943 bytes
+ 1491 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 14 glue, 4 kern, 1 glyph, 215 attribute, 67 glue_sp
+ec, 215 attribute_list, 2 write nodes
+   avail lists: 1:8,2:725,3:185,4:18,5:311,6:34,7:3553,8:112,9:760,10:16,11:218
+ 41266 multiletter control sequences out of 65536+600000
+ 98 fonts using 10879639 bytes
  79i,15n,95p,955b,1048s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf>
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.ot
-f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular
-.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman7-regul
-ar.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bo
-ld.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman8-reg
+f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.
+otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regul
+ar.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman7-reg
 ular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-
-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman
-slant12-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cmextra/cmex8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
-b></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on all_orders.pdf (18 pages, 355607 bytes).
+bold.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman8-r
+egular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman1
+2-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmrom
+anslant12-regular.otf></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
+s/cmextra/cmex8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.
+pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
+sr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on all_orders.pdf (19 pages, 357653 bytes).
 
-PDF statistics: 633 PDF objects out of 1000 (max. 8388607)
- 506 compressed objects within 6 object streams
- 148 named destinations out of 1000 (max. 131072)
+PDF statistics: 646 PDF objects out of 1000 (max. 8388607)
+ 515 compressed objects within 6 object streams
+ 150 named destinations out of 1000 (max. 131072)
  104 words of extra memory for PDF output out of 10000 (max. 100000000)
 

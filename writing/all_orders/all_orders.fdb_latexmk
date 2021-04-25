@@ -1,8 +1,9 @@
 # Fdb version 3
-["lualatex"] 1619389316 "all_orders.tex" "all_orders.pdf" "all_orders" 1619389319
+["lualatex"] 1619390114 "all_orders.tex" "all_orders.pdf" "all_orders" 1619390117
   "../reedthesis.cls" 1383591362 8293 480a01b2533a1585368760477c470aa0 ""
-  "../thesis.tex" 1619388965 7402 d7bcba4595c8905da4aa5e7ba8c5b9d9 ""
+  "../thesis.tex" 1619389874 7402 d7bcba4595c8905da4aa5e7ba8c5b9d9 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1578167051 124231 de1fac4fa22b2d0f3c02f2a11a85c4b6 ""
+  "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc" 1578167051 132153 e7fa8b11b7f6a785da3d3a24d622a3e1 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1578167050 123160 07b01c97fb3dfb55a9303e4e62ca726f ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1578088225 124128 a9660d29d58fde0161397418fef1dfe6 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc" 1578088225 131060 99ff9ae82052dd1abb7e28d118ca7de7 ""
@@ -13,6 +14,7 @@
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1580168458 123967 57b70db54ced14932f52c5185614c3e5 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmromanslant12-regular.luc" 1612227379 125052 c97150538b27307107aa8c85aeb1c8af ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1255129361 118828 4d461c73423fe2666dad2ff0dfc3ca68 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf" 1255129361 111536 ae9d1b331000d544f47e5223081b7b54 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf" 1255129361 110496 b9c8767d4cc3bf3f4b21f676bf89aa78 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf" 1255129361 117732 558aeb4ada25b652cc2e9bcf0771e962 ""
@@ -256,12 +258,12 @@
   "/usr/local/texlive/2017/texmf-dist/tex/luatex/luaotfload/fontloader-basics-gen.lua" 1547850999 12695 9a740c440e62da9b31d1d097257a1869 ""
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1575873454 4693480 8353df0835313a2d202e2f489241f4ef ""
   "/usr/local/texlive/2017/texmf-var/web2c/luatex/lualatex.fmt" 1575873557 1399169 069afea70d38dea9ddb6c86bc40f5b67 ""
-  "all_orders.aux" 1619389319 8022 8473f077bce26126bf11efcc4f0ea851 "lualatex"
-  "all_orders.out" 1619389319 1832 7782c56fb89b5e9feab596edb13c988f "lualatex"
-  "all_orders.tex" 1619389316 50946 1cacd5a9ebb8cf7b49912c3e0e800aff ""
+  "all_orders.aux" 1619390116 8022 3e62ea3a0c98b47253d81ea8954ff7c8 "lualatex"
+  "all_orders.out" 1619390116 1832 7782c56fb89b5e9feab596edb13c988f "lualatex"
+  "all_orders.tex" 1619390114 51169 0551542b7a37524546b6d5c5dcbe662f ""
   "figures/resummation_plot.pdf" 1619128155 100541 843a509be87ad18dfae6e9396e0a41e5 ""
   (generated)
   "all_orders.aux"
-  "all_orders.out"
-  "all_orders.pdf"
   "all_orders.log"
+  "all_orders.pdf"
+  "all_orders.out"
