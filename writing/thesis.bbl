@@ -55,7 +55,7 @@ J.E.~Augustin, A.M.~Boyarski, M.~Breidenbach, F.~Bulos, J.T.~Dakin,
   Lett. B} {\bfseries 716} (2012) 1}.
 
 \bibitem{cms_collaboration_observation_2012}
-C.~Collaboration, \emph{Observation of a new boson at a mass of 125 {{GeV}}
+{CMS Collaboration}, \emph{Observation of a new boson at a mass of 125 {{GeV}}
   with the {{CMS}} experiment at the {{LHC}}},
   \href{https://doi.org/10.1016/j.physletb.2012.08.021}{\emph{Physics Letters
   B} {\bfseries 716} (2012) 30}
@@ -239,7 +239,7 @@ T.~Becher, M.~Neubert and B.D.~Pecjak, \emph{Factorization and
 
 \bibitem{atlas_collaboration_measurement_2020-1}
 {ATLAS Collaboration}, \emph{A measurement of soft-drop jet observables in $pp$
-  collisions with the atlas detector at $\sqrt{s} = 13$ tev},
+  collisions with the atlas detector at $\sqrt{s} = 13$ {TeV}},
   \href{https://doi.org/10.1103/PhysRevD.101.052007}{\emph{Phys. Rev. D}
   {\bfseries 101} (2020) 052007}
   [\href{https://arxiv.org/abs/1912.09837}{{\ttfamily 1912.09837}}].

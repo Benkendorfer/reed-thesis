@@ -358,9 +358,12 @@ INPUT ./acknowledgments/acknowledgments.tex
 INPUT ./thesis.toc
 INPUT ./thesis.toc
 OUTPUT thesis.toc
-INPUT ./introduction/introduction.tex
-INPUT ./introduction/introduction.tex
+INPUT ./abstract/abstract.tex
+INPUT ./abstract/abstract.tex
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
+INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
+INPUT ./introduction/introduction.tex
+INPUT ./introduction/introduction.tex
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
@@ -400,7 +403,6 @@ INPUT ./introduction/figures/atlas_high_res.jpg
 INPUT ./introduction/figures/cms_160312_02.pdf
 INPUT ./introduction/figures/cms_160312_02.pdf
 INPUT ./introduction/figures/cms_160312_02.pdf
-INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-bold.luc
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bold.luc
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc

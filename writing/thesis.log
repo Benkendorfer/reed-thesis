@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 15:36
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 16:25
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.124 seconds
+luaotfload | main : initialization completed in 0.121 seconds
 (./reedthesis.cls
 Document Class: reedthesis 2004/01/27 The Reed College Thesis Class
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/book.cls
@@ -1139,15 +1139,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \tf@toc=\write5
 
 \openout5 = thesis.toc
- [6] [7
+ [6] (./abstract/abstract.tex) [7
 
 ] [8
 
-] [9] [10
+] [9]
+[10
 
-]
-(./introduction/introduction.tex
-<introduction/figures/Standard_Model_of_Elementary_Particles.pdf, id=345, 1046.4
+] (./introduction/introduction.tex
+<introduction/figures/Standard_Model_of_Elementary_Particles.pdf, id=355, 1046.4
 0938pt x 1001.24063pt>
 File: introduction/figures/Standard_Model_of_Elementary_Particles.pdf Graphic fi
 le (type pdf)
@@ -1173,14 +1173,14 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.3'
 [3]
 warning  (pdf backend): ignoring duplicate destination with the name 'page.4'
 [4]
-<introduction/figures/atlas_high_res.jpg, id=753, 724.35188pt x 512.08456pt>
+<introduction/figures/atlas_high_res.jpg, id=760, 724.35188pt x 512.08456pt>
 File: introduction/figures/atlas_high_res.jpg Graphic file (type jpg)
 <use introduction/figures/atlas_high_res.jpg>
 Package luatex.def Info: introduction/figures/atlas_high_res.jpg  used on input 
 line 57.
 (luatex.def)             Requested size: 433.62pt x 306.54987pt.
  [5<./introduction/figures/atlas_high_res.jpg>]
-<introduction/figures/cms_160312_02.pdf, id=769, 2392.81453pt x 1690.44048pt>
+<introduction/figures/cms_160312_02.pdf, id=776, 2392.81453pt x 1690.44048pt>
 File: introduction/figures/cms_160312_02.pdf Graphic file (type pdf)
 <use introduction/figures/cms_160312_02.pdf>
 Package luatex.def Info: introduction/figures/cms_160312_02.pdf  used on input l
@@ -1197,7 +1197,7 @@ LaTeX Font Info:    Trying to load font information for U+euf on input line 30.
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 ) [13] [14]
 [15]
-<technical_introduction/figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg, id=952
+<technical_introduction/figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg, id=957
 , 2862.17822pt x 1889.75317pt>
 File: technical_introduction/figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg Gr
 aphic file (type jpg)
@@ -1206,7 +1206,7 @@ Package luatex.def Info: technical_introduction/figures/DijetHighMass9.3TeV-VP1-
 nocone_small.jpg  used on input line 96.
 (luatex.def)             Requested size: 433.62pt x 286.2766pt.
  [16<./technical_introduction/figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg>] [17] [18]
-<technical_introduction/figures/atlas_pile_up.jpeg, id=1001, 1027.6794pt x 684.1
+<technical_introduction/figures/atlas_pile_up.jpeg, id=1006, 1027.6794pt x 684.1
 56pt>
 File: technical_introduction/figures/atlas_pile_up.jpeg Graphic file (type jpg)
 <use technical_introduction/figures/atlas_pile_up.jpeg>
@@ -1241,7 +1241,7 @@ Chapter 2.
 
 ] [26] [27] [28] [29] [30] [31] [32]
 [33] [34]
-<leading_order/figures/approximation_small_zcut_0.01.pdf, id=1277, 375.4025pt x 
+<leading_order/figures/approximation_small_zcut_0.01.pdf, id=1282, 375.4025pt x 
 190.7125pt>
 File: leading_order/figures/approximation_small_zcut_0.01.pdf Graphic file (type
  pdf)
@@ -1249,7 +1249,7 @@ File: leading_order/figures/approximation_small_zcut_0.01.pdf Graphic file (type
 Package luatex.def Info: leading_order/figures/approximation_small_zcut_0.01.pdf
   used on input line 484.
 (luatex.def)             Requested size: 390.25534pt x 198.26938pt.
-<leading_order/figures/approximation_small_zcut_0.0001.pdf, id=1278, 375.4025pt 
+<leading_order/figures/approximation_small_zcut_0.0001.pdf, id=1283, 375.4025pt 
 x 190.7125pt>
 File: leading_order/figures/approximation_small_zcut_0.0001.pdf Graphic file (ty
 pe pdf)
@@ -1268,7 +1268,7 @@ Chapter 3.
 (./factorization/factorization.tex [39
 
 ] [40] [41]
-<factorization/figures/head_on_schematic.pdf, id=1769, 434.63028pt x 651.94836pt
+<factorization/figures/head_on_schematic.pdf, id=1774, 434.63028pt x 651.94836pt
 >
 File: factorization/figures/head_on_schematic.pdf Graphic file (type pdf)
 <use factorization/figures/head_on_schematic.pdf>
@@ -1346,7 +1346,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [61]
 [62] [63]
-<all_orders/figures/resummation_plot.pdf, id=2115, 346.29375pt x 157.58875pt>
+<all_orders/figures/resummation_plot.pdf, id=2120, 346.29375pt x 157.58875pt>
 File: all_orders/figures/resummation_plot.pdf Graphic file (type pdf)
 <use all_orders/figures/resummation_plot.pdf>
 Package luatex.def Info: all_orders/figures/resummation_plot.pdf  used on input 
@@ -1368,7 +1368,7 @@ Overfull \hbox (24.55785pt too wide) detected at line 68
  []
 
 [70] [71] [72]
-<appendix_soft_function/figures/full_eps_0.0001.pdf, id=2416, 336.25626pt x 169.
+<appendix_soft_function/figures/full_eps_0.0001.pdf, id=2421, 336.25626pt x 169.
 63374pt>
 File: appendix_soft_function/figures/full_eps_0.0001.pdf Graphic file (type pdf)
 
@@ -1396,7 +1396,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
 )
 
 Here is how much of LuaTeX's memory you used:
- 39038 strings out of 493861
+ 39048 strings out of 493861
  100000,953878 words of node,token memory allocated
  3433 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 60 glue, 4 kern, 1 glyph, 600 attribute, 65 glue_sp
@@ -1434,10 +1434,10 @@ xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (94 pages, 10907669 bytes).
+Output written on thesis.pdf (94 pages, 10909872 bytes).
 
-PDF statistics: 2794 PDF objects out of 2984 (max. 8388607)
- 2245 compressed objects within 23 object streams
+PDF statistics: 2799 PDF objects out of 2984 (max. 8388607)
+ 2250 compressed objects within 23 object streams
  557 named destinations out of 1000 (max. 131072)
  440 words of extra memory for PDF output out of 10000 (max. 100000000)
 
