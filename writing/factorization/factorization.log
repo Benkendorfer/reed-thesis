@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 15:20
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 20:41
  restricted system commands enabled.
 **factorization.tex
 (./factorization.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.118 seconds
+luaotfload | main : initialization completed in 0.128 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1218,10 +1218,10 @@ Here is how much of LuaTeX's memory you used:
  803 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 5 glue, 4 kern, 1 glyph, 60 attribute, 66 glue_spec
 , 60 attribute_list, 2 write nodes
-   avail lists: 1:8,2:350,3:128,4:12,5:234,6:26,7:3907,8:77,9:296,10:7,11:289
+   avail lists: 1:8,2:350,3:128,4:12,5:234,6:26,7:3904,8:77,9:296,10:7,11:288
  41220 multiletter control sequences out of 65536+600000
  96 fonts using 10616247 bytes
- 79i,13n,95p,1199b,746s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 79i,13n,95p,1197b,746s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmromanslant12-regu
 lar.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-i
 talic.otf></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10
@@ -1243,7 +1243,7 @@ ocal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on factorization.pdf (6 pages, 177161 bytes).
+Output written on factorization.pdf (6 pages, 177166 bytes).
 
 PDF statistics: 224 PDF objects out of 1000 (max. 8388607)
  174 compressed objects within 2 object streams

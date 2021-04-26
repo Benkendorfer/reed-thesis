@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 13:23
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 17:03
  restricted system commands enabled.
 **acknowledgments.tex
 (./acknowledgments.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.123 seconds
+luaotfload | main : initialization completed in 0.130 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1126,6 +1126,11 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1141,32 +1146,33 @@ Non-PDF special ignored!{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updm
 ap/pdftex.map}
 
 ] [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./acknowledgments.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 51.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 51.
 Package rerunfilecheck Info: File `acknowledgments.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 47.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 51.
 )
 
 Here is how much of LuaTeX's memory you used:
- 37592 strings out of 493861
+ 37594 strings out of 493861
  100000,953878 words of node,token memory allocated
  560 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 8 attribute, 65 glue_spec,
  8 attribute_list, 2 write nodes
-   avail lists: 1:8,2:82,3:38,4:15,5:312,6:16,7:3982,8:3,9:103,10:10,11:182
- 41170 multiletter control sequences out of 65536+600000
- 53 fonts using 7304191 bytes
+   avail lists: 1:8,2:88,3:39,4:15,5:296,6:17,7:3857,8:3,9:103,10:10,11:176
+ 41171 multiletter control sequences out of 65536+600000
+ 54 fonts using 7435887 bytes
  79i,11n,95p,865b,729s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.o
-tf>
-Output written on acknowledgments.pdf (2 pages, 15660 bytes).
+</usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.ot
+f></usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-regular
+.otf>
+Output written on acknowledgments.pdf (2 pages, 18987 bytes).
 
-PDF statistics: 27 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+PDF statistics: 34 PDF objects out of 1000 (max. 8388607)
+ 23 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

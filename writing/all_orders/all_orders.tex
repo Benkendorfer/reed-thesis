@@ -36,9 +36,9 @@
 
 	It will be helpful to work in Laplace space, which for a function $f(t)$ is achieved by the transformation \cite{boas_mathematical_2006}
 	\begin{equation}
-		\cL\qty{f}(s) = \int_0^\infty f(t) e^{-st}\,dt.
+		\cL\qty{f}(s) = \int_0^\infty f(t) e^{-st}\,dt
 	\end{equation}
-	For notational simplicity, instead of writing $\cL\qty{f}(s)$ everywhere, we will simply write $f(s)$. That is, whenever a function is written in terms of Laplace variables, we will assume that it is the Laplace-transformed function, and vice versa.
+	which takes $t \to s$. For notational simplicity, instead of writing $\cL\qty{f}(s)$ everywhere, we will simply write $f(s)$. That is, whenever a function is written in terms of Laplace variables, we will assume that it is the Laplace-transformed function, and vice versa.
 
 	Under Laplace transformation, convolution becomes multiplication, so under the transformation $\rho \to \nu$, the factorization formula becomes
 	\begin{equation}\label{all-eq:factorization formula laplace}
@@ -80,7 +80,7 @@
 
 		\item Solve the renormalization group equation
 		\begin{equation}\label{all-eq:general RGE}
-			\frac{\partial F}{\partial \log \mu} = \gamma F = \qty(\Gamma_F(\alpha_s) \log\frac{\mu^2}{\mu_1^2} + \gamma_F(\alpha_s))F.
+			\frac{\partial F}{\partial \log \mu} = \gamma F.
 		\end{equation}
 	\end{enumerate}
 	These steps are explained in more detail below.
@@ -93,9 +93,9 @@
 	\end{equation}
 	Here, $\mu_1$ is the remainder of the scale appearing with $\mu$ in the logarithm. We call $\Gamma_F(\alpha_s)$ the \textbf{cusp anomalous dimension}, and $\gamma_F(\alpha_s)$ is the \textbf{non-cusp anomalous dimension}. The cusp anomalous dimension is universal up to normalization and can be written as a series in $\alpha_s$:
 	\begin{equation}\label{all-eq:general cusp anomalous dimension}
-		\Gamma_F(\alpha_s) = d_F \Gamma_\cusp(\alpha_s) = d_F \sum_{n = 0}^\infty \Gamma_n \qty(\frac{\alpha_s}{4\pi})^{n + 1}.
+		\Gamma_F(\alpha_s) = d_F \Gamma_\cusp(\alpha_s) = d_F \sum_{n = 0}^\infty \Gamma_n \qty(\frac{\alpha_s}{4\pi})^{n + 1}
 	\end{equation}
-	The coefficients $\Gamma_n$ can be pulled from the literature. The relevant terms for our purposes are \cite{frye_factorization_2016}
+	for some constant $d_F$. The coefficients $\Gamma_n$ can be pulled from the literature. The relevant terms for our purposes are \cite{frye_factorization_2016}
 	\begin{equation}\label{all-eq:Gamma values}
 	\begin{aligned}
 		\Gamma_0 &= 4 \\
@@ -473,7 +473,7 @@
 
 \subsection{Computation, transformation, and Laurent series}
 	The actual computation of the integral in Eq.~\ref{all-eq:soft function specific coords} is fairly involved,\footnote{And much too complicated for Mathematica, in case you were wondering.} and is therefore relegated to Appendix \ref{app:soft function integral}. The result, from Eq.~\ref{app_soft-eq:full soft function}, is
-	\begin{equation}
+	\begin{equation}\label{all-eq:S_R full result rho space}
 	\begin{aligned}
 		S_R(\rho_s) &= \frac{2\pi\alpha_s C_F\mu^{2\epsilon}}{\pi^{5/2} \Gamma(\frac{1}{2} - \epsilon)}\qty(\frac{Q}{4})^{-2\epsilon} \frac{1}{\rho_s^{1 + 2\epsilon}} \\
 			&\qquad\times \Bigg[\frac{1}{2\epsilon}\frac{\sqrt{\pi} \, \Gamma(\frac{1}{2} - \epsilon)}{\Gamma(1 - \epsilon)} - \qty[\pi - \arcsec(1 + \sec\theta_g)]\log\cot\frac{\theta_g}{2} \\
@@ -491,7 +491,7 @@
 	\begin{equation}
 		\frac{2\pi\alpha_s C_F\mu^{2\epsilon}}{\pi^{5/2} \Gamma(\frac{1}{2} - \epsilon)}\qty(\frac{Q}{4})^{-2\epsilon} \nu^{2\epsilon}\Gamma(-2\epsilon) = \frac{\alpha_s C_F}{\pi^2} \qty[-\frac{1}{\epsilon} - 2\log(\frac{2\mu \nu}{Q}) - 2\epsilon \log^2 \qty(\frac{2\mu\nu}{Q})] + \cO(\epsilon).
 	\end{equation}
-	We have set the Euler-Mascheroni constant $\gamma_E \to 0$ when expanding the gamma functions. We have also dropped some order-$\epsilon$ terms which are not logarithmically enhanced, as these do not contribute meaningfully to the anomalous dimension. We can also expand the first term in square brackets as
+	We have set the Euler-Mascheroni constant $\gamma_E \to 0$ when expanding the gamma functions. We have also dropped some order-$\epsilon$ terms which are not logarithmically enhanced, as these do not contribute meaningfully to the anomalous dimension. We can also expand the first term in the square brackets of Eq.~\ref{all-eq:S_R full result rho space} as
 	\begin{equation}
 		\frac{1}{2\epsilon}\frac{\sqrt{\pi} \Gamma(\frac{1}{2} - \epsilon)}{\Gamma(1 - \epsilon)} = \frac{\pi}{2\epsilon} + \pi \log 2 + \cO(\epsilon).
 	\end{equation}
@@ -532,7 +532,7 @@
 	\begin{equation}
 		\gamma_F(\alpha_s) = \sum_{n = 0}^\infty \gamma_n \qty(\frac{\alpha_s}{4\pi})^{n + 1}.
 	\end{equation}
-	We would like to determine the values of $d_F$ and $\gamma_0$ (since $\Gamma_0$ and $\Gamma_1$ are universal and known). The anomalous dimension ends up being the coefficient of $2/\epsilon$, so we can simply read it off: the coefficient of $2/\epsilon$ in Eq.~\ref{all-eq:soft function laplace expanded} is
+	We would like to determine the values of $d_F$, $\gamma_0$, and $\mu_1$ (since $\Gamma_0$ and $\Gamma_1$ are universal and known). The anomalous dimension ends up being the coefficient of $2/\epsilon$, so we can simply read it off: the coefficient of $2/\epsilon$ in Eq.~\ref{all-eq:soft function laplace expanded} is
 	\begin{equation}
 		\gamma = -\frac{\alpha_s C_F}{4\pi}\qty[\frac{8}{\pi} f(\theta_g) + 4\log(\frac{4\mu^2 \nu^2}{Q^2})].
 	\end{equation}
@@ -606,7 +606,7 @@
 	\end{equation}
 	Notice that setting $\mu_0 = Q/2\nu$ would eliminate the large logarithms from $S_R(\nu, \mu_0)$!
 
-	Finally, we should convert the soft function back to real space. This is done using the tricks of Sec.~\ref{all-sec:full resummed result}. The logarithm-derivative transformation is
+	Finally, we should convert the soft function back to real space. This is done using the tricks of Sec.~\ref{all-sec:full resummed result}. The logarithm-derivative transformation yields
 	\begin{equation}
 		S_R(L \to \partial_{\omega}) = 1 -\frac{\alpha_s C_F}{\pi^2}\qty[2f(\theta_g) \partial_{\omega} + \pi \partial^2_{\omega}],
 	\end{equation}

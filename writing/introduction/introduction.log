@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  20 APR 2021 11:29
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 17:22
  restricted system commands enabled.
 **introduction.tex
 (./introduction.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.125 seconds
+luaotfload | main : initialization completed in 0.115 seconds
 (/usr/local/texlive/2017/texmf-dist/tex/latex/subfiles/subfiles.cls
 Document Class: subfiles 2019/10/30 v1.5 Multi-file projects (class)
 Preamble taken from file `../thesis.tex'
@@ -1291,18 +1291,18 @@ LaTeX Warning: Citation `larkoski_elementary_2019-1' on page 9 undefined on inpu
 t line 115.
 
 [9] [10] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 178.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 178.
  (./introduction.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 176.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 178.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 178.
 Package rerunfilecheck Info: File `introduction.out' has not changed.
 (rerunfilecheck)             Checksum: 22A00465FA679B22DF4A172EA10D0ED9;1391.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 178.
 )
 
 Here is how much of LuaTeX's memory you used:
@@ -1311,7 +1311,7 @@ Here is how much of LuaTeX's memory you used:
  836 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 19 glue, 4 kern, 1 glyph, 46 attribute, 66 glue_spe
 c, 46 attribute_list, 2 write nodes
-   avail lists: 1:8,2:347,3:85,4:34,5:264,6:27,7:4222,8:36,9:222,10:17,11:312
+   avail lists: 1:8,2:347,3:85,4:34,5:264,6:27,7:4224,8:36,9:225,10:17,11:312
  41230 multiletter control sequences out of 65536+600000
  99 fonts using 11011335 bytes
  79i,12n,95p,1568b,985s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1336,7 +1336,7 @@ r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
 l/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on introduction.pdf (11 pages, 9356200 bytes).
+Output written on introduction.pdf (11 pages, 9355909 bytes).
 
 PDF statistics: 637 PDF objects out of 1000 (max. 8388607)
  448 compressed objects within 5 object streams

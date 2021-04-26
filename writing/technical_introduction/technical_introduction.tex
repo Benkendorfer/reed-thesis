@@ -16,9 +16,9 @@
 \setlength{\parskip}{0pt}
 
 \begin{document}
-	It will be helpful to first develop a basic level of understanding about the groomed hemisphere mass distribution which we wish to calculate. In order to understand calculations which deal with the strong force, we must first study the theory of quantum chromodynamics (QCD), albeit at a superficial level. This will lead us naturally into a discussion of jet grooming, followed by a discussion of the calculational framework under which we will work, called Soft-Collinear Effective Theory (SCET). Then, after touching briefly on some specific techniques we will use later, we will be ready to start calculating.
+	It will be helpful to first develop a basic level of understanding about the groomed hemisphere mass distribution which we wish to calculate. In order to understand calculations which deal with the strong force, we must first study the theory of quantum chromodynamics, albeit at a superficial level. This will lead us naturally into a discussion of jet grooming, followed by a discussion of the calculational framework under which we will work, called Soft-Collinear Effective Theory (SCET). Then, after touching briefly on some specific techniques we will use later, we will be ready to start calculating.
 
-\section{Quantum Chromodynamics (QCD)}\label{technical-sec:QCD}
+\section{Quantum chromodynamics}\label{technical-sec:QCD}
 	Recall that, in the Standard Model, quarks and gluons interact with each other via the strong force. The theory of the strong force is called quantum chromodynamics (QCD). In the context of quantum field theory, QCD can be described by the Lagrangian \cite{larkoski_elementary_2019-1}
 	\begin{equation}\label{technical-eq:QCD Lagrangian}
 		\cL_{\mathrm{QCD}} = -\frac{1}{4} F_{\mu\nu}^a F^{\mu \nu\,a} + \bar \psi i \gamma \cdot D \psi,
@@ -39,15 +39,15 @@
 	\begin{equation}
 		F_{\mu \nu} = \partial_\mu A_\nu - \partial_\nu A_\mu.
 	\end{equation}
-	The result is that, in Lorentz gauge $\partial \cdot A = 0$,
+	The result is that, in Lorenz gauge $\partial \cdot A = 0$,
 	\begin{equation}
 		\partial^2 A^\nu = e\bar \psi \gamma^\nu \psi,
 	\end{equation}
-	which, as a first-order differential equation, reveals the familiar fact that electromagnetism obeys the principle of superposition \cite{larkoski_elementary_2019-1} {\color{red}\textbf{[TODO: CHECK SCHWARTZ]}}. In contrast, the field strength tensor for QCD is \cite{larkoski_elementary_2019-1}
+	which, as a first-order differential equation, reveals the familiar fact that electromagnetism obeys the principle of superposition \cite{larkoski_elementary_2019-1}. In contrast, the field strength tensor for QCD is \cite{larkoski_elementary_2019-1}
 	\begin{equation}\label{technical-eq:QCD field strength}
 		F_{\mu \nu}^a = \partial_\mu A_\nu^a - \partial_\nu A_\mu^a + g f^{abc} A_\mu^b A_\nu^c.
 	\end{equation}
-	Here, $f^{abc}$ are the structure constants of the $\su(3)$ algebra. Notice that the QCD field strength tensor has a third term relative to the QED field strength tensor. This term is quadratic in the gluon field, with the result that QCD is a highly nonlinear theory \cite{larkoski_elementary_2019-1}. 
+	Here, $f^{abc}$ are the structure constants of the $\su(3)$ algebra. Notice that the QCD field strength tensor has an additional third term relative to the QED field strength tensor. This term is quadratic in the gluon field, with the result that QCD is a highly nonlinear theory \cite{larkoski_elementary_2019-1}. 
 
 	Physically, this means that gluons interact with themselves! This is a bizarre property which makes makes QCD simultaneously difficult to work with and very rich in structure. We will see a direct manifestation of this phenomenon in Sec.~\ref{technical-sec:jets}.
 
@@ -226,29 +226,29 @@
 
 	While it might be reasonable to worry that the grooming algorithm will make the calculation more difficult (it introduces another external scale $\zcut$, after all), it turns out that there are theoretical benefits to jet grooming, in addition to the experimental ones. A common problem in the calculation of jet observables is the presence of \textbf{non-global logarithms}, which are large logarithms of scales from radiation external to the jet.\footnote{This is the theoretical justification for hating background radiation.} This could be, for example, due to background radiation which radiates particles into the jet as it passes. The presence of non-global logarithms has made it difficult to compute the ungroomed jet mass distribution to high accuracy \cite{dasgupta_towards_2013}. However, it turns out that mMDT grooming eliminates the radiation which could give rise to non-global logarithms, which enables us to achieve higher accuracy than might otherwise be feasible \cite{dasgupta_towards_2013, frye_factorization_2016}.
 
-	This is not the only benefit. It also turns out that the groomed jet mass is more sensitive to the strong coupling $\alpha_s$ than the ungroomed version \cite{larkoski_improving_2020}. If our goal is to measuring $\alpha_s$ using jet masses --- and this would be a valiant goal, as it would be a novel way to measure the coupling and therefore a strong verification of the Standard Model --- then this provides another reason to be interested in the groomed distribution.
+	This is not the only benefit. It also turns out that the groomed jet mass is more sensitive to the strong coupling $\alpha_s$ than the ungroomed version \cite{larkoski_improving_2020}. If our goal were to measure $\alpha_s$ using jet masses --- and this would be a valiant goal, as it would be a novel way to measure the coupling and therefore a strong verification of the Standard Model --- then this provides another reason to be interested in the groomed distribution.
 
 	Thus, though we may gain some degree of complication in our calculation from the grooming algorithm, it is well worth the cost. Now let us figure out how to compute it.
 
 
 \section{Calculational techniques}
-\subsection{Soft-Collinear Effective Theory (SCET)}
+\subsection{Soft-Collinear Effective Theory}
 	The machinery of quantum field theory is, in some sense, too powerful. While the theory is extremely effective at predicting observations in nature, it is also unwieldy. Getting from the QCD Lagrangian of Eq.~\ref{technical-eq:QCD Lagrangian} to a precision calculation of the groomed heavy hemisphere mass would be very difficult.
 
 	Luckily for us, QCD simplifies in the low-energy, or \textbf{soft}, limit in which we will be working (since we are taking $\rho \ll 1$). In this limit, we can replace QCD with a low-energy effective theory called Soft-Collinear Effective Theory (SCET) \cite{bauer_summing_2000,bauer_effective_2001,bauer_invariant_2001,bauer_soft-collinear_2002,beneke_soft-collinear_2002,beneke_multipole-expanded_2003,hill_spectator_2003}. The precise details of SCET are unimportant for our purposes --- for more information, see Refs.~\cite{schwartz_quantum_2014} or \cite{becher_introduction_2015-1}.
 
 	What we will use is the framework which SCET provides for factorizing cross sections. In general, the differential cross section for an $e^+ e^- \to \text{3 jets}$ event takes on a factorized form like \cite{ellis_jet_2010,frye_factorization_2016}
 	\begin{equation}
-		\frac{d^2\sigma}{d\rho_1 d\rho_2} = H(Q^2) \otimes S(\rho_1, \rho_2, \zcut) \otimes J_q(\rho_1) \otimes J_g(\rho_1, \zcut) \otimes J_{\bar q}(\rho_2),
+		\frac{d^2\sigma}{d\rho_1 d\rho_2} = H(Q^2) \otimes S(\rho_1, \rho_2, \zcut) \otimes J_q(\rho_1) \otimes J_{\bar q}(\rho_2),
 	\end{equation} 
-	where here $\rho_1$ and $\rho_2$ are the normalized masses of the two hemispheres. $H(Q^2)$ is a hard function describing $e^+ e^- \to \text{jets}$; $S(\rho_1, \rho_2, \zcut)$ is a function describing soft radiation; and the $J_i$ are jet functions describing the production of collinear radiation in a jet about particle $i$ (in this case, $i$ could be a quark $q$, antiquark $\bar q$, or gluon $g$). The $\otimes$ symbol denotes convolution.
+	where here $\rho_1$ and $\rho_2$ are the normalized masses of the two hemispheres. $H(Q^2)$ is a hard function describing $e^+ e^- \to \text{jets}$; $S(\rho_1, \rho_2, \zcut)$ is a function describing soft radiation; and the $J_i$ are jet functions describing the production of collinear radiation in a jet about particle $i$ (in this case, $i$ could be a quark $q$ or antiquark $\bar q$). The $\otimes$ symbol denotes convolution.
 
 	This factorization will be key for developing an all-orders calculation of the groomed heavy hemisphere mass, as it enables us to resum large logarithms. Much more on the factorization theorem will be discussed in Chapter \ref{chap:factorization}.
 
 \subsection{Dimensional regularization}
 	Beyond the framework of SCET, we will work using a technique called \textbf{dimensional regularization}.\footnote{Developed by 't Hooft and Veltman in the 1970s \cite{t_hooft_regularization_1972}.} At its heart, dimensional regularization is a scheme for analytically isolating the divergences in divergent integrals. 
 
-	This is done by decreasing the dimension of the calculation by some small amount $\epsilon > 0$ --- we will work in $d = 4 - 2\epsilon$ dimensions instead of the usual $4$. The effect is to siphon divergences in the original integral into poles at $\epsilon = 0$. The result is still divergent if we send $\epsilon \to 0$, but now it is contained in a single term which can be manipulated and possibly removed. Effectively, dimensional regularization provides one answer the question: ``How can we, in a self-consistent way, remove divergences which cancel?''
+	This is done by decreasing the dimension of the calculation by some small amount $\epsilon > 0$ --- we will work in $d = 4 - 2\epsilon$ dimensions instead of the usual $4$. The effect is to siphon divergences in the original integral into poles at $\epsilon = 0$. The result is still divergent if we send $\epsilon \to 0$, but now the divergence is contained in terms which can be manipulated and possibly removed. Effectively, dimensional regularization provides one answer the question: ``How can we, in a self-consistent way, remove divergences which cancel?''
 
 	As an example, take the integral
 	\begin{equation}
@@ -262,7 +262,7 @@
 	\begin{equation}
 		\mu^\epsilon \int_1^\infty \frac{dx}{x^{1 + \epsilon}} = \frac{\mu^\epsilon}{\epsilon} = \frac{1}{\epsilon} + \log \mu + \epsilon \log^2 \mu + \cO(\epsilon^2).
 	\end{equation}
-	Notice that the divergence has emerged as single term: $1/\epsilon$. Now if there were another term in the calculation which, when expanded in $\epsilon$, carried a $-1/\epsilon$, the divergences would manifestly cancel. We could then safely take $\epsilon \to 0$ with a finite result at the end.
+	Notice that the divergence has emerged as single term: $1/\epsilon$. Now if there were another term in the calculation which, when expanded in $\epsilon$, carried a $-1/\epsilon$, the divergences would manifestly cancel. We could then safely take $\epsilon \to 0$ to produce a finite result at the end.
 
 	Of course, the examples which we will see in practice are a little more complicated, but the basic strategy is the same. Our first encounter with dimensional regularization in the wild will take place in Chapter \ref{chap:leading order}.
 

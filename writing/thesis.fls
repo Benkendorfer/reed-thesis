@@ -355,6 +355,7 @@ INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generi
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc
 INPUT ./acknowledgments/acknowledgments.tex
 INPUT ./acknowledgments/acknowledgments.tex
+INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc
 INPUT ./thesis.toc
 INPUT ./thesis.toc
 OUTPUT thesis.toc
@@ -406,7 +407,6 @@ INPUT ./introduction/figures/cms_160312_02.pdf
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-bold.luc
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-bold.luc
 INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc
-INPUT /Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm

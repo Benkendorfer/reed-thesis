@@ -1,7 +1,7 @@
 # Fdb version 3
-["lualatex"] 1619389251 "factorization.tex" "factorization.pdf" "factorization" 1619389254
+["lualatex"] 1619408477 "factorization.tex" "factorization.pdf" "factorization" 1619408479
   "../reedthesis.cls" 1383591362 8293 480a01b2533a1585368760477c470aa0 ""
-  "../thesis.tex" 1619388965 7402 d7bcba4595c8905da4aa5e7ba8c5b9d9 ""
+  "../thesis.tex" 1619407045 7645 d714f05a92d725e81d8c4a40d5209988 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1578167050 123160 07b01c97fb3dfb55a9303e4e62ca726f ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1578088225 124128 a9660d29d58fde0161397418fef1dfe6 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc" 1578088225 131060 99ff9ae82052dd1abb7e28d118ca7de7 ""
@@ -253,12 +253,12 @@
   "/usr/local/texlive/2017/texmf-dist/tex/luatex/luaotfload/fontloader-basics-gen.lua" 1547850999 12695 9a740c440e62da9b31d1d097257a1869 ""
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1575873454 4693480 8353df0835313a2d202e2f489241f4ef ""
   "/usr/local/texlive/2017/texmf-var/web2c/luatex/lualatex.fmt" 1575873557 1399169 069afea70d38dea9ddb6c86bc40f5b67 ""
-  "factorization.aux" 1619389253 2986 0a3b6df6255950815e10208f82b6dfd5 "lualatex"
-  "factorization.out" 1619389253 939 71d2e0d9b2d48e262f0019cc72dbce9c "lualatex"
-  "factorization.tex" 1619389251 16097 16f98506b8060676c66e4ed80406ec86 ""
+  "factorization.aux" 1619408479 2986 0a3b6df6255950815e10208f82b6dfd5 "lualatex"
+  "factorization.out" 1619408479 939 71d2e0d9b2d48e262f0019cc72dbce9c "lualatex"
+  "factorization.tex" 1619408476 16082 5203ff408f9ee4bc404939ac223800be ""
   "figures/head_on_schematic.pdf" 1612548809 6779 d65cb7f305aae26809098a6380728c5e ""
   (generated)
-  "factorization.aux"
   "factorization.log"
-  "factorization.pdf"
+  "factorization.aux"
   "factorization.out"
+  "factorization.pdf"

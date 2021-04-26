@@ -89,7 +89,7 @@
 	\end{center}
 	\end{figure}
 
-	We will work in the limit that the heavy hemisphere mass $\rho$ is approximately equal to the mMDT cutoff $\zcut$, which is itself small: $\rho \sim \zcut \ll 1$. We will utilize the strategy of regions \cite{becher_introduction_2015-1} to compute the distribution. The method of regions entails computing the distribution in all singular regions of phase space, then summing the results at the end to generate the full distribution.\footnote{The fact that this works is rather magical.} There are three singular regions of phase space:
+	We will work in the limit that the heavy hemisphere mass $\rho$ is approximately equal to the mMDT cutoff $\zcut$, which is itself small: $\rho \sim \zcut \ll 1$. We will utilize the method of regions \cite{becher_introduction_2015-1} to compute the distribution. The method of regions entails computing the distribution in all singular regions of phase space, then summing the results at the end to generate the full distribution.\footnote{The fact that this works is rather magical.} There are three singular regions of phase space in this event:
 	\begin{enumerate}
 		\item The \textbf{soft region}, in which the gluon is emitted with low energy.
 
@@ -119,7 +119,7 @@
 	\begin{equation}
 		p_2^\mu = \frac{Q_q}{2}\qty(1, 0, 0, -1),
 	\end{equation}
-	and let the gluon have momentum $k^\mu$. The soft-gluon limit means that the energy of the gluon is $k^0 \ll 1$. In this case, the quarks carry most of the energy, so we can approximate $Q_q \approx Q$, the total energy of the event. Furthermore, let us assume that the gluon is emitted in the hemisphere containing the quark (the problem is symmetric under quark-antiquark exchange, so we will simply multiply the cross section by $2$ at the end to account for this assumption). Then the momentum of the heavy hemisphere is
+	and let the gluon have momentum $k^\mu$. (These momenta are acceptable because, in the limit that the gluon is soft, the quarks are emitted approximately back-to-back to conserve momentum). The soft-gluon limit means that the energy of the gluon is $k^0 \ll 1$. In this case, the quarks carry most of the energy, so we can approximate $Q_q \approx Q$, the total energy of the event. Furthermore, let us assume that the gluon is emitted in the hemisphere containing the quark (the problem is symmetric under quark-antiquark exchange, so we will simply multiply the cross section by $2$ at the end to account for this assumption). Then the momentum of the heavy hemisphere is
 	\begin{equation}
 		p_h = p_1 + k,
 	\end{equation}
@@ -131,11 +131,11 @@
 		&= Q(k_0 - k_3).
 	\end{aligned}
 	\end{equation}
-	The last line follows because we assume every particle to be massless, such that $p_1^2 = k^2 = 0$.\footnote{This is a reasonably accurate assumption for the energies accessible by colliders, and makes our calculations much easier. The gluon is actually massless regardless of the theoretical assumptions made.} Now let us introduce the \textbf{light-cone coordinates}
+	The last line follows because we assume every particle to be massless, such that $p_1^2 = k^2 = 0$.\footnote{This is a reasonably accurate assumption for the energies accessible by colliders, and makes our calculations much easier. The gluon is actually massless regardless of the theoretical assumptions made.} Now if we introduce the \textbf{light-cone coordinates}
 	\begin{align}
 		k^+ &\equiv k^0 - k^3 & k^- &\equiv k^0 + k^3,
 	\end{align}
-	this can be written simply as
+	the squared mass can be written simply as
 	\begin{equation}
 		m_h^2 = Q k^+.
 	\end{equation}
@@ -149,7 +149,7 @@
 	\end{equation}
 	This means that we will need to insert the measurement function
 	\begin{equation}
-		\delta\qty(\rho - \frac{4k^+}{Q})
+		\delta_\rho = \delta\qty(\rho - \frac{4k^+}{Q})
 	\end{equation}
 	into Fermi's Golden Rule.
 
@@ -175,22 +175,22 @@
 	\end{equation}
 	When we insert these into Fermi's Golden Rule, the differential cross section takes the form
 	\begin{equation}\label{leading-eq:soft cross section preliminary}
-		\frac{d\sigma_{\text{soft}}}{d\rho} = 2\int d\LIPS\,\abs{\cM}^2 \delta\qty(\rho - \frac{4k^+}{Q}) \Theta\qty(k^+ + k^- - Q\,\zcut)\Theta\qty(k^- - k^+).
+		\frac{d\sigma_{\text{soft}}}{d\rho} = 2\int d\Pi_\LIPS\,\abs{\cM}^2 \delta\qty(\rho - \frac{4k^+}{Q}) \Theta\qty(k^+ + k^- - Q\,\zcut)\Theta\qty(k^- - k^+).
 	\end{equation}
-	Here, $d\LIPS$ is a differential element of Lorentz-invariant phase space, and $\cM$ is the matrix element governing the $e^+ e^- \to q\bar q g$ process.
+	Here, $d\Pi_\LIPS$ is a differential element of Lorentz-invariant phase space, and $\cM$ is the matrix element governing the $e^+ e^- \to q\bar q g$ process. The factor of $2$ comes from the restriction that the gluon follow the quark (so we need to account for the opposite possibility).
 
 	Assuming a soft gluon, the matrix element is well-known in the literature (see Eqs.\ 87 and 88 of \cite{catani_infrared_2000}):
 	\begin{equation}
 		\abs{\cM}^2 = 4\pi \alpha_s \sigma_0 C_F \mu^{2\epsilon} \frac{p_1 \cdot p_2}{(p_1 \cdot k)(p_2 \cdot k)}.
 	\end{equation}
-	Here, $\alpha_s$ is the strong coupling constant\footnote{Which is not really a constant.}, $\sigma_0$ is the cross section for $e^+ e^- \to q\bar q$, $C_F$ is the quadratic Casimir of the fundamental representation of color (taken to be $C_F = 4/3$ for our purposes \cite{particle_data_group_review_2020}), and $\mu$ is a mass scale introduced to ensure that the differential cross section will remain dimensionless in $d = 4 - 2\epsilon$ dimensions. Inserting the values of $p_1$, $p_2$, and $k$, we have
+	Here, $\alpha_s$ is the strong coupling, $\sigma_0$ is the cross section for $e^+ e^- \to q\bar q$, $C_F$ is the quadratic Casimir of the fundamental representation of color (taken to be $C_F = 4/3$ for our purposes \cite{particle_data_group_review_2020}), and $\mu$ is a mass scale introduced to ensure that the differential cross section will have the proper energy dimensionality in $d = 4 - 2\epsilon$ dimensions. Inserting the values of $p_1$, $p_2$, and $k$, we have
 	\begin{equation}\label{leading-eq:soft matrix element}
 		\abs{\cM}^2 = 4\pi \alpha_s \sigma_0 C_F \mu^{2\epsilon} \frac{2}{k^+ k^-}.
 	\end{equation}
 
-	Now we must unpack the Lorentz-invariant phase space element $d\LIPS$. Working in $d$ dimensions, the standard form is
+	Now we must unpack the Lorentz-invariant phase space element $d\Pi_\LIPS$. Working in $d$ dimensions, the standard form is
 	\begin{equation}
-		d\LIPS = \frac{d^d k}{(2\pi)^{d-1}}\delta(k^2)\Theta(k_0),
+		d\Pi_\LIPS = \frac{d^d k}{(2\pi)^{d-1}}\delta(k^2)\Theta(k_0),
 	\end{equation}
 	where the Dirac delta and Heaviside functions ensure that the gluon is on-shell (i.e., real) with positive energy. If $\epsilon = 0$, we would have
 	\begin{equation}
@@ -210,9 +210,9 @@
 	\end{equation}
 	we have
 	\begin{equation}
-		d\LIPS = \frac{dk^+ dk^- d^{d-2}k_\perp}{2(2\pi)^{d-1}} \delta(k^+ k^- - k_\perp^2)\Theta(k^+ + k^-).
+		d\Pi_\LIPS = \frac{dk^+ dk^- d^{d-2}k_\perp}{2(2\pi)^{d-1}} \delta(k^+ k^- - k_\perp^2)\Theta(k^+ + k^-).
 	\end{equation}
-	Now it is convenient to transfer the $2 - 2\epsilon$ dimensions of $k_\perp$ into spherical coordinates, so that
+	Now it is convenient to transform the $2 - 2\epsilon$ dimensions of $k_\perp$ into spherical coordinates, so that
 	\begin{equation}
 		d^{d - 2}k_\perp = k_\perp^{d-3} dk_\perp d\Omega_{d-2}
 	\end{equation}
@@ -223,7 +223,7 @@
 	with $\Gamma(x)$ the gamma function; this identity comes from Eq.\ B.28 of \cite{schwartz_quantum_2014}.
 	Therefore,
 	\begin{equation}
-		d\LIPS = \frac{2\pi^{(d-2)/2}}{\Gamma(\frac{d-2}{2})} \frac{dk^+ dk^- dk_\perp}{2(2\pi)^{d-1}} k_\perp^{d-3} \delta(k^+ k^- - k_\perp^2)\Theta(k^+ + k^-).
+		d\Pi_\LIPS = \frac{2\pi^{(d-2)/2}}{\Gamma(\frac{d-2}{2})} \frac{dk^+ dk^- dk_\perp}{2(2\pi)^{d-1}} k_\perp^{d-3} \delta(k^+ k^- - k_\perp^2)\Theta(k^+ + k^-).
 	\end{equation}
 	As a final step, we can resolve this delta function:
 	\begin{equation}
@@ -235,11 +235,11 @@
 	\end{equation}
 	Putting everything together, inserting $d = 4 - 2\epsilon$, and simplifying, we are left with
 	\begin{equation}
-		d\LIPS = \frac{(4\pi)^{\epsilon}}{\Gamma(1-\epsilon)8\pi^2}\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \Theta(k^+ + k^-).
+		d\Pi_\LIPS = \frac{(4\pi)^{\epsilon}}{\Gamma(1-\epsilon)8\pi^2}\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \Theta(k^+ + k^-).
 	\end{equation}
 	Notice that a factor of $(k^+ k^-)^\epsilon$ has been introduced --- this is what will help us capture divergences as we work and cancel them at the end. Finally, we will work using a convention known as \textbf{modified minimal subtraction}, under which we will throw away factors of $(4\pi)^\epsilon$ and set the Euler-Mascheroni constant to be $\gamma_E \to 0$ when it appears (this does not affect the final result, but will make calculations slightly less unwieldy). Under this scheme, we have
 	\begin{equation}\label{leading-eq:soft phase space}
-		d\LIPS = \frac{1}{\Gamma(1-\epsilon)8\pi^2}\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \Theta(k^+ + k^-).
+		d\Pi_\LIPS = \frac{1}{\Gamma(1-\epsilon)8\pi^2}\frac{dk^+ dk^-}{(k^+ k^-)^\epsilon} \Theta(k^+ + k^-).
 	\end{equation}
 	as our final phase space element.
 
@@ -304,7 +304,7 @@
 	\end{equation}
 	Stop reading and appreciate this for a minute --- it is remarkable! By pushing our calculation out of the standard 4 dimensions, we are able to learn about structure that was inaccessible to us in our 4-dimensional perspective. 
 
-	This technique, moreover, is not only beautiful from a mathematical point of view; it will be extremely useful to have analytically extracted the divergences in this way. At the end of the calculation, we will find that they all cancel each other out. It is rather magical.
+	This technique, moreover, is not only beautiful from a mathematical point of view; it will be extremely useful to have analytically extracted the divergences in this way. At the end of the calculation, we will find that they all cancel each other out. It is almost magical.
 
 \section{Collinear gluon}
 	Now that we have computed the contribution from a soft gluon, let us move on to the next singular region of phase space: a gluon collinear to the quark or antiquark. 
@@ -446,7 +446,7 @@
 	\end{aligned}
 	}
 	\end{equation}
-	The upper bound on $z$ has been replaced by $\infty$ because, in the $z \ll 1$ limit, the integral should not depend on the particular upper bound.\footnote{Another way to think about this is that there is in principle no \textit{a priori} upper bound on any variable of integration. We impose a bound according to the physical constraint that $0 < z < 1$. This could be represented in the integral as a term such as $\Theta(1 - z)$, but in the limit $z \ll 1$, we have $\Theta(1 - z) \approx 1$, so the upper bound vanishes.} These integrals can then be computed to find
+	The upper bound on $z$ has been replaced by $\infty$ because, in the $z \ll 1$ limit, the integral should not depend on the particular upper bound.\footnote{Another way to think about this is that there is, \textit{a priori}, no upper bound on any variable of integration. We impose a bound according to the physical constraint that $0 < z < 1$. This could be represented in the integral as a term such as $\Theta(1 - z)$, but in the limit $z \ll 1$, we have $\Theta(1 - z) \approx 1$, so the upper bound vanishes.} These integrals can then be computed to find
 	\begin{equation}
 	\begin{aligned}
 		\frac{2\pi}{\alpha_s C_F} \frac{1}{\sigma_0}\frac{d\sigma_{\text{soft-collinear}}}{d\rho} = \frac{4}{\Gamma(1 - \epsilon)} \qty(\frac{2\mu}{Q})^{2\epsilon} \frac{1}{\rho^{1+\epsilon}} \frac{\zcut^{-\epsilon}}{\epsilon}.
@@ -469,7 +469,7 @@
 			&\qquad + 2\qty[-\frac{3}{2} + 3 \zcut + 2 \log(\frac{1-\zcut}{\zcut}) - \frac{2}{\epsilon} - 2\log(\frac{4\mu^2}{Q^2 \rho \zcut})] + \cO(\epsilon).
 	\end{aligned}
 	\end{equation}
-	Notice that the divergences in $\epsilon$ cancel! We are left with a function which does not diverge if we send $\epsilon \to 0$, which means we can simply return to 4 dimensions. Also notice that all factors of $\mu$ cancel each other out: we can pull a $\log(4\mu^2/Q^2\rho)$ out of the terms with a Heaviside function, which then cancels with the $-\log(4\mu^2/Q^2\rho)$ from the soft-collinear contribution.\footnote{Indeed, notice that logarithms of $\mu$ appear in conjunction with divergences in $\epsilon$. This is a general feature of our regularization scheme.} This is a nice consistency check, as $\mu$ is a completely arbitrary mass scale --- it would not make sense for the physical cross section to depend on an arbitrary constant! Thus, simplifying the expression and setting $\epsilon = 0$, we find that
+	Notice that the divergences in $\epsilon$ exactly cancel! We are left with a function which does not diverge if we send $\epsilon \to 0$, which means we can simply return to 4 dimensions. Also notice that all factors of $\mu$ cancel each other out: we can pull a $\log(4\mu^2/Q^2\rho)$ out of the terms with a Heaviside function, which then cancels with the $-\log(4\mu^2/Q^2\rho)$ from the soft-collinear contribution.\footnote{Indeed, notice that logarithms of $\mu$ appear in conjunction with divergences in $\epsilon$. This is a general feature of our dimensional regularization scheme.} This is a nice consistency check, as $\mu$ is a completely arbitrary mass scale --- it would not make sense for the physical cross section to depend on an arbitrary constant! Thus, simplifying the expression and setting $\epsilon = 0$, we find that
 	\begin{equation}\label{leading-eq:fixed order result}
 	\boxed{
 	\begin{aligned}
@@ -482,9 +482,12 @@
 	\begin{figure}
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{figures/approximation_small_zcut_0.01.pdf}
+
+		\vspace{1cm}
+
 		\includegraphics[width=0.9\textwidth]{figures/approximation_small_zcut_0.0001.pdf}
 
-		\caption{\label{leading-fig:fixed order approx}True (orange solid line) and approximated (blue dashed line) distribution of groomed heavy hemisphere mass in the limit $\rho \sim \zcut \ll 1$.}
+		\caption{\label{leading-fig:fixed order approx}True (orange solid line) and approximated (blue dashed line) distributions of groomed heavy hemisphere mass in the limit $\rho \sim \zcut \ll 1$, for two different values of $\zcut$.}
 	\end{center}
 	\end{figure}
 
@@ -514,7 +517,7 @@
 	\end{equation}
 	which is the same result!
 	
-	Thus, we see that this method works. To compute the distribution in a given limit, it suffices for us to consider only `interesting' regions of phase space, compute their contribution to the distribution, and then combine these contributions in the appropriate manner. The same principle will be applied as we work towards an all-orders calculation. 
+	Thus, we see that the method of regions works. To compute the distribution in a given limit, it suffices for us to consider only `interesting' regions of phase space, compute their contribution to the distribution, and then combine these contributions in the appropriate manner. The same principle will be applied as we work towards an all-orders calculation. 
 
 	There, too, we will begin by identifying the singular regions of phase space and the dominant physical contributions in each region. We will need to resum the contributions in each region in order to manage the effects of imposed scales to all orders, but this is simply an additional step in the calculation. Moreover, instead of a simple sum, we will combine functions by convolving them, since we need to appropriately capture terms at every order in $\alpha_s$ hidden in each function. Despite these complications, however, the core idea is the same, and this simple example provides a general road map as we push forward.\footnote{We could think of this as a map which only contains the location of the interstate highways.}
 

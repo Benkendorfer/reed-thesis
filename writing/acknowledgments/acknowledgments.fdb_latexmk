@@ -1,9 +1,11 @@
 # Fdb version 3
-["lualatex"] 1619382191 "acknowledgments.tex" "acknowledgments.pdf" "acknowledgments" 1619382193
+["lualatex"] 1619395399 "acknowledgments.tex" "acknowledgments.pdf" "acknowledgments" 1619395412
   "../reedthesis.cls" 1383591362 8293 480a01b2533a1585368760477c470aa0 ""
-  "../thesis.tex" 1619284986 7364 962bd60b95cea63306660a4c8b162193 ""
+  "../thesis.tex" 1619395188 7478 bb0c751251bd29fc44f73b40d3f24dda ""
+  "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-italic.luc" 1578088225 131060 99ff9ae82052dd1abb7e28d118ca7de7 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1578088207 123499 b7509c89014c4b75291df3d72894a934 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmromanslant12-regular.luc" 1612227379 125052 c97150538b27307107aa8c85aeb1c8af ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-italic.otf" 1255129361 117732 558aeb4ada25b652cc2e9bcf0771e962 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf" 1255129361 110400 d844cffffa1af59f9d2bb1bfdb6f1a2c ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -207,11 +209,11 @@
   "/usr/local/texlive/2017/texmf-dist/tex/luatex/luaotfload/fontloader-basics-gen.lua" 1547850999 12695 9a740c440e62da9b31d1d097257a1869 ""
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1575873454 4693480 8353df0835313a2d202e2f489241f4ef ""
   "/usr/local/texlive/2017/texmf-var/web2c/luatex/lualatex.fmt" 1575873557 1399169 069afea70d38dea9ddb6c86bc40f5b67 ""
-  "acknowledgments.aux" 1619382193 662 b2b94621371df8d9296b8bf5bec1b851 "lualatex"
-  "acknowledgments.out" 1619382193 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
-  "acknowledgments.tex" 1619382191 5539 b6c3b8765f27084158fccb6f02188963 ""
+  "acknowledgments.aux" 1619395401 662 b2b94621371df8d9296b8bf5bec1b851 "lualatex"
+  "acknowledgments.out" 1619395400 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "acknowledgments.tex" 1619395412 5759 61dba63a801f0175db520c41d5469b54 ""
   (generated)
-  "acknowledgments.log"
   "acknowledgments.pdf"
-  "acknowledgments.out"
   "acknowledgments.aux"
+  "acknowledgments.out"
+  "acknowledgments.log"
