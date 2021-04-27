@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  25 APR 2021 21:31
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.8)  27 APR 2021 10:18
  restricted system commands enabled.
 **thesis.tex
 (./thesis.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.165 seconds
+luaotfload | main : initialization completed in 0.152 seconds
 (./reedthesis.cls
 Document Class: reedthesis 2004/01/27 The Reed College Thesis Class
 (/usr/local/texlive/2017/texmf-dist/tex/latex/base/book.cls
@@ -1401,10 +1401,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 224.
 Here is how much of LuaTeX's memory you used:
  39049 strings out of 493861
  100000,953878 words of node,token memory allocated
- 3422 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 59 glue, 4 kern, 1 glyph, 599 attribute, 65 glue_sp
-ec, 599 attribute_list, 2 write, 15 pdf_action nodes
-   avail lists: 1:8,2:972,3:419,4:64,5:333,6:54,7:4497,8:115,9:967,10:21,11:359
+ 3442 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 59 glue, 4 kern, 1 glyph, 601 attribute, 65 glue_sp
+ec, 601 attribute_list, 2 write, 17 pdf_action nodes
+   avail lists: 1:8,2:968,3:419,4:64,5:333,6:52,7:4497,8:115,9:967,10:21,11:359
  41836 multiletter control sequences out of 65536+600000
  110 fonts using 12003063 bytes
  67i,16n,110p,1599b,1939s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1437,10 +1437,10 @@ xlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texli
 ve/2017/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/t
 exlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on thesis.pdf (94 pages, 10909672 bytes).
+Output written on thesis.pdf (94 pages, 10909713 bytes).
 
-PDF statistics: 2799 PDF objects out of 2984 (max. 8388607)
- 2250 compressed objects within 23 object streams
+PDF statistics: 2801 PDF objects out of 2984 (max. 8388607)
+ 2252 compressed objects within 23 object streams
  556 named destinations out of 1000 (max. 131072)
  440 words of extra memory for PDF output out of 10000 (max. 100000000)
 

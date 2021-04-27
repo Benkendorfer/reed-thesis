@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex thesis"] 1619410355 "thesis.aux" "thesis.bbl" "thesis" 1619411468
+["bibtex thesis"] 1619543933 "thesis.aux" "thesis.bbl" "thesis" 1619543939
   "./bsts/myJHEP.bst" 1616459774 20434 31238a1d6dad6e6003daecc06e05dcf7 ""
-  "jet_substructure.bib" 1619409695 110236 71a5c4ba04d1ec5a30e27efd1c29edbc ""
-  "thesis.aux" 1619411467 28364 37c9da1ca582e93ce3d7cbefe1cbf654 "lualatex"
+  "jet_substructure.bib" 1619543930 110535 03949773a36ffdb2a737956a53af022b ""
+  "thesis.aux" 1619543938 28364 37c9da1ca582e93ce3d7cbefe1cbf654 "lualatex"
   (generated)
-  "thesis.bbl"
   "thesis.blg"
-["lualatex"] 1619411462 "thesis.tex" "thesis.pdf" "thesis" 1619411468
+  "thesis.bbl"
+["lualatex"] 1619543933 "thesis.tex" "thesis.pdf" "thesis" 1619543939
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc" 1578089393 77605 7e7fca2819f97a8cad1742ec392b3c13 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc" 1578167051 124231 de1fac4fa22b2d0f3c02f2a11a85c4b6 ""
   "/Users/keesbenkendorfer/Library/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc" 1578167051 132153 e7fa8b11b7f6a785da3d3a24d622a3e1 ""
@@ -278,7 +278,7 @@
   "all_orders/all_orders.tex" 1619410048 51244 4fc7e183e6209ece948af68b72593b2d ""
   "all_orders/figures/resummation_plot.pdf" 1619128155 100541 843a509be87ad18dfae6e9396e0a41e5 ""
   "appendix_dilogarithm/appendix_dilogarithm.tex" 1618716751 2973 691dd2988ae1b0773973e96b145e636f ""
-  "appendix_soft_function/appendix_soft_function.tex" 1618792060 12848 d715620b7a3062e068459040a6f5b80c ""
+  "appendix_soft_function/appendix_soft_function.tex" 1619411540 12848 d715620b7a3062e068459040a6f5b80c ""
   "appendix_soft_function/figures/full_eps_0.0001.pdf" 1618596827 59444 4f02c735ccff2704747b98a21c1cae1d ""
   "chemarr.sty" 1383591362 2427 429918874401aa8c2f0b441e3fc621f5 ""
   "conclusion/conclusion.tex" 1619410341 6424 ca61885c12debe3a27355ded03587f22 ""
@@ -295,14 +295,14 @@
   "technical_introduction/figures/DijetHighMass9.3TeV-VP1-nocone_small.jpg" 1615851107 581537 5ea5fe984c613c46084d5a6f1153d791 ""
   "technical_introduction/figures/atlas_pile_up.jpeg" 1615917885 263896 75805b70c077e70433dbebdfe850a968 ""
   "technical_introduction/technical_introduction.tex" 1619411460 32632 25e86ab7cee73a60a0a601023b0a11f3 ""
-  "thesis.aux" 1619411467 28364 37c9da1ca582e93ce3d7cbefe1cbf654 "lualatex"
-  "thesis.bbl" 1619410355 12208 5a3e784af9f1824af414e0c7fe7909bc "bibtex thesis"
-  "thesis.out" 1619411467 8749 a71e5d1e450790ef2eaeb8b1557e8dcc "lualatex"
-  "thesis.tex" 1619411462 7645 d714f05a92d725e81d8c4a40d5209988 ""
-  "thesis.toc" 1619411467 4530 35f880af815639363c8a94149f833517 "lualatex"
+  "thesis.aux" 1619543938 28364 37c9da1ca582e93ce3d7cbefe1cbf654 "lualatex"
+  "thesis.bbl" 1619543933 12369 6fe11cc3bcc48554812525245fd899cd "bibtex thesis"
+  "thesis.out" 1619543938 8749 a71e5d1e450790ef2eaeb8b1557e8dcc "lualatex"
+  "thesis.tex" 1619543933 7657 f6ddd6dec71833952f49726cf79cdada ""
+  "thesis.toc" 1619543938 4530 35f880af815639363c8a94149f833517 "lualatex"
   (generated)
   "thesis.log"
+  "thesis.aux"
   "thesis.toc"
   "thesis.pdf"
-  "thesis.aux"
   "thesis.out"
